@@ -1,0 +1,93 @@
+{
+  "selection": "minimum expert validation loss under four-check early stopping",
+  "epoch_definition": "one token-equivalent expert epoch plus the requested replay batches",
+  "gameplay": {
+    "secrets": 72,
+    "split": "test",
+    "decoding": "greedy",
+    "average_guesses": "mean guesses among wins"
+  },
+  "mechanics_replay": {
+    "E1": {
+      "requested_ratios": {"expert": 1.0, "mechanics": 0.0, "consistency": 0.0},
+      "best_epoch": 8,
+      "expert_validation_loss": 0.41127454916007905,
+      "mechanics_validation_loss": 10.392833498023716,
+      "wins": 71,
+      "games": 72,
+      "average_guesses": 3.084507042253521,
+      "invalid_guesses": 1
+    },
+    "E2": {
+      "requested_ratios": {"expert": 0.95, "mechanics": 0.05, "consistency": 0.0},
+      "best_epoch": 10,
+      "expert_validation_loss": 0.4131127640192688,
+      "mechanics_validation_loss": 0.007316667760313735,
+      "wins": 72,
+      "games": 72,
+      "average_guesses": 3.0833333333333335,
+      "invalid_guesses": 0
+    },
+    "E3": {
+      "requested_ratios": {"expert": 0.9, "mechanics": 0.1, "consistency": 0.0},
+      "best_epoch": 8,
+      "expert_validation_loss": 0.4096046658843874,
+      "mechanics_validation_loss": 0.003034941782593256,
+      "wins": 71,
+      "games": 72,
+      "average_guesses": 3.0985915492957745,
+      "invalid_guesses": 0
+    }
+  },
+  "consistency_replay": {
+    "expert80_mechanics10_consistency10": {
+      "best_epoch": 12,
+      "expert_validation_loss": 0.46343557003458496,
+      "mechanics_validation_loss": 0.00331681805637043,
+      "consistency_validation_loss": 0.07561958107008905,
+      "wins": 70,
+      "games": 72,
+      "average_guesses": 3.057142857142857,
+      "invalid_guesses": 0
+    },
+    "expert90_mechanics5_consistency5": {
+      "best_epoch": 13,
+      "expert_validation_loss": 0.48834987957015813,
+      "mechanics_validation_loss": 0.009833364373610425,
+      "consistency_validation_loss": 0.09460451666029722,
+      "wins": 68,
+      "games": 72,
+      "average_guesses": 3.0588235294117645,
+      "invalid_guesses": 0
+    }
+  },
+  "learning_rate": {
+    "3e-4": {
+      "best_epoch": 8,
+      "expert_validation_loss": 0.41127454916007905,
+      "mechanics_validation_loss": 10.392833498023716,
+      "wins": 71,
+      "games": 72,
+      "average_guesses": 3.084507042253521,
+      "invalid_guesses": 1
+    },
+    "1e-4": {
+      "best_epoch": 16,
+      "expert_validation_loss": 0.49957818675889326,
+      "mechanics_validation_loss": 9.285607089920948,
+      "wins": 72,
+      "games": 72,
+      "average_guesses": 3.0833333333333335,
+      "invalid_guesses": 0
+    },
+    "3e-5": {
+      "best_epoch": 46,
+      "expert_validation_loss": 0.5448557157855731,
+      "mechanics_validation_loss": 9.495104990118577,
+      "wins": 70,
+      "games": 72,
+      "average_guesses": 3.085714285714286,
+      "invalid_guesses": 1
+    }
+  }
+}

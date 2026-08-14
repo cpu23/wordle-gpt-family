@@ -1,0 +1,22 @@
+{
+  "average_guesses": 3.085714285714286,
+  "batch_counts": {
+    "consistency": 0,
+    "expert": 2504,
+    "mechanics": 0
+  },
+  "consistency_validation_loss": null,
+  "epoch": 46,
+  "expert_validation_loss": 0.5448557157855731,
+  "games": 72,
+  "improved": true,
+  "invalid_guesses": 1,
+  "learning_rate": 3e-05,
+  "mechanics_validation_loss": 9.495104990118577,
+  "step": 115196,
+  "train_losses": {
+    "expert": 0.3242185939996006
+  },
+  "win_rate": 0.9722222222222222,
+  "wins": 70
+}

@@ -330,3 +330,62 @@ Evaluate any final checkpoint on the 72 held-out secrets with:
 uv run --with-requirements requirements.txt \
   python evaluate_v2.py PATH_TO_CHECKPOINT
 ```
+
+### 2026-08-14 — Experiment E: multi-task replay
+
+`experiments_replay.py` preserves the original B sampling contract: expert batches are sampled with replacement from the same seed, and epoch boundaries are based on cumulative supervised expert tokens. A reported epoch therefore contains one token-equivalent expert epoch plus replay batches. Separate deterministic random streams sample each objective, and replay batches are spread evenly through the expert updates.
+
+Every epoch records exact expert and mechanics validation loss, optional consistency validation loss, gameplay on all 72 test secrets, average guesses, and invalid guesses. Best checkpoints are still selected only by expert validation loss with four-check early stopping.
+
+All E runs start from the seed-zero B1 mechanics checkpoint at learning rate `3e-4`.
+
+| Run | Expert / mechanics | Best epoch | Expert val | Mechanics val | Wins | Avg guesses | Invalid |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| E1 | 100% / 0% | 8 | 0.411275 | 10.392833 | 71/72 | 3.0845 | 1 |
+| E2 | 95% / 5% | 10 | 0.413113 | 0.007317 | **72/72** | **3.0833** | 0 |
+| E3 | 90% / 10% | 8 | **0.409605** | **0.003035** | 71/72 | 3.0986 | 0 |
+
+E1 exactly reproduces the existing B2 checkpoint's expert and mechanics validation losses. Five-percent replay prevents catastrophic forgetting with only a `0.001838` expert-loss regression and produces the only perfect-gameplay best checkpoint. Ten-percent replay both preserves mechanics and slightly improves expert validation by `0.001670` relative to E1. Mechanics replay is therefore effective; 10% is the best validation tradeoff of these three ratios.
+
+#### Mechanics and consistency replay
+
+These runs start from the best D consistency checkpoint, after mechanics and candidate-consistency pretraining.
+
+| Expert / mechanics / consistency | Best epoch | Expert val | Mechanics val | Consistency val | Wins | Avg guesses | Invalid |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 80% / 10% / 10% | 12 | **0.463436** | **0.003317** | **0.075620** | **70/72** | **3.0571** | 0 |
+| 90% / 5% / 5% | 13 | 0.488350 | 0.009833 | 0.094605 | 68/72 | 3.0588 | 0 |
+
+For comparison, D without replay ended at expert/mechanics/consistency losses `0.481911 / 14.352221 / 8.972896`. The 80/10/10 mixture improves expert loss while retaining both prerequisite objectives near their pre-SFT values. The 90/5/5 allocation is worse on all three validation objectives. However, both consistency-replay runs remain worse on expert validation and gameplay than mechanics-only E3.
+
+#### Expert-only SFT learning rate
+
+Each run starts from the same B1 checkpoint and uses no replay.
+
+| Learning rate | Best epoch | Expert val | Mechanics val | Wins | Avg guesses | Invalid |
+|---:|---:|---:|---:|---:|---:|---:|
+| `3e-4` | 8 | **0.411275** | 10.392833 | 71/72 | 3.0845 | 1 |
+| `1e-4` | 16 | 0.499578 | **9.285607** | **72/72** | **3.0833** | 0 |
+| `3e-5` | 46 | 0.544856 | 9.495105 | 70/72 | 3.0857 | 1 |
+
+Lowering the learning rate delays convergence and modestly lowers the final mechanics loss, but mechanics loss remains above `9`. It does not solve forgetting and substantially worsens expert validation. Replay is much more effective than reducing the SFT learning rate.
+
+Example replay commands:
+
+```bash
+uv run --with-requirements requirements.txt \
+  python experiments_replay.py \
+  --output-dir runs/v2-replay/e3-expert90-mechanics10 \
+  --initial-checkpoint runs/v2-experiment-b-mechanics/checkpoints/best.pt \
+  --expert-ratio 0.9 \
+  --mechanics-ratio 0.1 \
+  --consistency-ratio 0
+
+uv run --with-requirements requirements.txt \
+  python experiments_replay.py \
+  --output-dir runs/v2-replay/consistency-expert80-mechanics10-consistency10 \
+  --initial-checkpoint runs/v2-experiment-d-consistency/checkpoints/best.pt \
+  --expert-ratio 0.8 \
+  --mechanics-ratio 0.1 \
+  --consistency-ratio 0.1
+```

@@ -1,0 +1,28 @@
+{
+  "batch_size": 32,
+  "eval_batch_size": 256,
+  "gameplay_secrets": 72,
+  "initialization": "runs/v2-experiment-d-consistency/checkpoints/best.pt",
+  "learning_rate": 0.0003,
+  "max_epochs": 100,
+  "min_delta": 0.0001,
+  "nominal_batches_per_expert_epoch": {
+    "consistency": 313,
+    "expert": 2505,
+    "mechanics": 313
+  },
+  "nominal_realized_ratios": {
+    "consistency": 0.09996806132226126,
+    "expert": 0.8000638773554775,
+    "mechanics": 0.09996806132226126
+  },
+  "parameters": 814627,
+  "patience": 4,
+  "requested_ratios": {
+    "consistency": 0.1,
+    "expert": 0.8,
+    "mechanics": 0.1
+  },
+  "seed": 0,
+  "vocabulary_size": 35
+}

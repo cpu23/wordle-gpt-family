@@ -1,0 +1,28 @@
+{
+  "batch_size": 32,
+  "eval_batch_size": 256,
+  "gameplay_secrets": 72,
+  "initialization": "runs/v2-experiment-b-mechanics/checkpoints/best.pt",
+  "learning_rate": 0.0003,
+  "max_epochs": 100,
+  "min_delta": 0.0001,
+  "nominal_batches_per_expert_epoch": {
+    "consistency": 0,
+    "expert": 2505,
+    "mechanics": 132
+  },
+  "nominal_realized_ratios": {
+    "consistency": 0.0,
+    "expert": 0.949943117178612,
+    "mechanics": 0.05005688282138794
+  },
+  "parameters": 814627,
+  "patience": 4,
+  "requested_ratios": {
+    "consistency": 0.0,
+    "expert": 0.95,
+    "mechanics": 0.05
+  },
+  "seed": 0,
+  "vocabulary_size": 35
+}

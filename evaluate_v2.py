@@ -81,20 +81,19 @@ def play_secret(
     return GameResult(secret, tuple(guesses), False, 0)
 
 
-def evaluate_checkpoint(
-    checkpoint_path: str | Path,
+def evaluate_model(
+    model: WordleGPT,
     secrets: Sequence[str],
     allowed_words: Sequence[str],
     *,
-    device: str,
+    checkpoint: str = "in-memory",
 ) -> GameplaySummary:
-    """Play every supplied secret and aggregate game-level metrics."""
-    model = load_v2_model(checkpoint_path, device)
+    """Play every supplied secret with an already-loaded model."""
     allowed = frozenset(allowed_words)
     results = tuple(play_secret(model, secret, allowed) for secret in secrets)
     wins = sum(result.won for result in results)
     return GameplaySummary(
-        checkpoint=str(checkpoint_path),
+        checkpoint=checkpoint,
         games=len(results),
         wins=wins,
         win_rate=wins / len(results),
@@ -106,6 +105,23 @@ def evaluate_checkpoint(
         average_attempts=sum(len(result.guesses) for result in results) / len(results),
         invalid_guesses=sum(result.invalid_guesses for result in results),
         results=results,
+    )
+
+
+def evaluate_checkpoint(
+    checkpoint_path: str | Path,
+    secrets: Sequence[str],
+    allowed_words: Sequence[str],
+    *,
+    device: str,
+) -> GameplaySummary:
+    """Restore a checkpoint and play every supplied secret."""
+    model = load_v2_model(checkpoint_path, device)
+    return evaluate_model(
+        model,
+        secrets,
+        allowed_words,
+        checkpoint=str(checkpoint_path),
     )
 
 
