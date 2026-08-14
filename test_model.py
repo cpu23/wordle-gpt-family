@@ -11,7 +11,12 @@ from model import (
     VOCAB_SIZE,
     WordleGPT,
 )
-from train import IGNORE_INDEX, calculate_loss, create_shifted_pairs
+from train import (
+    IGNORE_INDEX,
+    calculate_loss,
+    create_shifted_pairs,
+    generate_tokens,
+)
 
 
 class WordleGPTTests(unittest.TestCase):
@@ -56,6 +61,22 @@ class TrainingTests(unittest.TestCase):
         targets = torch.tensor([[4, IGNORE_INDEX]])
         loss = calculate_loss(logits, targets)
         self.assertAlmostEqual(loss.item(), torch.tensor(32.0).log().item())
+
+    def test_greedy_generation_appends_and_stops_one_token(self):
+        model = WordleGPT()
+        with torch.no_grad():
+            model.output.weight.zero_()
+            model.output.bias.fill_(-1.0)
+            model.output.bias[7] = 1.0
+
+        generated = generate_tokens(
+            model,
+            [29, 2],
+            max_new_tokens=4,
+            stop_token_id=7,
+        )
+        self.assertEqual(generated, [29, 2, 7])
+        self.assertTrue(model.training)
 
 
 if __name__ == "__main__":

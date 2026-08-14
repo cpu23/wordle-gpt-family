@@ -12,7 +12,7 @@ from torch import Tensor
 from torch.nn import functional as F
 
 from model import CONTEXT_LENGTH, VOCAB_SIZE, WordleGPT
-from tokenizer import END_TOKEN, TOKEN_TO_ID
+from tokenizer import END_TOKEN, TOKEN_TO_ID, decode
 
 DEFAULT_DATA = Path("data/wordle-100k/tokenized-trajectories.jsonl.gz")
 DEFAULT_BATCH_SIZE = 32
@@ -138,6 +138,45 @@ def train(
     return model, losses
 
 
+def generate_tokens(
+    model: WordleGPT,
+    prefix: Sequence[int],
+    *,
+    max_new_tokens: int,
+    stop_token_id: int | None = None,
+) -> list[int]:
+    """Greedily append one model prediction at a time."""
+    if not prefix:
+        raise ValueError("prefix must contain at least one token")
+    if max_new_tokens < 0:
+        raise ValueError("max_new_tokens cannot be negative")
+    if len(prefix) + max_new_tokens > model.context_length:
+        raise ValueError("generation would exceed the model context length")
+
+    device = next(model.parameters()).device
+    generated = torch.empty(
+        (1, len(prefix) + max_new_tokens),
+        dtype=torch.long,
+        device=device,
+    )
+    generated[0, : len(prefix)] = torch.tensor(prefix, device=device)
+    generated_length = len(prefix)
+    was_training = model.training
+    model.eval()
+    try:
+        with torch.inference_mode():
+            for _ in range(max_new_tokens):
+                logits = model(generated[:, :generated_length])
+                next_token = logits[0, -1].argmax()
+                generated[0, generated_length] = next_token
+                generated_length += 1
+                if stop_token_id is not None and next_token.item() == stop_token_id:
+                    break
+    finally:
+        model.train(was_training)
+    return generated[0, :generated_length].tolist()
+
+
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Overfit WordleGPT on a fixed set of tokenized trajectories."
@@ -148,6 +187,13 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--learning-rate", type=float, default=DEFAULT_LEARNING_RATE)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--device", choices=("cpu", "cuda"))
+    parser.add_argument(
+        "--generate-example",
+        action="store_true",
+        help="greedily continue one memorized training trajectory",
+    )
+    parser.add_argument("--example-index", type=int, default=0)
+    parser.add_argument("--prefix-length", type=int, default=6)
     return parser
 
 
@@ -158,13 +204,42 @@ def main(argv: Sequence[str] | None = None) -> int:
         count=args.batch_size,
         seed=args.seed,
     )
-    train(
+    model, _ = train(
         trajectories,
         num_steps=args.steps,
         learning_rate=args.learning_rate,
         device=args.device,
         seed=args.seed,
     )
+    if args.generate_example:
+        if not 0 <= args.example_index < len(trajectories):
+            raise ValueError("example-index is outside the selected training batch")
+        target = trajectories[args.example_index]
+        if not 1 <= args.prefix_length < len(target):
+            raise ValueError("prefix-length must be within the selected trajectory")
+        prefix = target[: args.prefix_length]
+        predicted = generate_tokens(
+            model,
+            prefix,
+            max_new_tokens=len(target) - len(prefix),
+            stop_token_id=TOKEN_TO_ID[END_TOKEN],
+        )
+        predicted_continuation = predicted[len(prefix) :]
+        expected_continuation = target[len(prefix) :]
+        correct = sum(
+            actual == expected
+            for actual, expected in zip(
+                predicted_continuation, expected_continuation, strict=False
+            )
+        )
+        accuracy = correct / len(expected_continuation)
+        print(f"prompt:    {decode(prefix)}")
+        print(f"expected:  {decode(target)}")
+        print(f"predicted: {decode(predicted)}")
+        print(
+            f"continuation tokens: {correct}/{len(expected_continuation)} "
+            f"({accuracy:.1%})"
+        )
     return 0
 
 
