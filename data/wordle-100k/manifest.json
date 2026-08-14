@@ -1,0 +1,125 @@
+{
+  "duplicate_fingerprint_count": 3391,
+  "files": {
+    "duplicates": "duplicates.jsonl.gz",
+    "states": "states.jsonl.gz",
+    "trajectories": "trajectories.jsonl.gz"
+  },
+  "max_turns": 6,
+  "nested_datasets": {
+    "1000": {
+      "duplicate_rate": 0.34,
+      "duplicate_states": 340,
+      "file": "states.jsonl.gz",
+      "split_counts": {
+        "test": 69,
+        "train": 814,
+        "validation": 117
+      },
+      "state_index_range": [
+        0,
+        1000
+      ],
+      "strategy_counts": {
+        "clever": 250,
+        "partly-random": 250,
+        "random": 250,
+        "simple": 250
+      },
+      "total_states": 1000,
+      "unique_states": 660
+    },
+    "10000": {
+      "duplicate_rate": 0.4438,
+      "duplicate_states": 4438,
+      "file": "states.jsonl.gz",
+      "split_counts": {
+        "test": 972,
+        "train": 8060,
+        "validation": 968
+      },
+      "state_index_range": [
+        0,
+        10000
+      ],
+      "strategy_counts": {
+        "clever": 2500,
+        "partly-random": 2500,
+        "random": 2500,
+        "simple": 2500
+      },
+      "total_states": 10000,
+      "unique_states": 5562
+    },
+    "100000": {
+      "duplicate_rate": 0.53805,
+      "duplicate_states": 53805,
+      "file": "states.jsonl.gz",
+      "split_counts": {
+        "test": 9744,
+        "train": 80136,
+        "validation": 10120
+      },
+      "state_index_range": [
+        0,
+        100000
+      ],
+      "strategy_counts": {
+        "clever": 25000,
+        "partly-random": 25000,
+        "random": 25000,
+        "simple": 25000
+      },
+      "total_states": 100000,
+      "unique_states": 46195
+    },
+    "30000": {
+      "duplicate_rate": 0.4932,
+      "duplicate_states": 14796,
+      "file": "states.jsonl.gz",
+      "split_counts": {
+        "test": 2796,
+        "train": 24191,
+        "validation": 3013
+      },
+      "state_index_range": [
+        0,
+        30000
+      ],
+      "strategy_counts": {
+        "clever": 7500,
+        "partly-random": 7500,
+        "random": 7500,
+        "simple": 7500
+      },
+      "total_states": 30000,
+      "unique_states": 15204
+    }
+  },
+  "partly_random_rate": 0.35,
+  "schema_version": 1,
+  "seed": 20260813,
+  "split_method": "trajectory-level sha256(seed:strategy:strategy_trajectory_index)",
+  "split_targets": {
+    "test": 0.1,
+    "train": 0.8,
+    "validation": 0.1
+  },
+  "state_identity": "sha256 of ordered prior guess/feedback history",
+  "strategies": [
+    "clever",
+    "simple",
+    "random",
+    "partly-random"
+  ],
+  "target_strategy_share": 0.25,
+  "total_states": 100000,
+  "trajectory_counts": {
+    "clever": 8098,
+    "partly-random": 6480,
+    "random": 4182,
+    "simple": 7104
+  },
+  "word_count": 719,
+  "word_list_sha256": "3f4682f8bedf30744c51133af3f5dcd6436d6dcfccf5323a448f48bb0928d04d"
+}

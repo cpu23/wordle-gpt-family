@@ -1,0 +1,125 @@
+{
+  "deduplicated_pool": {
+    "duplicate_states_removed": 53805,
+    "file": "deduplicated-states.jsonl.gz",
+    "record_fields": [
+      "state",
+      "number_of_occurrences",
+      "strategies",
+      "action_policies",
+      "strategy_counts",
+      "action_policy_counts",
+      "secret_split_counts",
+      "answer_counts"
+    ],
+    "unique_states": 46195
+  },
+  "raw_artifact_sha256": {
+    "duplicates.jsonl.gz": "b63a69079d14f07282274a2cc91ce850c610dd31b5fdbfee07b42fd00a310d78",
+    "manifest.json": "782d3412fa0b6cc48ded7f8736ca5504f20330cdfe4c2f59058b6ef6fffa8ea8",
+    "states.jsonl.gz": "dd88cbbf6858c950e247c4c4b3984e1211c79a3a97f48e71811f9ac2d9a30463",
+    "trajectories.jsonl.gz": "6b2600f3d7eedba3cf9d54dd9660e52ea6cffaae6cd1c39c4ef5becf6dad5497"
+  },
+  "raw_pool": {
+    "file": "states.jsonl.gz",
+    "frequency_preserved": true,
+    "total_states": 100000
+  },
+  "schema_version": 1,
+  "secret_split": {
+    "counts": {
+      "test": 72,
+      "train": 575,
+      "validation": 72
+    },
+    "file": "secret-splits.json",
+    "trajectory_atomic": true
+  },
+  "seed": 20260813,
+  "tokenized_trajectories": {
+    "file": "tokenized-trajectories.jsonl.gz",
+    "sequence_statistics": {
+      "all": {
+        "average_sequence_length": 47.398855552118775,
+        "longest_sequence_length": 73,
+        "shortest_sequence_length": 13,
+        "total_tokens": 1225924,
+        "trajectory_count": 25864
+      },
+      "test": {
+        "average_sequence_length": 47.89164334266294,
+        "longest_sequence_length": 73,
+        "shortest_sequence_length": 13,
+        "total_tokens": 119777,
+        "trajectory_count": 2501
+      },
+      "train": {
+        "average_sequence_length": 47.2765804252868,
+        "longest_sequence_length": 73,
+        "shortest_sequence_length": 13,
+        "total_tokens": 984913,
+        "trajectory_count": 20833
+      },
+      "validation": {
+        "average_sequence_length": 47.91857707509882,
+        "longest_sequence_length": 73,
+        "shortest_sequence_length": 13,
+        "total_tokens": 121234,
+        "trajectory_count": 2530
+      }
+    },
+    "strategy_counts": {
+      "clever": 8098,
+      "partly-random": 6480,
+      "random": 4182,
+      "simple": 7104
+    }
+  },
+  "tokenizer": {
+    "control_tokens": {
+      "end": "<E>",
+      "feedback": "<F>",
+      "guess": "<G>"
+    },
+    "feedback_encoding": {
+      "gray": "0",
+      "green": "2",
+      "yellow": "1"
+    },
+    "tokens_by_id": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "u",
+      "v",
+      "w",
+      "x",
+      "y",
+      "z",
+      "0",
+      "1",
+      "2",
+      "<G>",
+      "<F>",
+      "<E>"
+    ],
+    "vocabulary_size": 32
+  }
+}
