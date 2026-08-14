@@ -9,6 +9,7 @@ import torch
 from torch import Tensor
 
 from train import IGNORE_INDEX, create_shifted_pairs
+from tokenizer_v2 import VOCABULARY_SIZE
 
 EXAMPLE_TYPES = ("mechanics", "expert")
 EXAMPLE_TYPE_TO_ID = {name: index for index, name in enumerate(EXAMPLE_TYPES)}
@@ -25,8 +26,15 @@ class V2SplitData:
         return int((self.targets != IGNORE_INDEX).sum().item())
 
 
-def load_v2_split(data_dir: str | Path, split: str) -> V2SplitData:
-    """Load one v2 split, masking every target outside declared loss ranges."""
+def load_v2_split(
+    data_dir: str | Path,
+    split: str,
+    *,
+    example_type: str | None = None,
+) -> V2SplitData:
+    """Load one masked v2 split, optionally selecting one training objective."""
+    if example_type is not None and example_type not in EXAMPLE_TYPE_TO_ID:
+        raise ValueError(f"unknown v2 example type: {example_type!r}")
     token_sequences: list[list[int]] = []
     loss_ranges: list[list[list[int]]] = []
     example_type_ids: list[int] = []
@@ -34,7 +42,9 @@ def load_v2_split(data_dir: str | Path, split: str) -> V2SplitData:
     with gzip.open(path, "rt", encoding="utf-8") as source:
         for line in source:
             example = json.loads(line)
-            if example["split"] != split:
+            if example["split"] != split or (
+                example_type is not None and example["example_type"] != example_type
+            ):
                 continue
             try:
                 example_type_id = EXAMPLE_TYPE_TO_ID[example["example_type"]]
@@ -46,7 +56,10 @@ def load_v2_split(data_dir: str | Path, split: str) -> V2SplitData:
     if not token_sequences:
         raise ValueError(f"v2 dataset has no {split} examples")
 
-    inputs, unmasked_targets = create_shifted_pairs(token_sequences)
+    inputs, unmasked_targets = create_shifted_pairs(
+        token_sequences,
+        vocab_size=VOCABULARY_SIZE,
+    )
     targets = torch.full_like(unmasked_targets, IGNORE_INDEX)
     for row, ranges in enumerate(loss_ranges):
         for start, stop in ranges:

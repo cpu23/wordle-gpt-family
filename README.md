@@ -37,14 +37,16 @@ uv run --with-requirements requirements.txt python dataset_v2.py
 
 The builder emits `data/wordle-v2/examples.jsonl.gz` and a manifest. Every one of the 100,000 broad source states contributes two examples:
 
-1. **Mechanics:** `<G>secret<G>guess<F>feedback<E>`. Only the five feedback targets contribute to loss because both secret and guess are supplied.
-2. **Expert:** observable history followed by `<G>clever-next-guess<E>`. Only the five expert guess letters contribute to loss.
+1. **Mechanics:** `<M><S>colon<G>could<F>22010<E>`. `<M>` selects the mechanics task and `<S>` marks the supplied secret. Only the five feedback targets contribute to loss.
+2. **Expert:** `<P><G>could<F>22010<G>clever-next-guess<E>`. `<P>` selects policy/action prediction. Only the five expert guess letters contribute to loss.
 
 The source states are balanced across the `clever`, `simple`, `random`, and `partly-random` trajectory strategies. All expert labels are recomputed with `choose_informative_guess`, regardless of the source strategy.
 
 Each record carries half-open `loss_ranges` over shifted next-token targets. `train_v2.load_v2_split` converts every target outside those ranges to `IGNORE_INDEX`. Consequently, training does not reward reconstruction of supplied secrets, historical or random guesses, unobservable environment feedback, structural markers, or end tokens.
 
 The full artifact contains 200,000 examples: 100,000 mechanics and 100,000 expert examples. Its training split has 160,272 examples and exactly 801,360 supervised targets.
+
+V2 appends `<M>`, `<S>`, and `<P>` to the unchanged 32-token v1 vocabulary, producing a 35-token vocabulary. V1 checkpoints remain 32-token models; later transfer from v1 must explicitly copy the shared token rows into a 35-token v2 model.
 
 ## Setup
 
@@ -204,3 +206,34 @@ The model completed 50,080 optimizer updates and processed 50,733,816 non-paddin
 | 20 | 50,080 | 0.4285 | 1.2170 |
 
 The best saved validation checkpoint is epoch 4 (`epoch-004.0-step-010023.pt`, loss 0.7759). Continued constant-rate training overfits: train loss keeps falling while validation loss rises. At epoch 20, clever next-guess loss is 0.1049, but simple, random, and partly-random next-guess losses have worsened to 2.0807, 2.5255, and 1.6620 respectively. This failure mode directly motivates v2's clever expert targets and masked unobservable targets.
+
+### 2026-08-14 — V2 experiments A and B
+
+Both experiments use the same 814,627-parameter architecture, initialization seed, optimizer settings, data splits, and expert objective. Validation is checked once per token-equivalent epoch. Training stops after four checks without an improvement of at least `1e-4`; every strict validation improvement overwrites that stage's `best.pt`.
+
+| Experiment/stage | Initialization | Best epoch | Train loss | Validation loss | Stopped after |
+|---|---|---:|---:|---:|---:|
+| A: expert only | Random | 6 | 0.268740 | 0.412606 | Epoch 10 |
+| B1: mechanics | Random | 9 | 0.000344 | 0.000515 | Epoch 13 |
+| B2: expert SFT | Best B1 mechanics | 8 | 0.237188 | **0.411275** | Epoch 12 |
+
+Mechanics pretraining reduced the best expert validation loss by `0.001332`, or `0.323%`, relative to expert-only training. This is a small advantage from one seed, not yet strong evidence that mechanics pretraining improves policy imitation. Mechanics itself is learned almost perfectly. Its specialized checkpoint initially has very high expert loss (`21.4903`), but expert SFT recovers within the first epoch and reaches its best result two epochs later than experiment A.
+
+Reproduce the runs with:
+
+```bash
+uv run --with-requirements requirements.txt \
+  python experiments_v2.py --experiment a --patience 4 --max-epochs 100
+
+uv run --with-requirements requirements.txt \
+  python experiments_v2.py --experiment b-mechanics --patience 4 --max-epochs 100
+
+uv run --with-requirements requirements.txt \
+  python experiments_v2.py \
+  --experiment b-expert \
+  --initial-checkpoint runs/v2-experiment-b-mechanics/checkpoints/best.pt \
+  --patience 4 \
+  --max-epochs 100
+```
+
+Experiment C, v1 epoch-4 pretraining followed by expert SFT, is intentionally deferred.

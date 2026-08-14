@@ -8,6 +8,13 @@ from dataset_v2 import build_v2_dataset
 from tokenizer import FEEDBACK_SYMBOLS, LETTERS, TOKEN_TO_ID
 from train import IGNORE_INDEX
 from train_v2 import load_v2_split
+from tokenizer_v2 import (
+    MECHANICS_TOKEN,
+    POLICY_TOKEN,
+    SECRET_TOKEN,
+    VOCABULARY_SIZE,
+    decode,
+)
 from wordle import score_guess
 
 
@@ -52,6 +59,7 @@ class DatasetV2Tests(unittest.TestCase):
         self.assertEqual(manifest["examples"], 8)
         self.assertEqual(set(manifest["source_strategy_counts"]), set(strategies))
         mechanics = [example for example in examples if example["example_type"] == "mechanics"]
+        self.assertEqual(manifest["vocabulary_size"], VOCABULARY_SIZE)
         experts = [example for example in examples if example["example_type"] == "expert"]
         self.assertEqual(len(mechanics), 4)
         self.assertEqual(len(experts), 4)
@@ -60,6 +68,9 @@ class DatasetV2Tests(unittest.TestCase):
             (validation_data.targets != IGNORE_INDEX).sum(dim=1).tolist(),
             [5, 5],
         )
+        self.assertTrue(mechanics[0]["text"].startswith(MECHANICS_TOKEN + SECRET_TOKEN))
+        self.assertTrue(experts[0]["text"].startswith(POLICY_TOKEN))
+        self.assertEqual(decode(mechanics[0]["token_ids"]), mechanics[0]["text"])
 
         feedback_ids = {TOKEN_TO_ID[symbol] for symbol in FEEDBACK_SYMBOLS}
         letter_ids = {TOKEN_TO_ID[letter] for letter in LETTERS}

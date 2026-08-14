@@ -14,8 +14,14 @@ from tokenizer import (
     FEEDBACK_TO_SYMBOL,
     FEEDBACK_TOKEN,
     GUESS_TOKEN,
-    encode,
     serialize_trajectory,
+)
+from tokenizer_v2 import (
+    MECHANICS_TOKEN,
+    POLICY_TOKEN,
+    SECRET_TOKEN,
+    VOCABULARY_SIZE,
+    encode,
 )
 from wordle import DEFAULT_WORDS, choose_informative_guess, load_words, score_guess
 
@@ -44,7 +50,7 @@ def _mechanics_example(state: dict[str, object]) -> dict[str, object]:
     if score_guess(answer, guess) != feedback:
         raise ValueError("source state feedback does not match its secret and guess")
     text = (
-        f"{GUESS_TOKEN}{answer}{GUESS_TOKEN}{guess}"
+        f"{MECHANICS_TOKEN}{SECRET_TOKEN}{answer}{GUESS_TOKEN}{guess}"
         f"{FEEDBACK_TOKEN}{_feedback_symbols(feedback)}{END_TOKEN}"
     )
     token_ids = encode(text)
@@ -57,7 +63,7 @@ def _mechanics_example(state: dict[str, object]) -> dict[str, object]:
         "action_policy": state["action_policy"],
         "text": text,
         "token_ids": token_ids,
-        "loss_ranges": [[12, 17]],
+        "loss_ranges": [[13, 18]],
         "supervised_target": "feedback",
     }
 
@@ -75,13 +81,14 @@ def _expert_example(
     history = state["history"]
     history_text = serialize_trajectory(history)
     text = (
-        history_text[: -len(END_TOKEN)]
+        POLICY_TOKEN
+        + history_text[: -len(END_TOKEN)]
         + GUESS_TOKEN
         + expert_guess
         + END_TOKEN
     )
     token_ids = encode(text)
-    guess_target_start = len(history) * 12
+    guess_target_start = 1 + len(history) * 12
     return {
         "schema_version": SCHEMA_VERSION,
         "example_type": "expert",
@@ -142,6 +149,8 @@ def build_v2_dataset(
         "schema_version": SCHEMA_VERSION,
         "source": str(source_path),
         "source_states": state_count,
+        "role_format_version": 2,
+        "vocabulary_size": VOCABULARY_SIZE,
         "examples": state_count * 2,
         "file": examples_path.name,
         "example_type_counts": dict(sorted(type_counts.items())),

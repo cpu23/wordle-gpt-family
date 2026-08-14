@@ -11,6 +11,7 @@
     "expert": "Given observable history, predict only the clever solver's next-guess letters.",
     "mechanics": "Given secret and guess, predict only five feedback tokens."
   },
+  "role_format_version": 2,
   "schema_version": 2,
   "source": "data/wordle-100k/states.jsonl.gz",
   "source_action_policy_counts": {
@@ -30,5 +31,6 @@
     "train": 160272,
     "validation": 20240
   },
-  "unique_expert_states": 20205
+  "unique_expert_states": 20205,
+  "vocabulary_size": 35
 }

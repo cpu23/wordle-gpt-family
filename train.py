@@ -50,6 +50,7 @@ def create_shifted_pairs(
     trajectories: Sequence[Sequence[int]],
     *,
     context_length: int = CONTEXT_LENGTH,
+    vocab_size: int = VOCAB_SIZE,
 ) -> tuple[Tensor, Tensor]:
     """Pad trajectories and create next-token inputs and masked targets."""
     if not trajectories:
@@ -59,7 +60,7 @@ def create_shifted_pairs(
     if any(len(trajectory) - 1 > context_length for trajectory in trajectories):
         raise ValueError("trajectory exceeds the model context length")
     if any(
-        token < 0 or token >= VOCAB_SIZE
+        token < 0 or token >= vocab_size
         for trajectory in trajectories
         for token in trajectory
     ):
