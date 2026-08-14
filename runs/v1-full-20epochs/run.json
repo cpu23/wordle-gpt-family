@@ -1,0 +1,33 @@
+{
+  "batch_size": 32,
+  "eval_batch_size": 256,
+  "learning_rate": 0.0003,
+  "save_epochs": [
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0,
+    14.0,
+    15.0,
+    16.0,
+    17.0,
+    18.0,
+    19.0,
+    20.0
+  ],
+  "seed": 0,
+  "target_epochs": 20.0,
+  "train_examples": 80136,
+  "train_tokens": 2536680,
+  "validation_examples": 10120
+}

@@ -1,0 +1,23 @@
+{
+  "checkpoint": "runs/v1-full-20epochs/checkpoints/epoch-020.0-step-050080.pt",
+  "epochs": 20.000085150669378,
+  "learning_rate": 0.0003,
+  "step": 50080,
+  "tokens_seen": 50733816,
+  "train_loss": 0.4285167522115521,
+  "validation_losses": {
+    "end": 0.7412847586771245,
+    "feedback": 1.1028238987489638,
+    "guess_letter": 1.7073968224809706,
+    "next_guess_clever": 0.10485162248080614,
+    "next_guess_partly-random": 1.6620001788681684,
+    "next_guess_random": 2.525489600388866,
+    "next_guess_simple": 2.0806569572229274,
+    "overall": 1.2170185991157334,
+    "structure": 0.16707443917904366,
+    "trajectory_clever": 0.32786486514359614,
+    "trajectory_partly-random": 1.1371116554215714,
+    "trajectory_random": 1.706502302477451,
+    "trajectory_simple": 1.4319894885687954
+  }
+}
