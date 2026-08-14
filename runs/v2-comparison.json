@@ -1,0 +1,108 @@
+{
+  "evaluation": {
+    "average_guesses": "mean guesses among won games",
+    "invalid_guess": "generated non-letter token or word outside words.txt; ends game",
+    "max_guesses": 6,
+    "secret_split": "data/wordle-100k/secret-splits.json:test",
+    "secrets": 72
+  },
+  "seeded_a_b": [
+    {
+      "seed": 0,
+      "a": {
+        "expert_validation_loss": 0.4126063024950593,
+        "wins": 67,
+        "win_rate": 0.9305555555555556,
+        "average_guesses": 3.074626865671642,
+        "invalid_guesses": 3
+      },
+      "b": {
+        "mechanics_validation_before_sft": 0.000515376758198493,
+        "expert_validation_loss": 0.41127454916007905,
+        "mechanics_validation_after_sft": 10.392833498023716,
+        "wins": 71,
+        "win_rate": 0.9861111111111112,
+        "average_guesses": 3.084507042253521,
+        "invalid_guesses": 1
+      }
+    },
+    {
+      "seed": 1,
+      "a": {
+        "expert_validation_loss": 0.39955274981472333,
+        "wins": 68,
+        "win_rate": 0.9444444444444444,
+        "average_guesses": 3.1029411764705883,
+        "invalid_guesses": 4
+      },
+      "b": {
+        "mechanics_validation_before_sft": 0.00011792030259083383,
+        "expert_validation_loss": 0.4298178884634387,
+        "mechanics_validation_after_sft": 12.52949604743083,
+        "wins": 72,
+        "win_rate": 1.0,
+        "average_guesses": 3.0972222222222223,
+        "invalid_guesses": 0
+      }
+    },
+    {
+      "seed": 2,
+      "a": {
+        "expert_validation_loss": 0.3980091634757905,
+        "wins": 71,
+        "win_rate": 0.9861111111111112,
+        "average_guesses": 3.1690140845070425,
+        "invalid_guesses": 1
+      },
+      "b": {
+        "mechanics_validation_before_sft": 0.00014356441648581282,
+        "expert_validation_loss": 0.45631264667737154,
+        "mechanics_validation_after_sft": 15.101941699604742,
+        "wins": 69,
+        "win_rate": 0.9583333333333334,
+        "average_guesses": 3.0869565217391304,
+        "invalid_guesses": 2
+      }
+    }
+  ],
+  "aggregate": {
+    "a": {
+      "expert_validation_mean": 0.40338940526185774,
+      "expert_validation_sample_stddev": 0.00801929302694348,
+      "wins": 206,
+      "games": 216,
+      "win_rate": 0.9537037037037037,
+      "average_guesses": 3.116504854368932,
+      "invalid_guesses": 8
+    },
+    "b": {
+      "expert_validation_mean": 0.43246836143362977,
+      "expert_validation_sample_stddev": 0.022635730874406772,
+      "wins": 212,
+      "games": 216,
+      "win_rate": 0.9814814814814815,
+      "average_guesses": 3.089622641509434,
+      "invalid_guesses": 3
+    }
+  },
+  "c": {
+    "expert_validation_loss": 0.42085458868577075,
+    "mechanics_validation_after_sft": 12.237597579051384,
+    "wins": 71,
+    "games": 72,
+    "win_rate": 0.9861111111111112,
+    "average_guesses": 3.084507042253521,
+    "invalid_guesses": 0
+  },
+  "d": {
+    "consistency_validation_before_sft": 0.07305126705133988,
+    "expert_validation_loss": 0.48191066576086955,
+    "mechanics_validation_after_sft": 14.352220849802372,
+    "consistency_validation_after_sft": 8.972896409716654,
+    "wins": 71,
+    "games": 72,
+    "win_rate": 0.9861111111111112,
+    "average_guesses": 3.1267605633802815,
+    "invalid_guesses": 0
+  }
+}

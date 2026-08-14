@@ -236,4 +236,97 @@ uv run --with-requirements requirements.txt \
   --max-epochs 100
 ```
 
-Experiment C, v1 epoch-4 pretraining followed by expert SFT, is intentionally deferred.
+### 2026-08-14 — Mechanics retention, seeded replicates, C, and D
+
+All gameplay measurements use greedy decoding for at most six guesses on all 72 secrets in the fixed test-secret split. A generated token outside `a`–`z` or a five-letter word outside `words.txt` is counted as one invalid guess and ends that game. Average guesses is calculated over wins.
+
+#### B2 catastrophic forgetting
+
+Evaluating the best B2 expert checkpoint on the unchanged mechanics validation split gives:
+
+| Checkpoint | Mechanics validation loss |
+|---|---:|
+| B1: after mechanics | 0.000515 |
+| B2: after expert SFT | **10.392833** |
+
+Expert SFT increased mechanics loss approximately 20,166-fold. The sequential B pipeline therefore does not retain the mechanics behavior it learned.
+
+#### Seed-zero held-out gameplay
+
+| Checkpoint | Wins | Win rate | Average guesses | Invalid guesses |
+|---|---:|---:|---:|---:|
+| A: expert only | 67/72 | 93.06% | 3.0746 | 3 |
+| B: mechanics → expert | 71/72 | **98.61%** | 3.0845 | 1 |
+
+#### A and B across seeds 0, 1, and 2
+
+| Seed | A expert validation | B expert validation | A wins | B wins | A invalid | B invalid |
+|---:|---:|---:|---:|---:|---:|---:|
+| 0 | 0.412606 | **0.411275** | 67/72 | **71/72** | 3 | **1** |
+| 1 | **0.399553** | 0.429818 | 68/72 | **72/72** | 4 | **0** |
+| 2 | **0.398009** | 0.456313 | **71/72** | 69/72 | **1** | 2 |
+| Mean / aggregate | **0.403389 ± 0.008019** | 0.432468 ± 0.022636 | 206/216 | **212/216** | 8 | **3** |
+
+Across three seeds, A has better and substantially less variable expert validation loss. B nevertheless has the better aggregate gameplay win rate, 98.15% versus 95.37%, and slightly fewer guesses per win, 3.0896 versus 3.1165. These 216 games reuse the same 72-secret test split across three trained checkpoints, so they do not establish statistical significance.
+
+B's post-SFT mechanics validation losses are 10.3928, 12.5295, and 15.1019 for seeds 0, 1, and 2. Catastrophic mechanics forgetting is consistent across all three runs.
+
+#### Experiment C: V1 trajectory pretraining → expert
+
+The 32-token V1 epoch-4 checkpoint is expanded to the 35-token V2 model by copying all shared parameters and the first 32 token/output rows. The three new role-token rows retain their deterministic seed-zero initialization.
+
+| Best expert epoch | Expert validation | Mechanics validation after SFT | Wins | Average guesses | Invalid |
+|---:|---:|---:|---:|---:|---:|
+| 6 | 0.420855 | 12.237598 | 71/72 (98.61%) | 3.0845 | 0 |
+
+At seed zero, V1 trajectory pretraining does not improve expert validation loss over A (`0.412606`) or B (`0.411275`), although its greedy gameplay result matches B's win count.
+
+#### Experiment D: mechanics → candidate consistency → expert
+
+Candidate consistency uses the existing 35-token model and vocabulary. Each eligible observable state supplies one consistent and one inconsistent candidate:
+
+```text
+<M><S>candidate + observable history + <F> + label + <E>
+```
+
+Only the binary label contributes to loss: `2` means consistent and `0` means inconsistent. The artifact contains 148,272 balanced examples from 74,136 eligible states. D reuses the seed-zero B1 mechanics checkpoint, trains candidate consistency, then applies the same expert SFT used by A–C.
+
+| Stage/evaluation | Result |
+|---|---:|
+| Best consistency validation loss, epoch 9 | 0.073051 |
+| Best expert validation loss, epoch 11 | 0.481911 |
+| Post-SFT mechanics validation loss | 14.352221 |
+| Post-SFT consistency validation loss | 8.972896 |
+| Test gameplay | 71/72 wins (98.61%) |
+| Average guesses / invalid guesses | 3.1268 / 0 |
+
+D has the worst expert validation loss of the seed-zero pipelines and forgets both prior objectives during expert SFT. Sequential prerequisite training alone does not preserve mechanics or consistency; retaining those capabilities would require an explicitly joint or replayed objective.
+
+Reproduce C and D with:
+
+```bash
+uv run --with-requirements requirements.txt \
+  python experiments_v2.py \
+  --experiment c-expert \
+  --initial-checkpoint runs/v1-full-20epochs/checkpoints/epoch-004.0-step-010023.pt
+
+uv run --with-requirements requirements.txt python dataset_consistency.py
+
+uv run --with-requirements requirements.txt \
+  python experiments_v2.py \
+  --experiment d-consistency \
+  --data-dir data/wordle-v2-consistency \
+  --initial-checkpoint runs/v2-experiment-b-mechanics/checkpoints/best.pt
+
+uv run --with-requirements requirements.txt \
+  python experiments_v2.py \
+  --experiment d-expert \
+  --initial-checkpoint runs/v2-experiment-d-consistency/checkpoints/best.pt
+```
+
+Evaluate any final checkpoint on the 72 held-out secrets with:
+
+```bash
+uv run --with-requirements requirements.txt \
+  python evaluate_v2.py PATH_TO_CHECKPOINT
+```

@@ -1,0 +1,16 @@
+{
+  "batch_size": 32,
+  "eval_batch_size": 256,
+  "initialization": "runs/v2-replicates/b-mechanics-seed2/checkpoints/best.pt",
+  "learning_rate": 0.0003,
+  "max_epochs": 100,
+  "min_delta": 0.0001,
+  "objective": "expert",
+  "parameters": 814627,
+  "patience": 4,
+  "seed": 2,
+  "train_examples": 80136,
+  "train_supervised_tokens": 400680,
+  "validation_examples": 10120,
+  "vocabulary_size": 35
+}

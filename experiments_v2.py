@@ -60,6 +60,38 @@ def evaluate_objective_loss(
     return total_loss.item() / total_tokens.item()
 
 
+def load_initialization_checkpoint(
+    model: WordleGPT,
+    checkpoint_path: str | Path,
+    *,
+    device: torch.device,
+) -> None:
+    """Load v2 weights or expand a 32-token v1 checkpoint to the v2 vocabulary."""
+    checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=True)
+    source_state = checkpoint["model_state_dict"]
+    source_vocabulary_size = source_state["token_embedding.weight"].shape[0]
+    if source_vocabulary_size == VOCABULARY_SIZE:
+        model.load_state_dict(source_state)
+        return
+    if source_vocabulary_size != 32:
+        raise ValueError("initialization checkpoint has an incompatible vocabulary")
+
+    expanded_state = model.state_dict()
+    vocabulary_parameters = {
+        "token_embedding.weight",
+        "output.weight",
+        "output.bias",
+    }
+    for name, source_value in source_state.items():
+        if name in vocabulary_parameters:
+            expanded_state[name][:source_vocabulary_size].copy_(source_value)
+        elif expanded_state[name].shape != source_value.shape:
+            raise ValueError(f"incompatible checkpoint parameter: {name}")
+        else:
+            expanded_state[name].copy_(source_value)
+    model.load_state_dict(expanded_state)
+
+
 def _save_best_checkpoint(
     path: Path,
     *,
@@ -121,8 +153,8 @@ def train_stage(
     seed: int = 0,
 ) -> tuple[Path, list[StageRecord]]:
     """Train one v2 objective until validation fails to improve for patience checks."""
-    if objective not in ("mechanics", "expert"):
-        raise ValueError("objective must be mechanics or expert")
+    if objective not in ("mechanics", "expert", "consistency"):
+        raise ValueError("objective must be mechanics, expert, or consistency")
     if patience < 1:
         raise ValueError("patience must be positive")
     if min_delta < 0:
@@ -144,14 +176,11 @@ def train_stage(
     model = WordleGPT(vocab_size=VOCABULARY_SIZE).to(selected_device)
     initialization = "random"
     if initialization_checkpoint is not None:
-        checkpoint = torch.load(
+        load_initialization_checkpoint(
+            model,
             initialization_checkpoint,
-            map_location=selected_device,
-            weights_only=True,
+            device=selected_device,
         )
-        if checkpoint.get("vocabulary_size") != VOCABULARY_SIZE:
-            raise ValueError("initialization checkpoint has an incompatible vocabulary")
-        model.load_state_dict(checkpoint["model_state_dict"])
         initialization = str(initialization_checkpoint)
     optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
     generator = torch.Generator().manual_seed(seed)
@@ -264,17 +293,27 @@ def _default_output(runs_dir: Path, experiment: str) -> Path:
         "a": "v2-experiment-a-expert-only",
         "b-mechanics": "v2-experiment-b-mechanics",
         "b-expert": "v2-experiment-b-expert",
+        "c-expert": "v2-experiment-c-v1-expert",
+        "d-consistency": "v2-experiment-d-consistency",
+        "d-expert": "v2-experiment-d-expert",
     }
     return runs_dir / names[experiment]
 
 
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Run early-stopped Wordle dataset v2 experiments A and B."
+        description="Run early-stopped Wordle dataset v2 transfer experiments."
     )
     parser.add_argument(
         "--experiment",
-        choices=("a", "b-mechanics", "b-expert"),
+        choices=(
+            "a",
+            "b-mechanics",
+            "b-expert",
+            "c-expert",
+            "d-consistency",
+            "d-expert",
+        ),
         required=True,
     )
     parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR)
@@ -294,11 +333,20 @@ def _build_parser() -> argparse.ArgumentParser:
 
 def main(argv: Sequence[str] | None = None) -> int:
     args = _build_parser().parse_args(argv)
-    objective = "mechanics" if args.experiment == "b-mechanics" else "expert"
-    if args.experiment == "b-expert" and args.initial_checkpoint is None:
-        raise ValueError("b-expert requires the best mechanics checkpoint")
-    if args.experiment != "b-expert" and args.initial_checkpoint is not None:
-        raise ValueError("only b-expert accepts an initialization checkpoint")
+    objective = {
+        "b-mechanics": "mechanics",
+        "d-consistency": "consistency",
+    }.get(args.experiment, "expert")
+    checkpoint_experiments = (
+        "b-expert",
+        "c-expert",
+        "d-consistency",
+        "d-expert",
+    )
+    if args.experiment in checkpoint_experiments and args.initial_checkpoint is None:
+        raise ValueError(f"{args.experiment} requires an initialization checkpoint")
+    if args.experiment not in checkpoint_experiments and args.initial_checkpoint is not None:
+        raise ValueError("this experiment does not accept an initialization checkpoint")
     train_data = load_v2_split(args.data_dir, "train", example_type=objective)
     validation_data = load_v2_split(
         args.data_dir,

@@ -11,7 +11,7 @@ from torch import Tensor
 from train import IGNORE_INDEX, create_shifted_pairs
 from tokenizer_v2 import VOCABULARY_SIZE
 
-EXAMPLE_TYPES = ("mechanics", "expert")
+EXAMPLE_TYPES = ("mechanics", "expert", "consistency")
 EXAMPLE_TYPE_TO_ID = {name: index for index, name in enumerate(EXAMPLE_TYPES)}
 
 

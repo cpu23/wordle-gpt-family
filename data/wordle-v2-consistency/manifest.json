@@ -1,0 +1,25 @@
+{
+  "eligible_states": 74136,
+  "examples": 148272,
+  "file": "examples.jsonl.gz",
+  "format": "<M><S>candidate + observable history + <F> + binary feedback label + <E>",
+  "label_counts": {
+    "0": 74136,
+    "2": 74136
+  },
+  "labels": {
+    "0": "candidate is inconsistent",
+    "2": "candidate is consistent"
+  },
+  "objective": "Given observable history and a supplied candidate, predict whether the candidate remains consistent.",
+  "schema_version": 1,
+  "source": "data/wordle-100k/states.jsonl.gz",
+  "source_states": 100000,
+  "split_counts": {
+    "test": 14440,
+    "train": 118868,
+    "validation": 14964
+  },
+  "supervised_targets": 148272,
+  "vocabulary_size": 35
+}
