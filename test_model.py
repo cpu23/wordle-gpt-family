@@ -32,6 +32,18 @@ class WordleGPTTests(unittest.TestCase):
         logits = model(torch.randint(VOCAB_SIZE, (2, 12)))
         self.assertEqual(logits.shape, (2, 12, VOCAB_SIZE))
 
+    def test_three_million_parameter_architecture_is_exact(self):
+        model = WordleGPT(
+            vocab_size=35,
+            context_length=96,
+            embedding_size=256,
+            num_layers=4,
+            num_heads=8,
+            mlp_size=1024,
+        )
+        self.assertEqual(sum(parameter.numel() for parameter in model.parameters()), 3_202_083)
+        self.assertEqual(model.blocks[0].attention.head_dim, 32)
+
     def test_attention_is_causal(self):
         torch.manual_seed(7)
         model = WordleGPT().eval()

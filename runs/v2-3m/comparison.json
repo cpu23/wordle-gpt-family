@@ -1,0 +1,40 @@
+{
+  "architecture": {
+    "parameters": 3202083,
+    "context_length": 96,
+    "embedding_size": 256,
+    "num_layers": 4,
+    "num_heads": 8,
+    "head_size": 32,
+    "mlp_size": 1024,
+    "vocab_size": 35
+  },
+  "mechanics_pretraining": {
+    "best_epoch": 10,
+    "validation_loss": 0.00024924366841674325,
+    "checkpoint": "runs/v2-3m/b-mechanics/checkpoints/best.pt"
+  },
+  "selection": "minimum expert validation loss under four-check early stopping",
+  "runs": {
+    "95/5/0": {
+      "best_epoch": 7,
+      "expert_validation_loss": 0.5189452739006917,
+      "mechanics_validation_loss": 0.008584854668779335,
+      "consistency_validation_loss": 5.646697386226944,
+      "wins": 69,
+      "games": 72,
+      "average_guesses": 3.1449275362318843,
+      "invalid_guesses": 0
+    },
+    "92/5/3": {
+      "best_epoch": 6,
+      "expert_validation_loss": 0.5270043076828064,
+      "mechanics_validation_loss": 0.012708320466897233,
+      "consistency_validation_loss": 0.5909738711449145,
+      "wins": 60,
+      "games": 72,
+      "average_guesses": 3.05,
+      "invalid_guesses": 3
+    }
+  }
+}

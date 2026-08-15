@@ -20,7 +20,7 @@ from experiments_v2 import (
     evaluate_objective_loss,
     load_initialization_checkpoint,
 )
-from model import WordleGPT
+from model import WordleGPT, checkpoint_model_config
 from tokenizer_v2 import VOCABULARY_SIZE
 from train import DEFAULT_LEARNING_RATE, IGNORE_INDEX
 from train_v2 import V2SplitData, load_v2_split
@@ -148,6 +148,7 @@ def _save_checkpoint(
         {
             "format_version": 1,
             "model_state_dict": model.state_dict(),
+            "model_config": dict(model.config),
             "vocabulary_size": VOCABULARY_SIZE,
             "epoch": record.epoch,
             "step": record.step,
@@ -214,7 +215,17 @@ def train_with_replay(
         device or ("cuda" if torch.cuda.is_available() else "cpu")
     )
     torch.manual_seed(seed)
-    model = WordleGPT(vocab_size=VOCABULARY_SIZE).to(selected_device)
+    initialization_payload = torch.load(
+        initialization_checkpoint,
+        map_location=selected_device,
+        weights_only=True,
+    )
+    model = WordleGPT(
+        **checkpoint_model_config(
+            initialization_payload,
+            vocab_size=VOCABULARY_SIZE,
+        )
+    ).to(selected_device)
     load_initialization_checkpoint(
         model,
         initialization_checkpoint,
@@ -241,6 +252,7 @@ def train_with_replay(
         "initialization": str(initialization_checkpoint),
         "parameters": sum(parameter.numel() for parameter in model.parameters()),
         "vocabulary_size": VOCABULARY_SIZE,
+        "model_config": dict(model.config),
         "requested_ratios": dict(ratios),
         "nominal_batches_per_expert_epoch": nominal_batch_counts,
         "nominal_realized_ratios": {

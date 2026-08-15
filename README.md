@@ -389,3 +389,56 @@ uv run --with-requirements requirements.txt \
   --mechanics-ratio 0.1 \
   --consistency-ratio 0.1
 ```
+
+### 2026-08-15 — Reduced consistency replay and 3.2M scaling
+
+The reduced-consistency sweep starts every run from the same seed-zero B1 mechanics checkpoint. This differs from the earlier 80/10/10 and 90/5/5 runs, which started after a separate consistency-pretraining stage. E2 is reused as the 95/5/0 baseline; its consistency loss was measured post hoc on the same validation split.
+
+| Expert / mechanics / consistency | Best epoch | Expert val | Mechanics val | Consistency val | Wins | Avg guesses | Invalid |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 95% / 5% / 0% | 10 | 0.413113 | 0.007317 | 4.516440 | **72/72** | 3.0833 | 0 |
+| 94% / 5% / 1% | 11 | 0.420792 | 0.010372 | 0.578969 | 71/72 | 3.0845 | 1 |
+| 92% / 5% / 3% | 8 | **0.411279** | **0.006531** | 0.415749 | 69/72 | **3.0725** | 0 |
+| 90% / 5% / 5% | 8 | 0.415287 | 0.011212 | **0.248635** | 68/72 | 3.0882 | 3 |
+
+One percent consistency replay sharply reduces consistency loss but regresses expert validation. Three percent gives the best expert and mechanics validation results while reducing baseline consistency loss by about 91%. Five percent improves consistency further but loses four games relative to the baseline. The 95/5/0 gameplay baseline and 92/5/3 validation tradeoff were selected for scaling.
+
+#### Exact 3,202,083-parameter architecture
+
+| Setting | Value |
+|---|---:|
+| Layers | 4 |
+| Model width | 256 |
+| Attention heads | 8 |
+| Head size | 32 |
+| MLP width | 1,024 |
+| Context | 96 |
+| Vocabulary | 35 |
+| Parameters | **3,202,083** |
+
+Architecture metadata is now saved in every new checkpoint. Replay and gameplay evaluation reconstruct the stored architecture automatically; older checkpoints retain the original 128-wide default.
+
+The scaled model was first trained from random initialization on mechanics. Its selected epoch-10 checkpoint reached `0.000249` mechanics validation loss. Both replay runs start from that same checkpoint and otherwise retain the small-model optimizer, sampling, epoch, and early-stopping settings.
+
+| Parameters | Expert / mechanics / consistency | Best epoch | Expert val | Mechanics val | Consistency val | Wins | Avg guesses | Invalid |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 814,627 | 95% / 5% / 0% | 10 | 0.413113 | 0.007317 | 4.516440 | 72/72 | 3.0833 | 0 |
+| 3,202,083 | 95% / 5% / 0% | 7 | 0.518945 | 0.008585 | 5.646697 | 69/72 | 3.1449 | 0 |
+| 814,627 | 92% / 5% / 3% | 8 | 0.411279 | 0.006531 | 0.415749 | 69/72 | 3.0725 | 0 |
+| 3,202,083 | 92% / 5% / 3% | 6 | 0.527004 | 0.012708 | 0.590974 | 60/72 | 3.0500 | 3 |
+
+The larger model is worse under the unchanged training recipe. This does not show that added capacity is harmful; it shows that the 814K optimizer and stopping configuration does not transfer directly. The 3.2M 95/5/0 run is better than its 92/5/3 counterpart on expert validation and gameplay, while 92/5/3 retains far more consistency.
+
+Build the scaled mechanics checkpoint with:
+
+```bash
+uv run --with-requirements requirements.txt \
+  python experiments_v2.py \
+  --experiment b-mechanics \
+  --output-dir runs/v2-3m/b-mechanics \
+  --context-length 96 \
+  --embedding-size 256 \
+  --num-layers 4 \
+  --num-heads 8 \
+  --mlp-size 1024
+```

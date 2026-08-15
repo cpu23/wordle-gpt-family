@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
-from collections.abc import Sequence
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -107,6 +107,7 @@ def _save_best_checkpoint(
             "format_version": 1,
             "model_state_dict": model.state_dict(),
             "vocabulary_size": VOCABULARY_SIZE,
+            "model_config": dict(model.config),
             "objective": objective,
             "initialization": initialization,
             "epoch": record.epoch,
@@ -151,6 +152,7 @@ def train_stage(
     max_epochs: int = DEFAULT_MAX_EPOCHS,
     device: str | torch.device | None = None,
     seed: int = 0,
+    model_config: Mapping[str, int] | None = None,
 ) -> tuple[Path, list[StageRecord]]:
     """Train one v2 objective until validation fails to improve for patience checks."""
     if objective not in ("mechanics", "expert", "consistency"):
@@ -173,7 +175,10 @@ def train_stage(
         device or ("cuda" if torch.cuda.is_available() else "cpu")
     )
     torch.manual_seed(seed)
-    model = WordleGPT(vocab_size=VOCABULARY_SIZE).to(selected_device)
+    model = WordleGPT(
+        vocab_size=VOCABULARY_SIZE,
+        **dict(model_config or {}),
+    ).to(selected_device)
     initialization = "random"
     if initialization_checkpoint is not None:
         load_initialization_checkpoint(
@@ -198,6 +203,7 @@ def train_stage(
         "initialization": initialization,
         "vocabulary_size": VOCABULARY_SIZE,
         "parameters": sum(parameter.numel() for parameter in model.parameters()),
+        "model_config": dict(model.config),
         "batch_size": batch_size,
         "eval_batch_size": eval_batch_size,
         "learning_rate": learning_rate,
@@ -328,6 +334,11 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--max-epochs", type=int, default=DEFAULT_MAX_EPOCHS)
     parser.add_argument("--device", choices=("cpu", "cuda"))
     parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--context-length", type=int)
+    parser.add_argument("--embedding-size", type=int)
+    parser.add_argument("--num-layers", type=int)
+    parser.add_argument("--num-heads", type=int)
+    parser.add_argument("--mlp-size", type=int)
     return parser
 
 
@@ -368,6 +379,17 @@ def main(argv: Sequence[str] | None = None) -> int:
         max_epochs=args.max_epochs,
         device=args.device,
         seed=args.seed,
+        model_config={
+            name: value
+            for name, value in {
+                "context_length": args.context_length,
+                "embedding_size": args.embedding_size,
+                "num_layers": args.num_layers,
+                "num_heads": args.num_heads,
+                "mlp_size": args.mlp_size,
+            }.items()
+            if value is not None
+        },
     )
     best = min(records, key=lambda record: record.validation_loss)
     print(

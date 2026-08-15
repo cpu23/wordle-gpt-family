@@ -1,0 +1,56 @@
+{
+  "architecture": {
+    "parameters": 814627,
+    "context_length": 96,
+    "embedding_size": 128,
+    "num_layers": 4,
+    "num_heads": 4,
+    "mlp_size": 512,
+    "vocab_size": 35
+  },
+  "initialization": "runs/v2-experiment-b-mechanics/checkpoints/best.pt",
+  "selection": "minimum expert validation loss under four-check early stopping",
+  "runs": {
+    "95/5/0": {
+      "best_epoch": 10,
+      "expert_validation_loss": 0.4131127640192688,
+      "mechanics_validation_loss": 0.007316667760313735,
+      "consistency_validation_loss": 4.516439976777599,
+      "wins": 72,
+      "games": 72,
+      "average_guesses": 3.0833333333333335,
+      "invalid_guesses": 0
+    },
+    "94/5/1": {
+      "best_epoch": 11,
+      "expert_validation_loss": 0.4207916332139328,
+      "mechanics_validation_loss": 0.010372379589457756,
+      "consistency_validation_loss": 0.5789689525695001,
+      "wins": 71,
+      "games": 72,
+      "average_guesses": 3.084507042253521,
+      "invalid_guesses": 1
+    },
+    "92/5/3": {
+      "best_epoch": 8,
+      "expert_validation_loss": 0.411278910881917,
+      "mechanics_validation_loss": 0.006531254463045022,
+      "consistency_validation_loss": 0.4157487409887898,
+      "wins": 69,
+      "games": 72,
+      "average_guesses": 3.072463768115942,
+      "invalid_guesses": 0
+    },
+    "90/5/5": {
+      "best_epoch": 8,
+      "expert_validation_loss": 0.4152870244565217,
+      "mechanics_validation_loss": 0.01121207859205163,
+      "consistency_validation_loss": 0.24863471158906375,
+      "wins": 68,
+      "games": 72,
+      "average_guesses": 3.088235294117647,
+      "invalid_guesses": 3
+    }
+  },
+  "selected_for_scaling": ["95/5/0", "92/5/3"]
+}

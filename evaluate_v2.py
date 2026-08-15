@@ -8,7 +8,7 @@ from pathlib import Path
 
 import torch
 
-from model import WordleGPT
+from model import WordleGPT, checkpoint_model_config
 from tokenizer import FEEDBACK_TO_SYMBOL, FEEDBACK_TOKEN, GUESS_TOKEN
 from tokenizer_v2 import POLICY_TOKEN, VOCABULARY_SIZE, decode, encode
 from train import generate_tokens
@@ -48,7 +48,9 @@ def load_v2_model(checkpoint_path: str | Path, device: str) -> WordleGPT:
     checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=True)
     if checkpoint.get("vocabulary_size") != VOCABULARY_SIZE:
         raise ValueError("checkpoint does not use the current v2 vocabulary")
-    model = WordleGPT(vocab_size=VOCABULARY_SIZE).to(device)
+    model = WordleGPT(
+        **checkpoint_model_config(checkpoint, vocab_size=VOCABULARY_SIZE)
+    ).to(device)
     model.load_state_dict(checkpoint["model_state_dict"])
     model.eval()
     return model

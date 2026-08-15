@@ -52,6 +52,8 @@ class V2ExperimentTests(unittest.TestCase):
         self.assertEqual(len(records), 3)
         self.assertEqual(records[-1].epoch, 2)
         self.assertEqual(best["epoch"], 0)
+        self.assertIn("model_state_dict", best)
+        self.assertEqual(best["model_config"]["vocab_size"], VOCABULARY_SIZE)
         self.assertEqual(sum(record["improved"] for record in metrics), 1)
 
     def test_v1_checkpoint_expands_only_vocabulary_parameters(self):

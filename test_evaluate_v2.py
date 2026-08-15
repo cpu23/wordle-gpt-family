@@ -1,9 +1,12 @@
+import tempfile
 import unittest
+from pathlib import Path
 
 import torch
 from torch import nn
 
-from evaluate_v2 import play_secret
+from evaluate_v2 import load_v2_model, play_secret
+from model import WordleGPT
 from tokenizer_v2 import VOCABULARY_SIZE, encode
 
 
@@ -37,6 +40,27 @@ class GameplayTests(unittest.TestCase):
         self.assertFalse(result.won)
         self.assertEqual(result.guesses, ("zzzzz",))
         self.assertEqual(result.invalid_guesses, 1)
+
+    def test_checkpoint_loader_restores_stored_architecture(self):
+        model = WordleGPT(
+            vocab_size=VOCABULARY_SIZE,
+            embedding_size=16,
+            num_layers=1,
+            num_heads=2,
+            mlp_size=32,
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            checkpoint_path = Path(directory) / "custom.pt"
+            torch.save(
+                {
+                    "vocabulary_size": VOCABULARY_SIZE,
+                    "model_config": model.config,
+                    "model_state_dict": model.state_dict(),
+                },
+                checkpoint_path,
+            )
+            restored = load_v2_model(checkpoint_path, "cpu")
+        self.assertEqual(restored.config, model.config)
 
 
 if __name__ == "__main__":

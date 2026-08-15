@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from collections.abc import Mapping
+
 import torch
 from torch import Tensor, nn
 
@@ -9,6 +11,37 @@ EMBEDDING_SIZE = 128
 NUM_LAYERS = 4
 NUM_HEADS = 4
 MLP_SIZE = 512
+MODEL_CONFIG_KEYS = (
+    "vocab_size",
+    "context_length",
+    "embedding_size",
+    "num_layers",
+    "num_heads",
+    "mlp_size",
+)
+
+
+def checkpoint_model_config(
+    checkpoint: Mapping[str, object],
+    *,
+    vocab_size: int,
+) -> dict[str, int]:
+    """Read architecture metadata, falling back to the original model."""
+    stored = checkpoint.get("model_config")
+    if stored is None:
+        return {"vocab_size": vocab_size}
+    if not isinstance(stored, Mapping) or set(stored) != set(MODEL_CONFIG_KEYS):
+        raise ValueError("checkpoint model configuration is invalid")
+    config = {
+        name: value
+        for name, value in stored.items()
+        if isinstance(name, str) and isinstance(value, int)
+    }
+    if set(config) != set(MODEL_CONFIG_KEYS):
+        raise ValueError("checkpoint model configuration is invalid")
+    if config["vocab_size"] != vocab_size:
+        raise ValueError("checkpoint model configuration has the wrong vocabulary")
+    return config
 
 
 class TransformerBlock(nn.Module):
@@ -66,6 +99,14 @@ class WordleGPT(nn.Module):
         if context_length < 1:
             raise ValueError("context_length must be positive")
 
+        self.config = {
+            "vocab_size": vocab_size,
+            "context_length": context_length,
+            "embedding_size": embedding_size,
+            "num_layers": num_layers,
+            "num_heads": num_heads,
+            "mlp_size": mlp_size,
+        }
         self.context_length = context_length
         self.token_embedding = nn.Embedding(vocab_size, embedding_size)
         self.position_embedding = nn.Embedding(context_length, embedding_size)
