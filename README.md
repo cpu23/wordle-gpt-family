@@ -442,3 +442,35 @@ uv run --with-requirements requirements.txt \
   --num-heads 8 \
   --mlp-size 1024
 ```
+
+### 2026-08-15 — Instrumented 3.2M learning-rate sweep
+
+All six runs executed sequentially on CUDA using the same 3.2M mechanics checkpoint. Every validation checkpoint now stores:
+
+- `train_losses`: supervised-token-weighted cross-entropy split into expert, mechanics, and consistency objectives
+- `expert_validation_loss`, `mechanics_validation_loss`, and optional `consistency_validation_loss`
+- `gradient_norm`: mean global L2 gradient norm over optimizer steps in the preceding token-equivalent epoch
+- `gradient_norms`: the same mean split by the objective that produced each update
+- the optimizer's actual `learning_rate`
+
+The gradient norm is measured after `backward()` and before `optimizer.step()` without clipping. Epoch zero has no preceding updates, so its gradient fields are null or empty. `run.json` records the selected device as `cuda`.
+
+#### 95% expert / 5% mechanics
+
+| LR | Best epoch | Train expert | Train mechanics | Val expert | Val mechanics | Gradient norm | Expert grad | Mechanics grad | Wins | Invalid |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `3e-4` | 7 | 0.321783 | 0.010585 | **0.518945** | 0.008585 | **1.3225** | 1.3701 | 0.4184 | **69/72** | **0** |
+| `2e-4` | 9 | **0.298345** | 0.007579 | 0.560944 | 0.005484 | 1.6681 | 1.7346 | 0.4070 | 68/72 | 1 |
+| `1e-4` | 11 | 0.402068 | **0.003420** | 0.598525 | **0.003225** | 2.2580 | 2.3646 | **0.2365** | 64/72 | 3 |
+
+#### 92% expert / 5% mechanics / 3% consistency
+
+| LR | Best epoch | Train expert / mechanics / consistency | Val expert / mechanics / consistency | Gradient norm | Expert / mechanics / consistency grad | Wins | Invalid |
+|---:|---:|---:|---:|---:|---:|---:|---:|
+| `3e-4` | 6 | 0.397043 / 0.014382 / 0.594879 | **0.527004** / 0.012708 / 0.590974 | **1.3597** | 1.3747 / 0.4769 / 2.3672 | 60/72 | 3 |
+| `2e-4` | 10 | **0.279321** / 0.007000 / 0.447983 | 0.568743 / 0.011506 / 0.443192 | 1.6858 | 1.7203 / 0.3310 / 2.8773 | **67/72** | 2 |
+| `1e-4` | 12 | 0.407765 / **0.005059** / **0.445089** | 0.599106 / **0.005989** / **0.387397** | 2.2483 | 2.3275 / **0.2244** / 3.1882 | 65/72 | **0** |
+
+`3e-4` remains the best learning rate for expert validation in both mixtures. Lower rates improve mechanics and consistency retention but materially worsen expert validation. Gradient norms remain finite; the larger norms at lower rates accompany slower optimization and later selected epochs rather than an observed gradient explosion. Consistency updates have the largest per-objective gradients, while mechanics updates have the smallest.
+
+Expert-only checkpoint selection also hides useful later tradeoffs. For 92/5/3 at `2e-4`, epoch 11 reaches 71/72 wins, zero invalid guesses, and consistency loss `0.405932`, while expert loss changes only from the selected epoch-10 value `0.568743` to `0.568982`. That epoch is recorded in `metrics.jsonl` but is not the saved `best.pt` because expert validation did not strictly improve.

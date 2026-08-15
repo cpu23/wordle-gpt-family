@@ -127,9 +127,16 @@ class ReplayTrainingTests(unittest.TestCase):
         self.assertGreater(records[0].mechanics_validation_loss, 0.0)
         self.assertEqual(records[0].games, 1)
         self.assertIn("expert_validation_loss", metrics[1])
+        self.assertIsNone(records[0].gradient_norm)
+        self.assertGreater(records[1].gradient_norm, 0.0)
+        self.assertEqual(set(records[1].gradient_norms), {"expert"})
+        self.assertIn("gradient_norm", metrics[1])
+        self.assertIn("gradient_norms", metrics[1])
         self.assertIn("mechanics_validation_loss", metrics[1])
         self.assertEqual(metrics[1]["batch_counts"]["expert"], 1)
         self.assertEqual(best["epoch"], 0)
+        self.assertIn("train_losses", best)
+        self.assertIn("gradient_norm", best)
 
 
 if __name__ == "__main__":

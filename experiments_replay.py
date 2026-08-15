@@ -39,6 +39,8 @@ class ReplayRecord:
     learning_rate: float
     batch_counts: dict[str, int]
     train_losses: dict[str, float]
+    gradient_norm: float | None
+    gradient_norms: dict[str, float]
     expert_validation_loss: float
     mechanics_validation_loss: float
     consistency_validation_loss: float | None
@@ -153,6 +155,9 @@ def _save_checkpoint(
             "epoch": record.epoch,
             "step": record.step,
             "learning_rate": record.learning_rate,
+            "train_losses": dict(record.train_losses),
+            "gradient_norm": record.gradient_norm,
+            "gradient_norms": dict(record.gradient_norms),
             "expert_validation_loss": record.expert_validation_loss,
             "mechanics_validation_loss": record.mechanics_validation_loss,
             "consistency_validation_loss": record.consistency_validation_loss,
@@ -261,6 +266,7 @@ def train_with_replay(
         },
         "batch_size": batch_size,
         "eval_batch_size": eval_batch_size,
+        "device": str(selected_device),
         "learning_rate": learning_rate,
         "patience": patience,
         "min_delta": min_delta,
@@ -275,6 +281,8 @@ def train_with_replay(
 
     for epoch in range(max_epochs + 1):
         train_losses: dict[str, float] = {}
+        gradient_norm: float | None = None
+        gradient_norms: dict[str, float] = {}
         if epoch:
             expert_sampled, expert_tokens_seen = _sample_expert_epoch(
                 train_data["expert"],
@@ -303,6 +311,11 @@ def train_with_replay(
                 objective: torch.zeros((), dtype=torch.long, device=selected_device)
                 for objective in sampled
             }
+            gradient_norm_sums = {
+                objective: torch.zeros((), device=selected_device)
+                for objective in sampled
+            }
+            gradient_counts = {objective: 0 for objective in sampled}
             model.train()
             for objective in schedule:
                 inputs, targets = sampled[objective][cursors[objective]]
@@ -317,15 +330,30 @@ def train_with_replay(
                     ignore_index=IGNORE_INDEX,
                 )
                 loss.backward()
+                total_gradient_norm = torch.nn.utils.clip_grad_norm_(
+                    model.parameters(),
+                    max_norm=float("inf"),
+                )
                 optimizer.step()
                 supervised = (targets != IGNORE_INDEX).sum()
                 loss_sums[objective] += loss.detach() * supervised
                 token_counts[objective] += supervised
+                gradient_norm_sums[objective] += total_gradient_norm.detach()
+                gradient_counts[objective] += 1
                 step += 1
             train_losses = {
                 objective: loss_sums[objective].item() / token_counts[objective].item()
                 for objective in sampled
             }
+            gradient_norms = {
+                objective: gradient_norm_sums[objective].item()
+                / gradient_counts[objective]
+                for objective in sampled
+            }
+            gradient_norm = sum(
+                gradient_norm_sums[objective].item()
+                for objective in sampled
+            ) / sum(gradient_counts.values())
 
         expert_validation = evaluate_objective_loss(
             model,
@@ -351,9 +379,11 @@ def train_with_replay(
         record = ReplayRecord(
             epoch=epoch,
             step=step,
-            learning_rate=learning_rate,
+            learning_rate=float(optimizer.param_groups[0]["lr"]),
             batch_counts=dict(batch_counts) if epoch else {name: 0 for name in OBJECTIVES},
             train_losses=train_losses,
+            gradient_norm=gradient_norm,
+            gradient_norms=gradient_norms,
             expert_validation_loss=expert_validation,
             mechanics_validation_loss=mechanics_validation,
             consistency_validation_loss=consistency_validation,
@@ -386,6 +416,8 @@ def train_with_replay(
             f"epoch={epoch} step={step} expert={expert_validation:.4f} "
             f"mechanics={mechanics_validation:.4f} "
             f"consistency={consistency_validation if consistency_validation is not None else 'n/a'} "
+            f"grad={gradient_norm if gradient_norm is not None else 'n/a'} "
+            f"lr={record.learning_rate:.2e} "
             f"wins={gameplay.wins}/{gameplay.games} avg={gameplay.average_guesses:.3f} "
             f"invalid={gameplay.invalid_guesses} patience={checks_without_progress}/{patience}"
         )
