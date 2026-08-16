@@ -5,7 +5,7 @@ from pathlib import Path
 import torch
 from torch import nn
 
-from evaluate_v2 import load_v2_model, play_secret
+from evaluate_v2 import _build_parser, load_v2_model, play_secret
 from model import WordleGPT
 from tokenizer_v2 import VOCABULARY_SIZE, encode
 
@@ -61,6 +61,9 @@ class GameplayTests(unittest.TestCase):
             )
             restored = load_v2_model(checkpoint_path, "cpu")
         self.assertEqual(restored.config, model.config)
+
+    def test_cli_defaults_to_validation_secrets(self):
+        self.assertEqual(_build_parser().parse_args(["model.pt"]).split, "validation")
 
 
 if __name__ == "__main__":

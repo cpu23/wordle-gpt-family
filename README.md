@@ -474,3 +474,82 @@ The gradient norm is measured after `backward()` and before `optimizer.step()` w
 `3e-4` remains the best learning rate for expert validation in both mixtures. Lower rates improve mechanics and consistency retention but materially worsen expert validation. Gradient norms remain finite; the larger norms at lower rates accompany slower optimization and later selected epochs rather than an observed gradient explosion. Consistency updates have the largest per-objective gradients, while mechanics updates have the smallest.
 
 Expert-only checkpoint selection also hides useful later tradeoffs. For 92/5/3 at `2e-4`, epoch 11 reaches 71/72 wins, zero invalid guesses, and consistency loss `0.405932`, while expert loss changes only from the selected epoch-10 value `0.568743` to `0.568982`. That epoch is recorded in `metrics.jsonl` but is not the saved `best.pt` because expert validation did not strictly improve.
+
+### 2026-08-16 — Diverse clever targets and strict secret evaluation
+
+Checkpoint selection and early stopping now use the same validation-gameplay ordering:
+
+1. maximize wins on the 72 validation secrets
+2. minimize invalid guesses
+3. minimize average guesses among wins
+4. minimize expert validation loss
+
+`experiments_replay.py` no longer evaluates the fixed test split while training, and `evaluate_v2.py` now defaults to `--split validation`. The fixed 72 test secrets require an explicit `--split test`; they are reserved for final development comparisons.
+
+#### Unique off-policy expert states
+
+`dataset_expert.py` generated 200,000 unique observable histories, each relabeled with the clever minimum-expected-survivors action regardless of the policy that reached it. Nested prefixes contain 10K, 50K, 100K, and 200K states.
+
+| Source behavior | Unique states |
+|---|---:|
+| Random legal | 39,715 |
+| Simple consistent | 17,299 |
+| Maximum entropy | 791 |
+| Partly random, rates 0.05/0.15/0.30/0.50/0.75/0.90 | 108,508 |
+| Deliberately poor sampled legal action | 33,687 |
+| **Total** | **200,000** |
+
+The fixed development pool contains 177,642 training and 22,358 validation histories sourced only from the fixed 575/72 development secrets. Full validation recomputed every history, feedback sequence, state fingerprint, answer set, clever target, serialization, and loss mask. It found 200,000 unique histories and 65,779 unique remaining-answer sets.
+
+Deduplication leaves only one empty history, although every game needs the same initial clever action. That canonical answer-independent state therefore carries training-only sampling weight 10,000 while remaining one stored unique state. Validation remains unweighted. This prevents a unique-state corpus from accidentally teaching the opening action only once.
+
+#### Development and benchmark modes
+
+- **Development:** fixed 575 train / 72 validation / 72 test secrets, normally one seed. Validation drives checkpoint selection, early stopping, tuning, and development gameplay.
+- **Benchmark:** five deterministic test folds of 144/144/144/144/143 secrets. Each run uses 72 validation secrets and 503/503/503/503/504 training secrets from the remaining folds.
+
+Every one of the 719 secrets is held out exactly once per benchmark seed. Both expert histories and mechanics examples are filtered by source secret before training; fold manifests report zero held-out examples and the exact number omitted. The benchmark compares nested 100K and 200K expert pools using identical folds, mechanics initialization, replay ratio, and model seed.
+
+```bash
+# Recreate modes and universal pools
+uv run --with-requirements requirements.txt python cross_validation.py \
+  --mode benchmark --output data/wordle-cv5.json --model-seeds 0 1 2
+uv run --with-requirements requirements.txt python dataset_expert.py \
+  --output-dir data/wordle-v2-diverse-cv --include-test
+uv run --with-requirements requirements.txt python dataset_mechanics_cv.py
+
+# Materialize strict folds, then run 5 folds × 3 seeds × both nested sizes
+uv run --with-requirements requirements.txt python benchmark_cv.py --prepare-only
+uv run --with-requirements requirements.txt python benchmark_cv.py --skip-prepare
+```
+
+Each seed produces one combined 719-secret artifact per model and a paired per-secret comparison. Reports include A-loses/B-wins, A-wins/B-loses, both-win, both-lose, and `B guesses - A guesses` for every secret. The aggregate reports mean and sample standard deviation across the three initializations.
+
+#### Three-seed five-fold result
+
+Each entry below aggregates five disjoint test folds, so every seed contains exactly 719 held-out games.
+
+| Expert pool | Wins / 719 | Win rate | Avg guesses on wins | Avg attempts, all secrets | Invalid guesses |
+|---|---:|---:|---:|---:|---:|
+| 100K, seed 0 | 249 | 34.63% | 3.4940 | 4.6592 | 174 |
+| 100K, seed 1 | 259 | 36.02% | 3.4054 | 4.4826 | 209 |
+| 100K, seed 2 | 238 | 33.10% | 3.5000 | 4.5508 | 213 |
+| **100K mean ± SD** | **248.7 ± 10.5** | **34.59% ± 1.46%** | **3.4665 ± 0.0530** | **4.5642 ± 0.0891** | **198.7 ± 21.5** |
+| 200K, seed 0 | 397 | 55.22% | 3.4358 | 4.2323 | 147 |
+| 200K, seed 1 | 358 | 49.79% | 3.3687 | 4.2782 | 156 |
+| 200K, seed 2 | 377 | 52.43% | 3.4244 | 4.2949 | 139 |
+| **200K mean ± SD** | **377.3 ± 19.5** | **52.48% ± 2.71%** | **3.4096 ± 0.0359** | **4.2684 ± 0.0324** | **147.3 ± 8.5** |
+
+Paired outcomes compare the 100K model as A and the nested 200K model as B:
+
+| Outcome | Seed 0 | Seed 1 | Seed 2 | Mean ± SD |
+|---|---:|---:|---:|---:|
+| A loses, B wins | 212 | 166 | 199 | **192.3 ± 23.7** |
+| A wins, B loses | 64 | 67 | 60 | **63.7 ± 3.5** |
+| Both win | 185 | 192 | 178 | **185.0 ± 7.0** |
+| Both lose | 258 | 294 | 282 | **278.0 ± 18.3** |
+| Mean `B attempts - A attempts` | -0.4270 | -0.2045 | -0.2559 | **-0.2958 ± 0.1165** |
+
+Doubling the unique expert pool produces a large, repeatable gain: approximately 129 additional held-out wins per 719-secret seed, 17.90 percentage points of win rate, 51 fewer invalid guesses, and 0.296 fewer attempts per secret. The absolute 52.48% win rate remains poor, however. The CV result rejects any claim that this off-policy corpus and current 3.2M training recipe are near the desired 704/719 regime; many more states help substantially but do not solve policy generalization or invalid generation.
+
+Exact combined predictions and the list of changed secrets are under `runs/cv5-diverse/seed-{0,1,2}/`. Cross-seed metrics are in `runs/cv5-diverse/aggregate.json`.

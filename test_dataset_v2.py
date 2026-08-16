@@ -14,6 +14,7 @@ from tokenizer_v2 import (
     SECRET_TOKEN,
     VOCABULARY_SIZE,
     decode,
+    encode,
 )
 from wordle import score_guess
 
@@ -85,6 +86,27 @@ class DatasetV2Tests(unittest.TestCase):
             self.assertEqual(stop - start, 5)
             self.assertTrue(set(targets[start:stop]) <= letter_ids)
             self.assertEqual(example["expert_policy"], "clever")
+
+    def test_training_sampling_weights_do_not_change_validation_distribution(self):
+        text = f"{POLICY_TOKEN}<G>crane<E>"
+        record = {
+            "example_type": "expert",
+            "text": text,
+            "token_ids": encode(text),
+            "loss_ranges": [[1, 6]],
+            "sampling_weight": 3,
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "examples.jsonl.gz"
+            with gzip.open(path, "wt", encoding="utf-8") as output:
+                output.write(json.dumps({**record, "split": "train"}) + "\n")
+                output.write(json.dumps({**record, "split": "validation"}) + "\n")
+            train_data = load_v2_split(directory, "train", example_type="expert")
+            validation_data = load_v2_split(
+                directory, "validation", example_type="expert"
+            )
+        self.assertEqual(len(train_data.inputs), 3)
+        self.assertEqual(len(validation_data.inputs), 1)
 
 
 if __name__ == "__main__":

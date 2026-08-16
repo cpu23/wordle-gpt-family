@@ -1,0 +1,175 @@
+{
+  "behaviors": [
+    "random",
+    "simple",
+    "entropy",
+    "partly-random-0.05",
+    "partly-random-0.15",
+    "partly-random-0.30",
+    "partly-random-0.50",
+    "partly-random-0.75",
+    "partly-random-0.90",
+    "poor"
+  ],
+  "expert_policy": "clever/minimum expected survivors",
+  "file": "examples.jsonl.gz",
+  "max_turns": 6,
+  "nested_datasets": {
+    "10000": {
+      "file": "examples.jsonl.gz",
+      "source_behavior_counts": {
+        "entropy": 394,
+        "partly-random-0.05": 261,
+        "partly-random-0.15": 428,
+        "partly-random-0.30": 726,
+        "partly-random-0.50": 948,
+        "partly-random-0.75": 1422,
+        "partly-random-0.90": 1612,
+        "poor": 1599,
+        "random": 1775,
+        "simple": 835
+      },
+      "split_counts": {
+        "train": 8948,
+        "validation": 1052
+      },
+      "state_index_range": [
+        0,
+        10000
+      ],
+      "unique_states": 10000
+    },
+    "100000": {
+      "file": "examples.jsonl.gz",
+      "source_behavior_counts": {
+        "entropy": 790,
+        "partly-random-0.05": 1238,
+        "partly-random-0.15": 3142,
+        "partly-random-0.30": 6177,
+        "partly-random-0.50": 10289,
+        "partly-random-0.75": 15076,
+        "partly-random-0.90": 18006,
+        "poor": 16808,
+        "random": 19592,
+        "simple": 8882
+      },
+      "split_counts": {
+        "train": 88880,
+        "validation": 11120
+      },
+      "state_index_range": [
+        0,
+        100000
+      ],
+      "unique_states": 100000
+    },
+    "200000": {
+      "file": "examples.jsonl.gz",
+      "source_behavior_counts": {
+        "entropy": 791,
+        "partly-random-0.05": 2270,
+        "partly-random-0.15": 6110,
+        "partly-random-0.30": 12247,
+        "partly-random-0.50": 20878,
+        "partly-random-0.75": 30617,
+        "partly-random-0.90": 36386,
+        "poor": 33687,
+        "random": 39715,
+        "simple": 17299
+      },
+      "split_counts": {
+        "train": 177642,
+        "validation": 22358
+      },
+      "state_index_range": [
+        0,
+        200000
+      ],
+      "unique_states": 200000
+    },
+    "50000": {
+      "file": "examples.jsonl.gz",
+      "source_behavior_counts": {
+        "entropy": 757,
+        "partly-random-0.05": 694,
+        "partly-random-0.15": 1636,
+        "partly-random-0.30": 3135,
+        "partly-random-0.50": 5064,
+        "partly-random-0.75": 7427,
+        "partly-random-0.90": 8838,
+        "poor": 8329,
+        "random": 9610,
+        "simple": 4510
+      },
+      "split_counts": {
+        "train": 44280,
+        "validation": 5720
+      },
+      "state_index_range": [
+        0,
+        50000
+      ],
+      "unique_states": 50000
+    }
+  },
+  "partly_random_rates": [
+    0.05,
+    0.15,
+    0.3,
+    0.5,
+    0.75,
+    0.9
+  ],
+  "sampling": {
+    "canonical_empty_history_weight": 10000,
+    "training_only": true,
+    "unique_state_storage": true
+  },
+  "schema_version": 1,
+  "seed": 20260815,
+  "source_action_policy_counts": {
+    "clever@0.10": 1859,
+    "clever@0.25": 3631,
+    "clever@0.50": 4893,
+    "clever@0.70": 4096,
+    "clever@0.85": 2544,
+    "clever@0.95": 1160,
+    "initial": 1,
+    "maximum-entropy": 791,
+    "poor-sampled-max-survivors": 33687,
+    "random-legal": 39714,
+    "random-legal@0.05": 1110,
+    "random-legal@0.15": 3566,
+    "random-legal@0.30": 8151,
+    "random-legal@0.50": 15985,
+    "random-legal@0.75": 26986,
+    "random-legal@0.90": 34527,
+    "simple-consistent": 17299
+  },
+  "source_behavior_counts": {
+    "entropy": 791,
+    "partly-random-0.05": 2270,
+    "partly-random-0.15": 6110,
+    "partly-random-0.30": 12247,
+    "partly-random-0.50": 20878,
+    "partly-random-0.75": 30617,
+    "partly-random-0.90": 36386,
+    "poor": 33687,
+    "random": 39715,
+    "simple": 17299
+  },
+  "source_secret_counts": {
+    "train": 575,
+    "validation": 72
+  },
+  "split_counts": {
+    "train": 177642,
+    "validation": 22358
+  },
+  "total_states": 200000,
+  "trajectory_count": 90591,
+  "unique_states": 200000,
+  "vocabulary_size": 35,
+  "word_count": 719,
+  "word_list_sha256": "3f4682f8bedf30744c51133af3f5dcd6436d6dcfccf5323a448f48bb0928d04d"
+}

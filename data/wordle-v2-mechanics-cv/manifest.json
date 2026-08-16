@@ -1,0 +1,10 @@
+{
+  "file": "examples.jsonl.gz",
+  "maximum_examples_per_secret": 140,
+  "minimum_examples_per_secret": 139,
+  "schema_version": 1,
+  "seed": 20260815,
+  "source_secrets": 719,
+  "total_examples": 100000,
+  "unique_secret_guess_pairs": 100000
+}

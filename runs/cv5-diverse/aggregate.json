@@ -1,0 +1,165 @@
+{
+  "architecture": {
+    "context_length": 96,
+    "embedding_size": 256,
+    "mlp_size": 1024,
+    "num_heads": 8,
+    "num_layers": 4
+  },
+  "mode": "benchmark",
+  "model_seeds": [
+    0,
+    1,
+    2
+  ],
+  "paired_guess_delta_b_minus_a": {
+    "mean": -0.2957811775614279,
+    "standard_deviation": 0.11650007804840913,
+    "values": [
+      -0.42698191933240615,
+      -0.20445062586926285,
+      -0.25591098748261476
+    ]
+  },
+  "paired_outcomes": {
+    "a_loses_b_wins": {
+      "mean": 192.33333333333334,
+      "standard_deviation": 23.713568549109883,
+      "values": [
+        212,
+        166,
+        199
+      ]
+    },
+    "a_wins_b_loses": {
+      "mean": 63.666666666666664,
+      "standard_deviation": 3.511884584284246,
+      "values": [
+        64,
+        67,
+        60
+      ]
+    },
+    "both_lose": {
+      "mean": 278.0,
+      "standard_deviation": 18.33030277982336,
+      "values": [
+        258,
+        294,
+        282
+      ]
+    },
+    "both_win": {
+      "mean": 185.0,
+      "standard_deviation": 7.0,
+      "values": [
+        185,
+        192,
+        178
+      ]
+    }
+  },
+  "ratios": {
+    "consistency": 0.0,
+    "expert": 0.95,
+    "mechanics": 0.05
+  },
+  "variants": {
+    "expert-100k": {
+      "average_attempts": {
+        "mean": 4.564209550301345,
+        "standard_deviation": 0.08908130744780395,
+        "values": [
+          4.659248956884562,
+          4.482614742698192,
+          4.55076495132128
+        ]
+      },
+      "average_guesses": {
+        "mean": 3.466460436339954,
+        "standard_deviation": 0.05296092933597025,
+        "values": [
+          3.4939759036144578,
+          3.4054054054054053,
+          3.5
+        ]
+      },
+      "invalid_guesses": {
+        "mean": 198.66666666666666,
+        "standard_deviation": 21.45538005567213,
+        "values": [
+          174.0,
+          209.0,
+          213.0
+        ]
+      },
+      "seeds": 3,
+      "win_rate": {
+        "mean": 0.34585071859063515,
+        "standard_deviation": 0.014609134220295548,
+        "values": [
+          0.3463143254520167,
+          0.36022253129346316,
+          0.33101529902642557
+        ]
+      },
+      "wins": {
+        "mean": 248.66666666666666,
+        "standard_deviation": 10.503967504392486,
+        "values": [
+          249.0,
+          259.0,
+          238.0
+        ]
+      }
+    },
+    "expert-200k": {
+      "average_attempts": {
+        "mean": 4.268428372739916,
+        "standard_deviation": 0.03240940249716579,
+        "values": [
+          4.232267037552155,
+          4.278164116828929,
+          4.294853963838665
+        ]
+      },
+      "average_guesses": {
+        "mean": 3.409628842929164,
+        "standard_deviation": 0.03588513646986722,
+        "values": [
+          3.4357682619647356,
+          3.368715083798883,
+          3.424403183023873
+        ]
+      },
+      "invalid_guesses": {
+        "mean": 147.33333333333334,
+        "standard_deviation": 8.504900548115382,
+        "values": [
+          147.0,
+          156.0,
+          139.0
+        ]
+      },
+      "seeds": 3,
+      "win_rate": {
+        "mean": 0.5248029670839128,
+        "standard_deviation": 0.027123973066870782,
+        "values": [
+          0.5521557719054242,
+          0.49791376912378305,
+          0.5243393602225312
+        ]
+      },
+      "wins": {
+        "mean": 377.3333333333333,
+        "standard_deviation": 19.5021366350801,
+        "values": [
+          397.0,
+          358.0,
+          377.0
+        ]
+      }
+    }
+  }
+}

@@ -52,6 +52,29 @@ class ReplayRecord:
     improved: bool
 
 
+def validation_gameplay_improved(
+    candidate: ReplayRecord,
+    reference: ReplayRecord | None,
+    *,
+    min_delta: float = 0.0,
+) -> bool:
+    """Rank validation checkpoints by wins, legality, speed, then expert loss."""
+    if reference is None:
+        return True
+    if candidate.wins != reference.wins:
+        return candidate.wins > reference.wins
+    if candidate.invalid_guesses != reference.invalid_guesses:
+        return candidate.invalid_guesses < reference.invalid_guesses
+    if candidate.average_guesses < reference.average_guesses - min_delta:
+        return True
+    if candidate.average_guesses > reference.average_guesses + min_delta:
+        return False
+    return (
+        candidate.expert_validation_loss
+        < reference.expert_validation_loss - min_delta
+    )
+
+
 def replay_batch_counts(
     expert_batches: int,
     ratios: Mapping[str, float],
@@ -245,8 +268,7 @@ def train_with_replay(
     }
     best_path = checkpoints_dir / "best.pt"
     records: list[ReplayRecord] = []
-    best_validation = float("inf")
-    patience_reference = float("inf")
+    best_record: ReplayRecord | None = None
     checks_without_progress = 0
     step = 0
     expert_epoch_tokens = train_data["expert"].supervised_token_count
@@ -273,6 +295,12 @@ def train_with_replay(
         "max_epochs": max_epochs,
         "seed": seed,
         "gameplay_secrets": len(secrets),
+        "checkpoint_selection": [
+            "maximum validation wins",
+            "minimum validation invalid guesses",
+            "minimum validation average guesses among wins",
+            "minimum expert validation loss",
+        ],
     }
     (run_dir / "run.json").write_text(
         json.dumps(run_config, indent=2, sort_keys=True) + "\n",
@@ -375,7 +403,7 @@ def train_with_replay(
             else None
         )
         gameplay = evaluate_model(model, secrets, allowed_words)
-        improved = expert_validation < best_validation
+        improved = False
         record = ReplayRecord(
             epoch=epoch,
             step=step,
@@ -392,13 +420,19 @@ def train_with_replay(
             win_rate=gameplay.win_rate,
             average_guesses=gameplay.average_guesses,
             invalid_guesses=gameplay.invalid_guesses,
-            improved=improved,
+            improved=False,
         )
+        improved = validation_gameplay_improved(
+            record,
+            best_record,
+            min_delta=min_delta,
+        )
+        record = ReplayRecord(**{**asdict(record), "improved": improved})
         records.append(record)
         with metrics_path.open("a", encoding="utf-8") as output:
             output.write(json.dumps(asdict(record), sort_keys=True) + "\n")
         if improved:
-            best_validation = expert_validation
+            best_record = record
             _save_checkpoint(
                 best_path,
                 model,
@@ -407,8 +441,6 @@ def train_with_replay(
                 seed=seed,
                 initialization=str(initialization_checkpoint),
             )
-        if expert_validation < patience_reference - min_delta:
-            patience_reference = expert_validation
             checks_without_progress = 0
         elif epoch:
             checks_without_progress += 1
@@ -423,9 +455,10 @@ def train_with_replay(
         )
         if checks_without_progress >= patience:
             break
+    if best_record is None:
+        raise RuntimeError("training produced no validation records")
     (run_dir / "best.json").write_text(
-        json.dumps(asdict(min(records, key=lambda item: item.expert_validation_loss)), indent=2, sort_keys=True)
-        + "\n",
+        json.dumps(asdict(best_record), indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
     return best_path, records
@@ -438,6 +471,11 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--initial-checkpoint", type=Path, required=True)
     parser.add_argument("--expert-data-dir", type=Path, default=DEFAULT_EXPERT_DATA_DIR)
+    parser.add_argument(
+        "--mechanics-data-dir",
+        type=Path,
+        help="Mechanics dataset; defaults to --expert-data-dir.",
+    )
     parser.add_argument(
         "--consistency-data-dir", type=Path, default=DEFAULT_CONSISTENCY_DATA_DIR
     )
@@ -464,13 +502,14 @@ def main(argv: Sequence[str] | None = None) -> int:
         "mechanics": args.mechanics_ratio,
         "consistency": args.consistency_ratio,
     }
+    mechanics_data_dir = args.mechanics_data_dir or args.expert_data_dir
     replay_batch_counts(1, ratios)
     train_data = {
         "expert": load_v2_split(args.expert_data_dir, "train", example_type="expert")
     }
     if ratios["mechanics"]:
         train_data["mechanics"] = load_v2_split(
-            args.expert_data_dir,
+            mechanics_data_dir,
             "train",
             example_type="mechanics",
         )
@@ -487,7 +526,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             example_type="expert",
         ),
         "mechanics": load_v2_split(
-            args.expert_data_dir,
+            mechanics_data_dir,
             "validation",
             example_type="mechanics",
         ),
@@ -505,7 +544,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         args.output_dir,
         initialization_checkpoint=args.initial_checkpoint,
         ratios=ratios,
-        secrets=splits["test"],
+        secrets=splits["validation"],
         allowed_words=load_words(args.words),
         batch_size=args.batch_size,
         eval_batch_size=args.eval_batch_size,
@@ -516,7 +555,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         device=args.device,
         seed=args.seed,
     )
-    best = min(records, key=lambda item: item.expert_validation_loss)
+    best = next(record for record in reversed(records) if record.improved)
     print(
         f"best checkpoint: {best_path} epoch={best.epoch} "
         f"expert={best.expert_validation_loss:.6f} "

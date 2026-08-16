@@ -50,9 +50,17 @@ def load_v2_split(
                 example_type_id = EXAMPLE_TYPE_TO_ID[example["example_type"]]
             except KeyError as error:
                 raise ValueError(f"unknown v2 example type: {error.args[0]!r}") from error
-            token_sequences.append(example["token_ids"])
-            loss_ranges.append(example["loss_ranges"])
-            example_type_ids.append(example_type_id)
+            raw_sampling_weight = example.get("sampling_weight", 1)
+            if (
+                isinstance(raw_sampling_weight, bool)
+                or not isinstance(raw_sampling_weight, int)
+                or raw_sampling_weight < 1
+            ):
+                raise ValueError("v2 sampling weights must be positive integers")
+            sampling_weight = raw_sampling_weight if split == "train" else 1
+            token_sequences.extend([example["token_ids"]] * sampling_weight)
+            loss_ranges.extend([example["loss_ranges"]] * sampling_weight)
+            example_type_ids.extend([example_type_id] * sampling_weight)
     if not token_sequences:
         raise ValueError(f"v2 dataset has no {split} examples")
 

@@ -133,7 +133,7 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("checkpoint", type=Path)
     parser.add_argument("--splits", type=Path, default=DEFAULT_SPLITS_PATH)
-    parser.add_argument("--split", choices=("train", "validation", "test"), default="test")
+    parser.add_argument("--split", choices=("train", "validation", "test"), default="validation")
     parser.add_argument("--words", type=Path, default=DEFAULT_WORDS)
     parser.add_argument("--device", choices=("cpu", "cuda"), default=None)
     parser.add_argument("--details", action="store_true")

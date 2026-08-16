@@ -1,4 +1,5 @@
 import io
+from dataclasses import replace
 import json
 import tempfile
 import unittest
@@ -9,10 +10,12 @@ import torch
 
 from experiments_replay import (
     OBJECTIVES,
+    ReplayRecord,
     _sample_expert_epoch,
     even_replay_schedule,
     replay_batch_counts,
     train_with_replay,
+    validation_gameplay_improved,
 )
 from model import WordleGPT
 from tokenizer_v2 import VOCABULARY_SIZE, encode
@@ -79,6 +82,50 @@ class ReplayScheduleTests(unittest.TestCase):
             index for index, objective in enumerate(schedule) if objective == "mechanics"
         ]
         self.assertGreaterEqual(replay_positions[1] - replay_positions[0], 8)
+
+    def test_validation_gameplay_ranking_prioritizes_observed_game_quality(self):
+        baseline = ReplayRecord(
+            epoch=1,
+            step=1,
+            learning_rate=3e-4,
+            batch_counts={},
+            train_losses={},
+            gradient_norm=1.0,
+            gradient_norms={},
+            expert_validation_loss=0.5,
+            mechanics_validation_loss=0.01,
+            consistency_validation_loss=None,
+            wins=68,
+            games=72,
+            win_rate=68 / 72,
+            average_guesses=3.1,
+            invalid_guesses=1,
+            improved=False,
+        )
+        self.assertTrue(
+            validation_gameplay_improved(
+                replace(baseline, wins=69, expert_validation_loss=0.9),
+                baseline,
+            )
+        )
+        self.assertTrue(
+            validation_gameplay_improved(
+                replace(baseline, invalid_guesses=0, expert_validation_loss=0.9),
+                baseline,
+            )
+        )
+        self.assertTrue(
+            validation_gameplay_improved(
+                replace(baseline, average_guesses=3.0, expert_validation_loss=0.9),
+                baseline,
+            )
+        )
+        self.assertFalse(
+            validation_gameplay_improved(
+                replace(baseline, wins=67, expert_validation_loss=0.1),
+                baseline,
+            )
+        )
 
 
 class ReplayTrainingTests(unittest.TestCase):

@@ -1,0 +1,43 @@
+{
+  "batch_size": 32,
+  "checkpoint_selection": [
+    "maximum validation wins",
+    "minimum validation invalid guesses",
+    "minimum validation average guesses among wins",
+    "minimum expert validation loss"
+  ],
+  "device": "cuda",
+  "eval_batch_size": 256,
+  "gameplay_secrets": 72,
+  "initialization": "runs/cv5-diverse/seed-2/fold-4/mechanics/checkpoints/best.pt",
+  "learning_rate": 0.0003,
+  "max_epochs": 100,
+  "min_delta": 0.0001,
+  "model_config": {
+    "context_length": 96,
+    "embedding_size": 256,
+    "mlp_size": 1024,
+    "num_heads": 8,
+    "num_layers": 4,
+    "vocab_size": 35
+  },
+  "nominal_batches_per_expert_epoch": {
+    "consistency": 0,
+    "expert": 2494,
+    "mechanics": 131
+  },
+  "nominal_realized_ratios": {
+    "consistency": 0.0,
+    "expert": 0.9500952380952381,
+    "mechanics": 0.0499047619047619
+  },
+  "parameters": 3202083,
+  "patience": 4,
+  "requested_ratios": {
+    "consistency": 0.0,
+    "expert": 0.95,
+    "mechanics": 0.05
+  },
+  "seed": 2,
+  "vocabulary_size": 35
+}
