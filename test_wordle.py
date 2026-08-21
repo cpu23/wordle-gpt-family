@@ -11,6 +11,7 @@ from wordle import (
     load_words,
     score_guess,
     solve,
+    top_informative_guesses,
 )
 
 
@@ -100,6 +101,38 @@ class SolverTests(unittest.TestCase):
                 self.assertEqual(turns[-1].guess, "frame")
                 self.assertEqual(turns[-1].feedback, GREEN * 5)
                 self.assertTrue(all(turn.remaining >= 1 for turn in turns))
+
+    def test_top_guesses_match_best_and_rank_by_expected_survivors(self):
+        possible = self.WORDS[2:10]
+        top = top_informative_guesses(possible, self.WORDS, count=8)
+        self.assertEqual(top[0][0], choose_informative_guess(possible, self.WORDS))
+
+        def bucket_cost(guess):
+            counts = {}
+            for answer in possible:
+                pattern = score_guess(answer, guess)
+                counts[pattern] = counts.get(pattern, 0) + 1
+            return sum(size * size for size in counts.values())
+
+        possible_set = set(possible)
+        candidates = list(possible)
+        candidates.extend(word for word in self.WORDS if word not in possible_set)
+        costs = {word: bucket_cost(word) for word in candidates}
+        self.assertEqual(
+            top,
+            sorted(
+                ((word, costs[word] / len(possible)) for word in candidates),
+                key=lambda item: (item[1], candidates.index(item[0])),
+            )[:8],
+        )
+
+    def test_top_guesses_respect_count_and_single_answer_state(self):
+        possible = self.WORDS[2:10]
+        self.assertEqual(len(top_informative_guesses(possible, self.WORDS, 3)), 3)
+        single = top_informative_guesses(("apple",), self.WORDS, 8)
+        self.assertEqual(single[0], ("apple", 1.0))
+        self.assertEqual(len(single), 8)
+        self.assertTrue(all(score == 1.0 for _, score in single))
 
 
 if __name__ == "__main__":

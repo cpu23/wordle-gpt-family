@@ -41,6 +41,37 @@ class GameplayTests(unittest.TestCase):
         self.assertEqual(result.guesses, ("zzzzz",))
         self.assertEqual(result.invalid_guesses, 1)
 
+    def test_constrained_decoding_forces_an_allowed_word(self):
+        result = play_secret(
+            ScriptedModel("zzzzz"),
+            "crane",
+            frozenset({"crane", "grape"}),
+            constrained=True,
+        )
+        self.assertIn(result.guesses[0], {"crane", "grape"})
+        self.assertEqual(result.invalid_guesses, 0)
+
+    def test_constrained_decoding_wins_on_allowed_scripted_word(self):
+        result = play_secret(
+            ScriptedModel("crane"),
+            "crane",
+            frozenset({"crane"}),
+            constrained=True,
+        )
+        self.assertTrue(result.won)
+        self.assertEqual(result.guesses, ("crane",))
+
+    def test_evaluate_model_rejects_unknown_decode_mode(self):
+        from evaluate_v2 import evaluate_model
+
+        with self.assertRaises(ValueError):
+            evaluate_model(
+                ScriptedModel("crane"),
+                ["crane"],
+                ["crane"],
+                decode="beam",
+            )
+
     def test_checkpoint_loader_restores_stored_architecture(self):
         model = WordleGPT(
             vocab_size=VOCABULARY_SIZE,
@@ -64,6 +95,13 @@ class GameplayTests(unittest.TestCase):
 
     def test_cli_defaults_to_validation_secrets(self):
         self.assertEqual(_build_parser().parse_args(["model.pt"]).split, "validation")
+
+    def test_cli_accepts_decode_mode(self):
+        self.assertEqual(
+            _build_parser().parse_args(["model.pt", "--decode", "constrained"]).decode,
+            "constrained",
+        )
+        self.assertEqual(_build_parser().parse_args(["model.pt"]).decode, "raw")
 
 
 if __name__ == "__main__":

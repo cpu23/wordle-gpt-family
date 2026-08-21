@@ -147,6 +147,52 @@ def choose_informative_guess(
     return best_guess
 
 
+def top_informative_guesses(
+    possible_answers: Sequence[str],
+    allowed_guesses: Sequence[str],
+    count: int = 8,
+) -> list[tuple[str, float]]:
+    """Return up to ``count`` guesses ranked by smallest expected survivors.
+
+    The score for a guess is the expected number of surviving answers,
+    ``sum(b_i ** 2) / n``, computed with the exact same bucketing as
+    ``choose_informative_guess``. Ties keep candidate order (remaining
+    answers first, then the other allowed guesses), so the first entry
+    always matches ``choose_informative_guess``.
+    """
+    if count < 1:
+        raise ValueError("count must be positive")
+    if not possible_answers:
+        raise ValueError("cannot choose a guess with no possible answers")
+    if not allowed_guesses:
+        raise ValueError("cannot choose a guess with no allowed guesses")
+
+    possible_set = set(possible_answers)
+    candidates = list(possible_answers)
+    candidates.extend(guess for guess in allowed_guesses if guess not in possible_set)
+    ideal_cost = len(possible_answers)
+    best: list[tuple[int, int, str]] = []
+    for index, guess in enumerate(candidates):
+        buckets: dict[int, int] = {}
+        cost = 0
+        for answer in possible_answers:
+            code = _feedback_code(answer, guess)
+            old_size = buckets.get(code, 0)
+            buckets[code] = old_size + 1
+            cost += 2 * old_size + 1
+            if len(best) == count and cost >= best[-1][0]:
+                break
+        if len(best) < count:
+            best.append((cost, index, guess))
+            best.sort(key=lambda item: (item[0], item[1]))
+        elif (cost, index) < (best[-1][0], best[-1][1]):
+            best[-1] = (cost, index, guess)
+            best.sort(key=lambda item: (item[0], item[1]))
+        if len(best) == count and best[-1][0] == ideal_cost:
+            break
+    return [(guess, cost / len(possible_answers)) for cost, _, guess in best]
+
+
 @dataclass(frozen=True)
 class Turn:
     guess: str

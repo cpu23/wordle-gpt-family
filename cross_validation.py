@@ -254,9 +254,9 @@ def combine_fold_predictions(
     mode: EvaluationMode,
     fold_result_paths: Sequence[str | Path],
 ) -> dict[str, object]:
-    """Combine one seed's five disjoint held-out prediction files."""
-    if mode.name != "benchmark" or len(fold_result_paths) != len(mode.runs):
-        raise ValueError("one result file is required for every benchmark fold")
+    """Combine one seed's disjoint held-out prediction files."""
+    if len(fold_result_paths) != len(mode.runs):
+        raise ValueError("one result file is required for every fold")
     combined: list[dict[str, object]] = []
     seen: set[str] = set()
     for run, path in zip(mode.runs, fold_result_paths, strict=True):
@@ -274,7 +274,7 @@ def combine_fold_predictions(
     won_guess_counts = [len(result["guesses"]) for result in combined if result["won"]]
     attempts = [len(result["guesses"]) for result in combined]
     return {
-        "mode": "benchmark",
+        "mode": mode.name,
         "games": len(combined),
         "wins": wins,
         "win_rate": wins / len(combined),

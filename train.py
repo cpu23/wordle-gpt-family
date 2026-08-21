@@ -12,7 +12,7 @@ from torch import Tensor
 from torch.nn import functional as F
 
 from model import CONTEXT_LENGTH, VOCAB_SIZE, WordleGPT
-from tokenizer import END_TOKEN, TOKEN_TO_ID, decode
+from tokenizer import END_TOKEN, ID_TO_TOKEN, TOKEN_TO_ID, decode
 
 DEFAULT_DATA = Path("data/wordle-100k/tokenized-trajectories.jsonl.gz")
 DEFAULT_BATCH_SIZE = 32
@@ -176,6 +176,64 @@ def generate_tokens(
     finally:
         model.train(was_training)
     return generated[0, :generated_length].tolist()
+
+
+def generate_constrained_guess(
+    model: WordleGPT,
+    prefix: Sequence[int],
+    allowed_words: frozenset[str],
+    *,
+    length: int = 5,
+) -> list[int]:
+    """Greedily decode ``length`` letters restricted to allowed-word prefixes.
+
+    At every position the model scores the full vocabulary, then every token
+    that is not a letter occurring at that position in some still-allowed
+    word is masked to -inf before the argmax. The finished word is therefore
+    guaranteed to be a member of ``allowed_words``; no other model
+    probability is altered.
+    """
+    if not prefix:
+        raise ValueError("prefix must contain at least one token")
+    if length < 1:
+        raise ValueError("length must be positive")
+    if len(prefix) + length > model.context_length:
+        raise ValueError("generation would exceed the model context length")
+    remaining = list(allowed_words)
+    if not remaining:
+        raise ValueError("at least one allowed word is required")
+    if any(len(word) != length for word in remaining):
+        raise ValueError("allowed words must have exactly `length` letters")
+
+    device = next(model.parameters()).device
+    generated = torch.empty(
+        (1, len(prefix) + length),
+        dtype=torch.long,
+        device=device,
+    )
+    generated[0, : len(prefix)] = torch.tensor(prefix, device=device)
+    generated_length = len(prefix)
+    was_training = model.training
+    model.eval()
+    try:
+        with torch.inference_mode():
+            for position in range(length):
+                logits = model(generated[:, :generated_length])[0, -1]
+                mask = torch.full_like(logits, float("-inf"))
+                allowed_letters = {word[position] for word in remaining}
+                mask[[TOKEN_TO_ID[letter] for letter in allowed_letters]] = 0.0
+                next_token = (logits + mask).argmax()
+                generated[0, generated_length] = next_token
+                generated_length += 1
+                letter = ID_TO_TOKEN[int(next_token)]
+                remaining = [word for word in remaining if word[position] == letter]
+                if not remaining:
+                    raise RuntimeError(
+                        "constrained decoding eliminated every allowed word"
+                    )
+    finally:
+        model.train(was_training)
+    return generated[0, len(prefix) :].tolist()
 
 
 def _build_parser() -> argparse.ArgumentParser:

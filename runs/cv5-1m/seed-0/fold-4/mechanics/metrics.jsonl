@@ -1,0 +1,10 @@
+{"epoch": 0, "improved": true, "learning_rate": 0.0003, "step": 0, "token_epochs": 0.0, "tokens_seen": 0, "train_loss": 3.4932759384738543, "validation_loss": 3.4980204692960557}
+{"epoch": 1, "improved": true, "learning_rate": 0.0003, "step": 2187, "token_epochs": 1.0004288532464192, "tokens_seen": 349920, "train_loss": 0.008132531037136905, "validation_loss": 0.008579343509150336}
+{"epoch": 2, "improved": true, "learning_rate": 0.0003, "step": 4373, "token_epochs": 2.000400263029991, "tokens_seen": 699680, "train_loss": 0.002790656753567523, "validation_loss": 0.002165522468250749}
+{"epoch": 3, "improved": false, "learning_rate": 0.0003, "step": 6559, "token_epochs": 3.000371672813563, "tokens_seen": 1049440, "train_loss": 0.0020851938612114745, "validation_loss": 0.002774212094943522}
+{"epoch": 4, "improved": false, "learning_rate": 0.0003, "step": 8745, "token_epochs": 4.000343082597135, "tokens_seen": 1399200, "train_loss": 0.004990581771257719, "validation_loss": 0.007614071446541126}
+{"epoch": 5, "improved": true, "learning_rate": 0.0003, "step": 10931, "token_epochs": 5.000314492380707, "tokens_seen": 1748960, "train_loss": 0.0011546964400266603, "validation_loss": 0.0011304009561829132}
+{"epoch": 6, "improved": false, "learning_rate": 0.0003, "step": 13117, "token_epochs": 6.000285902164279, "tokens_seen": 2098720, "train_loss": 0.0030044230656261616, "validation_loss": 0.0029991917031679046}
+{"epoch": 7, "improved": false, "learning_rate": 0.0003, "step": 15303, "token_epochs": 7.000257311947851, "tokens_seen": 2448480, "train_loss": 0.0020607059848592466, "validation_loss": 0.0019883101068611927}
+{"epoch": 8, "improved": false, "learning_rate": 0.0003, "step": 17489, "token_epochs": 8.000228721731423, "tokens_seen": 2798240, "train_loss": 0.005944893670081411, "validation_loss": 0.006090383467767099}
+{"epoch": 9, "improved": false, "learning_rate": 0.0003, "step": 19675, "token_epochs": 9.000200131514996, "tokens_seen": 3148000, "train_loss": 0.0011197603263171155, "validation_loss": 0.0012761780028931213}

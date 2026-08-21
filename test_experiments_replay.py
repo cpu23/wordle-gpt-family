@@ -87,6 +87,7 @@ class ReplayScheduleTests(unittest.TestCase):
         baseline = ReplayRecord(
             epoch=1,
             step=1,
+            tokens_seen=123,
             learning_rate=3e-4,
             batch_counts={},
             train_losses={},
@@ -182,6 +183,10 @@ class ReplayTrainingTests(unittest.TestCase):
         self.assertIn("mechanics_validation_loss", metrics[1])
         self.assertEqual(metrics[1]["batch_counts"]["expert"], 1)
         self.assertEqual(best["epoch"], 0)
+        self.assertEqual(records[0].tokens_seen, 0)
+        self.assertGreater(records[1].tokens_seen, 0)
+        self.assertIn("tokens_seen", metrics[1])
+        self.assertIn("tokens_seen", best)
         self.assertIn("train_losses", best)
         self.assertIn("gradient_norm", best)
 

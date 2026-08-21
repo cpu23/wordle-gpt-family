@@ -1,0 +1,1040 @@
+{
+  "changed_games": [
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "adult"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "both_win",
+      "secret": "again"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "algae"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "ankle"
+    },
+    {
+      "a_guesses": 5,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "aroma"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -3,
+      "outcome": "a_loses_b_wins",
+      "secret": "array"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -2,
+      "outcome": "both_win",
+      "secret": "batch"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 2,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -2,
+      "outcome": "both_win",
+      "secret": "chair"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "chant"
+    },
+    {
+      "a_guesses": 5,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -2,
+      "outcome": "both_win",
+      "secret": "charm"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "both_win",
+      "secret": "chili"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 2,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -4,
+      "outcome": "both_win",
+      "secret": "cling"
+    },
+    {
+      "a_guesses": 5,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "could"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 2,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "count"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "crime"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "curve"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "drain"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "eight"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "event"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "forth"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "a_loses_b_wins",
+      "secret": "glass"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "both_win",
+      "secret": "gleam"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "joint"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "juice"
+    },
+    {
+      "a_guesses": 5,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -2,
+      "outcome": "both_win",
+      "secret": "kneel"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "lunch"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 2,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -2,
+      "outcome": "both_win",
+      "secret": "march"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "both_win",
+      "secret": "moral"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "a_wins_b_loses",
+      "secret": "paper"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "patch"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "a_loses_b_wins",
+      "secret": "pause"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "proof"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "quite"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "both_win",
+      "secret": "shake"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "share"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -2,
+      "outcome": "a_loses_b_wins",
+      "secret": "shock"
+    },
+    {
+      "a_guesses": 5,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "stage"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "both_win",
+      "secret": "stake"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "thief"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "a_loses_b_wins",
+      "secret": "under"
+    },
+    {
+      "a_guesses": 5,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "a_wins_b_loses",
+      "secret": "union"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "white"
+    }
+  ],
+  "games": 72,
+  "mean_guess_delta_b_minus_a": -0.125,
+  "outcomes": {
+    "a_loses_b_wins": 5,
+    "a_wins_b_loses": 2,
+    "both_lose": 8,
+    "both_win": 57
+  },
+  "per_secret": [
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "adult"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "both_win",
+      "secret": "again"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "algae"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "ankle"
+    },
+    {
+      "a_guesses": 5,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "aroma"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -3,
+      "outcome": "a_loses_b_wins",
+      "secret": "array"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "audio"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -2,
+      "outcome": "both_win",
+      "secret": "batch"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "belly"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "boost"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "brand"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "brass"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "broad"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "cater"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 2,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -2,
+      "outcome": "both_win",
+      "secret": "chair"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "chant"
+    },
+    {
+      "a_guesses": 5,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -2,
+      "outcome": "both_win",
+      "secret": "charm"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "both_win",
+      "secret": "chili"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 2,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -4,
+      "outcome": "both_win",
+      "secret": "cling"
+    },
+    {
+      "a_guesses": 5,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "could"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 2,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "count"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "crime"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "crisp"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "curve"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "donor"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "drain"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "eight"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "event"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_lose",
+      "secret": "final"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "flour"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "forth"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 2,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "giant"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "a_loses_b_wins",
+      "secret": "glass"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "both_win",
+      "secret": "gleam"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "glide"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "globe"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "imply"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_lose",
+      "secret": "jelly"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "joint"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "juice"
+    },
+    {
+      "a_guesses": 5,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -2,
+      "outcome": "both_win",
+      "secret": "kneel"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_lose",
+      "secret": "knife"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "later"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "lunch"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 2,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -2,
+      "outcome": "both_win",
+      "secret": "march"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "both_win",
+      "secret": "moral"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_lose",
+      "secret": "novel"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "paint"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "panic"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "a_wins_b_loses",
+      "secret": "paper"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "patch"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "a_loses_b_wins",
+      "secret": "pause"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "proof"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "quite"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 2,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "right"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "both_win",
+      "secret": "shake"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "share"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "shine"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -2,
+      "outcome": "a_loses_b_wins",
+      "secret": "shock"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_lose",
+      "secret": "solid"
+    },
+    {
+      "a_guesses": 5,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "both_win",
+      "secret": "stage"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 2,
+      "outcome": "both_win",
+      "secret": "stake"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 3,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "thick"
+    },
+    {
+      "a_guesses": 3,
+      "a_invalid_guesses": 0,
+      "b_guesses": 4,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "thief"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 2,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "tiger"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_lose",
+      "secret": "token"
+    },
+    {
+      "a_guesses": 2,
+      "a_invalid_guesses": 0,
+      "b_guesses": 2,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_win",
+      "secret": "tribe"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": -1,
+      "outcome": "a_loses_b_wins",
+      "secret": "under"
+    },
+    {
+      "a_guesses": 5,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "a_wins_b_loses",
+      "secret": "union"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_lose",
+      "secret": "until"
+    },
+    {
+      "a_guesses": 6,
+      "a_invalid_guesses": 0,
+      "b_guesses": 6,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 0,
+      "outcome": "both_lose",
+      "secret": "weary"
+    },
+    {
+      "a_guesses": 4,
+      "a_invalid_guesses": 0,
+      "b_guesses": 5,
+      "b_invalid_guesses": 0,
+      "guess_delta_b_minus_a": 1,
+      "outcome": "both_win",
+      "secret": "white"
+    }
+  ]
+}

@@ -36,6 +36,7 @@ OBJECTIVES = ("expert", "mechanics", "consistency")
 class ReplayRecord:
     epoch: int
     step: int
+    tokens_seen: int
     learning_rate: float
     batch_counts: dict[str, int]
     train_losses: dict[str, float]
@@ -177,6 +178,7 @@ def _save_checkpoint(
             "vocabulary_size": VOCABULARY_SIZE,
             "epoch": record.epoch,
             "step": record.step,
+            "tokens_seen": record.tokens_seen,
             "learning_rate": record.learning_rate,
             "train_losses": dict(record.train_losses),
             "gradient_norm": record.gradient_norm,
@@ -273,6 +275,7 @@ def train_with_replay(
     step = 0
     expert_epoch_tokens = train_data["expert"].supervised_token_count
     expert_tokens_seen = 0
+    total_tokens_seen = 0
 
     realized_total = sum(nominal_batch_counts.values())
     run_config = {
@@ -382,6 +385,9 @@ def train_with_replay(
                 gradient_norm_sums[objective].item()
                 for objective in sampled
             ) / sum(gradient_counts.values())
+            total_tokens_seen += int(
+                sum(token_counts[objective].item() for objective in sampled)
+            )
 
         expert_validation = evaluate_objective_loss(
             model,
@@ -407,6 +413,7 @@ def train_with_replay(
         record = ReplayRecord(
             epoch=epoch,
             step=step,
+            tokens_seen=total_tokens_seen,
             learning_rate=float(optimizer.param_groups[0]["lr"]),
             batch_counts=dict(batch_counts) if epoch else {name: 0 for name in OBJECTIVES},
             train_losses=train_losses,

@@ -4,3 +4,10 @@ __pycache__/
 .pytest_cache/
 runs/**/checkpoints/
 data/wordle-cv5/
+data/wordle-cv5-500k/
+data/wordle-dev-500k/
+data/wordle-cv5-1m/
+data/wordle-dev-1m/
+# 1M pools exceed GitHub's 100 MB per-file limit; commit split parts only.
+data/wordle-v2-diverse-1m/examples.jsonl.gz
+data/wordle-v2-diverse-1m-cv/examples.jsonl.gz

@@ -1,0 +1,29 @@
+{
+  "average_guesses": 3.35,
+  "batch_counts": {
+    "consistency": 0,
+    "expert": 4674,
+    "mechanics": 246
+  },
+  "consistency_validation_loss": null,
+  "epoch": 13,
+  "examples_seen": 2046688,
+  "expert_validation_loss": 0.852805113806716,
+  "games": 72,
+  "gradient_norm": 1.123833799749855,
+  "gradient_norms": {
+    "expert": 1.1739554709229247,
+    "mechanics": 0.17152204746153296
+  },
+  "improved": true,
+  "invalid_guesses": 13,
+  "learning_rate": 0.0003,
+  "mechanics_validation_loss": 0.004393633584522791,
+  "step": 63959,
+  "train_losses": {
+    "expert": 0.13550574613219404,
+    "mechanics": 0.005169990973743966
+  },
+  "win_rate": 0.5555555555555556,
+  "wins": 40
+}

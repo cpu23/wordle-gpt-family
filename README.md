@@ -553,3 +553,368 @@ Paired outcomes compare the 100K model as A and the nested 200K model as B:
 Doubling the unique expert pool produces a large, repeatable gain: approximately 129 additional held-out wins per 719-secret seed, 17.90 percentage points of win rate, 51 fewer invalid guesses, and 0.296 fewer attempts per secret. The absolute 52.48% win rate remains poor, however. The CV result rejects any claim that this off-policy corpus and current 3.2M training recipe are near the desired 704/719 regime; many more states help substantially but do not solve policy generalization or invalid generation.
 
 Exact combined predictions and the list of changed secrets are under `runs/cv5-diverse/seed-{0,1,2}/`. Cross-seed metrics are in `runs/cv5-diverse/aggregate.json`.
+
+### 2026-08-20 — 500K logical-state scaling and constrained decoding
+
+This experiment holds the 3,202,083-parameter architecture and successful
+replay recipe fixed while extending the unique expert corpus from 200K to
+500K observable histories. All expert targets remain labels from the
+minimum-expected-survivors solver; source behavior only determines which
+reachable state is collected.
+
+#### Corpus construction and validation
+
+`build_500k_pools.py` reproduces the original generation stream through state
+200,000, then accepts a state whose remaining-answer-set fingerprint has
+already appeared with probability 0.5. Novel answer sets are always accepted.
+This leaves the nested 200K prefix field-identical to the old corpus while
+biasing only the 200K–500K tail toward logical novelty.
+
+```bash
+uv run --with-requirements requirements.txt python build_500k_pools.py dev
+uv run --with-requirements requirements.txt python build_500k_pools.py cv
+```
+
+The development pool uses only the fixed 575 train and 72 validation source
+secrets. None of the 72 fixed development-test secrets contributes an
+example. The universal CV pool contains all 719 source secrets, but fold
+materialization removes every held-out test source before training.
+
+| Development-pool prefix | Histories | Unique remaining-answer sets | New sets |
+|---|---:|---:|---:|
+| 100K | 100,000 | 37,989 | — |
+| 200K | 200,000 | 65,779 | +27,790 |
+| 500K | 500,000 | 167,621 | +101,842 |
+
+The universal CV pool has 37,992, 65,859, and 168,667 unique answer sets at
+the same prefixes. Thus 200K → 500K adds 300,000 histories and 101,842 logical
+states in the development pool: about 0.339 new answer sets per added history.
+
+| Source behavior, development pool | States |
+|---|---:|
+| Random legal | 101,114 |
+| Simple consistent | 43,105 |
+| Maximum entropy | 791 |
+| Partly random, rates 0.05/0.15/0.30/0.50/0.75/0.90 | 264,746 |
+| Deliberately poor sampled legal action | 90,244 |
+| **Total** | **500,000** |
+
+The resulting development pool contains 133,082 answer sets used once,
+28,795 used 2–5 times, 2,868 used 6–10 times, 1,939 used 11–50 times,
+197 used 51–100 times, and 740 used more than 100 times. Candidate-set sizes
+remain broad:
+
+| Remaining candidates | Stored states | Distinct answer sets |
+|---|---:|---:|
+| 1 | 203,698 | 647 |
+| 2–5 | 145,663 | 47,280 |
+| 6–10 | 55,832 | 41,967 |
+| 11–50 | 76,852 | 64,999 |
+| 51–100 | 12,146 | 9,766 |
+| 101–250 | 5,774 | 2,933 |
+| 251–500 | 34 | 28 |
+| 501–719 | 1 | 1 |
+
+`validation.json` records a complete recomputation over all 500,000 records:
+unique history, reachable feedback, source secret still in the candidate set,
+clever target, serialization, token IDs, loss mask, source metadata, answer-set
+fingerprint, and manifest distributions. The compressed artifacts are pinned
+in their manifests:
+
+- development `examples.jsonl.gz` SHA-256:
+  `96dd7a0620701fe9db2cb2437dc3c2746a5e7972a2428984952e4d8ec6737ecf`
+- CV `examples.jsonl.gz` SHA-256:
+  `f8b9022973318305d7d4e0589f91e8d1d8860e5472795be5c94eb0387d14b9ad`
+
+The canonical empty-history state remains one stored record with training-only
+sampling weight 10,000. Validation, development gameplay, and benchmark
+gameplay remain unweighted.
+
+#### Fixed training and decoding configuration
+
+The model remains four decoder blocks, width 256, eight heads, MLP width 1024,
+context length 96: 3,202,083 parameters. Training uses batch size 32,
+evaluation batch size 256, learning rate `3e-4`, at most 100 expert epochs,
+patience 4, and 95% expert / 5% mechanics replay from the same seeded mechanics
+initialization. Checkpoints are selected by maximum validation wins, minimum
+invalid guesses, minimum average guesses among wins, then minimum expert
+validation loss.
+
+Every `metrics.jsonl` record includes optimizer step, epoch/effective pass,
+learning rate, expert and mechanics train/validation losses, validation wins,
+validation invalid guesses, and average guesses among wins. New 500K records
+include exact supervised tokens seen; reused 200K records are backfilled with
+exact sampled examples seen (`optimizer step × batch size`). Test secrets do
+not participate in selection.
+
+Raw decoding is unchanged greedy autoregressive generation. Constrained
+decoding masks each next-letter distribution to letters that continue at least
+one allowed-word prefix; after five positions the generated sequence is
+therefore an allowed guess. It does not repair text or otherwise rescore the
+model policy.
+
+#### Fixed development split
+
+These results use the selected seed-0 checkpoints and the 72 fixed development
+test secrets, after all selection on the separate 72 validation secrets:
+
+| Expert pool / decoding | Wins / 72 | Win rate | Avg guesses on wins | Avg attempts | Invalid |
+|---|---:|---:|---:|---:|---:|
+| 200K raw | 53 | 73.61% | 3.4906 | 3.8472 | 10 |
+| 200K constrained | 59 | 81.94% | 3.5593 | 4.0000 | 0 |
+| 500K raw | 60 | 83.33% | 3.4500 | 3.7917 | 4 |
+| 500K constrained | 62 | 86.11% | 3.5323 | 3.8750 | 0 |
+
+For 200K vs 500K, raw decoding has 10 A-loses/B-wins, 3
+A-wins/B-loses, 50 both-win, and 9 both-lose; mean `B attempts - A
+attempts` is -0.0556. Constrained decoding has 5, 2, 57, and 8,
+respectively; mean attempt delta is -0.1250. Constraining 200K converts six
+raw losses into wins with no reversals; constraining 500K converts two with no
+reversals. Exact changed secrets and guess sequences are in
+`runs/dev-500k/seed-0/paired-*.json`.
+
+#### Three-seed, five-fold raw and constrained benchmark
+
+Each row combines five disjoint folds, covering all 719 secrets exactly once.
+The 200K raw rows reuse the prior selected checkpoints and predictions from the
+field-identical nested prefix.
+
+| Expert pool / decoding | Seed | Wins / 719 | Win rate | Avg guesses on wins | Avg attempts | Invalid |
+|---|---:|---:|---:|---:|---:|---:|
+| 200K raw | 0 | 397 | 55.22% | 3.4358 | 4.2323 | 147 |
+| 200K raw | 1 | 358 | 49.79% | 3.3687 | 4.2782 | 156 |
+| 200K raw | 2 | 377 | 52.43% | 3.4244 | 4.2949 | 139 |
+| **200K raw mean ± SD** | — | **377.3 ± 19.5** | **52.48% ± 2.71%** | **3.4096 ± 0.0359** | **4.2684 ± 0.0324** | **147.3 ± 8.5** |
+| 200K constrained | 0 | 438 | 60.92% | 3.5457 | 4.5049 | 0 |
+| 200K constrained | 1 | 393 | 54.66% | 3.4784 | 4.6217 | 0 |
+| 200K constrained | 2 | 415 | 57.72% | 3.5446 | 4.5828 | 0 |
+| **200K constrained mean ± SD** | — | **415.3 ± 22.5** | **57.77% ± 3.13%** | **3.5229 ± 0.0385** | **4.5698 ± 0.0595** | **0.0 ± 0.0** |
+| 500K raw | 0 | 454 | 63.14% | 3.4163 | 4.0987 | 112 |
+| 500K raw | 1 | 487 | 67.73% | 3.3860 | 3.9875 | 92 |
+| 500K raw | 2 | 488 | 67.87% | 3.4426 | 4.0654 | 81 |
+| **500K raw mean ± SD** | — | **476.3 ± 19.3** | **66.25% ± 2.69%** | **3.4150 ± 0.0283** | **4.0505 ± 0.0571** | **95.0 ± 15.7** |
+| 500K constrained | 0 | 494 | 68.71% | 3.5243 | 4.2990 | 0 |
+| 500K constrained | 1 | 524 | 72.88% | 3.4676 | 4.1544 | 0 |
+| 500K constrained | 2 | 514 | 71.49% | 3.5058 | 4.2170 | 0 |
+| **500K constrained mean ± SD** | — | **510.7 ± 15.3** | **71.02% ± 2.12%** | **3.4992 ± 0.0289** | **4.2235 ± 0.0725** | **0.0 ± 0.0** |
+
+Paired 200K (A) vs 500K (B):
+
+| Decoding / seed | A loses, B wins | A wins, B loses | Both win | Both lose | Mean `B attempts - A attempts` |
+|---|---:|---:|---:|---:|---:|
+| Raw / 0 | 140 | 83 | 314 | 182 | -0.1335 |
+| Raw / 1 | 183 | 54 | 304 | 178 | -0.2907 |
+| Raw / 2 | 165 | 54 | 323 | 177 | -0.2295 |
+| Constrained / 0 | 131 | 75 | 363 | 150 | -0.2058 |
+| Constrained / 1 | 179 | 48 | 345 | 147 | -0.4673 |
+| Constrained / 2 | 150 | 51 | 364 | 154 | -0.3658 |
+
+Paired 500K raw (A) vs constrained (B):
+
+| Seed | Raw loses, constrained wins | Raw wins, constrained loses | Both win | Both lose |
+|---|---:|---:|---:|---:|
+| 0 | 40 | 0 | 454 | 225 |
+| 1 | 37 | 0 | 487 | 195 |
+| 2 | 26 | 0 | 488 | 205 |
+
+Exact predictions and changed-secret records are under
+`runs/cv5-500k/seed-{0,1,2}/`; cross-seed metrics are in
+`runs/cv5-500k/aggregate.json`.
+
+#### Interpretation
+
+The 500K corpus materially improves generalization in every seed and both
+decoding modes. Relative to 200K, raw wins rise by 99.0 per seed on average
+(+13.77 percentage points), invalid failures fall by 52.3, and attempts fall
+by 0.218 per secret. Constrained wins rise by 95.3 (+13.26 points), with 500K
+winning substantially more paired disagreements in every seed.
+
+The gain is not proportional to logical-state growth. Unique remaining-answer
+sets rise from 65,779 to 167,621 (2.55×), while constrained win rate rises from
+57.77% to 71.02%. Compared with the earlier 100K → 200K gain of 17.90 raw
+points, 200K → 500K gains 13.77 raw points despite adding many more logical
+states. Data scaling is still effective, but returns are diminishing.
+
+Illegal generation is a meaningful, not dominant, bottleneck. At 500K,
+constraints remove 95 invalid failures per seed and convert 34.3 losses into
+wins on average with no reverse flips, a +4.78-point gap. The constrained
+71.02% result also shows that most remaining failures are strategic rather
+than lexical.
+
+The evidence supports retaining the 500K corpus and testing a larger model as
+the next controlled axis. More data is not exhausted—the paired 500K gain is
+large and consistent—but the smaller gain per added logical state and modest
+raw/constrained gap now provide a concrete reason to test whether 3.2M
+parameters, rather than legal-word generation, is becoming the tighter limit.
+
+### 2026-08-21 — 1M logical-state scaling with solver top actions
+
+#### Corpus construction
+
+The 500K stream is continued to 1,000,000 unique observable states with the
+same generator settings (seed 20260815, identical behaviors, answer-set bias
+`repeat_probability=0.5` from state 200,000). Every record additionally
+stores `top_guesses`: the eight legal guesses ranked by the
+minimum-expected-survivors solver together with their expected-survivor
+scores. This field is metadata only — generation, the expert target (always
+`top_guesses[0]`, identical to the classic clever target), training, and
+evaluation are unchanged.
+
+The first 500,000 records of each 1M pool are field-identical to the
+corresponding 500K pool; `build_1m_pools.py` verifies the prefix, and
+`seed_1m_runs.py` re-verifies every materialized fold on the exact fields the
+training loader reads before reusing the 200K/500K checkpoints. Only the 1M
+variant is retrained (15 new checkpoints: 5 folds × 3 seeds).
+
+| Metric | 100K | 200K | 500K | 1M |
+|---|---:|---:|---:|---:|
+| Unique observable histories | 100,000 | 200,000 | 500,000 | 1,000,000 |
+| Unique remaining-answer sets (dev pool) | 37,992 | 65,779 | 167,621 | 303,212 |
+| New answer sets added by the step | — | 27,787 | 101,842 | 135,591 |
+
+The development pool splits 888,231 train / 111,769 validation; the CV pool
+799,754 train / 101,076 validation / 99,170 test. Answer-set reuse stays
+broad: 238,445 sets used once, 53,847 used 2–5 times, 5,569 used 6–10 times,
+3,932 used 11–50 times, 488 used 51–100 times, and 931 used more than 100
+times. Candidate-set sizes remain varied:
+
+| Remaining candidates | Stored states | Distinct answer sets |
+|---|---:|---:|
+| 1 | 411,937 | 647 |
+| 2–5 | 290,939 | 47,280 |
+| 6–10 | 112,298 | 41,967 |
+| 11–50 | 152,483 | 64,999 |
+| 51–100 | 22,990 | 9,766 |
+| 101–250 | 9,318 | 2,933 |
+| 251–500 | 34 | 28 |
+| 501–719 | 1 | 1 |
+
+Source behaviors: random legal 206,420; simple consistent 85,004; maximum
+entropy 791; partly random (rates 0.05/0.15/0.30/0.50/0.75/0.90) 9,197 +
+27,403 + 56,329 + 98,187 + 151,926 + 184,924; deliberately poor 179,819.
+`validation.json` recomputes every record (unique history, reachable
+feedback, source secret still candidate, clever target, stored top actions,
+serialization, token IDs, loss mask, source metadata). Artifacts pinned in
+their manifests:
+
+- development `examples.jsonl.gz` SHA-256:
+  `4fff02cb7c8b2a4488a9f9b68763e5d625b909201c17ad4e8be9f3bef1f483a4`
+- CV `examples.jsonl.gz` SHA-256:
+  `ee693c17f1ac4c37b28abd02347ba466c325e719471cb76e5a182ad6879a5dd8`
+
+Training and decoding configuration is unchanged (3,202,083 parameters, 95/5
+expert/mechanics replay, same checkpoint-selection order). Materialized fold
+data is regenerable from pool + mode file and is gitignored; pools, run
+artifacts, and checkpoints are committed. Each 1M pool archive exceeds
+GitHub's 100 MB per-file limit, so it is committed as
+`examples.jsonl.gz.part-0` + `examples.jsonl.gz.part-1`; run
+`python join_pools.py` to reassemble and verify `examples.jsonl.gz` against
+the manifest SHA-256.
+
+#### Fixed development split
+
+Seed-0 checkpoints, 72 fixed development test secrets:
+
+| Expert pool / decoding | Wins / 72 | Win rate | Avg guesses on wins | Avg attempts | Invalid |
+|---|---:|---:|---:|---:|---:|
+| 200K raw | 53 | 73.61% | 3.4906 | 3.8472 | 10 |
+| 200K constrained | 59 | 81.94% | 3.5593 | 4.0000 | 0 |
+| 500K raw | 60 | 83.33% | 3.4500 | 3.7917 | 4 |
+| 500K constrained | 62 | 86.11% | 3.5323 | 3.8750 | 0 |
+| 1M raw | 57 | 79.17% | 3.1754 | 3.6528 | 6 |
+| 1M constrained | 59 | 81.94% | 3.2203 | 3.7222 | 0 |
+
+On this 72-secret sample the 1M model wins slightly fewer games than 500K
+(500K-vs-1M raw: 7 A-loses/B-wins vs 4 A-wins/B-loses) but is faster on wins
+(3.1754 vs 3.4500 average guesses). The sample is too small to be conclusive;
+the five-fold benchmark below is the reliable measurement.
+
+#### Three-seed, five-fold raw and constrained benchmark
+
+Each row combines five disjoint folds covering all 719 secrets exactly once.
+The 200K and 500K rows reuse the prior selected checkpoints and predictions
+(training-identical data, verified per fold); only the 1M rows are new.
+
+| Expert pool / decoding | Seed | Wins / 719 | Win rate | Avg guesses on wins | Avg attempts | Invalid |
+|---|---:|---:|---:|---:|---:|---:|
+| 200K raw | 0 | 397 | 55.22% | 3.4358 | 4.2323 | 147 |
+| 200K raw | 1 | 358 | 49.79% | 3.3687 | 4.2782 | 156 |
+| 200K raw | 2 | 377 | 52.43% | 3.4244 | 4.2949 | 139 |
+| **200K raw mean ± SD** | — | **377.3 ± 19.5** | **52.48% ± 2.71%** | **3.4096 ± 0.0359** | **4.2684 ± 0.0324** | **147.3 ± 8.5** |
+| 200K constrained | 0 | 438 | 60.92% | 3.5457 | 4.5049 | 0 |
+| 200K constrained | 1 | 393 | 54.66% | 3.4784 | 4.6217 | 0 |
+| 200K constrained | 2 | 415 | 57.72% | 3.5446 | 4.5828 | 0 |
+| **200K constrained mean ± SD** | — | **415.3 ± 22.5** | **57.77% ± 3.13%** | **3.5229 ± 0.0385** | **4.5698 ± 0.0595** | **0.0 ± 0.0** |
+| 500K raw | 0 | 454 | 63.14% | 3.4163 | 4.0987 | 112 |
+| 500K raw | 1 | 487 | 67.73% | 3.3860 | 3.9875 | 92 |
+| 500K raw | 2 | 488 | 67.87% | 3.4426 | 4.0654 | 81 |
+| **500K raw mean ± SD** | — | **476.3 ± 19.3** | **66.25% ± 2.69%** | **3.4150 ± 0.0283** | **4.0505 ± 0.0571** | **95.0 ± 15.7** |
+| 500K constrained | 0 | 494 | 68.71% | 3.5243 | 4.2990 | 0 |
+| 500K constrained | 1 | 524 | 72.88% | 3.4676 | 4.1544 | 0 |
+| 500K constrained | 2 | 514 | 71.49% | 3.5058 | 4.2170 | 0 |
+| **500K constrained mean ± SD** | — | **510.7 ± 15.3** | **71.02% ± 2.12%** | **3.4992 ± 0.0289** | **4.2235 ± 0.0725** | **0.0 ± 0.0** |
+| 1M raw | 0 | 510 | 70.93% | 3.3745 | 3.9235 | 80 |
+| 1M raw | 1 | 548 | 76.22% | 3.3704 | 3.8456 | 57 |
+| 1M raw | 2 | 533 | 74.13% | 3.3996 | 3.9152 | 64 |
+| **1M raw mean ± SD** | — | **530.3 ± 19.1** | **73.76% ± 2.66%** | **3.3815 ± 0.0158** | **3.8948 ± 0.0428** | **67.0 ± 11.8** |
+| 1M constrained | 0 | 535 | 74.41% | 3.4168 | 4.0779 | 0 |
+| 1M constrained | 1 | 572 | 79.55% | 3.4266 | 3.9527 | 0 |
+| 1M constrained | 2 | 555 | 77.19% | 3.4577 | 4.0376 | 0 |
+| **1M constrained mean ± SD** | — | **554.0 ± 18.5** | **77.05% ± 2.58%** | **3.4337 ± 0.0213** | **4.0227 ± 0.0639** | **0.0 ± 0.0** |
+
+Paired 500K (A) vs 1M (B):
+
+| Decoding / seed | A loses, B wins | A wins, B loses | Both win | Both lose | Mean `B attempts - A attempts` |
+|---|---:|---:|---:|---:|---:|
+| Raw / 0 | 124 | 68 | 386 | 141 | -0.1752 |
+| Raw / 1 | 114 | 53 | 434 | 118 | -0.1419 |
+| Raw / 2 | 112 | 67 | 421 | 119 | -0.1502 |
+| Constrained / 0 | 106 | 65 | 429 | 119 | -0.2211 |
+| Constrained / 1 | 100 | 52 | 472 | 95 | -0.2017 |
+| Constrained / 2 | 99 | 58 | 456 | 106 | -0.1794 |
+
+Paired 1M raw (A) vs constrained (B):
+
+| Seed | Raw loses, constrained wins | Raw wins, constrained loses | Both win | Both lose |
+|---|---:|---:|---:|---:|
+| 0 | 25 | 0 | 510 | 184 |
+| 1 | 24 | 0 | 548 | 147 |
+| 2 | 22 | 0 | 533 | 164 |
+
+Constrained decoding uses slightly more attempts than raw (mean delta
++0.1544/+0.1071/+0.1224) because it replaces a raw failure with a longer won
+game; it never loses a game that raw wins. Exact predictions and changed
+secrets are under `runs/cv5-1m/seed-{0,1,2}/`; cross-seed metrics in
+`runs/cv5-1m/aggregate.json`.
+
+#### Interpretation
+
+1M continues to improve generalization in every seed and both decoding modes.
+Relative to 500K, raw wins rise by 54.0 per seed (+7.51 points), invalid
+failures fall by 28.0, and attempts fall by 0.156 per secret; constrained
+wins rise by 43.3 (+6.03 points). The 500K→1M step is roughly half as strong
+as 200K→500K (+99.0 raw wins, +13.77 points) and the 100K→200K step (+17.90
+points). Gains remain consistent: the paired 500K-vs-1M outcome is a win for
+1M by a wide margin in every seed (114–124 net converted secrets raw,
+99–106 constrained).
+
+The gain is not proportional to logical-state growth. Unique answer sets
+rise from 167,621 to 303,212 (+81%), but raw wins rise only +11.3%: about
+0.40 wins per 1,000 added answer sets versus 0.97 for 200K→500K. Coverage
+still helps, but each additional doubling of logical states is worth less.
+
+Illegal generation is a shrinking, minor bottleneck. Raw invalid guesses fall
+147 → 95 → 67 across the three pool sizes; the raw/constrained win-rate gap
+shrinks 5.29 → 4.77 → 3.29 points. At 1M, constrained decoding converts 23.7
+raw losses into wins per seed with no reversals (+3.29 points), and the
+constrained model still loses 165.0 games per seed — most failures are now
+strategic, not lexical.
+
+Data scaling has not plateaued but is clearly diminishing: raw gains per step
+are +17.90, +13.77, and +7.51 points. The constrained 1M win rate (77.05%) is
+still far below the classical solver's near-perfect play, so the corpus is
+not saturated, but the 3.2M-parameter model is now the more plausible binding
+constraint: per-logical-state returns have roughly halved, and enforcing
+lexical validity recovers only a small fraction of the remaining failures.
+The next controlled axis should be a larger model trained on the 1M corpus,
+holding data and decoding fixed.

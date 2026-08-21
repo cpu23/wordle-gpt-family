@@ -11,12 +11,13 @@ import torch
 from model import WordleGPT, checkpoint_model_config
 from tokenizer import FEEDBACK_TO_SYMBOL, FEEDBACK_TOKEN, GUESS_TOKEN
 from tokenizer_v2 import POLICY_TOKEN, VOCABULARY_SIZE, decode, encode
-from train import generate_tokens
+from train import generate_constrained_guess, generate_tokens
 from wordle import DEFAULT_WORDS, load_words, score_guess
 
 DEFAULT_SPLITS_PATH = Path("data/wordle-100k/secret-splits.json")
 DEFAULT_MAX_GUESSES = 6
 LETTER_TOKEN_LIMIT = 26
+DECODE_MODES = ("raw", "constrained")
 
 
 @dataclass(frozen=True)
@@ -36,6 +37,7 @@ class GameplaySummary:
     average_attempts: float
     average_guesses: float
     invalid_guesses: int
+    decode: str
     results: tuple[GameResult, ...]
 
 
@@ -62,12 +64,22 @@ def play_secret(
     allowed_words: frozenset[str],
     *,
     max_guesses: int = DEFAULT_MAX_GUESSES,
+    constrained: bool = False,
 ) -> GameResult:
-    """Play one game greedily; an invalid generated word ends the game."""
+    """Play one game greedily; an invalid generated word ends the game.
+
+    With ``constrained=True`` every guess is token-masked so that the
+    generated five-letter word is guaranteed to be an allowed word.
+    """
     prefix = encode(POLICY_TOKEN + GUESS_TOKEN)
     guesses: list[str] = []
     for _ in range(max_guesses):
-        generated = generate_tokens(model, prefix, max_new_tokens=5)
+        if constrained:
+            generated = prefix + generate_constrained_guess(
+                model, prefix, allowed_words
+            )
+        else:
+            generated = generate_tokens(model, prefix, max_new_tokens=5)
         guess_ids = generated[-5:]
         if any(not 0 <= token_id < LETTER_TOKEN_LIMIT for token_id in guess_ids):
             guesses.append(decode(guess_ids))
@@ -89,10 +101,17 @@ def evaluate_model(
     allowed_words: Sequence[str],
     *,
     checkpoint: str = "in-memory",
+    decode: str = "raw",
 ) -> GameplaySummary:
     """Play every supplied secret with an already-loaded model."""
+    if decode not in DECODE_MODES:
+        raise ValueError(f"unknown decode mode: {decode!r}")
+    constrained = decode == "constrained"
     allowed = frozenset(allowed_words)
-    results = tuple(play_secret(model, secret, allowed) for secret in secrets)
+    results = tuple(
+        play_secret(model, secret, allowed, constrained=constrained)
+        for secret in secrets
+    )
     wins = sum(result.won for result in results)
     return GameplaySummary(
         checkpoint=checkpoint,
@@ -106,6 +125,7 @@ def evaluate_model(
         ),
         average_attempts=sum(len(result.guesses) for result in results) / len(results),
         invalid_guesses=sum(result.invalid_guesses for result in results),
+        decode=decode,
         results=results,
     )
 
@@ -116,6 +136,7 @@ def evaluate_checkpoint(
     allowed_words: Sequence[str],
     *,
     device: str,
+    decode: str = "raw",
 ) -> GameplaySummary:
     """Restore a checkpoint and play every supplied secret."""
     model = load_v2_model(checkpoint_path, device)
@@ -124,6 +145,7 @@ def evaluate_checkpoint(
         secrets,
         allowed_words,
         checkpoint=str(checkpoint_path),
+        decode=decode,
     )
 
 
@@ -135,6 +157,12 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--splits", type=Path, default=DEFAULT_SPLITS_PATH)
     parser.add_argument("--split", choices=("train", "validation", "test"), default="validation")
     parser.add_argument("--words", type=Path, default=DEFAULT_WORDS)
+    parser.add_argument(
+        "--decode",
+        choices=DECODE_MODES,
+        default="raw",
+        help="raw greedy decoding or token-masked constrained decoding.",
+    )
     parser.add_argument("--device", choices=("cpu", "cuda"), default=None)
     parser.add_argument("--details", action="store_true")
     return parser
@@ -149,6 +177,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         splits[args.split],
         load_words(args.words),
         device=device,
+        decode=args.decode,
     )
     payload = asdict(summary)
     if not args.details:
