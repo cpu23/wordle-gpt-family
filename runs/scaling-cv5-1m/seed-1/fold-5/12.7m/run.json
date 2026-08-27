@@ -1,0 +1,55 @@
+{
+  "checkpoint_selection": [
+    "maximum validation wins",
+    "minimum validation invalid guesses",
+    "minimum validation average guesses among wins",
+    "minimum expert validation loss"
+  ],
+  "device": "cuda",
+  "effective_batch_size": 128,
+  "eval_batch_size": 256,
+  "gameplay_secrets": 72,
+  "gradient_accumulation_steps": 1,
+  "initialization": "runs/scaling-cv5-1m/seed-1/fold-5/12.7m/mechanics/checkpoints/best.pt",
+  "learning_rate": 0.0003,
+  "max_epochs": 100,
+  "min_delta": 0.0001,
+  "model_config": {
+    "context_length": 96,
+    "embedding_size": 512,
+    "mlp_size": 2048,
+    "num_heads": 16,
+    "num_layers": 4,
+    "vocab_size": 35
+  },
+  "nominal_batches_per_expert_epoch": {
+    "consistency": 0,
+    "expert": 5559,
+    "mechanics": 293
+  },
+  "nominal_realized_ratios": {
+    "consistency": 0.0,
+    "expert": 0.9499316473000684,
+    "mechanics": 0.050068352699931644
+  },
+  "optimizer": {
+    "amsgrad": false,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "name": "AdamW",
+    "weight_decay": 0.01
+  },
+  "parameters": 12695587,
+  "patience": 4,
+  "physical_batch_size": 128,
+  "requested_ratios": {
+    "consistency": 0.0,
+    "expert": 0.95,
+    "mechanics": 0.05
+  },
+  "seed": 1,
+  "vocabulary_size": 35
+}

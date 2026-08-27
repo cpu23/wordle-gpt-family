@@ -1,0 +1,10 @@
+{"epoch": 0, "improved": true, "learning_rate": 0.0003, "step": 0, "token_epochs": 0.0, "tokens_seen": 0, "train_loss": 3.7352214043196668, "validation_loss": 3.7422485266207173}
+{"epoch": 1, "improved": true, "learning_rate": 0.0003, "step": 548, "token_epochs": 1.000656224143342, "tokens_seen": 350720, "train_loss": 0.005155248124166346, "validation_loss": 0.007873288235480034}
+{"epoch": 2, "improved": true, "learning_rate": 0.0003, "step": 1096, "token_epochs": 2.001312448286684, "tokens_seen": 701440, "train_loss": 0.0032433997398062355, "validation_loss": 0.005400115171163283}
+{"epoch": 3, "improved": true, "learning_rate": 0.0003, "step": 1643, "token_epochs": 3.0001426574224657, "tokens_seen": 1051520, "train_loss": 0.0027135935471589772, "validation_loss": 0.004336773128660036}
+{"epoch": 4, "improved": true, "learning_rate": 0.0003, "step": 2191, "token_epochs": 4.0007988815658075, "tokens_seen": 1402240, "train_loss": 0.0016104037773456447, "validation_loss": 0.0033310410550347743}
+{"epoch": 5, "improved": true, "learning_rate": 0.0003, "step": 2739, "token_epochs": 5.00145510570915, "tokens_seen": 1752960, "train_loss": 0.000807667744510364, "validation_loss": 0.0008980578516951666}
+{"epoch": 6, "improved": false, "learning_rate": 0.0003, "step": 3286, "token_epochs": 6.000285314844931, "tokens_seen": 2103040, "train_loss": 0.00244122200738163, "validation_loss": 0.002855851178449799}
+{"epoch": 7, "improved": false, "learning_rate": 0.0003, "step": 3834, "token_epochs": 7.000941538988274, "tokens_seen": 2453760, "train_loss": 0.001619355043006755, "validation_loss": 0.0027430403948235068}
+{"epoch": 8, "improved": false, "learning_rate": 0.0003, "step": 4382, "token_epochs": 8.001597763131615, "tokens_seen": 2804480, "train_loss": 0.002238887390800201, "validation_loss": 0.004873053032777227}
+{"epoch": 9, "improved": false, "learning_rate": 0.0003, "step": 4929, "token_epochs": 9.000427972267397, "tokens_seen": 3154560, "train_loss": 0.005018342275613249, "validation_loss": 0.0036232931251209606}

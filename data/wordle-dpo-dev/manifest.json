@@ -1,0 +1,69 @@
+{
+  "allowed_words_sha256": "f5962542c2c3b101e6fd54c4bfd9f99e1e057243b5eb4bd2b567f7df2c9b9fc3",
+  "counts": {
+    "train": {
+      "clear": 349483,
+      "hard": 90000,
+      "pairs": 439483
+    },
+    "validation": {
+      "clear": 40000,
+      "hard": 10000,
+      "pairs": 50000
+    }
+  },
+  "eligible_pairs": {
+    "train_clear": 349483,
+    "train_hard": 546512,
+    "validation_clear": 43523,
+    "validation_hard": 69409
+  },
+  "file_sha256": {
+    "train": "f07a3119942aaefb74b98251d7f98e7ee518d3454d7be5275c5ebf765f6796e3",
+    "validation": "78550fe28c27adf0d44f8ab52e211675eb36827d010039b27b37e25c30e6dc58"
+  },
+  "files": {
+    "train": "train.jsonl.gz",
+    "validation": "validation.jsonl.gz"
+  },
+  "requested_clear_fraction": 0.8,
+  "requested_targets": {
+    "train": 450000,
+    "validation": 50000
+  },
+  "rules": {
+    "clear": {
+      "chosen_ranks": [
+        1,
+        2
+      ],
+      "minimum_score_ratio": 1.25,
+      "rejected_ranks": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "hard": {
+      "chosen_ranks": [
+        1,
+        2
+      ],
+      "rejected_ranks": [
+        3,
+        4
+      ],
+      "require_strictly_better": true
+    }
+  },
+  "schema_version": 1,
+  "seed": 0,
+  "source": "data/wordle-dev-1m/fold-1/expert-1m/examples.jsonl.gz",
+  "source_sha256": "d920f9f152599544f6362fdcc547a74af4ccc68e1b4942abc427bfeef01bc2d4",
+  "unique_pairs": 489483,
+  "unique_prompts": {
+    "train": 125522,
+    "validation": 15155
+  }
+}

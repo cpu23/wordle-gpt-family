@@ -1,0 +1,263 @@
+{
+  "architectures": {
+    "12.7m": {
+      "context_length": 96,
+      "embedding_size": 512,
+      "mlp_size": 2048,
+      "num_heads": 16,
+      "num_layers": 4
+    },
+    "3.2m": {
+      "context_length": 96,
+      "embedding_size": 256,
+      "mlp_size": 1024,
+      "num_heads": 8,
+      "num_layers": 4
+    },
+    "7.2m": {
+      "context_length": 96,
+      "embedding_size": 384,
+      "mlp_size": 1536,
+      "num_heads": 12,
+      "num_layers": 4
+    }
+  },
+  "decode_modes": [
+    "raw",
+    "constrained"
+  ],
+  "effective_batch_size": 128,
+  "eval_batch_size": 256,
+  "experiment": "1m-corpus-model-scaling",
+  "gradient_accumulation_steps": 1,
+  "learning_rate": 0.0003,
+  "max_epochs": 100,
+  "model_seeds": [
+    0,
+    1,
+    2
+  ],
+  "parameter_counts": {
+    "12.7m": 12695587,
+    "3.2m": 3202083,
+    "7.2m": 7162403
+  },
+  "patience": 4,
+  "physical_batch_size": 128,
+  "ratios": {
+    "consistency": 0.0,
+    "expert": 0.95,
+    "mechanics": 0.05
+  },
+  "sources": {
+    "corpus_files": [
+      {
+        "bytes": 102799652,
+        "path": "data/wordle-cv5-1m/fold-1/expert-1m/examples.jsonl.gz",
+        "sha256": "e88c5d28267418c513e7d5ce81763f7651254135a542bbd8732a561ad2dcbbbf"
+      },
+      {
+        "bytes": 399,
+        "path": "data/wordle-cv5-1m/fold-1/expert-1m/manifest.json",
+        "sha256": "da091f5810b0ad6634760c6294a7380211c51158078b5c1e219e353d69d408d4"
+      },
+      {
+        "bytes": 18761739,
+        "path": "data/wordle-cv5-1m/fold-1/expert-200k/examples.jsonl.gz",
+        "sha256": "960cd5eee8f18f31c454051c481e378d66cbb52d8622e1bcdb0ab6bba66dd5ff"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-1/expert-200k/manifest.json",
+        "sha256": "857bbe94a6cdba6fea94ed8d3fbd65df2525f496b8f9fe496fd305854370b68c"
+      },
+      {
+        "bytes": 50180732,
+        "path": "data/wordle-cv5-1m/fold-1/expert-500k/examples.jsonl.gz",
+        "sha256": "6dc17f82b7f69baf52957c381f848ca5d6dac5e8116aa7fa8b819d9d1376f65e"
+      },
+      {
+        "bytes": 396,
+        "path": "data/wordle-cv5-1m/fold-1/expert-500k/manifest.json",
+        "sha256": "e1ee41b2bf62ea1b4a8e32dfd0a55085a8b23f1e44d4dd42b3007858c5aa783b"
+      },
+      {
+        "bytes": 2278441,
+        "path": "data/wordle-cv5-1m/fold-1/mechanics/examples.jsonl.gz",
+        "sha256": "60a2c16f2415249699b1a05090018e522a1326458b2b2374410ad570c75d5427"
+      },
+      {
+        "bytes": 390,
+        "path": "data/wordle-cv5-1m/fold-1/mechanics/manifest.json",
+        "sha256": "95175627230c3c25d3f7fafbb65a858325d5c995ad63068831c716bfda588d0c"
+      },
+      {
+        "bytes": 103061876,
+        "path": "data/wordle-cv5-1m/fold-2/expert-1m/examples.jsonl.gz",
+        "sha256": "19b184b0878e0789a873d5aab4544e3e9a4fca76d653fa7fb928d526ff808cd2"
+      },
+      {
+        "bytes": 399,
+        "path": "data/wordle-cv5-1m/fold-2/expert-1m/manifest.json",
+        "sha256": "e362ae161ab150b14957f3e9ccc879a4f24c84dec29c6758cec2a044dc169ec3"
+      },
+      {
+        "bytes": 18825435,
+        "path": "data/wordle-cv5-1m/fold-2/expert-200k/examples.jsonl.gz",
+        "sha256": "5475256adafbe218912e26872782d528aa3b5b6052e1db347bcdf76a74f00a63"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-2/expert-200k/manifest.json",
+        "sha256": "66d7ec8db960ab332d79d92595cda1e489902646b3a74c700cb75835d295346f"
+      },
+      {
+        "bytes": 50253637,
+        "path": "data/wordle-cv5-1m/fold-2/expert-500k/examples.jsonl.gz",
+        "sha256": "8b6896835755f77112ba16865d85354968f6c2d794eafb08ad0d48ff0ea03202"
+      },
+      {
+        "bytes": 396,
+        "path": "data/wordle-cv5-1m/fold-2/expert-500k/manifest.json",
+        "sha256": "9cce2d8d76247b03dbd478fafec56e3e8fd6a61d5a4c13ee8692108310a1cc74"
+      },
+      {
+        "bytes": 2279781,
+        "path": "data/wordle-cv5-1m/fold-2/mechanics/examples.jsonl.gz",
+        "sha256": "abcde101c9b0196451dbf9903cc230b3bc8fed8c2986f51e71eaa9606735e93e"
+      },
+      {
+        "bytes": 390,
+        "path": "data/wordle-cv5-1m/fold-2/mechanics/manifest.json",
+        "sha256": "404c971dbad5643c5ca9863d5d1bffbb9b317296a79b789e84dcef6781ec1515"
+      },
+      {
+        "bytes": 103291725,
+        "path": "data/wordle-cv5-1m/fold-3/expert-1m/examples.jsonl.gz",
+        "sha256": "254c94dcc6a6def9d0fc18eb870c9f4dea7996b4729b1f86f7b398fa4244ef34"
+      },
+      {
+        "bytes": 399,
+        "path": "data/wordle-cv5-1m/fold-3/expert-1m/manifest.json",
+        "sha256": "8f6c8512894ebcaabc5f6385ce49d5197f64ab4cf1176ecf03c22f37b2f14e07"
+      },
+      {
+        "bytes": 18861861,
+        "path": "data/wordle-cv5-1m/fold-3/expert-200k/examples.jsonl.gz",
+        "sha256": "1f40347dfded52b02e364db7edd83c9ee3042433a345d682fdce89bf1447db36"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-3/expert-200k/manifest.json",
+        "sha256": "879eab38a8512455ac0d16384a42f6c2d9cf7185b5f472d194fe4b565555c5ef"
+      },
+      {
+        "bytes": 50394773,
+        "path": "data/wordle-cv5-1m/fold-3/expert-500k/examples.jsonl.gz",
+        "sha256": "e78edd4436c2e4f27f2a4b9a9d08b2703c519f9f2c8b1453afe81e697b4f8bf4"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-3/expert-500k/manifest.json",
+        "sha256": "5e8faaa6bac83c0ff9153ed570a98a8b9398a385b225e8080cf0410898197526"
+      },
+      {
+        "bytes": 2283220,
+        "path": "data/wordle-cv5-1m/fold-3/mechanics/examples.jsonl.gz",
+        "sha256": "1427695a55f9548505c3b715e1ea26877b774717aa5ad407a28de29cbaf50853"
+      },
+      {
+        "bytes": 390,
+        "path": "data/wordle-cv5-1m/fold-3/mechanics/manifest.json",
+        "sha256": "2be34793b25f475bbb3e54a6834c4dc0d9d7c15bd596bcc47f08538a57bd2843"
+      },
+      {
+        "bytes": 102821057,
+        "path": "data/wordle-cv5-1m/fold-4/expert-1m/examples.jsonl.gz",
+        "sha256": "38fb5d0047785c45f29ce8bd51d8408412c067207a1b89c0319f20e91eb41b5f"
+      },
+      {
+        "bytes": 399,
+        "path": "data/wordle-cv5-1m/fold-4/expert-1m/manifest.json",
+        "sha256": "154e4570184d8c2016f2caf7967230dfa8d7b2a6d51ac6a67082e08021bc1d20"
+      },
+      {
+        "bytes": 18791114,
+        "path": "data/wordle-cv5-1m/fold-4/expert-200k/examples.jsonl.gz",
+        "sha256": "b98b07ed5e7b4c00fd5d8ffa8a1245e48d893193066c8ee9cefc4d2d03d3e675"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-4/expert-200k/manifest.json",
+        "sha256": "4fd49f2755cb8858608d4f835bf99f37c37e6d3ac61976d3beddee448347a8f6"
+      },
+      {
+        "bytes": 50192384,
+        "path": "data/wordle-cv5-1m/fold-4/expert-500k/examples.jsonl.gz",
+        "sha256": "1497ae4f864c325219e2f6d17f133f8a6e415cea1ef2af792b5a23805261c0f5"
+      },
+      {
+        "bytes": 396,
+        "path": "data/wordle-cv5-1m/fold-4/expert-500k/manifest.json",
+        "sha256": "5289cc3fdfed0cc791eb49cdf3480fb5df283f819adea995d0b04c3c1bfb49e4"
+      },
+      {
+        "bytes": 2278889,
+        "path": "data/wordle-cv5-1m/fold-4/mechanics/examples.jsonl.gz",
+        "sha256": "a4854c712d320508bb73fdf8cbe2a45aa93f0c95c89a04e4aac6c3345101d747"
+      },
+      {
+        "bytes": 390,
+        "path": "data/wordle-cv5-1m/fold-4/mechanics/manifest.json",
+        "sha256": "3f67db8084e9bed14d37c66ad36a96ae9535b89b8d81f067cdad8e5143c2013e"
+      },
+      {
+        "bytes": 103089900,
+        "path": "data/wordle-cv5-1m/fold-5/expert-1m/examples.jsonl.gz",
+        "sha256": "60e07514ad9370e7693974886ca32f7aad4302eae8f8d07ed6ffacfd886bdba2"
+      },
+      {
+        "bytes": 397,
+        "path": "data/wordle-cv5-1m/fold-5/expert-1m/manifest.json",
+        "sha256": "da13d8be829fb45fce8d4f93e4d255a23984bc0a6657827a3b65e3323bbf0a6d"
+      },
+      {
+        "bytes": 18863976,
+        "path": "data/wordle-cv5-1m/fold-5/expert-200k/examples.jsonl.gz",
+        "sha256": "3dc4f9018d90f85d2ba03a3730a88f347c76a60fdb2afe7cf8e57197b0eb5b2b"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-5/expert-200k/manifest.json",
+        "sha256": "14e51b3b41b4dc5ee704429b7bd0183c84c632f87088a8d1a3f9a0c0ddcf2d7f"
+      },
+      {
+        "bytes": 50340940,
+        "path": "data/wordle-cv5-1m/fold-5/expert-500k/examples.jsonl.gz",
+        "sha256": "577d4f9b1103c816290005c151efcb72c30f41c28907ae46e7ee0c643f600672"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-5/expert-500k/manifest.json",
+        "sha256": "e33ecd826a4f05ea78dd9b55272804f347d0ab03e6e700a94eac45a6bde65f72"
+      },
+      {
+        "bytes": 2285444,
+        "path": "data/wordle-cv5-1m/fold-5/mechanics/examples.jsonl.gz",
+        "sha256": "cc4faf93e259047652799a1c7401a4249cee92ea39d4c11cd97b6d51f298d563"
+      },
+      {
+        "bytes": 390,
+        "path": "data/wordle-cv5-1m/fold-5/mechanics/manifest.json",
+        "sha256": "4bec76db22bae5ad4554944007229e4e647cfa40ddef9115e312b73bb90a04ca"
+      },
+      {
+        "bytes": 9729,
+        "path": "data/wordle-cv5-1m/manifest.json",
+        "sha256": "7441cfdd521d4b312c3423a659fffae2ca8f06b541ed94bf97bb90ad1164de91"
+      }
+    ],
+    "mode": "data/wordle-cv5.json",
+    "mode_sha256": "59aae085d5df925a81a89f3b1afdc6a7082aa667961abdb4c47efe73fce18aee"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "average_guesses": 3.3461538461538463,
+  "batch_counts": {
+    "consistency": 0,
+    "expert": 5559,
+    "mechanics": 293
+  },
+  "consistency_validation_loss": null,
+  "effective_expert_passes": 3.0000393464000856,
+  "epoch": 3,
+  "examples_seen": 2247424,
+  "expert_validation_loss": 0.5099389806756527,
+  "games": 72,
+  "gradient_norm": 0.6415742716394869,
+  "gradient_norms": {
+    "expert": 0.659938767651556,
+    "mechanics": 0.2931502670965097
+  },
+  "improved": true,
+  "invalid_guesses": 13,
+  "learning_rate": 0.0003,
+  "mechanics_validation_loss": 0.004550840566027798,
+  "peak_gpu_memory_bytes": 1180386816,
+  "step": 17558,
+  "tokens_seen": 11237120,
+  "train_losses": {
+    "expert": 0.24206085781502967,
+    "mechanics": 0.02462877136855402
+  },
+  "wall_clock_seconds": 485.7615172750011,
+  "win_rate": 0.7222222222222222,
+  "wins": 52
+}

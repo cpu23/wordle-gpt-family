@@ -1,0 +1,10 @@
+{"epoch": 0, "improved": true, "learning_rate": 0.0003, "step": 0, "token_epochs": 0.0, "tokens_seen": 0, "train_loss": 4.0289289185557875, "validation_loss": 4.0460397522972436}
+{"epoch": 1, "improved": true, "learning_rate": 0.0003, "step": 547, "token_epochs": 1.0007718475743976, "tokens_seen": 350080, "train_loss": 0.013810012209753152, "validation_loss": 0.01910846632478526}
+{"epoch": 2, "improved": true, "learning_rate": 0.0003, "step": 1094, "token_epochs": 2.0015436951487953, "tokens_seen": 700160, "train_loss": 0.0062516366306441355, "validation_loss": 0.009438018250170108}
+{"epoch": 3, "improved": true, "learning_rate": 0.0003, "step": 1640, "token_epochs": 3.0004859781023985, "tokens_seen": 1049600, "train_loss": 0.0016067391034039014, "validation_loss": 0.003674562387927456}
+{"epoch": 4, "improved": true, "learning_rate": 0.0003, "step": 2187, "token_epochs": 4.001257825676796, "tokens_seen": 1399680, "train_loss": 0.000879279988042616, "validation_loss": 0.002089650774783151}
+{"epoch": 5, "improved": true, "learning_rate": 0.0003, "step": 2733, "token_epochs": 5.000200108630399, "tokens_seen": 1749120, "train_loss": 0.0004925955514522615, "validation_loss": 0.0014861623144511742}
+{"epoch": 6, "improved": false, "learning_rate": 0.0003, "step": 3280, "token_epochs": 6.000971956204797, "tokens_seen": 2099200, "train_loss": 0.002246183782133515, "validation_loss": 0.003685420025266555}
+{"epoch": 7, "improved": false, "learning_rate": 0.0003, "step": 3827, "token_epochs": 7.001743803779195, "tokens_seen": 2449280, "train_loss": 0.0011169884626821972, "validation_loss": 0.00306197443438967}
+{"epoch": 8, "improved": false, "learning_rate": 0.0003, "step": 4373, "token_epochs": 8.000686086732799, "tokens_seen": 2798720, "train_loss": 0.0027629724160526427, "validation_loss": 0.0043673010478246415}
+{"epoch": 9, "improved": false, "learning_rate": 0.0003, "step": 4920, "token_epochs": 9.001457934307195, "tokens_seen": 3148800, "train_loss": 0.0011367800032573486, "validation_loss": 0.0016149334177892778}

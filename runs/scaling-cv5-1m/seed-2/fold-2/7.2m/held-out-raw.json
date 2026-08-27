@@ -1,0 +1,1546 @@
+{
+  "average_attempts": 3.6527777777777777,
+  "average_guesses": 3.3125,
+  "checkpoint": "runs/scaling-cv5-1m/seed-2/fold-2/7.2m/checkpoints/best.pt",
+  "decode": "raw",
+  "games": 144,
+  "invalid_guesses": 18,
+  "results": [
+    {
+      "guesses": [
+        "irate",
+        "fruit",
+        "orbit",
+        "trick",
+        "orbit",
+        "trial"
+      ],
+      "invalid_guesses": 0,
+      "secret": "print",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "light",
+        "thick",
+        "thing"
+      ],
+      "invalid_guesses": 0,
+      "secret": "thing",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "flour",
+        "super"
+      ],
+      "invalid_guesses": 0,
+      "secret": "super",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "close",
+        "solve"
+      ],
+      "invalid_guesses": 0,
+      "secret": "solve",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "radio"
+      ],
+      "invalid_guesses": 0,
+      "secret": "radio",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "champ",
+        "taste",
+        "taste",
+        "taste",
+        "taste"
+      ],
+      "invalid_guesses": 0,
+      "secret": "waste",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "smart",
+        "shark",
+        "smart",
+        "smart",
+        "smart"
+      ],
+      "invalid_guesses": 0,
+      "secret": "start",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "baler",
+        "arbit"
+      ],
+      "invalid_guesses": 1,
+      "secret": "zebra",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "close",
+        "honey",
+        "ounce"
+      ],
+      "invalid_guesses": 0,
+      "secret": "ounce",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "flour",
+        "berry",
+        "nerve",
+        "berry",
+        "berry"
+      ],
+      "invalid_guesses": 0,
+      "secret": "mercy",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "image"
+      ],
+      "invalid_guesses": 0,
+      "secret": "image",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "slick",
+        "shine"
+      ],
+      "invalid_guesses": 0,
+      "secret": "shine",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "album",
+        "datum",
+        "camel",
+        "match"
+      ],
+      "invalid_guesses": 0,
+      "secret": "match",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "stone",
+        "flute"
+      ],
+      "invalid_guesses": 0,
+      "secret": "flute",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "stone",
+        "theme"
+      ],
+      "invalid_guesses": 0,
+      "secret": "theme",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "stuck",
+        "study"
+      ],
+      "invalid_guesses": 0,
+      "secret": "study",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "pedal",
+        "camel",
+        "angel"
+      ],
+      "invalid_guesses": 0,
+      "secret": "angel",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "right",
+        "first"
+      ],
+      "invalid_guesses": 0,
+      "secret": "first",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "dress",
+        "creek",
+        "press",
+        "freet"
+      ],
+      "invalid_guesses": 1,
+      "secret": "green",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "alike"
+      ],
+      "invalid_guesses": 0,
+      "secret": "alike",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "uncle",
+        "clone",
+        "lance"
+      ],
+      "invalid_guesses": 0,
+      "secret": "lance",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "slick",
+        "movie"
+      ],
+      "invalid_guesses": 0,
+      "secret": "movie",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "pedal",
+        "essay"
+      ],
+      "invalid_guesses": 0,
+      "secret": "essay",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blast",
+        "beast"
+      ],
+      "invalid_guesses": 0,
+      "secret": "beast",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "pedal",
+        "began"
+      ],
+      "invalid_guesses": 0,
+      "secret": "began",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "claim",
+        "adobe",
+        "flank",
+        "glain"
+      ],
+      "invalid_guesses": 1,
+      "secret": "plain",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "uncle",
+        "false",
+        "false",
+        "false",
+        "false"
+      ],
+      "invalid_guesses": 0,
+      "secret": "value",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "right",
+        "stair"
+      ],
+      "invalid_guesses": 0,
+      "secret": "stair",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "stuck",
+        "blunt"
+      ],
+      "invalid_guesses": 0,
+      "secret": "blunt",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bonus",
+        "fancy",
+        "candy"
+      ],
+      "invalid_guesses": 0,
+      "secret": "candy",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bench",
+        "brass"
+      ],
+      "invalid_guesses": 0,
+      "secret": "brass",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "flour",
+        "berry",
+        "enery"
+      ],
+      "invalid_guesses": 1,
+      "secret": "every",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "slate",
+        "plate"
+      ],
+      "invalid_guesses": 0,
+      "secret": "plate",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "sheep",
+        "blame",
+        "leave"
+      ],
+      "invalid_guesses": 0,
+      "secret": "leave",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "close",
+        "globe",
+        "glove"
+      ],
+      "invalid_guesses": 0,
+      "secret": "glove",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "batch",
+        "learn"
+      ],
+      "invalid_guesses": 0,
+      "secret": "learn",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bloom",
+        "croak",
+        "groan"
+      ],
+      "invalid_guesses": 0,
+      "secret": "groan",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bland",
+        "drill"
+      ],
+      "invalid_guesses": 0,
+      "secret": "drill",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "slick",
+        "glide"
+      ],
+      "invalid_guesses": 0,
+      "secret": "glide",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "choir",
+        "fruit",
+        "rigid"
+      ],
+      "invalid_guesses": 0,
+      "secret": "rigid",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "click",
+        "amend",
+        "cliff"
+      ],
+      "invalid_guesses": 0,
+      "secret": "cliff",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "diver",
+        "reign"
+      ],
+      "invalid_guesses": 0,
+      "secret": "reign",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "click",
+        "fling",
+        "blind"
+      ],
+      "invalid_guesses": 0,
+      "secret": "blind",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "extra",
+        "extra",
+        "extra",
+        "extra",
+        "extra"
+      ],
+      "invalid_guesses": 0,
+      "secret": "earth",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "blood",
+        "allow",
+        "blown"
+      ],
+      "invalid_guesses": 0,
+      "secret": "blown",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "right",
+        "stick",
+        "strip"
+      ],
+      "invalid_guesses": 0,
+      "secret": "strip",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "cheat",
+        "gheat"
+      ],
+      "invalid_guesses": 1,
+      "secret": "wheat",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "brief",
+        "crief"
+      ],
+      "invalid_guesses": 1,
+      "secret": "grief",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "blood",
+        "sweep",
+        "wound"
+      ],
+      "invalid_guesses": 0,
+      "secret": "wound",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blood",
+        "funny",
+        "found",
+        "foung"
+      ],
+      "invalid_guesses": 1,
+      "secret": "focus",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "steel",
+        "chest"
+      ],
+      "invalid_guesses": 0,
+      "secret": "chest",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blind",
+        "final",
+        "cargo",
+        "panic"
+      ],
+      "invalid_guesses": 0,
+      "secret": "panic",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "dress"
+      ],
+      "invalid_guesses": 0,
+      "secret": "dress",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bound",
+        "drown"
+      ],
+      "invalid_guesses": 0,
+      "secret": "drown",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "delta"
+      ],
+      "invalid_guesses": 0,
+      "secret": "delta",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "uncle",
+        "canoe"
+      ],
+      "invalid_guesses": 0,
+      "secret": "canoe",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "steel"
+      ],
+      "invalid_guesses": 0,
+      "secret": "steel",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "fancy",
+        "north"
+      ],
+      "invalid_guesses": 0,
+      "secret": "north",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bonus",
+        "local"
+      ],
+      "invalid_guesses": 0,
+      "secret": "local",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "flour",
+        "fewer"
+      ],
+      "invalid_guesses": 0,
+      "secret": "fewer",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "pedal",
+        "cheap"
+      ],
+      "invalid_guesses": 0,
+      "secret": "cheap",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bonus",
+        "bacon"
+      ],
+      "invalid_guesses": 0,
+      "secret": "bacon",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "agree",
+        "larke"
+      ],
+      "invalid_guesses": 1,
+      "secret": "carve",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "baler",
+        "clear"
+      ],
+      "invalid_guesses": 0,
+      "secret": "clear",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "album",
+        "fault",
+        "total"
+      ],
+      "invalid_guesses": 0,
+      "secret": "total",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bland",
+        "bring"
+      ],
+      "invalid_guesses": 0,
+      "secret": "bring",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "click",
+        "civil"
+      ],
+      "invalid_guesses": 0,
+      "secret": "civil",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bonus",
+        "laugh",
+        "awful",
+        "sunny",
+        "laugh"
+      ],
+      "invalid_guesses": 0,
+      "secret": "usual",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "bound",
+        "prove"
+      ],
+      "invalid_guesses": 1,
+      "secret": "grove",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "beach",
+        "heavy"
+      ],
+      "invalid_guesses": 0,
+      "secret": "heavy",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blood",
+        "bound"
+      ],
+      "invalid_guesses": 0,
+      "secret": "bound",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blast",
+        "enact",
+        "exact"
+      ],
+      "invalid_guesses": 0,
+      "secret": "exact",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bench",
+        "drama",
+        "grasp"
+      ],
+      "invalid_guesses": 0,
+      "secret": "grasp",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "click",
+        "civic"
+      ],
+      "invalid_guesses": 0,
+      "secret": "civic",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "sheep",
+        "space"
+      ],
+      "invalid_guesses": 0,
+      "secret": "space",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "tiger"
+      ],
+      "invalid_guesses": 0,
+      "secret": "tiger",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "cheat",
+        "steam"
+      ],
+      "invalid_guesses": 0,
+      "secret": "steam",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "fancy",
+        "forth"
+      ],
+      "invalid_guesses": 0,
+      "secret": "forth",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "close",
+        "smoke"
+      ],
+      "invalid_guesses": 0,
+      "secret": "smoke",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "sheep",
+        "place",
+        "peace"
+      ],
+      "invalid_guesses": 0,
+      "secret": "peace",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blush",
+        "award",
+        "quard"
+      ],
+      "invalid_guesses": 1,
+      "secret": "guard",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "light",
+        "thick"
+      ],
+      "invalid_guesses": 0,
+      "secret": "thick",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "title",
+        "twice"
+      ],
+      "invalid_guesses": 0,
+      "secret": "twice",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "baler",
+        "ample",
+        "maker"
+      ],
+      "invalid_guesses": 0,
+      "secret": "maker",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "tiger",
+        "timer",
+        "titer"
+      ],
+      "invalid_guesses": 1,
+      "secret": "tired",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "champ",
+        "earth",
+        "haste"
+      ],
+      "invalid_guesses": 0,
+      "secret": "haste",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "short",
+        "court"
+      ],
+      "invalid_guesses": 0,
+      "secret": "court",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "flour",
+        "error",
+        "refer"
+      ],
+      "invalid_guesses": 0,
+      "secret": "refer",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "agree"
+      ],
+      "invalid_guesses": 0,
+      "secret": "agree",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "given",
+        "field",
+        "liver",
+        "pixel"
+      ],
+      "invalid_guesses": 0,
+      "secret": "pixel",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "album",
+        "catch",
+        "taugh"
+      ],
+      "invalid_guesses": 1,
+      "secret": "haunt",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "wheel",
+        "dozen",
+        "novel",
+        "nozel"
+      ],
+      "invalid_guesses": 1,
+      "secret": "money",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "bound",
+        "probe"
+      ],
+      "invalid_guesses": 0,
+      "secret": "probe",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "adobe",
+        "rival",
+        "chair"
+      ],
+      "invalid_guesses": 0,
+      "secret": "chair",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bland",
+        "drink"
+      ],
+      "invalid_guesses": 0,
+      "secret": "drink",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "short",
+        "robot",
+        "rough",
+        "roast",
+        "robot"
+      ],
+      "invalid_guesses": 0,
+      "secret": "worst",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "candy",
+        "bride"
+      ],
+      "invalid_guesses": 0,
+      "secret": "bride",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "admit",
+        "saint",
+        "habit"
+      ],
+      "invalid_guesses": 0,
+      "secret": "habit",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "pedal",
+        "ahead"
+      ],
+      "invalid_guesses": 0,
+      "secret": "ahead",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blush",
+        "frost"
+      ],
+      "invalid_guesses": 0,
+      "secret": "frost",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "irate",
+        "irate",
+        "trite"
+      ],
+      "invalid_guesses": 1,
+      "secret": "write",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "blush",
+        "truly"
+      ],
+      "invalid_guesses": 0,
+      "secret": "truly",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "brief"
+      ],
+      "invalid_guesses": 0,
+      "secret": "brief",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "close",
+        "globe"
+      ],
+      "invalid_guesses": 0,
+      "secret": "globe",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bonus",
+        "album"
+      ],
+      "invalid_guesses": 0,
+      "secret": "album",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "short"
+      ],
+      "invalid_guesses": 0,
+      "secret": "short",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "shock",
+        "aback",
+        "flank"
+      ],
+      "invalid_guesses": 0,
+      "secret": "flank",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "batch",
+        "learn",
+        "ready"
+      ],
+      "invalid_guesses": 0,
+      "secret": "ready",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "greet"
+      ],
+      "invalid_guesses": 0,
+      "secret": "greet",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "dress",
+        "creek"
+      ],
+      "invalid_guesses": 0,
+      "secret": "creek",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "diver",
+        "adult",
+        "given",
+        "fiber",
+        "river"
+      ],
+      "invalid_guesses": 0,
+      "secret": "river",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "shock",
+        "aback"
+      ],
+      "invalid_guesses": 0,
+      "secret": "aback",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "wheel",
+        "jewel"
+      ],
+      "invalid_guesses": 0,
+      "secret": "jewel",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "carry",
+        "angry",
+        "armor",
+        "broad",
+        "royal"
+      ],
+      "invalid_guesses": 0,
+      "secret": "solar",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "fruit",
+        "trick"
+      ],
+      "invalid_guesses": 0,
+      "secret": "trick",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "magic",
+        "brake"
+      ],
+      "invalid_guesses": 0,
+      "secret": "brake",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "steel",
+        "fleth"
+      ],
+      "invalid_guesses": 1,
+      "secret": "elect",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "claim",
+        "again"
+      ],
+      "invalid_guesses": 0,
+      "secret": "again",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "rough",
+        "world"
+      ],
+      "invalid_guesses": 0,
+      "secret": "world",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "close",
+        "chose"
+      ],
+      "invalid_guesses": 0,
+      "secret": "chose",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blood",
+        "clock",
+        "flock"
+      ],
+      "invalid_guesses": 0,
+      "secret": "flock",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "steel",
+        "event"
+      ],
+      "invalid_guesses": 0,
+      "secret": "event",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blood",
+        "funny",
+        "young"
+      ],
+      "invalid_guesses": 0,
+      "secret": "young",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "flour",
+        "lover",
+        "lover",
+        "lover",
+        "lover"
+      ],
+      "invalid_guesses": 0,
+      "secret": "lower",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "blood",
+        "lucky"
+      ],
+      "invalid_guesses": 0,
+      "secret": "lucky",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bland",
+        "brick"
+      ],
+      "invalid_guesses": 0,
+      "secret": "brick",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "sheep",
+        "scale",
+        "snake"
+      ],
+      "invalid_guesses": 0,
+      "secret": "snake",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bench",
+        "brand"
+      ],
+      "invalid_guesses": 0,
+      "secret": "brand",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "sheep",
+        "blame",
+        "knack"
+      ],
+      "invalid_guesses": 1,
+      "secret": "awake",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "focus",
+        "nerve"
+      ],
+      "invalid_guesses": 0,
+      "secret": "nerve",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "admit",
+        "admit",
+        "admit",
+        "admit",
+        "admit"
+      ],
+      "invalid_guesses": 0,
+      "secret": "audit",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "choir",
+        "dirty",
+        "minor",
+        "sirut"
+      ],
+      "invalid_guesses": 1,
+      "secret": "virus",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "carry",
+        "alarm",
+        "labor"
+      ],
+      "invalid_guesses": 0,
+      "secret": "labor",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blind",
+        "aging",
+        "paint",
+        "saint",
+        "china"
+      ],
+      "invalid_guesses": 0,
+      "secret": "china",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "dress",
+        "breed"
+      ],
+      "invalid_guesses": 0,
+      "secret": "breed",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blast",
+        "enact",
+        "react",
+        "death",
+        "peach"
+      ],
+      "invalid_guesses": 0,
+      "secret": "teach",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "camel",
+        "after"
+      ],
+      "invalid_guesses": 0,
+      "secret": "after",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "pedal",
+        "ahead",
+        "avent"
+      ],
+      "invalid_guesses": 1,
+      "secret": "amend",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "blood",
+        "solid",
+        "would"
+      ],
+      "invalid_guesses": 0,
+      "secret": "would",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "carry",
+        "angry",
+        "royal",
+        "royal",
+        "spray"
+      ],
+      "invalid_guesses": 0,
+      "secret": "sugar",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "flour",
+        "cover"
+      ],
+      "invalid_guesses": 0,
+      "secret": "cover",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "stuck",
+        "built",
+        "ought"
+      ],
+      "invalid_guesses": 0,
+      "secret": "ought",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "light",
+        "built",
+        "guilt",
+        "guilt",
+        "guilt"
+      ],
+      "invalid_guesses": 0,
+      "secret": "quilt",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "carry",
+        "apron",
+        "straw",
+        "moral",
+        "rural"
+      ],
+      "invalid_guesses": 0,
+      "secret": "rural",
+      "won": true
+    }
+  ],
+  "win_rate": 0.7777777777777778,
+  "wins": 112
+}

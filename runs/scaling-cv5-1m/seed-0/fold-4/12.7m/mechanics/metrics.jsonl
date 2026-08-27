@@ -1,0 +1,10 @@
+{"epoch": 0, "improved": true, "learning_rate": 0.0003, "step": 0, "token_epochs": 0.0, "tokens_seen": 0, "train_loss": 3.3740347228178518, "validation_loss": 3.3759229905142285}
+{"epoch": 1, "improved": true, "learning_rate": 0.0003, "step": 547, "token_epochs": 1.000886296709266, "tokens_seen": 350080, "train_loss": 0.007328471684294322, "validation_loss": 0.010988807316369196}
+{"epoch": 2, "improved": true, "learning_rate": 0.0003, "step": 1094, "token_epochs": 2.001772593418532, "tokens_seen": 700160, "train_loss": 0.003462257410338401, "validation_loss": 0.004713266708823483}
+{"epoch": 3, "improved": true, "learning_rate": 0.0003, "step": 1640, "token_epochs": 3.0008291162764102, "tokens_seen": 1049600, "train_loss": 0.0027185945406981733, "validation_loss": 0.0032556807488961868}
+{"epoch": 4, "improved": true, "learning_rate": 0.0003, "step": 2187, "token_epochs": 4.001715412985677, "tokens_seen": 1399680, "train_loss": 0.0018474328121537904, "validation_loss": 0.0018616889728883237}
+{"epoch": 5, "improved": true, "learning_rate": 0.0003, "step": 2733, "token_epochs": 5.000771935843554, "tokens_seen": 1749120, "train_loss": 0.000832182343290993, "validation_loss": 0.0010509153109934707}
+{"epoch": 6, "improved": false, "learning_rate": 0.0003, "step": 3280, "token_epochs": 6.0016582325528205, "tokens_seen": 2099200, "train_loss": 0.002040595287394216, "validation_loss": 0.0027371448930120445}
+{"epoch": 7, "improved": false, "learning_rate": 0.0003, "step": 3826, "token_epochs": 7.000714755410699, "tokens_seen": 2448640, "train_loss": 0.0024517487398527066, "validation_loss": 0.0032252783544409946}
+{"epoch": 8, "improved": false, "learning_rate": 0.0003, "step": 4373, "token_epochs": 8.001601052119964, "tokens_seen": 2798720, "train_loss": 0.002056967304518862, "validation_loss": 0.0031768509345356964}
+{"epoch": 9, "improved": false, "learning_rate": 0.0003, "step": 4919, "token_epochs": 9.000657574977843, "tokens_seen": 3148160, "train_loss": 0.0023450091980086914, "validation_loss": 0.002977948543493354}

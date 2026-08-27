@@ -1,0 +1,18 @@
+{
+  "base_checkpoint": "runs/scaling-dev-1m/seed-0/fold-1/7.2m/checkpoints/best.pt",
+  "base_checkpoint_sha256": "68dce0c6c0477e89fce4e05524627ad6136b7eff806a3fb6554ca65811f4ef9e",
+  "beta": 0.2,
+  "completion_log_probability": "sum over exactly five guess-letter tokens",
+  "effective_batch_size": 128,
+  "eval_batch_size": 256,
+  "gradient_accumulation_steps": 2,
+  "learning_rate": 1e-05,
+  "max_effective_passes": 10,
+  "mechanics_replay": false,
+  "optimizer": "AdamW",
+  "patience": 3,
+  "physical_batch_size": 64,
+  "seed": 0,
+  "train_pairs": 439483,
+  "validation_pairs": 50000
+}

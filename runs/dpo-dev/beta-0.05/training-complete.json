@@ -1,0 +1,4 @@
+{
+  "checkpoint": "runs/dpo-dev/beta-0.05/checkpoints/best.pt",
+  "evaluations": 4
+}

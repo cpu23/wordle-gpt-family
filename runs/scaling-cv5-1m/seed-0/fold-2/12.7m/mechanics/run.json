@@ -1,0 +1,24 @@
+{
+  "batch_size": 128,
+  "eval_batch_size": 256,
+  "initialization": "random",
+  "learning_rate": 0.0003,
+  "max_epochs": 100,
+  "min_delta": 0.0001,
+  "model_config": {
+    "context_length": 96,
+    "embedding_size": 512,
+    "mlp_size": 2048,
+    "num_heads": 16,
+    "num_layers": 4,
+    "vocab_size": 35
+  },
+  "objective": "mechanics",
+  "parameters": 12695587,
+  "patience": 4,
+  "seed": 0,
+  "train_examples": 69963,
+  "train_supervised_tokens": 349815,
+  "validation_examples": 10010,
+  "vocabulary_size": 35
+}

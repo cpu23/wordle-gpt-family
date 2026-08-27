@@ -1,0 +1,10 @@
+{"epoch": 0, "improved": true, "learning_rate": 0.0003, "step": 0, "token_epochs": 0.0, "tokens_seen": 0, "train_loss": 3.8626772518474137, "validation_loss": 3.868789643891719}
+{"epoch": 1, "improved": true, "learning_rate": 0.0003, "step": 548, "token_epochs": 1.000656224143342, "tokens_seen": 350720, "train_loss": 0.007836796342263688, "validation_loss": 0.010790993676487113}
+{"epoch": 2, "improved": true, "learning_rate": 0.0003, "step": 1096, "token_epochs": 2.001312448286684, "tokens_seen": 701440, "train_loss": 0.005646377994914263, "validation_loss": 0.008905034174322307}
+{"epoch": 3, "improved": true, "learning_rate": 0.0003, "step": 1643, "token_epochs": 3.0001426574224657, "tokens_seen": 1051520, "train_loss": 0.0023007244726244865, "validation_loss": 0.004595232414753927}
+{"epoch": 4, "improved": true, "learning_rate": 0.0003, "step": 2191, "token_epochs": 4.0007988815658075, "tokens_seen": 1402240, "train_loss": 0.0010231064867165878, "validation_loss": 0.00317019899936242}
+{"epoch": 5, "improved": true, "learning_rate": 0.0003, "step": 2739, "token_epochs": 5.00145510570915, "tokens_seen": 1752960, "train_loss": 0.0006021822395772035, "validation_loss": 0.0023003355366713802}
+{"epoch": 6, "improved": false, "learning_rate": 0.0003, "step": 3286, "token_epochs": 6.000285314844931, "tokens_seen": 2103040, "train_loss": 0.008421232735108348, "validation_loss": 0.009652610887789057}
+{"epoch": 7, "improved": false, "learning_rate": 0.0003, "step": 3834, "token_epochs": 7.000941538988274, "tokens_seen": 2453760, "train_loss": 0.001002877239303591, "validation_loss": 0.0026676222561432426}
+{"epoch": 8, "improved": false, "learning_rate": 0.0003, "step": 4382, "token_epochs": 8.001597763131615, "tokens_seen": 2804480, "train_loss": 0.0023417078325277648, "validation_loss": 0.004584835221295637}
+{"epoch": 9, "improved": false, "learning_rate": 0.0003, "step": 4929, "token_epochs": 9.000427972267397, "tokens_seen": 3154560, "train_loss": 0.003909444815762397, "validation_loss": 0.006188478318381031}

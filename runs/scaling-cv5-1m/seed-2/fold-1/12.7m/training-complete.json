@@ -1,0 +1,4 @@
+{
+  "checkpoint": "runs/scaling-cv5-1m/seed-2/fold-1/12.7m/checkpoints/best.pt",
+  "epochs_evaluated": 12
+}

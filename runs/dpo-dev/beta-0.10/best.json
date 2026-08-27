@@ -1,0 +1,29 @@
+{
+  "constrained_average_attempts": 3.9166666666666665,
+  "constrained_average_guesses": 3.457627118644068,
+  "constrained_wins": 59,
+  "effective_passes": 0.0,
+  "epoch": 0,
+  "gradient_norm": null,
+  "improved": true,
+  "learning_rate": 1e-05,
+  "mechanics_validation_loss": 0.0017920516262490485,
+  "optimizer_steps": 0,
+  "pairs_seen": 0,
+  "peak_gpu_memory_bytes": 615426560,
+  "raw_invalid_guesses": 5,
+  "raw_wins": 57,
+  "train": null,
+  "validation": {
+    "loss": 0.6931474208831787,
+    "policy_chosen_logp": -3.7127950191497803,
+    "policy_margin": 3.795870542526245,
+    "policy_rejected_logp": -7.508666038513184,
+    "preference_accuracy": 0.7555599808692932,
+    "reference_chosen_logp": -3.7127950191497803,
+    "reference_deviation": 0.0,
+    "reference_margin": 3.795870542526245,
+    "reference_rejected_logp": -7.508666038513184
+  },
+  "wall_clock_seconds": 12.583450400998117
+}

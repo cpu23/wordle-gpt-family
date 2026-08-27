@@ -1,0 +1,10 @@
+{
+  "epoch": 3,
+  "improved": true,
+  "learning_rate": 0.0003,
+  "step": 1875,
+  "token_epochs": 3.0012004801920766,
+  "tokens_seen": 1200000,
+  "train_loss": 0.0022129542735062776,
+  "validation_loss": 0.0022962331224418487
+}

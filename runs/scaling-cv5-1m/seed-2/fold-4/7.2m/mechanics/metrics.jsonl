@@ -1,0 +1,10 @@
+{"epoch": 0, "improved": true, "learning_rate": 0.0003, "step": 0, "token_epochs": 0.0, "tokens_seen": 0, "train_loss": 3.4689267232752954, "validation_loss": 3.4727486894658015}
+{"epoch": 1, "improved": true, "learning_rate": 0.0003, "step": 547, "token_epochs": 1.000886296709266, "tokens_seen": 350080, "train_loss": 0.010830276916348601, "validation_loss": 0.011897237152084373}
+{"epoch": 2, "improved": true, "learning_rate": 0.0003, "step": 1094, "token_epochs": 2.001772593418532, "tokens_seen": 700160, "train_loss": 0.004807689193523601, "validation_loss": 0.007138804122917186}
+{"epoch": 3, "improved": true, "learning_rate": 0.0003, "step": 1640, "token_epochs": 3.0008291162764102, "tokens_seen": 1049600, "train_loss": 0.0017766191527423378, "validation_loss": 0.004702878238794153}
+{"epoch": 4, "improved": true, "learning_rate": 0.0003, "step": 2187, "token_epochs": 4.001715412985677, "tokens_seen": 1399680, "train_loss": 0.001763932942205771, "validation_loss": 0.0025246803866465924}
+{"epoch": 5, "improved": true, "learning_rate": 0.0003, "step": 2733, "token_epochs": 5.000771935843554, "tokens_seen": 1749120, "train_loss": 0.0004608215808418523, "validation_loss": 0.0009535395545597619}
+{"epoch": 6, "improved": false, "learning_rate": 0.0003, "step": 3280, "token_epochs": 6.0016582325528205, "tokens_seen": 2099200, "train_loss": 0.00158155653793475, "validation_loss": 0.001522841927294605}
+{"epoch": 7, "improved": false, "learning_rate": 0.0003, "step": 3826, "token_epochs": 7.000714755410699, "tokens_seen": 2448640, "train_loss": 0.0028194207728248206, "validation_loss": 0.003634399779724944}
+{"epoch": 8, "improved": false, "learning_rate": 0.0003, "step": 4373, "token_epochs": 8.001601052119964, "tokens_seen": 2798720, "train_loss": 0.0016475105236566172, "validation_loss": 0.001569817057860475}
+{"epoch": 9, "improved": false, "learning_rate": 0.0003, "step": 4919, "token_epochs": 9.000657574977843, "tokens_seen": 3148160, "train_loss": 0.0017626409380405337, "validation_loss": 0.0028924024241957376}

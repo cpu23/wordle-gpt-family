@@ -1,0 +1,861 @@
+{
+  "architectures": {
+    "12.7m": {
+      "context_length": 96,
+      "embedding_size": 512,
+      "mlp_size": 2048,
+      "num_heads": 16,
+      "num_layers": 4
+    },
+    "3.2m": {
+      "context_length": 96,
+      "embedding_size": 256,
+      "mlp_size": 1024,
+      "num_heads": 8,
+      "num_layers": 4
+    },
+    "7.2m": {
+      "context_length": 96,
+      "embedding_size": 384,
+      "mlp_size": 1536,
+      "num_heads": 12,
+      "num_layers": 4
+    }
+  },
+  "decode_modes": [
+    "raw",
+    "constrained"
+  ],
+  "effective_batch_size": 128,
+  "eval_batch_size": 256,
+  "experiment": "1m-corpus-model-scaling",
+  "gradient_accumulation_steps": 1,
+  "learning_rate": 0.0003,
+  "max_epochs": 100,
+  "model_seeds": [
+    0,
+    1,
+    2
+  ],
+  "paired_comparisons": {
+    "3.2m-vs-12.7m-constrained": {
+      "mean_guess_delta_b_minus_a": {
+        "mean": -0.15067222994900326,
+        "standard_deviation": 0.0385769940894107,
+        "values": [
+          -0.1933240611961057,
+          -0.1404728789986092,
+          -0.11821974965229486
+        ]
+      },
+      "outcomes": {
+        "a_loses_b_wins": {
+          "mean": 81.66666666666667,
+          "standard_deviation": 14.224392195567912,
+          "values": [
+            98,
+            72,
+            75
+          ]
+        },
+        "a_wins_b_loses": {
+          "mean": 54.333333333333336,
+          "standard_deviation": 3.0550504633038935,
+          "values": [
+            57,
+            55,
+            51
+          ]
+        },
+        "both_lose": {
+          "mean": 86.66666666666667,
+          "standard_deviation": 8.504900548115382,
+          "values": [
+            87,
+            95,
+            78
+          ]
+        },
+        "both_win": {
+          "mean": 496.3333333333333,
+          "standard_deviation": 19.008769905844336,
+          "values": [
+            477,
+            497,
+            515
+          ]
+        }
+      },
+      "seeds": 3
+    },
+    "3.2m-vs-12.7m-raw": {
+      "mean_guess_delta_b_minus_a": {
+        "mean": -0.11312007417709781,
+        "standard_deviation": 0.021561457495101504,
+        "values": [
+          -0.1376912378303199,
+          -0.1043115438108484,
+          -0.09735744089012517
+        ]
+      },
+      "outcomes": {
+        "a_loses_b_wins": {
+          "mean": 89.33333333333333,
+          "standard_deviation": 12.096831541082704,
+          "values": [
+            103,
+            85,
+            80
+          ]
+        },
+        "a_wins_b_loses": {
+          "mean": 60.333333333333336,
+          "standard_deviation": 6.6583281184793925,
+          "values": [
+            62,
+            66,
+            53
+          ]
+        },
+        "both_lose": {
+          "mean": 108.0,
+          "standard_deviation": 3.605551275463989,
+          "values": [
+            105,
+            112,
+            107
+          ]
+        },
+        "both_win": {
+          "mean": 461.3333333333333,
+          "standard_deviation": 15.69500982265807,
+          "values": [
+            449,
+            456,
+            479
+          ]
+        }
+      },
+      "seeds": 3
+    },
+    "3.2m-vs-7.2m-constrained": {
+      "mean_guess_delta_b_minus_a": {
+        "mean": -0.12702828001854427,
+        "standard_deviation": 0.07181717713831035,
+        "values": [
+          -0.20166898470097358,
+          -0.12100139082058414,
+          -0.0584144645340751
+        ]
+      },
+      "outcomes": {
+        "a_loses_b_wins": {
+          "mean": 81.0,
+          "standard_deviation": 7.0,
+          "values": [
+            89,
+            78,
+            76
+          ]
+        },
+        "a_wins_b_loses": {
+          "mean": 53.333333333333336,
+          "standard_deviation": 14.047538337136984,
+          "values": [
+            40,
+            52,
+            68
+          ]
+        },
+        "both_lose": {
+          "mean": 87.33333333333333,
+          "standard_deviation": 9.60902353693305,
+          "values": [
+            96,
+            89,
+            77
+          ]
+        },
+        "both_win": {
+          "mean": 497.3333333333333,
+          "standard_deviation": 3.0550504633038935,
+          "values": [
+            494,
+            500,
+            498
+          ]
+        }
+      },
+      "seeds": 3
+    },
+    "3.2m-vs-7.2m-raw": {
+      "mean_guess_delta_b_minus_a": {
+        "mean": -0.1284191006026889,
+        "standard_deviation": 0.04524622460812039,
+        "values": [
+          -0.17246175243393602,
+          -0.13073713490959665,
+          -0.08205841446453407
+        ]
+      },
+      "outcomes": {
+        "a_loses_b_wins": {
+          "mean": 86.0,
+          "standard_deviation": 8.54400374531753,
+          "values": [
+            94,
+            87,
+            77
+          ]
+        },
+        "a_wins_b_loses": {
+          "mean": 63.0,
+          "standard_deviation": 12.12435565298214,
+          "values": [
+            50,
+            65,
+            74
+          ]
+        },
+        "both_lose": {
+          "mean": 111.33333333333333,
+          "standard_deviation": 2.309401076758503,
+          "values": [
+            114,
+            110,
+            110
+          ]
+        },
+        "both_win": {
+          "mean": 458.6666666666667,
+          "standard_deviation": 2.0816659994661326,
+          "values": [
+            461,
+            457,
+            458
+          ]
+        }
+      },
+      "seeds": 3
+    },
+    "7.2m-vs-12.7m-constrained": {
+      "mean_guess_delta_b_minus_a": {
+        "mean": -0.02364394993045897,
+        "standard_deviation": 0.03426616132059782,
+        "values": [
+          0.008344923504867872,
+          -0.019471488178025034,
+          -0.059805285118219746
+        ]
+      },
+      "outcomes": {
+        "a_loses_b_wins": {
+          "mean": 59.0,
+          "standard_deviation": 4.358898943540674,
+          "values": [
+            56,
+            57,
+            64
+          ]
+        },
+        "a_wins_b_loses": {
+          "mean": 59.333333333333336,
+          "standard_deviation": 9.865765724632494,
+          "values": [
+            64,
+            66,
+            48
+          ]
+        },
+        "both_lose": {
+          "mean": 81.66666666666667,
+          "standard_deviation": 2.0816659994661326,
+          "values": [
+            80,
+            84,
+            81
+          ]
+        },
+        "both_win": {
+          "mean": 519.0,
+          "standard_deviation": 7.0,
+          "values": [
+            519,
+            512,
+            526
+          ]
+        }
+      },
+      "seeds": 3
+    },
+    "7.2m-vs-12.7m-raw": {
+      "mean_guess_delta_b_minus_a": {
+        "mean": 0.015299026425591097,
+        "standard_deviation": 0.02682517596938235,
+        "values": [
+          0.03477051460361613,
+          0.02642559109874826,
+          -0.015299026425591099
+        ]
+      },
+      "outcomes": {
+        "a_loses_b_wins": {
+          "mean": 74.0,
+          "standard_deviation": 10.0,
+          "values": [
+            64,
+            74,
+            84
+          ]
+        },
+        "a_wins_b_loses": {
+          "mean": 68.0,
+          "standard_deviation": 8.54400374531753,
+          "values": [
+            67,
+            77,
+            60
+          ]
+        },
+        "both_lose": {
+          "mean": 100.33333333333333,
+          "standard_deviation": 0.5773502691896257,
+          "values": [
+            100,
+            101,
+            100
+          ]
+        },
+        "both_win": {
+          "mean": 476.6666666666667,
+          "standard_deviation": 10.598742063723098,
+          "values": [
+            488,
+            467,
+            475
+          ]
+        }
+      },
+      "seeds": 3
+    }
+  },
+  "parameter_counts": {
+    "12.7m": 12695587,
+    "3.2m": 3202083,
+    "7.2m": 7162403
+  },
+  "patience": 4,
+  "physical_batch_size": 128,
+  "ratios": {
+    "consistency": 0.0,
+    "expert": 0.95,
+    "mechanics": 0.05
+  },
+  "sources": {
+    "corpus_files": [
+      {
+        "bytes": 102799652,
+        "path": "data/wordle-cv5-1m/fold-1/expert-1m/examples.jsonl.gz",
+        "sha256": "e88c5d28267418c513e7d5ce81763f7651254135a542bbd8732a561ad2dcbbbf"
+      },
+      {
+        "bytes": 399,
+        "path": "data/wordle-cv5-1m/fold-1/expert-1m/manifest.json",
+        "sha256": "da091f5810b0ad6634760c6294a7380211c51158078b5c1e219e353d69d408d4"
+      },
+      {
+        "bytes": 18761739,
+        "path": "data/wordle-cv5-1m/fold-1/expert-200k/examples.jsonl.gz",
+        "sha256": "960cd5eee8f18f31c454051c481e378d66cbb52d8622e1bcdb0ab6bba66dd5ff"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-1/expert-200k/manifest.json",
+        "sha256": "857bbe94a6cdba6fea94ed8d3fbd65df2525f496b8f9fe496fd305854370b68c"
+      },
+      {
+        "bytes": 50180732,
+        "path": "data/wordle-cv5-1m/fold-1/expert-500k/examples.jsonl.gz",
+        "sha256": "6dc17f82b7f69baf52957c381f848ca5d6dac5e8116aa7fa8b819d9d1376f65e"
+      },
+      {
+        "bytes": 396,
+        "path": "data/wordle-cv5-1m/fold-1/expert-500k/manifest.json",
+        "sha256": "e1ee41b2bf62ea1b4a8e32dfd0a55085a8b23f1e44d4dd42b3007858c5aa783b"
+      },
+      {
+        "bytes": 2278441,
+        "path": "data/wordle-cv5-1m/fold-1/mechanics/examples.jsonl.gz",
+        "sha256": "60a2c16f2415249699b1a05090018e522a1326458b2b2374410ad570c75d5427"
+      },
+      {
+        "bytes": 390,
+        "path": "data/wordle-cv5-1m/fold-1/mechanics/manifest.json",
+        "sha256": "95175627230c3c25d3f7fafbb65a858325d5c995ad63068831c716bfda588d0c"
+      },
+      {
+        "bytes": 103061876,
+        "path": "data/wordle-cv5-1m/fold-2/expert-1m/examples.jsonl.gz",
+        "sha256": "19b184b0878e0789a873d5aab4544e3e9a4fca76d653fa7fb928d526ff808cd2"
+      },
+      {
+        "bytes": 399,
+        "path": "data/wordle-cv5-1m/fold-2/expert-1m/manifest.json",
+        "sha256": "e362ae161ab150b14957f3e9ccc879a4f24c84dec29c6758cec2a044dc169ec3"
+      },
+      {
+        "bytes": 18825435,
+        "path": "data/wordle-cv5-1m/fold-2/expert-200k/examples.jsonl.gz",
+        "sha256": "5475256adafbe218912e26872782d528aa3b5b6052e1db347bcdf76a74f00a63"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-2/expert-200k/manifest.json",
+        "sha256": "66d7ec8db960ab332d79d92595cda1e489902646b3a74c700cb75835d295346f"
+      },
+      {
+        "bytes": 50253637,
+        "path": "data/wordle-cv5-1m/fold-2/expert-500k/examples.jsonl.gz",
+        "sha256": "8b6896835755f77112ba16865d85354968f6c2d794eafb08ad0d48ff0ea03202"
+      },
+      {
+        "bytes": 396,
+        "path": "data/wordle-cv5-1m/fold-2/expert-500k/manifest.json",
+        "sha256": "9cce2d8d76247b03dbd478fafec56e3e8fd6a61d5a4c13ee8692108310a1cc74"
+      },
+      {
+        "bytes": 2279781,
+        "path": "data/wordle-cv5-1m/fold-2/mechanics/examples.jsonl.gz",
+        "sha256": "abcde101c9b0196451dbf9903cc230b3bc8fed8c2986f51e71eaa9606735e93e"
+      },
+      {
+        "bytes": 390,
+        "path": "data/wordle-cv5-1m/fold-2/mechanics/manifest.json",
+        "sha256": "404c971dbad5643c5ca9863d5d1bffbb9b317296a79b789e84dcef6781ec1515"
+      },
+      {
+        "bytes": 103291725,
+        "path": "data/wordle-cv5-1m/fold-3/expert-1m/examples.jsonl.gz",
+        "sha256": "254c94dcc6a6def9d0fc18eb870c9f4dea7996b4729b1f86f7b398fa4244ef34"
+      },
+      {
+        "bytes": 399,
+        "path": "data/wordle-cv5-1m/fold-3/expert-1m/manifest.json",
+        "sha256": "8f6c8512894ebcaabc5f6385ce49d5197f64ab4cf1176ecf03c22f37b2f14e07"
+      },
+      {
+        "bytes": 18861861,
+        "path": "data/wordle-cv5-1m/fold-3/expert-200k/examples.jsonl.gz",
+        "sha256": "1f40347dfded52b02e364db7edd83c9ee3042433a345d682fdce89bf1447db36"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-3/expert-200k/manifest.json",
+        "sha256": "879eab38a8512455ac0d16384a42f6c2d9cf7185b5f472d194fe4b565555c5ef"
+      },
+      {
+        "bytes": 50394773,
+        "path": "data/wordle-cv5-1m/fold-3/expert-500k/examples.jsonl.gz",
+        "sha256": "e78edd4436c2e4f27f2a4b9a9d08b2703c519f9f2c8b1453afe81e697b4f8bf4"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-3/expert-500k/manifest.json",
+        "sha256": "5e8faaa6bac83c0ff9153ed570a98a8b9398a385b225e8080cf0410898197526"
+      },
+      {
+        "bytes": 2283220,
+        "path": "data/wordle-cv5-1m/fold-3/mechanics/examples.jsonl.gz",
+        "sha256": "1427695a55f9548505c3b715e1ea26877b774717aa5ad407a28de29cbaf50853"
+      },
+      {
+        "bytes": 390,
+        "path": "data/wordle-cv5-1m/fold-3/mechanics/manifest.json",
+        "sha256": "2be34793b25f475bbb3e54a6834c4dc0d9d7c15bd596bcc47f08538a57bd2843"
+      },
+      {
+        "bytes": 102821057,
+        "path": "data/wordle-cv5-1m/fold-4/expert-1m/examples.jsonl.gz",
+        "sha256": "38fb5d0047785c45f29ce8bd51d8408412c067207a1b89c0319f20e91eb41b5f"
+      },
+      {
+        "bytes": 399,
+        "path": "data/wordle-cv5-1m/fold-4/expert-1m/manifest.json",
+        "sha256": "154e4570184d8c2016f2caf7967230dfa8d7b2a6d51ac6a67082e08021bc1d20"
+      },
+      {
+        "bytes": 18791114,
+        "path": "data/wordle-cv5-1m/fold-4/expert-200k/examples.jsonl.gz",
+        "sha256": "b98b07ed5e7b4c00fd5d8ffa8a1245e48d893193066c8ee9cefc4d2d03d3e675"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-4/expert-200k/manifest.json",
+        "sha256": "4fd49f2755cb8858608d4f835bf99f37c37e6d3ac61976d3beddee448347a8f6"
+      },
+      {
+        "bytes": 50192384,
+        "path": "data/wordle-cv5-1m/fold-4/expert-500k/examples.jsonl.gz",
+        "sha256": "1497ae4f864c325219e2f6d17f133f8a6e415cea1ef2af792b5a23805261c0f5"
+      },
+      {
+        "bytes": 396,
+        "path": "data/wordle-cv5-1m/fold-4/expert-500k/manifest.json",
+        "sha256": "5289cc3fdfed0cc791eb49cdf3480fb5df283f819adea995d0b04c3c1bfb49e4"
+      },
+      {
+        "bytes": 2278889,
+        "path": "data/wordle-cv5-1m/fold-4/mechanics/examples.jsonl.gz",
+        "sha256": "a4854c712d320508bb73fdf8cbe2a45aa93f0c95c89a04e4aac6c3345101d747"
+      },
+      {
+        "bytes": 390,
+        "path": "data/wordle-cv5-1m/fold-4/mechanics/manifest.json",
+        "sha256": "3f67db8084e9bed14d37c66ad36a96ae9535b89b8d81f067cdad8e5143c2013e"
+      },
+      {
+        "bytes": 103089900,
+        "path": "data/wordle-cv5-1m/fold-5/expert-1m/examples.jsonl.gz",
+        "sha256": "60e07514ad9370e7693974886ca32f7aad4302eae8f8d07ed6ffacfd886bdba2"
+      },
+      {
+        "bytes": 397,
+        "path": "data/wordle-cv5-1m/fold-5/expert-1m/manifest.json",
+        "sha256": "da13d8be829fb45fce8d4f93e4d255a23984bc0a6657827a3b65e3323bbf0a6d"
+      },
+      {
+        "bytes": 18863976,
+        "path": "data/wordle-cv5-1m/fold-5/expert-200k/examples.jsonl.gz",
+        "sha256": "3dc4f9018d90f85d2ba03a3730a88f347c76a60fdb2afe7cf8e57197b0eb5b2b"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-5/expert-200k/manifest.json",
+        "sha256": "14e51b3b41b4dc5ee704429b7bd0183c84c632f87088a8d1a3f9a0c0ddcf2d7f"
+      },
+      {
+        "bytes": 50340940,
+        "path": "data/wordle-cv5-1m/fold-5/expert-500k/examples.jsonl.gz",
+        "sha256": "577d4f9b1103c816290005c151efcb72c30f41c28907ae46e7ee0c643f600672"
+      },
+      {
+        "bytes": 395,
+        "path": "data/wordle-cv5-1m/fold-5/expert-500k/manifest.json",
+        "sha256": "e33ecd826a4f05ea78dd9b55272804f347d0ab03e6e700a94eac45a6bde65f72"
+      },
+      {
+        "bytes": 2285444,
+        "path": "data/wordle-cv5-1m/fold-5/mechanics/examples.jsonl.gz",
+        "sha256": "cc4faf93e259047652799a1c7401a4249cee92ea39d4c11cd97b6d51f298d563"
+      },
+      {
+        "bytes": 390,
+        "path": "data/wordle-cv5-1m/fold-5/mechanics/manifest.json",
+        "sha256": "4bec76db22bae5ad4554944007229e4e647cfa40ddef9115e312b73bb90a04ca"
+      },
+      {
+        "bytes": 9729,
+        "path": "data/wordle-cv5-1m/manifest.json",
+        "sha256": "7441cfdd521d4b312c3423a659fffae2ca8f06b541ed94bf97bb90ad1164de91"
+      }
+    ],
+    "mode": "data/wordle-cv5.json",
+    "mode_sha256": "59aae085d5df925a81a89f3b1afdc6a7082aa667961abdb4c47efe73fce18aee"
+  },
+  "summaries": {
+    "12.7m": {
+      "constrained": {
+        "average_attempts": {
+          "mean": 3.908205841446453,
+          "standard_deviation": 0.0247237675029641,
+          "values": [
+            3.888734353268428,
+            3.9360222531293463,
+            3.8998609179415857
+          ]
+        },
+        "average_guesses": {
+          "mean": 3.3975312025259896,
+          "standard_deviation": 0.04063107736700912,
+          "values": [
+            3.36,
+            3.3919156414762743,
+            3.440677966101695
+          ]
+        },
+        "invalid_guesses": {
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "seeds": 3,
+        "win_rate": {
+          "mean": 0.803894297635605,
+          "standard_deviation": 0.015044024793312917,
+          "values": [
+            0.799721835883171,
+            0.7913769123783032,
+            0.8205841446453408
+          ]
+        },
+        "wins": {
+          "mean": 578.0,
+          "standard_deviation": 10.816653826391969,
+          "values": [
+            575.0,
+            569.0,
+            590.0
+          ]
+        }
+      },
+      "raw": {
+        "average_attempts": {
+          "mean": 3.7881316643486325,
+          "standard_deviation": 0.02457990939603432,
+          "values": [
+            3.776077885952712,
+            3.8164116828929067,
+            3.7719054242002783
+          ]
+        },
+        "average_guesses": {
+          "mean": 3.323749328142851,
+          "standard_deviation": 0.02316304941111024,
+          "values": [
+            3.300724637681159,
+            3.3234750462107208,
+            3.3470483005366725
+          ]
+        },
+        "invalid_guesses": {
+          "mean": 61.666666666666664,
+          "standard_deviation": 4.509249752822894,
+          "values": [
+            57.0,
+            62.0,
+            66.0
+          ]
+        },
+        "seeds": 3,
+        "win_rate": {
+          "mean": 0.7658785350023182,
+          "standard_deviation": 0.012619988492180042,
+          "values": [
+            0.7677329624478443,
+            0.7524339360222532,
+            0.7774687065368567
+          ]
+        },
+        "wins": {
+          "mean": 550.6666666666666,
+          "standard_deviation": 9.073771725877465,
+          "values": [
+            552.0,
+            541.0,
+            559.0
+          ]
+        }
+      }
+    },
+    "3.2m": {
+      "constrained": {
+        "average_attempts": {
+          "mean": 4.058878071395456,
+          "standard_deviation": 0.03544091767012778,
+          "values": [
+            4.082058414464534,
+            4.076495132127955,
+            4.01808066759388
+          ]
+        },
+        "average_guesses": {
+          "mean": 3.4648334563743393,
+          "standard_deviation": 0.04135757757999779,
+          "values": [
+            3.4176029962546814,
+            3.494565217391304,
+            3.4823321554770317
+          ]
+        },
+        "invalid_guesses": {
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "seeds": 3,
+        "win_rate": {
+          "mean": 0.7658785350023182,
+          "standard_deviation": 0.022311004943005985,
+          "values": [
+            0.7426981919332406,
+            0.7677329624478443,
+            0.7872044506258693
+          ]
+        },
+        "wins": {
+          "mean": 550.6666666666666,
+          "standard_deviation": 16.041612554021285,
+          "values": [
+            534.0,
+            552.0,
+            566.0
+          ]
+        }
+      },
+      "raw": {
+        "average_attempts": {
+          "mean": 3.90125173852573,
+          "standard_deviation": 0.027920528372579596,
+          "values": [
+            3.913769123783032,
+            3.920723226703755,
+            3.8692628650904033
+          ]
+        },
+        "average_guesses": {
+          "mean": 3.3837544840950855,
+          "standard_deviation": 0.03381938953927477,
+          "values": [
+            3.3483365949119372,
+            3.4157088122605366,
+            3.387218045112782
+          ]
+        },
+        "invalid_guesses": {
+          "mean": 88.33333333333333,
+          "standard_deviation": 5.8594652770823155,
+          "values": [
+            95.0,
+            86.0,
+            84.0
+          ]
+        },
+        "seeds": 3,
+        "win_rate": {
+          "mean": 0.7255447380621233,
+          "standard_deviation": 0.014609134220295548,
+          "values": [
+            0.7107093184979137,
+            0.7260083449235049,
+            0.7399165507649513
+          ]
+        },
+        "wins": {
+          "mean": 521.6666666666666,
+          "standard_deviation": 10.503967504392486,
+          "values": [
+            511.0,
+            522.0,
+            532.0
+          ]
+        }
+      }
+    },
+    "7.2m": {
+      "constrained": {
+        "average_attempts": {
+          "mean": 3.931849791376912,
+          "standard_deviation": 0.04461478423461879,
+          "values": [
+            3.8803894297635604,
+            3.955493741307371,
+            3.9596662030598053
+          ]
+        },
+        "average_guesses": {
+          "mean": 3.4289776986071714,
+          "standard_deviation": 0.03779626826510917,
+          "values": [
+            3.3859348198970842,
+            3.4567474048442905,
+            3.4442508710801394
+          ]
+        },
+        "invalid_guesses": {
+          "mean": 0.0,
+          "standard_deviation": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "seeds": 3,
+        "win_rate": {
+          "mean": 0.8043579044969865,
+          "standard_deviation": 0.006271557375275248,
+          "values": [
+            0.8108484005563282,
+            0.803894297635605,
+            0.7983310152990264
+          ]
+        },
+        "wins": {
+          "mean": 578.3333333333334,
+          "standard_deviation": 4.509249752822894,
+          "values": [
+            583.0,
+            578.0,
+            574.0
+          ]
+        }
+      },
+      "raw": {
+        "average_attempts": {
+          "mean": 3.7728326379230412,
+          "standard_deviation": 0.027337084817441897,
+          "values": [
+            3.741307371349096,
+            3.7899860917941584,
+            3.787204450625869
+          ]
+        },
+        "average_guesses": {
+          "mean": 3.34454773974084,
+          "standard_deviation": 0.012099111917404724,
+          "values": [
+            3.338738738738739,
+            3.358455882352941,
+            3.336448598130841
+          ]
+        },
+        "invalid_guesses": {
+          "mean": 81.66666666666667,
+          "standard_deviation": 6.027713773341708,
+          "values": [
+            76.0,
+            88.0,
+            81.0
+          ]
+        },
+        "seeds": 3,
+        "win_rate": {
+          "mean": 0.7575336114974501,
+          "standard_deviation": 0.013931366899691,
+          "values": [
+            0.7719054242002782,
+            0.7566063977746871,
+            0.7440890125173852
+          ]
+        },
+        "wins": {
+          "mean": 544.6666666666666,
+          "standard_deviation": 10.016652800877813,
+          "values": [
+            555.0,
+            544.0,
+            535.0
+          ]
+        }
+      }
+    }
+  }
+}

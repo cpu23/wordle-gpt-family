@@ -1,0 +1,4 @@
+{
+  "checkpoint": "runs/dpo-dev/beta-0.05-mechanics-5pct/checkpoints/best.pt",
+  "evaluations": 4
+}

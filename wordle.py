@@ -104,6 +104,24 @@ def _feedback_code(answer: str, guess: str) -> int:
     for mark in marks:
         code = code * 3 + mark
     return code
+def expected_survivors(
+    possible_answers: Sequence[str],
+    guess: str,
+) -> float:
+    """Return the expected surviving-answer count after a legal guess."""
+    if not possible_answers:
+        raise ValueError("cannot score a guess with no possible answers")
+    guess = _validate_word(guess, "guess")
+    buckets: dict[int, int] = {}
+    squared_total = 0
+    for answer in possible_answers:
+        code = _feedback_code(answer, guess)
+        old_size = buckets.get(code, 0)
+        buckets[code] = old_size + 1
+        squared_total += 2 * old_size + 1
+    return squared_total / len(possible_answers)
+
+
 
 
 def choose_informative_guess(

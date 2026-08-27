@@ -6,6 +6,7 @@ import math
 from collections.abc import Mapping, Sequence
 from dataclasses import asdict, dataclass
 from pathlib import Path
+import time
 
 import torch
 from torch.nn import functional as F
@@ -51,6 +52,10 @@ class ReplayRecord:
     average_guesses: float
     invalid_guesses: int
     improved: bool
+    examples_seen: int = 0
+    effective_expert_passes: float = 0.0
+    wall_clock_seconds: float = 0.0
+    peak_gpu_memory_bytes: int | None = None
 
 
 def validation_gameplay_improved(
@@ -179,6 +184,10 @@ def _save_checkpoint(
             "epoch": record.epoch,
             "step": record.step,
             "tokens_seen": record.tokens_seen,
+            "examples_seen": record.examples_seen,
+            "effective_expert_passes": record.effective_expert_passes,
+            "wall_clock_seconds": record.wall_clock_seconds,
+            "peak_gpu_memory_bytes": record.peak_gpu_memory_bytes,
             "learning_rate": record.learning_rate,
             "train_losses": dict(record.train_losses),
             "gradient_norm": record.gradient_norm,
@@ -212,6 +221,7 @@ def train_with_replay(
     secrets: Sequence[str],
     allowed_words: Sequence[str],
     batch_size: int = DEFAULT_BATCH_SIZE,
+    gradient_accumulation_steps: int = 1,
     eval_batch_size: int = DEFAULT_EVAL_BATCH_SIZE,
     learning_rate: float = DEFAULT_LEARNING_RATE,
     patience: int = DEFAULT_PATIENCE,
@@ -225,8 +235,8 @@ def train_with_replay(
         raise ValueError("patience and max_epochs must be positive")
     if min_delta < 0 or learning_rate < 0:
         raise ValueError("min_delta and learning_rate cannot be negative")
-    if batch_size < 1 or eval_batch_size < 1:
-        raise ValueError("batch sizes must be positive")
+    if batch_size < 1 or eval_batch_size < 1 or gradient_accumulation_steps < 1:
+        raise ValueError("batch sizes and gradient accumulation steps must be positive")
     if not secrets:
         raise ValueError("gameplay evaluation requires at least one secret")
     if set(train_data) != {name for name in OBJECTIVES if ratios[name] > 0}:
@@ -245,6 +255,9 @@ def train_with_replay(
         device or ("cuda" if torch.cuda.is_available() else "cpu")
     )
     torch.manual_seed(seed)
+    if selected_device.type == "cuda":
+        torch.cuda.reset_peak_memory_stats(selected_device)
+    started_at = time.perf_counter()
     initialization_payload = torch.load(
         initialization_checkpoint,
         map_location=selected_device,
@@ -262,6 +275,13 @@ def train_with_replay(
         device=selected_device,
     )
     optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
+    optimizer_settings = {
+        "name": "AdamW",
+        "betas": list(optimizer.defaults["betas"]),
+        "eps": optimizer.defaults["eps"],
+        "weight_decay": optimizer.defaults["weight_decay"],
+        "amsgrad": optimizer.defaults["amsgrad"],
+    }
     generators = {
         objective: torch.Generator().manual_seed(
             seed + OBJECTIVES.index(objective) * 1_000_003
@@ -276,6 +296,7 @@ def train_with_replay(
     expert_epoch_tokens = train_data["expert"].supervised_token_count
     expert_tokens_seen = 0
     total_tokens_seen = 0
+    total_examples_seen = 0
 
     realized_total = sum(nominal_batch_counts.values())
     run_config = {
@@ -289,10 +310,13 @@ def train_with_replay(
             objective: nominal_batch_counts[objective] / realized_total
             for objective in OBJECTIVES
         },
-        "batch_size": batch_size,
+        "physical_batch_size": batch_size,
+        "gradient_accumulation_steps": gradient_accumulation_steps,
+        "effective_batch_size": batch_size * gradient_accumulation_steps,
         "eval_batch_size": eval_batch_size,
         "device": str(selected_device),
         "learning_rate": learning_rate,
+        "optimizer": optimizer_settings,
         "patience": patience,
         "min_delta": min_delta,
         "max_epochs": max_epochs,
@@ -348,30 +372,46 @@ def train_with_replay(
             }
             gradient_counts = {objective: 0 for objective in sampled}
             model.train()
-            for objective in schedule:
+            optimizer.zero_grad(set_to_none=True)
+            accumulated = 0
+            accumulated_objectives: list[str] = []
+            for schedule_position, objective in enumerate(schedule):
                 inputs, targets = sampled[objective][cursors[objective]]
                 cursors[objective] += 1
                 inputs = inputs.to(selected_device)
                 targets = targets.to(selected_device)
-                optimizer.zero_grad(set_to_none=True)
                 logits = model(inputs)
                 loss = F.cross_entropy(
                     logits.reshape(-1, logits.size(-1)),
                     targets.reshape(-1),
                     ignore_index=IGNORE_INDEX,
                 )
-                loss.backward()
-                total_gradient_norm = torch.nn.utils.clip_grad_norm_(
-                    model.parameters(),
-                    max_norm=float("inf"),
-                )
-                optimizer.step()
+                (loss / gradient_accumulation_steps).backward()
                 supervised = (targets != IGNORE_INDEX).sum()
                 loss_sums[objective] += loss.detach() * supervised
                 token_counts[objective] += supervised
-                gradient_norm_sums[objective] += total_gradient_norm.detach()
-                gradient_counts[objective] += 1
-                step += 1
+                total_examples_seen += len(inputs)
+                accumulated += 1
+                accumulated_objectives.append(objective)
+                final_microbatch = schedule_position + 1 == len(schedule)
+                if accumulated == gradient_accumulation_steps or final_microbatch:
+                    if final_microbatch and accumulated < gradient_accumulation_steps:
+                        scale = gradient_accumulation_steps / accumulated
+                        for parameter in model.parameters():
+                            if parameter.grad is not None:
+                                parameter.grad.mul_(scale)
+                    total_gradient_norm = torch.nn.utils.clip_grad_norm_(
+                        model.parameters(),
+                        max_norm=float("inf"),
+                    )
+                    optimizer.step()
+                    optimizer.zero_grad(set_to_none=True)
+                    for accumulated_objective in set(accumulated_objectives):
+                        gradient_norm_sums[accumulated_objective] += total_gradient_norm.detach()
+                        gradient_counts[accumulated_objective] += 1
+                    step += 1
+                    accumulated = 0
+                    accumulated_objectives.clear()
             train_losses = {
                 objective: loss_sums[objective].item() / token_counts[objective].item()
                 for objective in sampled
@@ -415,6 +455,14 @@ def train_with_replay(
             step=step,
             tokens_seen=total_tokens_seen,
             learning_rate=float(optimizer.param_groups[0]["lr"]),
+            examples_seen=total_examples_seen,
+            effective_expert_passes=expert_tokens_seen / expert_epoch_tokens,
+            wall_clock_seconds=time.perf_counter() - started_at,
+            peak_gpu_memory_bytes=(
+                torch.cuda.max_memory_allocated(selected_device)
+                if selected_device.type == "cuda"
+                else None
+            ),
             batch_counts=dict(batch_counts) if epoch else {name: 0 for name in OBJECTIVES},
             train_losses=train_losses,
             gradient_norm=gradient_norm,
