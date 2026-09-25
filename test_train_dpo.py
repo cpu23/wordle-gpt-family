@@ -7,7 +7,7 @@ import torch
 
 from model import WordleGPT
 from tokenizer_v2 import VOCABULARY_SIZE, encode
-from train_dpo import completion_logps, dpo_loss
+from train_dpo import anchored_dpo_loss, completion_logps, dpo_loss
 
 
 class DPOTest(unittest.TestCase):
@@ -38,6 +38,15 @@ class DPOTest(unittest.TestCase):
         rejected = completion_logps(self.model, self.prompts, self.lengths, self.rejected)
         loss = dpo_loss(chosen, rejected, chosen, rejected, beta=0.1)
         torch.testing.assert_close(loss, torch.full_like(loss, math.log(2)))
+
+    def test_chosen_anchor_adds_only_five_token_chosen_nll(self):
+        chosen = completion_logps(self.model, self.prompts, self.lengths, self.chosen)
+        rejected = completion_logps(self.model, self.prompts, self.lengths, self.rejected)
+        total, dpo, chosen_nll = anchored_dpo_loss(
+            chosen, rejected, chosen.detach(), rejected.detach(), beta=0.2, lambda_sft=0.5
+        )
+        torch.testing.assert_close(chosen_nll, -chosen)
+        torch.testing.assert_close(total, dpo + 0.5 * chosen_nll)
 
     def test_improving_policy_margin_reduces_loss(self):
         reference_chosen = torch.tensor([-10.0, -10.0])

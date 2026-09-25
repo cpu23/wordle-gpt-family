@@ -1,0 +1,1013 @@
+{
+  "mode": {
+    "mode": "development",
+    "path": "data/wordle-development.json",
+    "sha256": "2698b839a6e0d06571799ea49e448a2752e0582bd6affc2eb66c6cc51eaed370"
+  },
+  "rows": 1000000,
+  "temperatures": {
+    "0.25": {
+      "all": {
+        "all": {
+          "count": 1000000,
+          "count_mass_ge_0.01": {
+            "mean": 25.192277,
+            "median": 29.0
+          },
+          "effective_candidates": {
+            "mean": 43.50285405397967,
+            "median": 52.93852290778523
+          },
+          "entropy": {
+            "mean": 2.503457472250621,
+            "median": 3.9691312951587365
+          },
+          "rank1_mass": {
+            "mean": 0.4332957208791438,
+            "median": 0.06513413386445252
+          },
+          "top3_mass": {
+            "mean": 0.4685460561520714,
+            "median": 0.16441051046268954
+          },
+          "top8_mass": {
+            "mean": 0.5392952981899338,
+            "median": 0.3418283897156523
+          }
+        },
+        "non_singleton": {
+          "count": 588063,
+          "count_mass_ge_0.01": {
+            "mean": 42.13892048981147,
+            "median": 37.0
+          },
+          "effective_candidates": {
+            "mean": 73.27602153847405,
+            "median": 68.55172497076063
+          },
+          "entropy": {
+            "mean": 4.257124614625679,
+            "median": 4.227588569378968
+          },
+          "rank1_mass": {
+            "mean": 0.03632046375837927,
+            "median": 0.027755420876431992
+          },
+          "top3_mass": {
+            "mean": 0.09626359106434418,
+            "median": 0.08292869421223775
+          },
+          "top8_mass": {
+            "mean": 0.21657254102015225,
+            "median": 0.21176931217636155
+          }
+        },
+        "singleton": {
+          "count": 411937,
+          "count_mass_ge_0.01": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "effective_candidates": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "entropy": {
+            "mean": 0.0,
+            "median": 0.0
+          },
+          "rank1_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top3_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top8_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          }
+        }
+      },
+      "source_test": {
+        "all": {
+          "count": 0,
+          "count_mass_ge_0.01": {
+            "mean": null,
+            "median": null
+          },
+          "effective_candidates": {
+            "mean": null,
+            "median": null
+          },
+          "entropy": {
+            "mean": null,
+            "median": null
+          },
+          "rank1_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top3_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top8_mass": {
+            "mean": null,
+            "median": null
+          }
+        },
+        "non_singleton": {
+          "count": 0,
+          "count_mass_ge_0.01": {
+            "mean": null,
+            "median": null
+          },
+          "effective_candidates": {
+            "mean": null,
+            "median": null
+          },
+          "entropy": {
+            "mean": null,
+            "median": null
+          },
+          "rank1_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top3_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top8_mass": {
+            "mean": null,
+            "median": null
+          }
+        },
+        "singleton": {
+          "count": 0,
+          "count_mass_ge_0.01": {
+            "mean": null,
+            "median": null
+          },
+          "effective_candidates": {
+            "mean": null,
+            "median": null
+          },
+          "entropy": {
+            "mean": null,
+            "median": null
+          },
+          "rank1_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top3_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top8_mass": {
+            "mean": null,
+            "median": null
+          }
+        }
+      },
+      "source_train": {
+        "all": {
+          "count": 888231,
+          "count_mass_ge_0.01": {
+            "mean": 25.186219575763513,
+            "median": 29.0
+          },
+          "effective_candidates": {
+            "mean": 43.51469130449181,
+            "median": 52.97213442453549
+          },
+          "entropy": {
+            "mean": 2.5035326705099363,
+            "median": 3.969766009714135
+          },
+          "rank1_mass": {
+            "mean": 0.4333123908010633,
+            "median": 0.06515583849563548
+          },
+          "top3_mass": {
+            "mean": 0.46854582018463237,
+            "median": 0.164373762260075
+          },
+          "top8_mass": {
+            "mean": 0.5392635622453289,
+            "median": 0.34161686102510413
+          }
+        },
+        "non_singleton": {
+          "count": 522310,
+          "count_mass_ge_0.01": {
+            "mean": 42.1306503800425,
+            "median": 37.0
+          },
+          "effective_candidates": {
+            "mean": 73.29972003614722,
+            "median": 68.60198726808309
+          },
+          "entropy": {
+            "mean": 4.257462670559076,
+            "median": 4.228321503234645
+          },
+          "rank1_mass": {
+            "mean": 0.0363012352695128,
+            "median": 0.027751263448256725
+          },
+          "top3_mass": {
+            "mean": 0.0962185721284605,
+            "median": 0.08291204782126546
+          },
+          "top8_mass": {
+            "mean": 0.2164798934669655,
+            "median": 0.21177504246744305
+          }
+        },
+        "singleton": {
+          "count": 365921,
+          "count_mass_ge_0.01": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "effective_candidates": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "entropy": {
+            "mean": 0.0,
+            "median": 0.0
+          },
+          "rank1_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top3_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top8_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          }
+        }
+      },
+      "source_validation": {
+        "all": {
+          "count": 111769,
+          "count_mass_ge_0.01": {
+            "mean": 25.240415499825534,
+            "median": 30.0
+          },
+          "effective_candidates": {
+            "mean": 43.40878313217086,
+            "median": 52.70045023191393
+          },
+          "entropy": {
+            "mean": 2.50285986982893,
+            "median": 3.9646239988108976
+          },
+          "rank1_mass": {
+            "mean": 0.4331632445984536,
+            "median": 0.06498343828329264
+          },
+          "top3_mass": {
+            "mean": 0.4685479313911301,
+            "median": 0.16470005398024937
+          },
+          "top8_mass": {
+            "mean": 0.5395475045245375,
+            "median": 0.34353872417021575
+          }
+        },
+        "non_singleton": {
+          "count": 65753,
+          "count_mass_ge_0.01": {
+            "mean": 42.20461423813362,
+            "median": 37.0
+          },
+          "effective_candidates": {
+            "mean": 73.0877721457516,
+            "median": 68.17298589367611
+          },
+          "entropy": {
+            "mean": 4.254439261948652,
+            "median": 4.222048385114842
+          },
+          "rank1_mass": {
+            "mean": 0.03647320556513866,
+            "median": 0.027810833423468188
+          },
+          "top3_mass": {
+            "mean": 0.09662119969667124,
+            "median": 0.08305211409847126
+          },
+          "top8_mass": {
+            "mean": 0.21730848833061667,
+            "median": 0.21165400018816824
+          }
+        },
+        "singleton": {
+          "count": 46016,
+          "count_mass_ge_0.01": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "effective_candidates": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "entropy": {
+            "mean": 0.0,
+            "median": 0.0
+          },
+          "rank1_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top3_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top8_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          }
+        }
+      }
+    },
+    "0.5": {
+      "all": {
+        "all": {
+          "count": 1000000,
+          "count_mass_ge_0.01": {
+            "mean": 23.709581,
+            "median": 16.0
+          },
+          "effective_candidates": {
+            "mean": 59.47378690739024,
+            "median": 87.98950158795321
+          },
+          "entropy": {
+            "mean": 2.7067320020426,
+            "median": 4.477217507224482
+          },
+          "rank1_mass": {
+            "mean": 0.4235683883253902,
+            "median": 0.02981823292032134
+          },
+          "top3_mass": {
+            "mean": 0.4449966181111538,
+            "median": 0.08181447738517092
+          },
+          "top8_mass": {
+            "mean": 0.49352901725462733,
+            "median": 0.1920052523700544
+          }
+        },
+        "non_singleton": {
+          "count": 588063,
+          "count_mass_ge_0.01": {
+            "mean": 39.61759879468696,
+            "median": 40.0
+          },
+          "effective_candidates": {
+            "mean": 100.43456212581006,
+            "median": 100.26157843758133
+          },
+          "entropy": {
+            "mean": 4.602792561413659,
+            "median": 4.607782555154293
+          },
+          "rank1_mass": {
+            "mean": 0.019779153467213855,
+            "median": 0.018152206249401226
+          },
+          "top3_mass": {
+            "mean": 0.05621781698755716,
+            "median": 0.05410610837548944
+          },
+          "top8_mass": {
+            "mean": 0.13874706834918585,
+            "median": 0.13975802020420533
+          }
+        },
+        "singleton": {
+          "count": 411937,
+          "count_mass_ge_0.01": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "effective_candidates": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "entropy": {
+            "mean": 0.0,
+            "median": 0.0
+          },
+          "rank1_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top3_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top8_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          }
+        }
+      },
+      "source_test": {
+        "all": {
+          "count": 0,
+          "count_mass_ge_0.01": {
+            "mean": null,
+            "median": null
+          },
+          "effective_candidates": {
+            "mean": null,
+            "median": null
+          },
+          "entropy": {
+            "mean": null,
+            "median": null
+          },
+          "rank1_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top3_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top8_mass": {
+            "mean": null,
+            "median": null
+          }
+        },
+        "non_singleton": {
+          "count": 0,
+          "count_mass_ge_0.01": {
+            "mean": null,
+            "median": null
+          },
+          "effective_candidates": {
+            "mean": null,
+            "median": null
+          },
+          "entropy": {
+            "mean": null,
+            "median": null
+          },
+          "rank1_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top3_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top8_mass": {
+            "mean": null,
+            "median": null
+          }
+        },
+        "singleton": {
+          "count": 0,
+          "count_mass_ge_0.01": {
+            "mean": null,
+            "median": null
+          },
+          "effective_candidates": {
+            "mean": null,
+            "median": null
+          },
+          "entropy": {
+            "mean": null,
+            "median": null
+          },
+          "rank1_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top3_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top8_mass": {
+            "mean": null,
+            "median": null
+          }
+        }
+      },
+      "source_train": {
+        "all": {
+          "count": 888231,
+          "count_mass_ge_0.01": {
+            "mean": 23.71602094500192,
+            "median": 16.0
+          },
+          "effective_candidates": {
+            "mean": 59.476639058355765,
+            "median": 87.99580376687184
+          },
+          "entropy": {
+            "mean": 2.70665609870359,
+            "median": 4.477289128873901
+          },
+          "rank1_mass": {
+            "mean": 0.42359284043239687,
+            "median": 0.02980626633793602
+          },
+          "top3_mass": {
+            "mean": 0.44501345159765493,
+            "median": 0.081804794426589
+          },
+          "top8_mass": {
+            "mean": 0.49352791046514866,
+            "median": 0.1919183748270049
+          }
+        },
+        "non_singleton": {
+          "count": 522310,
+          "count_mass_ge_0.01": {
+            "mean": 39.630457008290094,
+            "median": 40.0
+          },
+          "effective_candidates": {
+            "mean": 100.44432154743811,
+            "median": 100.2744578753587
+          },
+          "entropy": {
+            "mean": 4.6028907223824715,
+            "median": 4.6079110052626095
+          },
+          "rank1_mass": {
+            "mean": 0.019772342574540757,
+            "median": 0.01816094935392377
+          },
+          "top3_mass": {
+            "mean": 0.05619984899013364,
+            "median": 0.05412123155869147
+          },
+          "top8_mass": {
+            "mean": 0.13870266592707303,
+            "median": 0.13974248849873389
+          }
+        },
+        "singleton": {
+          "count": 365921,
+          "count_mass_ge_0.01": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "effective_candidates": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "entropy": {
+            "mean": 0.0,
+            "median": 0.0
+          },
+          "rank1_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top3_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top8_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          }
+        }
+      },
+      "source_validation": {
+        "all": {
+          "count": 111769,
+          "count_mass_ge_0.01": {
+            "mean": 23.658402598215964,
+            "median": 15.0
+          },
+          "effective_candidates": {
+            "mean": 59.45112079331344,
+            "median": 87.94588062282209
+          },
+          "entropy": {
+            "mean": 2.70733520775002,
+            "median": 4.476721632370014
+          },
+          "rank1_mass": {
+            "mean": 0.4233740668278485,
+            "median": 0.02990589775938163
+          },
+          "top3_mass": {
+            "mean": 0.44486284197869824,
+            "median": 0.08188491151444759
+          },
+          "top8_mass": {
+            "mean": 0.49353781293791454,
+            "median": 0.19279190104349125
+          }
+        },
+        "non_singleton": {
+          "count": 65753,
+          "count_mass_ge_0.01": {
+            "mean": 39.5154593706751,
+            "median": 40.0
+          },
+          "effective_candidates": {
+            "mean": 100.35703800507733,
+            "median": 100.1735801100443
+          },
+          "entropy": {
+            "mean": 4.602012818198592,
+            "median": 4.606904482326864
+          },
+          "rank1_mass": {
+            "mean": 0.019833255901355033,
+            "median": 0.018098455598455597
+          },
+          "top3_mass": {
+            "mean": 0.05636054606051623,
+            "median": 0.053969650361579954
+          },
+          "top8_mass": {
+            "mean": 0.1390997796945808,
+            "median": 0.14008450010000426
+          }
+        },
+        "singleton": {
+          "count": 46016,
+          "count_mass_ge_0.01": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "effective_candidates": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "entropy": {
+            "mean": 0.0,
+            "median": 0.0
+          },
+          "rank1_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top3_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top8_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          }
+        }
+      }
+    },
+    "1.0": {
+      "all": {
+        "all": {
+          "count": 1000000,
+          "count_mass_ge_0.01": {
+            "mean": 18.119899,
+            "median": 1.0
+          },
+          "effective_candidates": {
+            "mean": 69.75096431006679,
+            "median": 112.61768739936201
+          },
+          "entropy": {
+            "mean": 2.804499528035417,
+            "median": 4.723998785068778
+          },
+          "rank1_mass": {
+            "mean": 0.4196583886501373,
+            "median": 0.0169926928967583
+          },
+          "top3_mass": {
+            "mean": 0.43455495485993684,
+            "median": 0.04862644571233863
+          },
+          "top8_mass": {
+            "mean": 0.4701684290920343,
+            "median": 0.12155379699260371
+          }
+        },
+        "non_singleton": {
+          "count": 588063,
+          "count_mass_ge_0.01": {
+            "mean": 30.11235530886997,
+            "median": 37.0
+          },
+          "effective_candidates": {
+            "mean": 117.91088252460503,
+            "median": 118.51034618832402
+          },
+          "entropy": {
+            "mean": 4.76904605124862,
+            "median": 4.775000266370034
+          },
+          "rank1_mass": {
+            "mean": 0.013130206542729828,
+            "median": 0.012839717526214421
+          },
+          "top3_mass": {
+            "mean": 0.03846178871980869,
+            "median": 0.038306438976239414
+          },
+          "top8_mass": {
+            "mean": 0.09902243312712133,
+            "median": 0.10020162671651871
+          }
+        },
+        "singleton": {
+          "count": 411937,
+          "count_mass_ge_0.01": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "effective_candidates": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "entropy": {
+            "mean": 0.0,
+            "median": 0.0
+          },
+          "rank1_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top3_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top8_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          }
+        }
+      },
+      "source_test": {
+        "all": {
+          "count": 0,
+          "count_mass_ge_0.01": {
+            "mean": null,
+            "median": null
+          },
+          "effective_candidates": {
+            "mean": null,
+            "median": null
+          },
+          "entropy": {
+            "mean": null,
+            "median": null
+          },
+          "rank1_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top3_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top8_mass": {
+            "mean": null,
+            "median": null
+          }
+        },
+        "non_singleton": {
+          "count": 0,
+          "count_mass_ge_0.01": {
+            "mean": null,
+            "median": null
+          },
+          "effective_candidates": {
+            "mean": null,
+            "median": null
+          },
+          "entropy": {
+            "mean": null,
+            "median": null
+          },
+          "rank1_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top3_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top8_mass": {
+            "mean": null,
+            "median": null
+          }
+        },
+        "singleton": {
+          "count": 0,
+          "count_mass_ge_0.01": {
+            "mean": null,
+            "median": null
+          },
+          "effective_candidates": {
+            "mean": null,
+            "median": null
+          },
+          "entropy": {
+            "mean": null,
+            "median": null
+          },
+          "rank1_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top3_mass": {
+            "mean": null,
+            "median": null
+          },
+          "top8_mass": {
+            "mean": null,
+            "median": null
+          }
+        }
+      },
+      "source_train": {
+        "all": {
+          "count": 888231,
+          "count_mass_ge_0.01": {
+            "mean": 18.110365434216998,
+            "median": 1.0
+          },
+          "effective_candidates": {
+            "mean": 69.74930729149504,
+            "median": 112.62654433033342
+          },
+          "entropy": {
+            "mean": 2.8043764365110824,
+            "median": 4.724077427979516
+          },
+          "rank1_mass": {
+            "mean": 0.41968553144732224,
+            "median": 0.016986279000230316
+          },
+          "top3_mass": {
+            "mean": 0.43457867393474436,
+            "median": 0.048615157236185175
+          },
+          "top8_mass": {
+            "mean": 0.4701834803419973,
+            "median": 0.12153607217512755
+          }
+        },
+        "non_singleton": {
+          "count": 522310,
+          "count_mass_ge_0.01": {
+            "mean": 30.097579981237196,
+            "median": 37.0
+          },
+          "effective_candidates": {
+            "mean": 117.91383654311029,
+            "median": 118.51063753962531
+          },
+          "entropy": {
+            "mean": 4.769072172806714,
+            "median": 4.775002724813136
+          },
+          "rank1_mass": {
+            "mean": 0.013127643129533233,
+            "median": 0.012842465753424657
+          },
+          "top3_mass": {
+            "mean": 0.03845465361132652,
+            "median": 0.038312339123147104
+          },
+          "top8_mass": {
+            "mean": 0.09900354756304233,
+            "median": 0.10017576651702259
+          }
+        },
+        "singleton": {
+          "count": 365921,
+          "count_mass_ge_0.01": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "effective_candidates": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "entropy": {
+            "mean": 0.0,
+            "median": 0.0
+          },
+          "rank1_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top3_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top8_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          }
+        }
+      },
+      "source_validation": {
+        "all": {
+          "count": 111769,
+          "count_mass_ge_0.01": {
+            "mean": 18.195662482441463,
+            "median": 1.0
+          },
+          "effective_candidates": {
+            "mean": 69.76413267753014,
+            "median": 112.5450636512512
+          },
+          "entropy": {
+            "mean": 2.8054777394156005,
+            "median": 4.723353707228316
+          },
+          "rank1_mass": {
+            "mean": 0.41944268417137875,
+            "median": 0.017048045540213243
+          },
+          "top3_mass": {
+            "mean": 0.43436645878736413,
+            "median": 0.04872653946644673
+          },
+          "top8_mass": {
+            "mean": 0.47004881643731006,
+            "median": 0.1216858777346657
+          }
+        },
+        "non_singleton": {
+          "count": 65753,
+          "count_mass_ge_0.01": {
+            "mean": 30.229723358630025,
+            "median": 37.0
+          },
+          "effective_candidates": {
+            "mean": 117.88741723168323,
+            "median": 118.50627367443376
+          },
+          "entropy": {
+            "mean": 4.768838554236951,
+            "median": 4.774965901574071
+          },
+          "rank1_mass": {
+            "mean": 0.01315056905617732,
+            "median": 0.01282051282051282
+          },
+          "top3_mass": {
+            "mean": 0.03851846656737942,
+            "median": 0.038273442483521145
+          },
+          "top8_mass": {
+            "mean": 0.09917245090538392,
+            "median": 0.10037133718151404
+          }
+        },
+        "singleton": {
+          "count": 46016,
+          "count_mass_ge_0.01": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "effective_candidates": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "entropy": {
+            "mean": 0.0,
+            "median": 0.0
+          },
+          "rank1_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top3_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          },
+          "top8_mass": {
+            "mean": 1.0,
+            "median": 1.0
+          }
+        }
+      }
+    }
+  },
+  "weighting": "unweighted corpus states"
+}

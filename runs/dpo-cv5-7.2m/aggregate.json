@@ -1,0 +1,333 @@
+{
+  "base_model": "7.2m SFT",
+  "benchmark": "dpo-cv5-7.2m",
+  "beta": 0.2,
+  "dpo_action_regret": {
+    "mean_action_regret": {
+      "mean": 0.026334978839924417,
+      "standard_deviation": 0.003515165176708045,
+      "values": [
+        0.02227739904097525,
+        0.02845553393383906,
+        0.028272003544958946
+      ]
+    },
+    "median_action_regret": {
+      "mean": 0.0,
+      "standard_deviation": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "rank_1_fraction": {
+      "mean": 0.658969256531157,
+      "standard_deviation": 0.019499357941488653,
+      "values": [
+        0.6813583815028902,
+        0.6498411577832687,
+        0.645708230307312
+      ]
+    },
+    "seeds": 3,
+    "top_3_fraction": {
+      "mean": 0.6978085236204771,
+      "standard_deviation": 0.013135743809222684,
+      "values": [
+        0.7120664739884393,
+        0.6861983762795623,
+        0.6951607205934299
+      ]
+    },
+    "top_8_fraction": {
+      "mean": 0.7237993584220216,
+      "standard_deviation": 0.014557981352403266,
+      "values": [
+        0.740606936416185,
+        0.7151429579950582,
+        0.7156481808548216
+      ]
+    }
+  },
+  "dpo_summaries": {
+    "constrained": {
+      "average_attempts": {
+        "mean": 3.909133055169217,
+        "standard_deviation": 0.051410217521917406,
+        "values": [
+          3.8497913769123784,
+          3.9401947148817804,
+          3.937413073713491
+        ]
+      },
+      "average_guesses": {
+        "mean": 3.4333182784189145,
+        "standard_deviation": 0.016583224677490495,
+        "values": [
+          3.4147157190635453,
+          3.446551724137931,
+          3.4386873920552676
+        ]
+      },
+      "invalid_guesses": {
+        "mean": 0.0,
+        "standard_deviation": 0.0,
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "seeds": 3,
+      "win_rate": {
+        "mean": 0.8145572554473807,
+        "standard_deviation": 0.014871594744872884,
+        "values": [
+          0.8317107093184979,
+          0.8066759388038943,
+          0.8052851182197497
+        ]
+      },
+      "wins": {
+        "mean": 585.6666666666666,
+        "standard_deviation": 10.692676621563626,
+        "values": [
+          598.0,
+          580.0,
+          579.0
+        ]
+      }
+    },
+    "raw": {
+      "average_attempts": {
+        "mean": 3.777468706536857,
+        "standard_deviation": 0.03372560682331615,
+        "values": [
+          3.7385257301808066,
+          3.7969401947148818,
+          3.7969401947148818
+        ]
+      },
+      "average_guesses": {
+        "mean": 3.3578435315620694,
+        "standard_deviation": 0.010535658220856862,
+        "values": [
+          3.36077057793345,
+          3.3461538461538463,
+          3.366606170598911
+        ]
+      },
+      "invalid_guesses": {
+        "mean": 69.66666666666667,
+        "standard_deviation": 11.930353445448853,
+        "values": [
+          60.0,
+          83.0,
+          66.0
+        ]
+      },
+      "seeds": 3,
+      "win_rate": {
+        "mean": 0.7732962447844228,
+        "standard_deviation": 0.018398826919781584,
+        "values": [
+          0.7941585535465925,
+          0.7593880389429764,
+          0.7663421418636995
+        ]
+      },
+      "wins": {
+        "mean": 556.0,
+        "standard_deviation": 13.228756555322953,
+        "values": [
+          571.0,
+          546.0,
+          551.0
+        ]
+      }
+    }
+  },
+  "effective_batch_size": 128,
+  "eval_batch_size": 256,
+  "evaluation_passes": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "gradient_accumulation_steps": 2,
+  "lambda_sft": 1.0,
+  "learning_rate": 1e-06,
+  "mode": "data/wordle-cv5.json",
+  "mode_sha256": "59aae085d5df925a81a89f3b1afdc6a7082aa667961abdb4c47efe73fce18aee",
+  "model_seeds": [
+    0,
+    1,
+    2
+  ],
+  "paired_comparisons": {
+    "constrained": {
+      "mean_guess_delta_b_minus_a": {
+        "mean": -0.022716736207695876,
+        "standard_deviation": 0.0076600424857943,
+        "values": [
+          -0.030598052851182198,
+          -0.015299026425591099,
+          -0.022253129346314324
+        ]
+      },
+      "outcomes": {
+        "a_loses_b_wins": {
+          "mean": 17.666666666666668,
+          "standard_deviation": 11.590225767142472,
+          "values": [
+            30,
+            7,
+            16
+          ]
+        },
+        "a_wins_b_loses": {
+          "mean": 10.333333333333334,
+          "standard_deviation": 5.033222956847166,
+          "values": [
+            15,
+            5,
+            11
+          ]
+        },
+        "both_lose": {
+          "mean": 123.0,
+          "standard_deviation": 14.933184523068078,
+          "values": [
+            106,
+            134,
+            129
+          ]
+        },
+        "both_win": {
+          "mean": 568.0,
+          "standard_deviation": 5.0,
+          "values": [
+            568,
+            573,
+            563
+          ]
+        }
+      },
+      "seeds": 3
+    },
+    "raw": {
+      "mean_guess_delta_b_minus_a": {
+        "mean": 0.004636068613815485,
+        "standard_deviation": 0.006572761649864546,
+        "values": [
+          -0.0027816411682892906,
+          0.006954102920723227,
+          0.009735744089012517
+        ]
+      },
+      "outcomes": {
+        "a_loses_b_wins": {
+          "mean": 22.333333333333332,
+          "standard_deviation": 13.316656236958785,
+          "values": [
+            31,
+            7,
+            29
+          ]
+        },
+        "a_wins_b_loses": {
+          "mean": 11.0,
+          "standard_deviation": 5.291502622129181,
+          "values": [
+            15,
+            5,
+            13
+          ]
+        },
+        "both_lose": {
+          "mean": 152.0,
+          "standard_deviation": 17.69180601295413,
+          "values": [
+            133,
+            168,
+            155
+          ]
+        },
+        "both_win": {
+          "mean": 533.6666666666666,
+          "standard_deviation": 10.115993936995679,
+          "values": [
+            540,
+            539,
+            522
+          ]
+        }
+      },
+      "seeds": 3
+    }
+  },
+  "physical_batch_size": 64,
+  "preferences_dir": "data/wordle-dpo-dev",
+  "sft_action_regret": {
+    "mean_action_regret": {
+      "mean": 0.029177176844886032,
+      "standard_deviation": 0.0032597999181355054,
+      "values": [
+        0.02557899641718837,
+        0.030019126152924035,
+        0.03193340796454568
+      ]
+    },
+    "median_action_regret": {
+      "mean": 0.0,
+      "standard_deviation": 0.0,
+      "values": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "rank_1_fraction": {
+      "mean": 0.6545911986007747,
+      "standard_deviation": 0.009258706903334002,
+      "values": [
+        0.6652329749103942,
+        0.6483825597749648,
+        0.6501580611169653
+      ]
+    },
+    "seeds": 3,
+    "top_3_fraction": {
+      "mean": 0.6926505202083156,
+      "standard_deviation": 0.008747672769509565,
+      "values": [
+        0.6996415770609319,
+        0.6828410689170182,
+        0.6954689146469969
+      ]
+    },
+    "top_8_fraction": {
+      "mean": 0.7170616102981565,
+      "standard_deviation": 0.006665774144023809,
+      "values": [
+        0.7243727598566309,
+        0.7113220815752461,
+        0.7154899894625922
+      ]
+    }
+  },
+  "sft_runs_dir": "runs/scaling-cv5-1m",
+  "train_preferences_sha256": "f07a3119942aaefb74b98251d7f98e7ee518d3454d7be5275c5ebf765f6796e3",
+  "validation_preferences_sha256": "78550fe28c27adf0d44f8ab52e211675eb36827d010039b27b37e25c30e6dc58"
+}

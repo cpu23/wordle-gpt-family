@@ -1,0 +1,7 @@
+{
+  "states_verified": 1000000,
+  "cached_candidate_scores_verified": 128000000,
+  "independently_recomputed_feedback_scores": 16384,
+  "exhaustive_rankings_recomputed": 128,
+  "unique_actions_per_state": 128
+}

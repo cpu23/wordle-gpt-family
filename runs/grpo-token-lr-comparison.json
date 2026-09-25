@@ -1,0 +1,688 @@
+{
+  "algorithm": "token-clipped equal-trajectory GRPO",
+  "beta": 0.1,
+  "updates_per_run": 1000,
+  "state_order_matched": true,
+  "training_panel_size": 512,
+  "validation_panel_size": 512,
+  "continuations_per_panel": 4096,
+  "training_state_draws_per_run": 16000,
+  "unique_training_states_per_run": 14781,
+  "runs": {
+    "1e-06": {
+      "output_dir": "runs/grpo-token-lr-1e6",
+      "curve": [
+        {
+          "updates": 0,
+          "training": {
+            "constrained_prefix_kl_from_sft": 0.0,
+            "identical_reward_group_rate": 0.630859375,
+            "mean_group_reward_std": 0.1736218179576099,
+            "mean_guesses_for_winning_rollouts": 4.596472803810202,
+            "mean_trajectory_reward": 2.229248046875,
+            "raw_prefix_kl_from_sft": 0.0,
+            "sampled_rollout_win_fraction": 0.927490234375,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3799
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 0.0,
+            "identical_reward_group_rate": 0.431640625,
+            "mean_group_reward_std": 0.37480618711560965,
+            "mean_guesses_for_winning_rollouts": 4.7869440838801465,
+            "mean_trajectory_reward": 1.50634765625,
+            "raw_prefix_kl_from_sft": 0.0,
+            "sampled_rollout_win_fraction": 0.6806640625,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2788
+          },
+          "greedy_constrained_wins": 59,
+          "greedy_average_attempts": 3.9166666666666665,
+          "greedy_raw_wins": 57,
+          "fixed_sft_prefix_kl": 0.0
+        },
+        {
+          "updates": 100,
+          "training": {
+            "constrained_prefix_kl_from_sft": 6.828623781984788e-06,
+            "identical_reward_group_rate": 0.6328125,
+            "mean_group_reward_std": 0.1724239052273333,
+            "mean_guesses_for_winning_rollouts": 4.595313365990517,
+            "mean_trajectory_reward": 2.229736328125,
+            "raw_prefix_kl_from_sft": 7.099977509028577e-06,
+            "sampled_rollout_win_fraction": 0.92724609375,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3798
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 1.5655707954920217e-05,
+            "identical_reward_group_rate": 0.4375,
+            "mean_group_reward_std": 0.37775170896202326,
+            "mean_guesses_for_winning_rollouts": 4.7889645777052765,
+            "mean_trajectory_reward": 1.506591796875,
+            "raw_prefix_kl_from_sft": 1.6527666559795762e-05,
+            "sampled_rollout_win_fraction": 0.681396484375,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2791
+          },
+          "greedy_constrained_wins": 59,
+          "greedy_average_attempts": 3.9166666666666665,
+          "greedy_raw_wins": 57,
+          "fixed_sft_prefix_kl": 1.1386568985471968e-05
+        },
+        {
+          "updates": 250,
+          "training": {
+            "constrained_prefix_kl_from_sft": 3.486040736788709e-05,
+            "identical_reward_group_rate": 0.63671875,
+            "mean_group_reward_std": 0.17116250144317746,
+            "mean_guesses_for_winning_rollouts": 4.592836433000743,
+            "mean_trajectory_reward": 2.2314453125,
+            "raw_prefix_kl_from_sft": 3.5714902764993894e-05,
+            "sampled_rollout_win_fraction": 0.927001953125,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3797
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 7.831608081687591e-05,
+            "identical_reward_group_rate": 0.427734375,
+            "mean_group_reward_std": 0.38403640408068895,
+            "mean_guesses_for_winning_rollouts": 4.780294876139783,
+            "mean_trajectory_reward": 1.507080078125,
+            "raw_prefix_kl_from_sft": 8.2252914126002e-05,
+            "sampled_rollout_win_fraction": 0.678955078125,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2781
+          },
+          "greedy_constrained_wins": 59,
+          "greedy_average_attempts": 3.9305555555555554,
+          "greedy_raw_wins": 57,
+          "fixed_sft_prefix_kl": 5.336280446499586e-05
+        },
+        {
+          "updates": 500,
+          "training": {
+            "constrained_prefix_kl_from_sft": 0.00011526066123224155,
+            "identical_reward_group_rate": 0.63671875,
+            "mean_group_reward_std": 0.17089074151590466,
+            "mean_guesses_for_winning_rollouts": 4.59437440108551,
+            "mean_trajectory_reward": 2.234130859375,
+            "raw_prefix_kl_from_sft": 0.00011820443137366965,
+            "sampled_rollout_win_fraction": 0.9287109375,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3804
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 0.00025989365258283215,
+            "identical_reward_group_rate": 0.4296875,
+            "mean_group_reward_std": 0.380760551430285,
+            "mean_guesses_for_winning_rollouts": 4.777336735795956,
+            "mean_trajectory_reward": 1.503662109375,
+            "raw_prefix_kl_from_sft": 0.00027319549462845316,
+            "sampled_rollout_win_fraction": 0.676513671875,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2771
+          },
+          "greedy_constrained_wins": 57,
+          "greedy_average_attempts": 3.9444444444444446,
+          "greedy_raw_wins": 56,
+          "fixed_sft_prefix_kl": 0.00018013696535490453
+        },
+        {
+          "updates": 1000,
+          "training": {
+            "constrained_prefix_kl_from_sft": 0.0004788900969288079,
+            "identical_reward_group_rate": 0.626953125,
+            "mean_group_reward_std": 0.1728536901064217,
+            "mean_guesses_for_winning_rollouts": 4.590013103760808,
+            "mean_trajectory_reward": 2.23876953125,
+            "raw_prefix_kl_from_sft": 0.0004901316488030716,
+            "sampled_rollout_win_fraction": 0.928955078125,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3805
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 0.001042057243466843,
+            "identical_reward_group_rate": 0.423828125,
+            "mean_group_reward_std": 0.38089066557586193,
+            "mean_guesses_for_winning_rollouts": 4.775524962043348,
+            "mean_trajectory_reward": 1.5,
+            "raw_prefix_kl_from_sft": 0.0010999891310348175,
+            "sampled_rollout_win_fraction": 0.67431640625,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2762
+          },
+          "greedy_constrained_wins": 57,
+          "greedy_average_attempts": 3.986111111111111,
+          "greedy_raw_wins": 56,
+          "fixed_sft_prefix_kl": 0.000736729649361223
+        }
+      ],
+      "training_final_paired_change": {
+        "mean_change": 0.009521484375,
+        "secret_cluster_bootstrap_95_percent": [
+          0.0040708812260536395,
+          0.01529126213592233
+        ],
+        "secret_clusters": 337,
+        "bootstrap_samples": 10000
+      },
+      "validation_final_paired_change": {
+        "mean_change": -0.00634765625,
+        "secret_cluster_bootstrap_95_percent": [
+          -0.020309477756286266,
+          0.007952286282306162
+        ],
+        "secret_clusters": 72,
+        "bootstrap_samples": 10000
+      },
+      "length_diagnostics": {
+        "1": {
+          "rollouts": 784,
+          "mean_abs_advantage": 0.13631556985177556,
+          "mean_reward_gradient_contribution_l2": 0.3748689246448604,
+          "mean_combined_gradient_contribution_l2": 0.3738713319974274,
+          "per_token_weight": 0.2
+        },
+        "2": {
+          "rollouts": 526,
+          "mean_abs_advantage": 0.35606362945453296,
+          "mean_reward_gradient_contribution_l2": 0.2862573807889765,
+          "mean_combined_gradient_contribution_l2": 0.28613856163891876,
+          "per_token_weight": 0.1
+        },
+        "3": {
+          "rollouts": 95,
+          "mean_abs_advantage": 1.0061775988654087,
+          "mean_reward_gradient_contribution_l2": 0.18692081320014867,
+          "mean_combined_gradient_contribution_l2": 0.1867574013092301,
+          "per_token_weight": 0.06666666666666667
+        },
+        "4": {
+          "rollouts": 3,
+          "mean_abs_advantage": 2.341184616088867,
+          "mean_reward_gradient_contribution_l2": 0.022051832215352493,
+          "mean_combined_gradient_contribution_l2": 0.02204109999266538,
+          "per_token_weight": 0.05
+        },
+        "5": {
+          "rollouts": 0,
+          "mean_abs_advantage": null,
+          "mean_reward_gradient_contribution_l2": 0.0,
+          "mean_combined_gradient_contribution_l2": 0.0,
+          "per_token_weight": 0.04
+        },
+        "6": {
+          "rollouts": 0,
+          "mean_abs_advantage": null,
+          "mean_reward_gradient_contribution_l2": 0.0,
+          "mean_combined_gradient_contribution_l2": 0.0,
+          "per_token_weight": 0.03333333333333333
+        }
+      },
+      "pre_update_max_clip_fraction": 0.0,
+      "post_update_max_clip_fraction": 0.0,
+      "elapsed_seconds": 143.0120029589998
+    },
+    "3e-06": {
+      "output_dir": "runs/grpo-token-lr-3e6",
+      "curve": [
+        {
+          "updates": 0,
+          "training": {
+            "constrained_prefix_kl_from_sft": 0.0,
+            "identical_reward_group_rate": 0.630859375,
+            "mean_group_reward_std": 0.1736218179576099,
+            "mean_guesses_for_winning_rollouts": 4.596472803810202,
+            "mean_trajectory_reward": 2.229248046875,
+            "raw_prefix_kl_from_sft": 0.0,
+            "sampled_rollout_win_fraction": 0.927490234375,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3799
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 0.0,
+            "identical_reward_group_rate": 0.431640625,
+            "mean_group_reward_std": 0.37480618711560965,
+            "mean_guesses_for_winning_rollouts": 4.7869440838801465,
+            "mean_trajectory_reward": 1.50634765625,
+            "raw_prefix_kl_from_sft": 0.0,
+            "sampled_rollout_win_fraction": 0.6806640625,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2788
+          },
+          "greedy_constrained_wins": 59,
+          "greedy_average_attempts": 3.9166666666666665,
+          "greedy_raw_wins": 57,
+          "fixed_sft_prefix_kl": 0.0
+        },
+        {
+          "updates": 100,
+          "training": {
+            "constrained_prefix_kl_from_sft": 5.907508182190213e-05,
+            "identical_reward_group_rate": 0.62890625,
+            "mean_group_reward_std": 0.17311372747644782,
+            "mean_guesses_for_winning_rollouts": 4.593889922256811,
+            "mean_trajectory_reward": 2.23046875,
+            "raw_prefix_kl_from_sft": 6.12596802511689e-05,
+            "sampled_rollout_win_fraction": 0.927001953125,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3797
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 0.00013502727415470872,
+            "identical_reward_group_rate": 0.427734375,
+            "mean_group_reward_std": 0.38019697833806276,
+            "mean_guesses_for_winning_rollouts": 4.7818116236727155,
+            "mean_trajectory_reward": 1.506591796875,
+            "raw_prefix_kl_from_sft": 0.00014298302312454325,
+            "sampled_rollout_win_fraction": 0.67919921875,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2782
+          },
+          "greedy_constrained_wins": 59,
+          "greedy_average_attempts": 3.9305555555555554,
+          "greedy_raw_wins": 57,
+          "fixed_sft_prefix_kl": 0.00010118486534338444
+        },
+        {
+          "updates": 250,
+          "training": {
+            "constrained_prefix_kl_from_sft": 0.00027270819737168495,
+            "identical_reward_group_rate": 0.626953125,
+            "mean_group_reward_std": 0.17250147415325046,
+            "mean_guesses_for_winning_rollouts": 4.591627129885697,
+            "mean_trajectory_reward": 2.233154296875,
+            "raw_prefix_kl_from_sft": 0.00027968815720669227,
+            "sampled_rollout_win_fraction": 0.92724609375,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3798
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 0.0006129592311481247,
+            "identical_reward_group_rate": 0.4296875,
+            "mean_group_reward_std": 0.3783395243808627,
+            "mean_guesses_for_winning_rollouts": 4.780215824422219,
+            "mean_trajectory_reward": 1.506591796875,
+            "raw_prefix_kl_from_sft": 0.0006441779732995201,
+            "sampled_rollout_win_fraction": 0.6787109375,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2780
+          },
+          "greedy_constrained_wins": 57,
+          "greedy_average_attempts": 3.9305555555555554,
+          "greedy_raw_wins": 56,
+          "fixed_sft_prefix_kl": 0.00042544869938865304
+        },
+        {
+          "updates": 500,
+          "training": {
+            "constrained_prefix_kl_from_sft": 0.0008233107400883455,
+            "identical_reward_group_rate": 0.638671875,
+            "mean_group_reward_std": 0.16920476267114282,
+            "mean_guesses_for_winning_rollouts": 4.589084204836675,
+            "mean_trajectory_reward": 2.2431640625,
+            "raw_prefix_kl_from_sft": 0.000840602984681027,
+            "sampled_rollout_win_fraction": 0.930419921875,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3811
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 0.0017908642403199337,
+            "identical_reward_group_rate": 0.423828125,
+            "mean_group_reward_std": 0.3791906191036105,
+            "mean_guesses_for_winning_rollouts": 4.774882345582712,
+            "mean_trajectory_reward": 1.5009765625,
+            "raw_prefix_kl_from_sft": 0.0018811257468769327,
+            "sampled_rollout_win_fraction": 0.674560546875,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2763
+          },
+          "greedy_constrained_wins": 56,
+          "greedy_average_attempts": 4.013888888888889,
+          "greedy_raw_wins": 55,
+          "fixed_sft_prefix_kl": 0.0012512519024312496
+        },
+        {
+          "updates": 1000,
+          "training": {
+            "constrained_prefix_kl_from_sft": 0.0027749408545787446,
+            "identical_reward_group_rate": 0.64453125,
+            "mean_group_reward_std": 0.16789491986855865,
+            "mean_guesses_for_winning_rollouts": 4.587172763260247,
+            "mean_trajectory_reward": 2.250244140625,
+            "raw_prefix_kl_from_sft": 0.0028339215787127614,
+            "sampled_rollout_win_fraction": 0.9326171875,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3820
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 0.005881702687474899,
+            "identical_reward_group_rate": 0.421875,
+            "mean_group_reward_std": 0.37602561339735985,
+            "mean_guesses_for_winning_rollouts": 4.774872890311735,
+            "mean_trajectory_reward": 1.49609375,
+            "raw_prefix_kl_from_sft": 0.00623476947657764,
+            "sampled_rollout_win_fraction": 0.67236328125,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2754
+          },
+          "greedy_constrained_wins": 58,
+          "greedy_average_attempts": 3.9722222222222223,
+          "greedy_raw_wins": 56,
+          "fixed_sft_prefix_kl": 0.004179761745035648
+        }
+      ],
+      "training_final_paired_change": {
+        "mean_change": 0.02099609375,
+        "secret_cluster_bootstrap_95_percent": [
+          0.011622390891840606,
+          0.030451866404715127
+        ],
+        "secret_clusters": 337,
+        "bootstrap_samples": 10000
+      },
+      "validation_final_paired_change": {
+        "mean_change": -0.01025390625,
+        "secret_cluster_bootstrap_95_percent": [
+          -0.031826568265682656,
+          0.011654478976234004
+        ],
+        "secret_clusters": 72,
+        "bootstrap_samples": 10000
+      },
+      "length_diagnostics": {
+        "1": {
+          "rollouts": 787,
+          "mean_abs_advantage": 0.12588992069228025,
+          "mean_reward_gradient_contribution_l2": 0.3415583941069516,
+          "mean_combined_gradient_contribution_l2": 0.3412321148313243,
+          "per_token_weight": 0.2
+        },
+        "2": {
+          "rollouts": 528,
+          "mean_abs_advantage": 0.3543635616643411,
+          "mean_reward_gradient_contribution_l2": 0.2969749786637046,
+          "mean_combined_gradient_contribution_l2": 0.2966098433191126,
+          "per_token_weight": 0.1
+        },
+        "3": {
+          "rollouts": 89,
+          "mean_abs_advantage": 1.0624412773700243,
+          "mean_reward_gradient_contribution_l2": 0.17551498250527817,
+          "mean_combined_gradient_contribution_l2": 0.17521502924236385,
+          "per_token_weight": 0.06666666666666667
+        },
+        "4": {
+          "rollouts": 4,
+          "mean_abs_advantage": 2.339605689048767,
+          "mean_reward_gradient_contribution_l2": 0.03179160234603015,
+          "mean_combined_gradient_contribution_l2": 0.031737104735591194,
+          "per_token_weight": 0.05
+        },
+        "5": {
+          "rollouts": 0,
+          "mean_abs_advantage": null,
+          "mean_reward_gradient_contribution_l2": 0.0,
+          "mean_combined_gradient_contribution_l2": 0.0,
+          "per_token_weight": 0.04
+        },
+        "6": {
+          "rollouts": 0,
+          "mean_abs_advantage": null,
+          "mean_reward_gradient_contribution_l2": 0.0,
+          "mean_combined_gradient_contribution_l2": 0.0,
+          "per_token_weight": 0.03333333333333333
+        }
+      },
+      "pre_update_max_clip_fraction": 0.0,
+      "post_update_max_clip_fraction": 0.0,
+      "elapsed_seconds": 143.11956663399997
+    },
+    "1e-05": {
+      "output_dir": "runs/grpo-token-lr-1e5",
+      "curve": [
+        {
+          "updates": 0,
+          "training": {
+            "constrained_prefix_kl_from_sft": 0.0,
+            "identical_reward_group_rate": 0.630859375,
+            "mean_group_reward_std": 0.1736218179576099,
+            "mean_guesses_for_winning_rollouts": 4.596472803810202,
+            "mean_trajectory_reward": 2.229248046875,
+            "raw_prefix_kl_from_sft": 0.0,
+            "sampled_rollout_win_fraction": 0.927490234375,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3799
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 0.0,
+            "identical_reward_group_rate": 0.431640625,
+            "mean_group_reward_std": 0.37480618711560965,
+            "mean_guesses_for_winning_rollouts": 4.7869440838801465,
+            "mean_trajectory_reward": 1.50634765625,
+            "raw_prefix_kl_from_sft": 0.0,
+            "sampled_rollout_win_fraction": 0.6806640625,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2788
+          },
+          "greedy_constrained_wins": 59,
+          "greedy_average_attempts": 3.9166666666666665,
+          "greedy_raw_wins": 57,
+          "fixed_sft_prefix_kl": 0.0
+        },
+        {
+          "updates": 100,
+          "training": {
+            "constrained_prefix_kl_from_sft": 0.0005139985496498412,
+            "identical_reward_group_rate": 0.619140625,
+            "mean_group_reward_std": 0.17500158259645104,
+            "mean_guesses_for_winning_rollouts": 4.589689632392695,
+            "mean_trajectory_reward": 2.2373046875,
+            "raw_prefix_kl_from_sft": 0.0005263355396891711,
+            "sampled_rollout_win_fraction": 0.92822265625,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3802
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 0.001217735538375564,
+            "identical_reward_group_rate": 0.43359375,
+            "mean_group_reward_std": 0.3730078423395753,
+            "mean_guesses_for_winning_rollouts": 4.772151801814654,
+            "mean_trajectory_reward": 1.50390625,
+            "raw_prefix_kl_from_sft": 0.0012913386017316952,
+            "sampled_rollout_win_fraction": 0.675048828125,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2765
+          },
+          "greedy_constrained_wins": 58,
+          "greedy_average_attempts": 3.9305555555555554,
+          "greedy_raw_wins": 57,
+          "fixed_sft_prefix_kl": 0.0008997749537229538
+        },
+        {
+          "updates": 250,
+          "training": {
+            "constrained_prefix_kl_from_sft": 0.0021083450119476765,
+            "identical_reward_group_rate": 0.642578125,
+            "mean_group_reward_std": 0.1654851958155632,
+            "mean_guesses_for_winning_rollouts": 4.584688057371879,
+            "mean_trajectory_reward": 2.2490234375,
+            "raw_prefix_kl_from_sft": 0.0021407442036434077,
+            "sampled_rollout_win_fraction": 0.93115234375,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3814
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 0.004697845812188461,
+            "identical_reward_group_rate": 0.423828125,
+            "mean_group_reward_std": 0.3814227320253849,
+            "mean_guesses_for_winning_rollouts": 4.779581551083926,
+            "mean_trajectory_reward": 1.502685546875,
+            "raw_prefix_kl_from_sft": 0.004946794200805016,
+            "sampled_rollout_win_fraction": 0.6767578125,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2772
+          },
+          "greedy_constrained_wins": 58,
+          "greedy_average_attempts": 3.9583333333333335,
+          "greedy_raw_wins": 56,
+          "fixed_sft_prefix_kl": 0.0031801180448383093
+        },
+        {
+          "updates": 500,
+          "training": {
+            "constrained_prefix_kl_from_sft": 0.004784610267961398,
+            "identical_reward_group_rate": 0.654296875,
+            "mean_group_reward_std": 0.16339146811515093,
+            "mean_guesses_for_winning_rollouts": 4.579250757938472,
+            "mean_trajectory_reward": 2.255859375,
+            "raw_prefix_kl_from_sft": 0.004850620243814774,
+            "sampled_rollout_win_fraction": 0.931884765625,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3817
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 0.009396129404194653,
+            "identical_reward_group_rate": 0.40625,
+            "mean_group_reward_std": 0.3868448119610548,
+            "mean_guesses_for_winning_rollouts": 4.779183254028254,
+            "mean_trajectory_reward": 1.500244140625,
+            "raw_prefix_kl_from_sft": 0.010008798417402431,
+            "sampled_rollout_win_fraction": 0.675537109375,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2767
+          },
+          "greedy_constrained_wins": 56,
+          "greedy_average_attempts": 3.9305555555555554,
+          "greedy_raw_wins": 55,
+          "fixed_sft_prefix_kl": 0.00691836467012763
+        },
+        {
+          "updates": 1000,
+          "training": {
+            "constrained_prefix_kl_from_sft": 0.010497225826838985,
+            "identical_reward_group_rate": 0.654296875,
+            "mean_group_reward_std": 0.15513268345966935,
+            "mean_guesses_for_winning_rollouts": 4.57631109291413,
+            "mean_trajectory_reward": 2.26806640625,
+            "raw_prefix_kl_from_sft": 0.010646707756677642,
+            "sampled_rollout_win_fraction": 0.935791015625,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 3833
+          },
+          "validation": {
+            "constrained_prefix_kl_from_sft": 0.019567908078897744,
+            "identical_reward_group_rate": 0.412109375,
+            "mean_group_reward_std": 0.38084083981812,
+            "mean_guesses_for_winning_rollouts": 4.7862372476918456,
+            "mean_trajectory_reward": 1.4765625,
+            "raw_prefix_kl_from_sft": 0.020750369993038476,
+            "sampled_rollout_win_fraction": 0.6669921875,
+            "sampled_rollouts": 4096,
+            "winning_rollouts": 2732
+          },
+          "greedy_constrained_wins": 56,
+          "greedy_average_attempts": 4.013888888888889,
+          "greedy_raw_wins": 53,
+          "fixed_sft_prefix_kl": 0.013400533236563206
+        }
+      ],
+      "training_final_paired_change": {
+        "mean_change": 0.038818359375,
+        "secret_cluster_bootstrap_95_percent": [
+          0.02385685884691849,
+          0.053393213572854294
+        ],
+        "secret_clusters": 337,
+        "bootstrap_samples": 10000
+      },
+      "validation_final_paired_change": {
+        "mean_change": -0.02978515625,
+        "secret_cluster_bootstrap_95_percent": [
+          -0.06453252032520325,
+          0.004224652087475149
+        ],
+        "secret_clusters": 72,
+        "bootstrap_samples": 10000
+      },
+      "length_diagnostics": {
+        "1": {
+          "rollouts": 789,
+          "mean_abs_advantage": 0.11052309814250363,
+          "mean_reward_gradient_contribution_l2": 0.3033319945362481,
+          "mean_combined_gradient_contribution_l2": 0.30121067619289865,
+          "per_token_weight": 0.2
+        },
+        "2": {
+          "rollouts": 542,
+          "mean_abs_advantage": 0.3203093880766872,
+          "mean_reward_gradient_contribution_l2": 0.28389681062915106,
+          "mean_combined_gradient_contribution_l2": 0.2823318276893009,
+          "per_token_weight": 0.1
+        },
+        "3": {
+          "rollouts": 74,
+          "mean_abs_advantage": 1.4081474393606186,
+          "mean_reward_gradient_contribution_l2": 0.18965580314397812,
+          "mean_combined_gradient_contribution_l2": 0.18892927400090478,
+          "per_token_weight": 0.06666666666666667
+        },
+        "4": {
+          "rollouts": 3,
+          "mean_abs_advantage": 2.645751476287842,
+          "mean_reward_gradient_contribution_l2": 0.03180223838849501,
+          "mean_combined_gradient_contribution_l2": 0.031738170168616554,
+          "per_token_weight": 0.05
+        },
+        "5": {
+          "rollouts": 0,
+          "mean_abs_advantage": null,
+          "mean_reward_gradient_contribution_l2": 0.0,
+          "mean_combined_gradient_contribution_l2": 0.0,
+          "per_token_weight": 0.04
+        },
+        "6": {
+          "rollouts": 0,
+          "mean_abs_advantage": null,
+          "mean_reward_gradient_contribution_l2": 0.0,
+          "mean_combined_gradient_contribution_l2": 0.0,
+          "per_token_weight": 0.03333333333333333
+        }
+      },
+      "pre_update_max_clip_fraction": 0.0,
+      "post_update_max_clip_fraction": 0.01875000074505806,
+      "elapsed_seconds": 142.71333748799998
+    }
+  },
+  "checkpoint_verification": [
+    {
+      "lr": 1e-06,
+      "checked_steps": 5,
+      "best_greedy": 0,
+      "best_continuation": 250,
+      "final_changed_tensors": 54,
+      "greedy_best_equals_sft": true
+    },
+    {
+      "lr": 3e-06,
+      "checked_steps": 5,
+      "best_greedy": 0,
+      "best_continuation": 100,
+      "final_changed_tensors": 54,
+      "greedy_best_equals_sft": true
+    },
+    {
+      "lr": 1e-05,
+      "checked_steps": 5,
+      "best_greedy": 0,
+      "best_continuation": 0,
+      "final_changed_tensors": 54,
+      "greedy_best_equals_sft": true
+    }
+  ],
+  "continued": false,
+  "decision": "Stop: all three improve fixed training reward while final held-out continuation reward decreases; faster rates show no credible early held-out gain. Optimization strength alone does not explain the lack of generalization.",
+  "limitations": "One training seed and 72 validation-secret clusters; paired bootstrap intervals for held-out changes overlap zero. No multiplicity correction for early checkpoint inspection.",
+  "test_evaluated": false
+}

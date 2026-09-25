@@ -1,0 +1,8116 @@
+[
+  {
+    "attempts": 2,
+    "group": 0,
+    "guesses": [
+      "irate",
+      "adopt"
+    ],
+    "member": 0,
+    "reward": 5.0,
+    "secret": "adopt",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 0,
+    "guesses": [
+      "irate",
+      "adopt"
+    ],
+    "member": 1,
+    "reward": 5.0,
+    "secret": "adopt",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 0,
+    "guesses": [
+      "irate",
+      "adult",
+      "adopt"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "adopt",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 0,
+    "guesses": [
+      "irate",
+      "adult",
+      "adopt"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "adopt",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 0,
+    "guesses": [
+      "irate",
+      "album",
+      "adopt"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "adopt",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 0,
+    "guesses": [
+      "irate",
+      "album",
+      "adopt"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "adopt",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 0,
+    "guesses": [
+      "irate",
+      "adopt"
+    ],
+    "member": 6,
+    "reward": 5.0,
+    "secret": "adopt",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 0,
+    "guesses": [
+      "irate",
+      "album",
+      "angry",
+      "adopt"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "adopt",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 1,
+    "guesses": [
+      "irate",
+      "agree"
+    ],
+    "member": 0,
+    "reward": 5.0,
+    "secret": "agree",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 1,
+    "guesses": [
+      "irate",
+      "agree"
+    ],
+    "member": 1,
+    "reward": 5.0,
+    "secret": "agree",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 1,
+    "guesses": [
+      "irate",
+      "agree"
+    ],
+    "member": 2,
+    "reward": 5.0,
+    "secret": "agree",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 1,
+    "guesses": [
+      "irate",
+      "agree"
+    ],
+    "member": 3,
+    "reward": 5.0,
+    "secret": "agree",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 1,
+    "guesses": [
+      "irate",
+      "agree"
+    ],
+    "member": 4,
+    "reward": 5.0,
+    "secret": "agree",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 1,
+    "guesses": [
+      "irate",
+      "agree"
+    ],
+    "member": 5,
+    "reward": 5.0,
+    "secret": "agree",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 1,
+    "guesses": [
+      "irate",
+      "agree"
+    ],
+    "member": 6,
+    "reward": 5.0,
+    "secret": "agree",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 1,
+    "guesses": [
+      "irate",
+      "agree"
+    ],
+    "member": 7,
+    "reward": 5.0,
+    "secret": "agree",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 2,
+    "guesses": [
+      "irate",
+      "alone",
+      "alike",
+      "agile",
+      "aisle"
+    ],
+    "member": 0,
+    "reward": 2.0,
+    "secret": "aisle",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 2,
+    "guesses": [
+      "irate",
+      "alone",
+      "agile",
+      "aisle"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "aisle",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 2,
+    "guesses": [
+      "irate",
+      "alone",
+      "alike",
+      "agile",
+      "aisle"
+    ],
+    "member": 2,
+    "reward": 2.0,
+    "secret": "aisle",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 2,
+    "guesses": [
+      "irate",
+      "alike",
+      "aisle"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "aisle",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 2,
+    "guesses": [
+      "irate",
+      "alike",
+      "agile",
+      "aisle"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "aisle",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 2,
+    "guesses": [
+      "irate",
+      "alone",
+      "agile",
+      "aisle"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "aisle",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 2,
+    "guesses": [
+      "irate",
+      "alike",
+      "agile",
+      "aisle"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "aisle",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 2,
+    "guesses": [
+      "irate",
+      "alike",
+      "agile",
+      "aisle"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "aisle",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 3,
+    "guesses": [
+      "irate",
+      "camel",
+      "alert"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "alert",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 3,
+    "guesses": [
+      "irate",
+      "camel",
+      "alert"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "alert",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 3,
+    "guesses": [
+      "irate",
+      "camel",
+      "alert"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "alert",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 3,
+    "guesses": [
+      "irate",
+      "camel",
+      "alert"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "alert",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 3,
+    "guesses": [
+      "irate",
+      "algae",
+      "alert"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "alert",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 3,
+    "guesses": [
+      "irate",
+      "camel",
+      "alert"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "alert",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 3,
+    "guesses": [
+      "irate",
+      "camel",
+      "alert"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "alert",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 3,
+    "guesses": [
+      "irate",
+      "camel",
+      "alert"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "alert",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 4,
+    "guesses": [
+      "irate",
+      "bland",
+      "alibi"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "alibi",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 4,
+    "guesses": [
+      "irate",
+      "blind",
+      "alibi"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "alibi",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 4,
+    "guesses": [
+      "irate",
+      "bland",
+      "alibi"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "alibi",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 4,
+    "guesses": [
+      "irate",
+      "blind",
+      "alibi"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "alibi",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 4,
+    "guesses": [
+      "irate",
+      "blind",
+      "alibi"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "alibi",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 4,
+    "guesses": [
+      "irate",
+      "bland",
+      "alibi"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "alibi",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 4,
+    "guesses": [
+      "irate",
+      "blind",
+      "alias",
+      "alibi"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "alibi",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 4,
+    "guesses": [
+      "irate",
+      "bland",
+      "alibi"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "alibi",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 5,
+    "guesses": [
+      "irate",
+      "alike",
+      "alike",
+      "alien",
+      "alive"
+    ],
+    "member": 0,
+    "reward": 2.0,
+    "secret": "alive",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 5,
+    "guesses": [
+      "irate",
+      "agile",
+      "alike",
+      "alike",
+      "alike",
+      "alike"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "alive",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 5,
+    "guesses": [
+      "irate",
+      "agile",
+      "alike",
+      "alike",
+      "alike",
+      "alike"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "alive",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 5,
+    "guesses": [
+      "irate",
+      "alike",
+      "alike",
+      "alias",
+      "align",
+      "alive"
+    ],
+    "member": 3,
+    "reward": 1.0,
+    "secret": "alive",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 5,
+    "guesses": [
+      "irate",
+      "along",
+      "alike",
+      "alike",
+      "alive"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "alive",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 5,
+    "guesses": [
+      "irate",
+      "alike",
+      "alike",
+      "alike",
+      "alike",
+      "align"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "alive",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 5,
+    "guesses": [
+      "irate",
+      "alike",
+      "alike",
+      "alive"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "alive",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 5,
+    "guesses": [
+      "irate",
+      "along",
+      "alike",
+      "alike",
+      "alike",
+      "alike"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "alive",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 6,
+    "guesses": [
+      "irate",
+      "pedal",
+      "ahead",
+      "ahead",
+      "ahead",
+      "ahead"
+    ],
+    "member": 0,
+    "reward": 0.0,
+    "secret": "amend",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 6,
+    "guesses": [
+      "irate",
+      "speak",
+      "angel",
+      "amend"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "amend",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 6,
+    "guesses": [
+      "irate",
+      "apple",
+      "ahead",
+      "ahead",
+      "ahead",
+      "ahead"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "amend",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 6,
+    "guesses": [
+      "irate",
+      "album",
+      "amend"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "amend",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 6,
+    "guesses": [
+      "irate",
+      "pedal",
+      "ahead",
+      "ahead",
+      "ahead",
+      "ahead"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "amend",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 6,
+    "guesses": [
+      "irate",
+      "panel",
+      "amend"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "amend",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 6,
+    "guesses": [
+      "irate",
+      "pedal",
+      "ahead",
+      "ahead",
+      "ahead",
+      "ahead"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "amend",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 6,
+    "guesses": [
+      "irate",
+      "plead",
+      "ahead",
+      "ahead",
+      "ahead",
+      "ahead"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "amend",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "bloom",
+      "major",
+      "armor"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "armor",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "bloom",
+      "major",
+      "armor"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "armor",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "bloom",
+      "major",
+      "armor"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "armor",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "bloom",
+      "major",
+      "armor"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "armor",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "bloom",
+      "armor"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "armor",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "bloom",
+      "major",
+      "armor"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "armor",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "bloom",
+      "major",
+      "armor"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "armor",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "cloud",
+      "armor"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "armor",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 8,
+    "guesses": [
+      "irate",
+      "cheat",
+      "asset"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "asset",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 8,
+    "guesses": [
+      "irate",
+      "cheat",
+      "asset"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "asset",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 8,
+    "guesses": [
+      "irate",
+      "asset"
+    ],
+    "member": 2,
+    "reward": 5.0,
+    "secret": "asset",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 8,
+    "guesses": [
+      "irate",
+      "cheat",
+      "asset"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "asset",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 8,
+    "guesses": [
+      "irate",
+      "cheat",
+      "asset"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "asset",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 8,
+    "guesses": [
+      "irate",
+      "cheat",
+      "asset"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "asset",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 8,
+    "guesses": [
+      "irate",
+      "asset"
+    ],
+    "member": 6,
+    "reward": 5.0,
+    "secret": "asset",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 8,
+    "guesses": [
+      "irate",
+      "steam",
+      "asset"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "asset",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 9,
+    "guesses": [
+      "irate",
+      "adopt",
+      "again",
+      "award"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "award",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 9,
+    "guesses": [
+      "irate",
+      "clash",
+      "award"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "award",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 9,
+    "guesses": [
+      "irate",
+      "abyss",
+      "alarm",
+      "award"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "award",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 9,
+    "guesses": [
+      "irate",
+      "shock",
+      "alarm",
+      "angry",
+      "adapt",
+      "award"
+    ],
+    "member": 3,
+    "reward": 1.0,
+    "secret": "award",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 9,
+    "guesses": [
+      "irate",
+      "clash",
+      "award"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "award",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 9,
+    "guesses": [
+      "irate",
+      "alarm",
+      "adopt",
+      "avoid",
+      "avoid",
+      "ahead"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "award",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 9,
+    "guesses": [
+      "irate",
+      "solar",
+      "award"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "award",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 9,
+    "guesses": [
+      "irate",
+      "shark",
+      "aback",
+      "alarm",
+      "angry",
+      "adore"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "award",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 10,
+    "guesses": [
+      "irate",
+      "clash",
+      "aware"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "aware",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 10,
+    "guesses": [
+      "irate",
+      "clash",
+      "aware"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "aware",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 10,
+    "guesses": [
+      "irate",
+      "clash",
+      "aware"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "aware",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 10,
+    "guesses": [
+      "irate",
+      "clash",
+      "aware"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "aware",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 10,
+    "guesses": [
+      "irate",
+      "clash",
+      "aware"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "aware",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 10,
+    "guesses": [
+      "irate",
+      "clash",
+      "aware"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "aware",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 10,
+    "guesses": [
+      "irate",
+      "clash",
+      "aware"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "aware",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 10,
+    "guesses": [
+      "irate",
+      "clash",
+      "aware"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "aware",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 11,
+    "guesses": [
+      "irate",
+      "cloud",
+      "badly"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "badly",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 11,
+    "guesses": [
+      "irate",
+      "bonus",
+      "badly"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "badly",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 11,
+    "guesses": [
+      "irate",
+      "candy",
+      "badly"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "badly",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 11,
+    "guesses": [
+      "irate",
+      "cloud",
+      "badly"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "badly",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 11,
+    "guesses": [
+      "irate",
+      "cloud",
+      "badly"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "badly",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 11,
+    "guesses": [
+      "irate",
+      "bacon",
+      "basil",
+      "badly"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "badly",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 11,
+    "guesses": [
+      "irate",
+      "bonus",
+      "badly"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "badly",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 11,
+    "guesses": [
+      "irate",
+      "bonus",
+      "badly"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "badly",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 12,
+    "guesses": [
+      "irate",
+      "alone",
+      "cabin",
+      "basin"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "basin",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 12,
+    "guesses": [
+      "irate",
+      "bland",
+      "basin"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "basin",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 12,
+    "guesses": [
+      "irate",
+      "blind",
+      "basin"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "basin",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 12,
+    "guesses": [
+      "irate",
+      "blind",
+      "basin"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "basin",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 12,
+    "guesses": [
+      "irate",
+      "black",
+      "basin"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "basin",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 12,
+    "guesses": [
+      "irate",
+      "bland",
+      "basin"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "basin",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 12,
+    "guesses": [
+      "irate",
+      "blind",
+      "basin"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "basin",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 12,
+    "guesses": [
+      "irate",
+      "cling",
+      "basin"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "basin",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 13,
+    "guesses": [
+      "irate",
+      "blast",
+      "beast"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "beast",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 13,
+    "guesses": [
+      "irate",
+      "blast",
+      "beast"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "beast",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 13,
+    "guesses": [
+      "irate",
+      "blast",
+      "beast"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "beast",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 13,
+    "guesses": [
+      "irate",
+      "blast",
+      "beast"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "beast",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 13,
+    "guesses": [
+      "irate",
+      "blast",
+      "beast"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "beast",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 13,
+    "guesses": [
+      "irate",
+      "blast",
+      "beast"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "beast",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 13,
+    "guesses": [
+      "irate",
+      "blast",
+      "beast"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "beast",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 13,
+    "guesses": [
+      "irate",
+      "blast",
+      "beast"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "beast",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 14,
+    "guesses": [
+      "irate",
+      "flour",
+      "berry"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "berry",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 14,
+    "guesses": [
+      "irate",
+      "fleet",
+      "every",
+      "query",
+      "berry"
+    ],
+    "member": 1,
+    "reward": 2.0,
+    "secret": "berry",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 14,
+    "guesses": [
+      "irate",
+      "flour",
+      "berry"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "berry",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 14,
+    "guesses": [
+      "irate",
+      "sweep",
+      "bleed",
+      "berry"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "berry",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 14,
+    "guesses": [
+      "irate",
+      "elder",
+      "query",
+      "zebra",
+      "berry"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "berry",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 14,
+    "guesses": [
+      "irate",
+      "fleet",
+      "every",
+      "query",
+      "query",
+      "query"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "berry",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 14,
+    "guesses": [
+      "irate",
+      "flour",
+      "berry"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "berry",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 14,
+    "guesses": [
+      "irate",
+      "fleet",
+      "enjoy",
+      "query",
+      "berry"
+    ],
+    "member": 7,
+    "reward": 2.0,
+    "secret": "berry",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 15,
+    "guesses": [
+      "irate",
+      "shock",
+      "bland"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "bland",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 15,
+    "guesses": [
+      "irate",
+      "shock",
+      "bland"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "bland",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 15,
+    "guesses": [
+      "irate",
+      "shock",
+      "bland"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "bland",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 15,
+    "guesses": [
+      "irate",
+      "stuck",
+      "bland"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "bland",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 15,
+    "guesses": [
+      "irate",
+      "shock",
+      "bland"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "bland",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 15,
+    "guesses": [
+      "irate",
+      "clash",
+      "bland"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "bland",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 15,
+    "guesses": [
+      "irate",
+      "shock",
+      "bland"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "bland",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 15,
+    "guesses": [
+      "irate",
+      "shock",
+      "bland"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "bland",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 16,
+    "guesses": [
+      "irate",
+      "wheel",
+      "blend",
+      "bless"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "bless",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 16,
+    "guesses": [
+      "irate",
+      "wheel",
+      "blend",
+      "bless"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "bless",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 16,
+    "guesses": [
+      "irate",
+      "wheel",
+      "blend",
+      "bless"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "bless",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 16,
+    "guesses": [
+      "irate",
+      "wheel",
+      "blend",
+      "bless"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "bless",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 16,
+    "guesses": [
+      "irate",
+      "wheel",
+      "blend",
+      "bless"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "bless",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 16,
+    "guesses": [
+      "irate",
+      "wheel",
+      "blend",
+      "bless"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "bless",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 16,
+    "guesses": [
+      "irate",
+      "wheel",
+      "blend",
+      "bless"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "bless",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 16,
+    "guesses": [
+      "irate",
+      "wheel",
+      "blend",
+      "bless"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "bless",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 17,
+    "guesses": [
+      "irate",
+      "black",
+      "block"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "block",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 17,
+    "guesses": [
+      "irate",
+      "bonus",
+      "blood",
+      "block"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "block",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 17,
+    "guesses": [
+      "irate",
+      "blown",
+      "blood",
+      "block"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "block",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 17,
+    "guesses": [
+      "irate",
+      "blood",
+      "block"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "block",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 17,
+    "guesses": [
+      "irate",
+      "bonus",
+      "blood",
+      "block"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "block",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 17,
+    "guesses": [
+      "irate",
+      "bonus",
+      "blood",
+      "block"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "block",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 17,
+    "guesses": [
+      "irate",
+      "bound",
+      "block"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "block",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 17,
+    "guesses": [
+      "irate",
+      "blown",
+      "blood",
+      "block"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "block",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 18,
+    "guesses": [
+      "irate",
+      "adobe",
+      "brain"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "brain",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 18,
+    "guesses": [
+      "irate",
+      "adobe",
+      "brain"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "brain",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 18,
+    "guesses": [
+      "irate",
+      "adopt",
+      "alias",
+      "brain"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "brain",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 18,
+    "guesses": [
+      "irate",
+      "adopt",
+      "alike",
+      "grain",
+      "brain"
+    ],
+    "member": 3,
+    "reward": 2.0,
+    "secret": "brain",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 18,
+    "guesses": [
+      "irate",
+      "adobe",
+      "brain"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "brain",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 18,
+    "guesses": [
+      "irate",
+      "adobe",
+      "brain"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "brain",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 18,
+    "guesses": [
+      "irate",
+      "adopt",
+      "alias",
+      "brain"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "brain",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 18,
+    "guesses": [
+      "irate",
+      "adobe",
+      "brain"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "brain",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 19,
+    "guesses": [
+      "irate",
+      "angle",
+      "sauce",
+      "candy",
+      "canoe"
+    ],
+    "member": 0,
+    "reward": 2.0,
+    "secret": "canoe",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 19,
+    "guesses": [
+      "irate",
+      "angle",
+      "dance",
+      "canoe"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "canoe",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 19,
+    "guesses": [
+      "irate",
+      "alone",
+      "noble",
+      "ounce",
+      "ounce",
+      "ounce"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "canoe",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 19,
+    "guesses": [
+      "irate",
+      "uncle",
+      "canoe"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "canoe",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 19,
+    "guesses": [
+      "irate",
+      "along",
+      "noble",
+      "ounce",
+      "ounce",
+      "canoe"
+    ],
+    "member": 4,
+    "reward": 1.0,
+    "secret": "canoe",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 19,
+    "guesses": [
+      "irate",
+      "usage",
+      "ample",
+      "bacon",
+      "canoe"
+    ],
+    "member": 5,
+    "reward": 2.0,
+    "secret": "canoe",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 19,
+    "guesses": [
+      "irate",
+      "angle",
+      "bacon",
+      "canoe"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "canoe",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 19,
+    "guesses": [
+      "irate",
+      "clash",
+      "canoe"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "canoe",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 20,
+    "guesses": [
+      "irate",
+      "close",
+      "chose"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "chose",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 20,
+    "guesses": [
+      "irate",
+      "close",
+      "chose"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "chose",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 20,
+    "guesses": [
+      "irate",
+      "close",
+      "chose"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "chose",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 20,
+    "guesses": [
+      "irate",
+      "close",
+      "chose"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "chose",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 20,
+    "guesses": [
+      "irate",
+      "close",
+      "chose"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "chose",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 20,
+    "guesses": [
+      "irate",
+      "close",
+      "chose"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "chose",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 20,
+    "guesses": [
+      "irate",
+      "close",
+      "chose"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "chose",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 20,
+    "guesses": [
+      "irate",
+      "close",
+      "chose"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "chose",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 21,
+    "guesses": [
+      "irate",
+      "bound",
+      "couch"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "couch",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 21,
+    "guesses": [
+      "irate",
+      "block",
+      "focus",
+      "couch"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "couch",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 21,
+    "guesses": [
+      "irate",
+      "bonus",
+      "couch"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "couch",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 21,
+    "guesses": [
+      "irate",
+      "blown",
+      "crush",
+      "couch"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "couch",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 21,
+    "guesses": [
+      "irate",
+      "block",
+      "couch"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "couch",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 21,
+    "guesses": [
+      "irate",
+      "cloud",
+      "couch"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "couch",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 21,
+    "guesses": [
+      "irate",
+      "bonus",
+      "couch"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "couch",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 21,
+    "guesses": [
+      "irate",
+      "bonus",
+      "couch"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "couch",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 22,
+    "guesses": [
+      "irate",
+      "fleet",
+      "apron",
+      "owner",
+      "owner",
+      "cover"
+    ],
+    "member": 0,
+    "reward": 1.0,
+    "secret": "cover",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 22,
+    "guesses": [
+      "irate",
+      "fleet",
+      "apron",
+      "owner",
+      "cover"
+    ],
+    "member": 1,
+    "reward": 2.0,
+    "secret": "cover",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 22,
+    "guesses": [
+      "irate",
+      "fleet",
+      "apron",
+      "owner",
+      "cover"
+    ],
+    "member": 2,
+    "reward": 2.0,
+    "secret": "cover",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 22,
+    "guesses": [
+      "irate",
+      "flour",
+      "cover"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "cover",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 22,
+    "guesses": [
+      "irate",
+      "fleet",
+      "bonus",
+      "owner",
+      "cover"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "cover",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 22,
+    "guesses": [
+      "irate",
+      "elder",
+      "bonus",
+      "cover"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "cover",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 22,
+    "guesses": [
+      "irate",
+      "fleet",
+      "apron",
+      "ought",
+      "owner",
+      "owner"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "cover",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 22,
+    "guesses": [
+      "irate",
+      "flour",
+      "cover"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "cover",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 23,
+    "guesses": [
+      "irate",
+      "bench",
+      "crash",
+      "crawl"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "crawl",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 23,
+    "guesses": [
+      "irate",
+      "chaos",
+      "crack",
+      "crash",
+      "craft",
+      "crawl"
+    ],
+    "member": 1,
+    "reward": 1.0,
+    "secret": "crawl",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 23,
+    "guesses": [
+      "irate",
+      "bench",
+      "craft",
+      "crash",
+      "crawl"
+    ],
+    "member": 2,
+    "reward": 2.0,
+    "secret": "crawl",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 23,
+    "guesses": [
+      "irate",
+      "bench",
+      "crash",
+      "crawl"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "crawl",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 23,
+    "guesses": [
+      "irate",
+      "bench",
+      "crash",
+      "craft",
+      "craze",
+      "crawl"
+    ],
+    "member": 4,
+    "reward": 1.0,
+    "secret": "crawl",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 23,
+    "guesses": [
+      "irate",
+      "bench",
+      "crash",
+      "crawl"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "crawl",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 23,
+    "guesses": [
+      "irate",
+      "bench",
+      "craft",
+      "crash",
+      "crawl"
+    ],
+    "member": 6,
+    "reward": 2.0,
+    "secret": "crawl",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 23,
+    "guesses": [
+      "irate",
+      "bench",
+      "crash",
+      "crawl"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "crawl",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 24,
+    "guesses": [
+      "irate",
+      "clash",
+      "dance"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "dance",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 24,
+    "guesses": [
+      "irate",
+      "along",
+      "dance"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "dance",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 24,
+    "guesses": [
+      "irate",
+      "apron",
+      "dance"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "dance",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 24,
+    "guesses": [
+      "irate",
+      "ample",
+      "bench",
+      "lance",
+      "lance",
+      "dance"
+    ],
+    "member": 3,
+    "reward": 1.0,
+    "secret": "dance",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 24,
+    "guesses": [
+      "irate",
+      "uncle",
+      "canoe",
+      "dance"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "dance",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 24,
+    "guesses": [
+      "irate",
+      "usage",
+      "alone",
+      "dance"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "dance",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 24,
+    "guesses": [
+      "irate",
+      "clash",
+      "dance"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "dance",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 24,
+    "guesses": [
+      "irate",
+      "along",
+      "candy",
+      "dance"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "dance",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 25,
+    "guesses": [
+      "irate",
+      "click",
+      "disco"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "disco",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 25,
+    "guesses": [
+      "irate",
+      "cling",
+      "music",
+      "disco"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "disco",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 25,
+    "guesses": [
+      "irate",
+      "child",
+      "disco"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "disco",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 25,
+    "guesses": [
+      "irate",
+      "slick",
+      "music",
+      "disco"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "disco",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 25,
+    "guesses": [
+      "irate",
+      "cliff",
+      "music",
+      "disco"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "disco",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 25,
+    "guesses": [
+      "irate",
+      "flick",
+      "civic",
+      "disco"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "disco",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 25,
+    "guesses": [
+      "irate",
+      "click",
+      "disco"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "disco",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 25,
+    "guesses": [
+      "irate",
+      "child",
+      "disco"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "disco",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 26,
+    "guesses": [
+      "irate",
+      "click",
+      "begin",
+      "virus",
+      "dizzy"
+    ],
+    "member": 0,
+    "reward": 2.0,
+    "secret": "dizzy",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 26,
+    "guesses": [
+      "irate",
+      "cling",
+      "civic",
+      "fiery",
+      "dizzy"
+    ],
+    "member": 1,
+    "reward": 2.0,
+    "secret": "dizzy",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 26,
+    "guesses": [
+      "irate",
+      "click",
+      "solid",
+      "dizzy"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "dizzy",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 26,
+    "guesses": [
+      "irate",
+      "flick",
+      "bonus",
+      "might",
+      "visit",
+      "pixel"
+    ],
+    "member": 3,
+    "reward": 0.0,
+    "secret": "dizzy",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 26,
+    "guesses": [
+      "irate",
+      "cloud",
+      "disco",
+      "dizzy"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "dizzy",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 26,
+    "guesses": [
+      "irate",
+      "flick",
+      "begin",
+      "music",
+      "dizzy"
+    ],
+    "member": 5,
+    "reward": 2.0,
+    "secret": "dizzy",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 26,
+    "guesses": [
+      "irate",
+      "click",
+      "bonus",
+      "might",
+      "fiery",
+      "dizzy"
+    ],
+    "member": 6,
+    "reward": 1.0,
+    "secret": "dizzy",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 26,
+    "guesses": [
+      "irate",
+      "click",
+      "bonus",
+      "might",
+      "visit",
+      "dizzy"
+    ],
+    "member": 7,
+    "reward": 1.0,
+    "secret": "dizzy",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 27,
+    "guesses": [
+      "irate",
+      "wheel",
+      "below",
+      "elbow"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "elbow",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 27,
+    "guesses": [
+      "irate",
+      "wheel",
+      "below",
+      "elbow"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "elbow",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 27,
+    "guesses": [
+      "irate",
+      "wheel",
+      "below",
+      "elbow"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "elbow",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 27,
+    "guesses": [
+      "irate",
+      "wheel",
+      "below",
+      "elbow"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "elbow",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 27,
+    "guesses": [
+      "irate",
+      "wheel",
+      "below",
+      "noble",
+      "elbow"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "elbow",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 27,
+    "guesses": [
+      "irate",
+      "wheel",
+      "below",
+      "elbow"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "elbow",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 27,
+    "guesses": [
+      "irate",
+      "wheel",
+      "below",
+      "elbow"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "elbow",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 27,
+    "guesses": [
+      "irate",
+      "wheel",
+      "below",
+      "elbow"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "elbow",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 28,
+    "guesses": [
+      "irate",
+      "linen",
+      "equip"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "equip",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 28,
+    "guesses": [
+      "irate",
+      "linen",
+      "equip"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "equip",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 28,
+    "guesses": [
+      "irate",
+      "linen",
+      "equip"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "equip",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 28,
+    "guesses": [
+      "irate",
+      "linen",
+      "equip"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "equip",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 28,
+    "guesses": [
+      "irate",
+      "linen",
+      "equip"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "equip",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 28,
+    "guesses": [
+      "irate",
+      "linen",
+      "equip"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "equip",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 28,
+    "guesses": [
+      "irate",
+      "linen",
+      "equip"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "equip",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 28,
+    "guesses": [
+      "irate",
+      "linen",
+      "equip"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "equip",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 29,
+    "guesses": [
+      "irate",
+      "faith"
+    ],
+    "member": 0,
+    "reward": 5.0,
+    "secret": "faith",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 29,
+    "guesses": [
+      "irate",
+      "unity",
+      "suite",
+      "vital",
+      "vital",
+      "saint"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "faith",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 29,
+    "guesses": [
+      "irate",
+      "vital",
+      "saint",
+      "faith"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "faith",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 29,
+    "guesses": [
+      "irate",
+      "vital",
+      "faith"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "faith",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 29,
+    "guesses": [
+      "irate",
+      "faith"
+    ],
+    "member": 4,
+    "reward": 5.0,
+    "secret": "faith",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 29,
+    "guesses": [
+      "irate",
+      "faith"
+    ],
+    "member": 5,
+    "reward": 5.0,
+    "secret": "faith",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 29,
+    "guesses": [
+      "irate",
+      "vital",
+      "unity",
+      "shift",
+      "faith"
+    ],
+    "member": 6,
+    "reward": 2.0,
+    "secret": "faith",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 29,
+    "guesses": [
+      "irate",
+      "faith"
+    ],
+    "member": 7,
+    "reward": 5.0,
+    "secret": "faith",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 30,
+    "guesses": [
+      "irate",
+      "fleet",
+      "ferry"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "ferry",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 30,
+    "guesses": [
+      "irate",
+      "elder",
+      "berry",
+      "query",
+      "reply",
+      "ferry"
+    ],
+    "member": 1,
+    "reward": 1.0,
+    "secret": "ferry",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 30,
+    "guesses": [
+      "irate",
+      "lemon",
+      "serve",
+      "berry",
+      "reply",
+      "ferry"
+    ],
+    "member": 2,
+    "reward": 1.0,
+    "secret": "ferry",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 30,
+    "guesses": [
+      "irate",
+      "flour",
+      "ferry"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "ferry",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 30,
+    "guesses": [
+      "irate",
+      "flour",
+      "ferry"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "ferry",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 30,
+    "guesses": [
+      "irate",
+      "elder",
+      "query",
+      "berry",
+      "reply",
+      "learn"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "ferry",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 30,
+    "guesses": [
+      "irate",
+      "fleet",
+      "ferry"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "ferry",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 30,
+    "guesses": [
+      "irate",
+      "fleet",
+      "ferry"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "ferry",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 31,
+    "guesses": [
+      "irate",
+      "fifth",
+      "fifty"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "fifty",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 31,
+    "guesses": [
+      "irate",
+      "fifth",
+      "fifty"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "fifty",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 31,
+    "guesses": [
+      "irate",
+      "fifth",
+      "fifty"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "fifty",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 31,
+    "guesses": [
+      "irate",
+      "fifth",
+      "fifty"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "fifty",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 31,
+    "guesses": [
+      "irate",
+      "fifth",
+      "fifty"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "fifty",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 31,
+    "guesses": [
+      "irate",
+      "fifth",
+      "fifty"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "fifty",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 31,
+    "guesses": [
+      "irate",
+      "fifth",
+      "fifty"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "fifty",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 31,
+    "guesses": [
+      "irate",
+      "fifth",
+      "fifty"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "fifty",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 32,
+    "guesses": [
+      "irate",
+      "adopt",
+      "boost",
+      "float"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "float",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 32,
+    "guesses": [
+      "irate",
+      "album",
+      "plant",
+      "fleet",
+      "fault",
+      "float"
+    ],
+    "member": 1,
+    "reward": 1.0,
+    "secret": "float",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 32,
+    "guesses": [
+      "irate",
+      "album",
+      "plant",
+      "plead",
+      "gleam",
+      "fleet"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "float",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 32,
+    "guesses": [
+      "irate",
+      "album",
+      "plead",
+      "glory",
+      "stock",
+      "float"
+    ],
+    "member": 3,
+    "reward": 1.0,
+    "secret": "float",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 32,
+    "guesses": [
+      "irate",
+      "cabin",
+      "adopt",
+      "stood",
+      "favor",
+      "fault"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "float",
+    "won": false
+  },
+  {
+    "attempts": 5,
+    "group": 32,
+    "guesses": [
+      "irate",
+      "album",
+      "plant",
+      "hotel",
+      "float"
+    ],
+    "member": 5,
+    "reward": 2.0,
+    "secret": "float",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 32,
+    "guesses": [
+      "irate",
+      "album",
+      "plant",
+      "flesh",
+      "fault",
+      "float"
+    ],
+    "member": 6,
+    "reward": 1.0,
+    "secret": "float",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 32,
+    "guesses": [
+      "irate",
+      "album",
+      "plant",
+      "flesh",
+      "float"
+    ],
+    "member": 7,
+    "reward": 2.0,
+    "secret": "float",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 33,
+    "guesses": [
+      "irate",
+      "bound",
+      "crown",
+      "brown",
+      "brown",
+      "brown"
+    ],
+    "member": 0,
+    "reward": 0.0,
+    "secret": "grown",
+    "won": false
+  },
+  {
+    "attempts": 5,
+    "group": 33,
+    "guesses": [
+      "irate",
+      "bound",
+      "crown",
+      "brown",
+      "grown"
+    ],
+    "member": 1,
+    "reward": 2.0,
+    "secret": "grown",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 33,
+    "guesses": [
+      "irate",
+      "bound",
+      "crown",
+      "brown",
+      "grown"
+    ],
+    "member": 2,
+    "reward": 2.0,
+    "secret": "grown",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 33,
+    "guesses": [
+      "irate",
+      "bound",
+      "crown",
+      "brown",
+      "brown",
+      "grown"
+    ],
+    "member": 3,
+    "reward": 1.0,
+    "secret": "grown",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 33,
+    "guesses": [
+      "irate",
+      "bacon",
+      "drown",
+      "brown",
+      "brown",
+      "prone"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "grown",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 33,
+    "guesses": [
+      "irate",
+      "bound",
+      "crown",
+      "brown",
+      "brown",
+      "brown"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "grown",
+    "won": false
+  },
+  {
+    "attempts": 5,
+    "group": 33,
+    "guesses": [
+      "irate",
+      "bound",
+      "crown",
+      "brown",
+      "grown"
+    ],
+    "member": 6,
+    "reward": 2.0,
+    "secret": "grown",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 33,
+    "guesses": [
+      "irate",
+      "bound",
+      "crown",
+      "brown",
+      "grown"
+    ],
+    "member": 7,
+    "reward": 2.0,
+    "secret": "grown",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 34,
+    "guesses": [
+      "irate",
+      "close",
+      "house"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "house",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 34,
+    "guesses": [
+      "irate",
+      "close",
+      "house"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "house",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 34,
+    "guesses": [
+      "irate",
+      "close",
+      "house"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "house",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 34,
+    "guesses": [
+      "irate",
+      "close",
+      "house"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "house",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 34,
+    "guesses": [
+      "irate",
+      "close",
+      "house"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "house",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 34,
+    "guesses": [
+      "irate",
+      "close",
+      "house"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "house",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 34,
+    "guesses": [
+      "irate",
+      "close",
+      "house"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "house",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 34,
+    "guesses": [
+      "irate",
+      "close",
+      "house"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "house",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 35,
+    "guesses": [
+      "irate",
+      "panel",
+      "camel",
+      "taken",
+      "baler",
+      "panel"
+    ],
+    "member": 0,
+    "reward": 0.0,
+    "secret": "label",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 35,
+    "guesses": [
+      "irate",
+      "apple",
+      "clean",
+      "label"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "label",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 35,
+    "guesses": [
+      "irate",
+      "alien",
+      "aback",
+      "baler",
+      "label"
+    ],
+    "member": 2,
+    "reward": 2.0,
+    "secret": "label",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 35,
+    "guesses": [
+      "irate",
+      "amend",
+      "equal",
+      "camel",
+      "panel",
+      "label"
+    ],
+    "member": 3,
+    "reward": 1.0,
+    "secret": "label",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 35,
+    "guesses": [
+      "irate",
+      "panel",
+      "camel",
+      "baler",
+      "label"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "label",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 35,
+    "guesses": [
+      "irate",
+      "pedal",
+      "camel",
+      "camel",
+      "taste",
+      "taken"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "label",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 35,
+    "guesses": [
+      "irate",
+      "album",
+      "cable",
+      "label"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "label",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 35,
+    "guesses": [
+      "irate",
+      "pedal",
+      "camel",
+      "taken",
+      "label"
+    ],
+    "member": 7,
+    "reward": 2.0,
+    "secret": "label",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 36,
+    "guesses": [
+      "irate",
+      "sweep",
+      "lower"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "lower",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 36,
+    "guesses": [
+      "irate",
+      "clown",
+      "lower"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "lower",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 36,
+    "guesses": [
+      "irate",
+      "fleet",
+      "lover",
+      "lover",
+      "lover",
+      "lover"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "lower",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 36,
+    "guesses": [
+      "irate",
+      "clown",
+      "lower"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "lower",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 36,
+    "guesses": [
+      "irate",
+      "elder",
+      "lover",
+      "lover",
+      "lover",
+      "lover"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "lower",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 36,
+    "guesses": [
+      "irate",
+      "floor",
+      "lover",
+      "lover",
+      "lover",
+      "lover"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "lower",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 36,
+    "guesses": [
+      "irate",
+      "bleed",
+      "lover",
+      "lover",
+      "lover",
+      "lover"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "lower",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 36,
+    "guesses": [
+      "irate",
+      "fleet",
+      "lover",
+      "lover",
+      "lover",
+      "lover"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "lower",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 37,
+    "guesses": [
+      "irate",
+      "panel",
+      "equal",
+      "medal"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "medal",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 37,
+    "guesses": [
+      "irate",
+      "clean",
+      "medal"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "medal",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 37,
+    "guesses": [
+      "irate",
+      "amend",
+      "medal"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "medal",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 37,
+    "guesses": [
+      "irate",
+      "abbey",
+      "cheap",
+      "delay",
+      "medal"
+    ],
+    "member": 3,
+    "reward": 2.0,
+    "secret": "medal",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 37,
+    "guesses": [
+      "irate",
+      "angel",
+      "equal",
+      "equal",
+      "medal"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "medal",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 37,
+    "guesses": [
+      "irate",
+      "angel",
+      "medal"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "medal",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 37,
+    "guesses": [
+      "irate",
+      "amend",
+      "medal"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "medal",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 37,
+    "guesses": [
+      "irate",
+      "angel",
+      "equal",
+      "medal"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "medal",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 38,
+    "guesses": [
+      "irate",
+      "fleet",
+      "berry",
+      "reply",
+      "mercy"
+    ],
+    "member": 0,
+    "reward": 2.0,
+    "secret": "mercy",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 38,
+    "guesses": [
+      "irate",
+      "fleet",
+      "berry",
+      "essay",
+      "reply",
+      "reply"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "mercy",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 38,
+    "guesses": [
+      "irate",
+      "fleet",
+      "decor",
+      "reply",
+      "reply",
+      "zebra"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "mercy",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 38,
+    "guesses": [
+      "irate",
+      "funny",
+      "every",
+      "mercy"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "mercy",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 38,
+    "guesses": [
+      "irate",
+      "flour",
+      "berry",
+      "serve",
+      "reply",
+      "mercy"
+    ],
+    "member": 4,
+    "reward": 1.0,
+    "secret": "mercy",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 38,
+    "guesses": [
+      "irate",
+      "kneel",
+      "berry",
+      "reply",
+      "reply",
+      "reply"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "mercy",
+    "won": false
+  },
+  {
+    "attempts": 5,
+    "group": 38,
+    "guesses": [
+      "irate",
+      "sweep",
+      "reign",
+      "berry",
+      "mercy"
+    ],
+    "member": 6,
+    "reward": 2.0,
+    "secret": "mercy",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 38,
+    "guesses": [
+      "irate",
+      "offer",
+      "every",
+      "reply",
+      "mercy"
+    ],
+    "member": 7,
+    "reward": 2.0,
+    "secret": "mercy",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 39,
+    "guesses": [
+      "irate",
+      "slick",
+      "adapt",
+      "glide",
+      "elite",
+      "elite"
+    ],
+    "member": 0,
+    "reward": 0.0,
+    "secret": "olive",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 39,
+    "guesses": [
+      "irate",
+      "slick",
+      "glide",
+      "elite",
+      "elite",
+      "elite"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "olive",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 39,
+    "guesses": [
+      "irate",
+      "slick",
+      "glide",
+      "elite",
+      "elite",
+      "elite"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "olive",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 39,
+    "guesses": [
+      "irate",
+      "slick",
+      "glide",
+      "elite",
+      "elite",
+      "elite"
+    ],
+    "member": 3,
+    "reward": 0.0,
+    "secret": "olive",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 39,
+    "guesses": [
+      "irate",
+      "slick",
+      "glide",
+      "elite",
+      "elite",
+      "elite"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "olive",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 39,
+    "guesses": [
+      "irate",
+      "slick",
+      "glide",
+      "elite",
+      "elite",
+      "elite"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "olive",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 39,
+    "guesses": [
+      "irate",
+      "slick",
+      "glide",
+      "elite",
+      "elite",
+      "elite"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "olive",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 39,
+    "guesses": [
+      "irate",
+      "slick",
+      "glide",
+      "elite",
+      "elite",
+      "elite"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "olive",
+    "won": false
+  },
+  {
+    "attempts": 2,
+    "group": 40,
+    "guesses": [
+      "irate",
+      "orbit"
+    ],
+    "member": 0,
+    "reward": 5.0,
+    "secret": "orbit",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 40,
+    "guesses": [
+      "irate",
+      "orbit"
+    ],
+    "member": 1,
+    "reward": 5.0,
+    "secret": "orbit",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 40,
+    "guesses": [
+      "irate",
+      "orbit"
+    ],
+    "member": 2,
+    "reward": 5.0,
+    "secret": "orbit",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 40,
+    "guesses": [
+      "irate",
+      "orbit"
+    ],
+    "member": 3,
+    "reward": 5.0,
+    "secret": "orbit",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 40,
+    "guesses": [
+      "irate",
+      "orbit"
+    ],
+    "member": 4,
+    "reward": 5.0,
+    "secret": "orbit",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 40,
+    "guesses": [
+      "irate",
+      "orbit"
+    ],
+    "member": 5,
+    "reward": 5.0,
+    "secret": "orbit",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 40,
+    "guesses": [
+      "irate",
+      "orbit"
+    ],
+    "member": 6,
+    "reward": 5.0,
+    "secret": "orbit",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 40,
+    "guesses": [
+      "irate",
+      "honey",
+      "frost",
+      "orbit"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "orbit",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 41,
+    "guesses": [
+      "irate",
+      "carry",
+      "harsh",
+      "major",
+      "range",
+      "parka"
+    ],
+    "member": 0,
+    "reward": 1.0,
+    "secret": "parka",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 41,
+    "guesses": [
+      "irate",
+      "carry",
+      "harsh",
+      "marry",
+      "fancy",
+      "marry"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "parka",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 41,
+    "guesses": [
+      "irate",
+      "carry",
+      "harsh",
+      "marry",
+      "early",
+      "favor"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "parka",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 41,
+    "guesses": [
+      "irate",
+      "carry",
+      "harsh",
+      "marry",
+      "favor",
+      "marry"
+    ],
+    "member": 3,
+    "reward": 0.0,
+    "secret": "parka",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 41,
+    "guesses": [
+      "irate",
+      "coral",
+      "marry",
+      "harsh",
+      "harsh",
+      "naval"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "parka",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 41,
+    "guesses": [
+      "irate",
+      "curly",
+      "apron",
+      "strap",
+      "harsh",
+      "rapid"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "parka",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 41,
+    "guesses": [
+      "irate",
+      "carry",
+      "harsh",
+      "major",
+      "range",
+      "parka"
+    ],
+    "member": 6,
+    "reward": 1.0,
+    "secret": "parka",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 41,
+    "guesses": [
+      "irate",
+      "carry",
+      "harsh",
+      "major",
+      "range",
+      "parka"
+    ],
+    "member": 7,
+    "reward": 1.0,
+    "secret": "parka",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 42,
+    "guesses": [
+      "irate",
+      "fancy",
+      "ratio",
+      "ratio",
+      "strap",
+      "party"
+    ],
+    "member": 0,
+    "reward": 1.0,
+    "secret": "party",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 42,
+    "guesses": [
+      "irate",
+      "nasty",
+      "party"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "party",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 42,
+    "guesses": [
+      "irate",
+      "nasty",
+      "party"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "party",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 42,
+    "guesses": [
+      "irate",
+      "strap",
+      "party"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "party",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 42,
+    "guesses": [
+      "irate",
+      "nasty",
+      "party"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "party",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 42,
+    "guesses": [
+      "irate",
+      "nasty",
+      "party"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "party",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 42,
+    "guesses": [
+      "irate",
+      "album",
+      "fancy",
+      "ratio",
+      "earth",
+      "strap"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "party",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 42,
+    "guesses": [
+      "irate",
+      "nasty",
+      "party"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "party",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 43,
+    "guesses": [
+      "irate",
+      "slope",
+      "glide",
+      "piece"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "piece",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 43,
+    "guesses": [
+      "irate",
+      "slick",
+      "piece"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "piece",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 43,
+    "guesses": [
+      "irate",
+      "slick",
+      "piece"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "piece",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 43,
+    "guesses": [
+      "irate",
+      "slick",
+      "piece"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "piece",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 43,
+    "guesses": [
+      "irate",
+      "slick",
+      "piece"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "piece",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 43,
+    "guesses": [
+      "irate",
+      "pinch",
+      "piece"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "piece",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 43,
+    "guesses": [
+      "irate",
+      "slick",
+      "piece"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "piece",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 43,
+    "guesses": [
+      "irate",
+      "slick",
+      "piece"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "piece",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 44,
+    "guesses": [
+      "irate",
+      "light",
+      "limit",
+      "linen",
+      "pilot"
+    ],
+    "member": 0,
+    "reward": 2.0,
+    "secret": "pilot",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 44,
+    "guesses": [
+      "irate",
+      "light",
+      "limit",
+      "linen",
+      "limit",
+      "limit"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "pilot",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 44,
+    "guesses": [
+      "irate",
+      "light",
+      "limit",
+      "linen",
+      "limit",
+      "limit"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "pilot",
+    "won": false
+  },
+  {
+    "attempts": 5,
+    "group": 44,
+    "guesses": [
+      "irate",
+      "light",
+      "limit",
+      "linen",
+      "pilot"
+    ],
+    "member": 3,
+    "reward": 2.0,
+    "secret": "pilot",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 44,
+    "guesses": [
+      "irate",
+      "light",
+      "limit",
+      "linen",
+      "limit",
+      "limit"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "pilot",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 44,
+    "guesses": [
+      "irate",
+      "light",
+      "limit",
+      "linen",
+      "limit",
+      "limit"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "pilot",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 44,
+    "guesses": [
+      "irate",
+      "light",
+      "limit",
+      "linen",
+      "limit",
+      "limit"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "pilot",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 44,
+    "guesses": [
+      "irate",
+      "light",
+      "limit",
+      "linen",
+      "limit",
+      "light"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "pilot",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 45,
+    "guesses": [
+      "irate",
+      "clown",
+      "forth",
+      "owner",
+      "worst",
+      "owner"
+    ],
+    "member": 0,
+    "reward": 0.0,
+    "secret": "power",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 45,
+    "guesses": [
+      "irate",
+      "enemy",
+      "blues",
+      "offer",
+      "owner",
+      "owner"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "power",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 45,
+    "guesses": [
+      "irate",
+      "fleet",
+      "bonus",
+      "owner",
+      "worry",
+      "owner"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "power",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 45,
+    "guesses": [
+      "irate",
+      "elder",
+      "apron",
+      "super",
+      "opera",
+      "opera"
+    ],
+    "member": 3,
+    "reward": 0.0,
+    "secret": "power",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 45,
+    "guesses": [
+      "irate",
+      "fleet",
+      "apron",
+      "super",
+      "opera",
+      "super"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "power",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 45,
+    "guesses": [
+      "irate",
+      "fleet",
+      "apron",
+      "opera",
+      "super",
+      "opera"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "power",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 45,
+    "guesses": [
+      "irate",
+      "elder",
+      "apron",
+      "south",
+      "round",
+      "solve"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "power",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 45,
+    "guesses": [
+      "irate",
+      "fleet",
+      "buyer",
+      "cover",
+      "honey",
+      "model"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "power",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 46,
+    "guesses": [
+      "irate",
+      "dress",
+      "fresh",
+      "greet",
+      "dress",
+      "dress"
+    ],
+    "member": 0,
+    "reward": 0.0,
+    "secret": "press",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 46,
+    "guesses": [
+      "irate",
+      "dress",
+      "fresh",
+      "creek",
+      "greet",
+      "dress"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "press",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 46,
+    "guesses": [
+      "irate",
+      "dance",
+      "fresh",
+      "greet",
+      "dress",
+      "dress"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "press",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 46,
+    "guesses": [
+      "irate",
+      "dress",
+      "fresh",
+      "greet",
+      "dress",
+      "dress"
+    ],
+    "member": 3,
+    "reward": 0.0,
+    "secret": "press",
+    "won": false
+  },
+  {
+    "attempts": 5,
+    "group": 46,
+    "guesses": [
+      "irate",
+      "dance",
+      "fresh",
+      "greet",
+      "press"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "press",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 46,
+    "guesses": [
+      "irate",
+      "dress",
+      "breed",
+      "fresh",
+      "great",
+      "creek"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "press",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 46,
+    "guesses": [
+      "irate",
+      "dance",
+      "fresh",
+      "greet",
+      "dress",
+      "dress"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "press",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 46,
+    "guesses": [
+      "irate",
+      "dance",
+      "fresh",
+      "greet",
+      "dress",
+      "dress"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "press",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 47,
+    "guesses": [
+      "irate",
+      "candy",
+      "might",
+      "prime"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "prime",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 47,
+    "guesses": [
+      "irate",
+      "candy",
+      "major",
+      "music",
+      "prime"
+    ],
+    "member": 1,
+    "reward": 2.0,
+    "secret": "prime",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 47,
+    "guesses": [
+      "irate",
+      "candy",
+      "movie",
+      "prime"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "prime",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 47,
+    "guesses": [
+      "irate",
+      "crime",
+      "smile",
+      "drive",
+      "write",
+      "prime"
+    ],
+    "member": 3,
+    "reward": 1.0,
+    "secret": "prime",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 47,
+    "guesses": [
+      "irate",
+      "candy",
+      "maybe",
+      "prime"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "prime",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 47,
+    "guesses": [
+      "irate",
+      "candy",
+      "movie",
+      "smile",
+      "write",
+      "write"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "prime",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 47,
+    "guesses": [
+      "irate",
+      "candy",
+      "movie",
+      "prime"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "prime",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 47,
+    "guesses": [
+      "irate",
+      "crime",
+      "drill",
+      "prime"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "prime",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 48,
+    "guesses": [
+      "irate",
+      "candy",
+      "bring",
+      "write",
+      "prime",
+      "prime"
+    ],
+    "member": 0,
+    "reward": 0.0,
+    "secret": "prize",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 48,
+    "guesses": [
+      "irate",
+      "candy",
+      "bring",
+      "write",
+      "prime",
+      "prime"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "prize",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 48,
+    "guesses": [
+      "irate",
+      "candy",
+      "movie",
+      "brief",
+      "write",
+      "write"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "prize",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 48,
+    "guesses": [
+      "irate",
+      "candy",
+      "movie",
+      "write",
+      "brief",
+      "write"
+    ],
+    "member": 3,
+    "reward": 0.0,
+    "secret": "prize",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 48,
+    "guesses": [
+      "irate",
+      "champ",
+      "admit",
+      "pride",
+      "prime",
+      "prime"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "prize",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 48,
+    "guesses": [
+      "irate",
+      "candy",
+      "irate",
+      "movie",
+      "write",
+      "brief"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "prize",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 48,
+    "guesses": [
+      "irate",
+      "candy",
+      "minor",
+      "brief",
+      "write",
+      "write"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "prize",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 48,
+    "guesses": [
+      "irate",
+      "candy",
+      "movie",
+      "write",
+      "write",
+      "write"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "prize",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 49,
+    "guesses": [
+      "irate",
+      "agree",
+      "raise"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "raise",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 49,
+    "guesses": [
+      "irate",
+      "adapt",
+      "raise"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "raise",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 49,
+    "guesses": [
+      "irate",
+      "adore",
+      "raise"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "raise",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 49,
+    "guesses": [
+      "irate",
+      "adapt",
+      "raise"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "raise",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 49,
+    "guesses": [
+      "irate",
+      "raise"
+    ],
+    "member": 4,
+    "reward": 5.0,
+    "secret": "raise",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 49,
+    "guesses": [
+      "irate",
+      "admit",
+      "raise"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "raise",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 49,
+    "guesses": [
+      "irate",
+      "raise"
+    ],
+    "member": 6,
+    "reward": 5.0,
+    "secret": "raise",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 49,
+    "guesses": [
+      "irate",
+      "adapt",
+      "raise"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "raise",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 50,
+    "guesses": [
+      "irate",
+      "agree",
+      "large",
+      "carve",
+      "radio",
+      "range"
+    ],
+    "member": 0,
+    "reward": 1.0,
+    "secret": "range",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 50,
+    "guesses": [
+      "irate",
+      "agree",
+      "range"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "range",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 50,
+    "guesses": [
+      "irate",
+      "agree",
+      "salad",
+      "carve",
+      "grape",
+      "large"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "range",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 50,
+    "guesses": [
+      "irate",
+      "agree",
+      "large",
+      "carve",
+      "large",
+      "raise"
+    ],
+    "member": 3,
+    "reward": 0.0,
+    "secret": "range",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 50,
+    "guesses": [
+      "irate",
+      "agree",
+      "large",
+      "sauce",
+      "radio",
+      "range"
+    ],
+    "member": 4,
+    "reward": 1.0,
+    "secret": "range",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 50,
+    "guesses": [
+      "irate",
+      "agree",
+      "large",
+      "radio",
+      "range"
+    ],
+    "member": 5,
+    "reward": 2.0,
+    "secret": "range",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 50,
+    "guesses": [
+      "irate",
+      "agree",
+      "large",
+      "carve",
+      "range"
+    ],
+    "member": 6,
+    "reward": 2.0,
+    "secret": "range",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 50,
+    "guesses": [
+      "irate",
+      "agree",
+      "salad",
+      "carve",
+      "range"
+    ],
+    "member": 7,
+    "reward": 2.0,
+    "secret": "range",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 51,
+    "guesses": [
+      "irate",
+      "couch",
+      "round"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "round",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 51,
+    "guesses": [
+      "irate",
+      "couch",
+      "round"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "round",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 51,
+    "guesses": [
+      "irate",
+      "couch",
+      "empty",
+      "round"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "round",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 51,
+    "guesses": [
+      "irate",
+      "cloud",
+      "apron",
+      "round"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "round",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 51,
+    "guesses": [
+      "irate",
+      "could",
+      "round"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "round",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 51,
+    "guesses": [
+      "irate",
+      "couch",
+      "round"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "round",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 51,
+    "guesses": [
+      "irate",
+      "couch",
+      "round"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "round",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 51,
+    "guesses": [
+      "irate",
+      "couch",
+      "sword",
+      "round"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "round",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 52,
+    "guesses": [
+      "irate",
+      "adopt",
+      "alarm",
+      "black",
+      "chart",
+      "scare"
+    ],
+    "member": 0,
+    "reward": 0.0,
+    "secret": "scarf",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 52,
+    "guesses": [
+      "irate",
+      "boast",
+      "shark",
+      "smart",
+      "sword",
+      "smart"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "scarf",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 52,
+    "guesses": [
+      "irate",
+      "chalk",
+      "scare",
+      "scare",
+      "scare",
+      "scare"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "scarf",
+    "won": false
+  },
+  {
+    "attempts": 5,
+    "group": 52,
+    "guesses": [
+      "irate",
+      "bonus",
+      "shark",
+      "smart",
+      "scarf"
+    ],
+    "member": 3,
+    "reward": 2.0,
+    "secret": "scarf",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 52,
+    "guesses": [
+      "irate",
+      "chaos",
+      "scarf"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "scarf",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 52,
+    "guesses": [
+      "irate",
+      "solar",
+      "shark",
+      "smart",
+      "start",
+      "sugar"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "scarf",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 52,
+    "guesses": [
+      "irate",
+      "short",
+      "smart",
+      "sword",
+      "spare",
+      "scare"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "scarf",
+    "won": false
+  },
+  {
+    "attempts": 5,
+    "group": 52,
+    "guesses": [
+      "irate",
+      "adopt",
+      "shark",
+      "smart",
+      "scarf"
+    ],
+    "member": 7,
+    "reward": 2.0,
+    "secret": "scarf",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 53,
+    "guesses": [
+      "irate",
+      "ought",
+      "count",
+      "ounce",
+      "cloud",
+      "crown"
+    ],
+    "member": 0,
+    "reward": 0.0,
+    "secret": "scout",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 53,
+    "guesses": [
+      "irate",
+      "stuck",
+      "sunny",
+      "scout"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "scout",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 53,
+    "guesses": [
+      "irate",
+      "stuck",
+      "scout"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "scout",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 53,
+    "guesses": [
+      "irate",
+      "count",
+      "ought",
+      "ought",
+      "ought",
+      "ought"
+    ],
+    "member": 3,
+    "reward": 0.0,
+    "secret": "scout",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 53,
+    "guesses": [
+      "irate",
+      "stuck",
+      "scout"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "scout",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 53,
+    "guesses": [
+      "irate",
+      "stuck",
+      "scout"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "scout",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 53,
+    "guesses": [
+      "irate",
+      "stuck",
+      "scout"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "scout",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 53,
+    "guesses": [
+      "irate",
+      "stuck",
+      "scout"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "scout",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 54,
+    "guesses": [
+      "irate",
+      "wheel",
+      "enemy",
+      "seven"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "seven",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 54,
+    "guesses": [
+      "irate",
+      "wheel",
+      "enemy",
+      "seven"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "seven",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 54,
+    "guesses": [
+      "irate",
+      "wheel",
+      "enemy",
+      "seven"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "seven",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 54,
+    "guesses": [
+      "irate",
+      "wheel",
+      "enemy",
+      "sense",
+      "seven"
+    ],
+    "member": 3,
+    "reward": 2.0,
+    "secret": "seven",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 54,
+    "guesses": [
+      "irate",
+      "wheel",
+      "abbey",
+      "enemy",
+      "seven"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "seven",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 54,
+    "guesses": [
+      "irate",
+      "wheel",
+      "enemy",
+      "seven"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "seven",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 54,
+    "guesses": [
+      "irate",
+      "wheel",
+      "enemy",
+      "sense",
+      "seven"
+    ],
+    "member": 6,
+    "reward": 2.0,
+    "secret": "seven",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 54,
+    "guesses": [
+      "irate",
+      "wheel",
+      "enemy",
+      "sense",
+      "seven"
+    ],
+    "member": 7,
+    "reward": 2.0,
+    "secret": "seven",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 55,
+    "guesses": [
+      "irate",
+      "clash",
+      "adapt",
+      "shape"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "shape",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 55,
+    "guesses": [
+      "irate",
+      "clash",
+      "adapt",
+      "shape"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "shape",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 55,
+    "guesses": [
+      "irate",
+      "blush",
+      "adapt",
+      "shape"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "shape",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 55,
+    "guesses": [
+      "irate",
+      "clash",
+      "adapt",
+      "shape"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "shape",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 55,
+    "guesses": [
+      "irate",
+      "sheep",
+      "aback",
+      "shame",
+      "shade",
+      "shame"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "shape",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 55,
+    "guesses": [
+      "irate",
+      "blush",
+      "adapt",
+      "shape"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "shape",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 55,
+    "guesses": [
+      "irate",
+      "blush",
+      "adapt",
+      "speak",
+      "shape"
+    ],
+    "member": 6,
+    "reward": 2.0,
+    "secret": "shape",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 55,
+    "guesses": [
+      "irate",
+      "clash",
+      "adapt",
+      "shape"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "shape",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 56,
+    "guesses": [
+      "irate",
+      "wheel",
+      "cheek",
+      "sheep"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "sheep",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 56,
+    "guesses": [
+      "irate",
+      "wheel",
+      "cheek",
+      "sheep"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "sheep",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 56,
+    "guesses": [
+      "irate",
+      "wheel",
+      "cheek",
+      "sheep"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "sheep",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 56,
+    "guesses": [
+      "irate",
+      "wheel",
+      "cheek",
+      "sheep"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "sheep",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 56,
+    "guesses": [
+      "irate",
+      "wheel",
+      "cheek",
+      "sheep"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "sheep",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 56,
+    "guesses": [
+      "irate",
+      "wheel",
+      "sheep"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "sheep",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 56,
+    "guesses": [
+      "irate",
+      "wheel",
+      "cheek",
+      "sheep"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "sheep",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 56,
+    "guesses": [
+      "irate",
+      "wheel",
+      "cheek",
+      "sheep"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "sheep",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 57,
+    "guesses": [
+      "irate",
+      "stuck",
+      "south",
+      "shout"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "shout",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 57,
+    "guesses": [
+      "irate",
+      "stuck",
+      "sweet",
+      "sweet",
+      "south",
+      "shout"
+    ],
+    "member": 1,
+    "reward": 1.0,
+    "secret": "shout",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 57,
+    "guesses": [
+      "irate",
+      "stuck",
+      "south",
+      "shout"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "shout",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 57,
+    "guesses": [
+      "irate",
+      "stuck",
+      "south",
+      "shout"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "shout",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 57,
+    "guesses": [
+      "irate",
+      "cloud",
+      "boost",
+      "shout"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "shout",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 57,
+    "guesses": [
+      "irate",
+      "stuck",
+      "south",
+      "shout"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "shout",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 57,
+    "guesses": [
+      "irate",
+      "cloud",
+      "boost",
+      "stove",
+      "storm",
+      "shout"
+    ],
+    "member": 6,
+    "reward": 1.0,
+    "secret": "shout",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 57,
+    "guesses": [
+      "irate",
+      "stuck",
+      "south",
+      "shout"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "shout",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 58,
+    "guesses": [
+      "irate",
+      "clash",
+      "scare",
+      "sauce",
+      "snack",
+      "snack"
+    ],
+    "member": 0,
+    "reward": 0.0,
+    "secret": "space",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 58,
+    "guesses": [
+      "irate",
+      "sheep",
+      "scale",
+      "scale",
+      "scare",
+      "scare"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "space",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 58,
+    "guesses": [
+      "irate",
+      "shock",
+      "scale",
+      "snack",
+      "snack",
+      "scale"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "space",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 58,
+    "guesses": [
+      "irate",
+      "sheep",
+      "scale",
+      "scale",
+      "scare",
+      "scare"
+    ],
+    "member": 3,
+    "reward": 0.0,
+    "secret": "space",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 58,
+    "guesses": [
+      "irate",
+      "shock",
+      "scale",
+      "snack",
+      "snack",
+      "snack"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "space",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 58,
+    "guesses": [
+      "irate",
+      "blush",
+      "snake",
+      "scare",
+      "scare",
+      "scare"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "space",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 58,
+    "guesses": [
+      "irate",
+      "clash",
+      "scare",
+      "snack",
+      "scare",
+      "scare"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "space",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 58,
+    "guesses": [
+      "irate",
+      "clash",
+      "scare",
+      "snack",
+      "scare",
+      "scare"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "space",
+    "won": false
+  },
+  {
+    "attempts": 5,
+    "group": 59,
+    "guesses": [
+      "irate",
+      "limit",
+      "light",
+      "input",
+      "split"
+    ],
+    "member": 0,
+    "reward": 2.0,
+    "secret": "split",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 59,
+    "guesses": [
+      "irate",
+      "light",
+      "built",
+      "limit",
+      "limit",
+      "limit"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "split",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 59,
+    "guesses": [
+      "irate",
+      "light",
+      "built",
+      "limit",
+      "limit",
+      "limit"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "split",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 59,
+    "guesses": [
+      "irate",
+      "light",
+      "built",
+      "limit",
+      "limit",
+      "limit"
+    ],
+    "member": 3,
+    "reward": 0.0,
+    "secret": "split",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 59,
+    "guesses": [
+      "irate",
+      "light",
+      "built",
+      "limit",
+      "limit",
+      "limit"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "split",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 59,
+    "guesses": [
+      "irate",
+      "shelf",
+      "still",
+      "slick",
+      "solid",
+      "solid"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "split",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 59,
+    "guesses": [
+      "irate",
+      "limit",
+      "light",
+      "input",
+      "pilot",
+      "pilot"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "split",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 59,
+    "guesses": [
+      "irate",
+      "light",
+      "built",
+      "limit",
+      "limit",
+      "limit"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "split",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 60,
+    "guesses": [
+      "irate",
+      "coast",
+      "stack"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "stack",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 60,
+    "guesses": [
+      "irate",
+      "clash",
+      "stack"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "stack",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 60,
+    "guesses": [
+      "irate",
+      "clash",
+      "stack"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "stack",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 60,
+    "guesses": [
+      "irate",
+      "clash",
+      "stack"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "stack",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 60,
+    "guesses": [
+      "irate",
+      "chant",
+      "topic",
+      "stack"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "stack",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 60,
+    "guesses": [
+      "irate",
+      "clash",
+      "stack"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "stack",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 60,
+    "guesses": [
+      "irate",
+      "clash",
+      "stack"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "stack",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 60,
+    "guesses": [
+      "irate",
+      "clash",
+      "stack"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "stack",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 61,
+    "guesses": [
+      "irate",
+      "blast",
+      "stale"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "stale",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 61,
+    "guesses": [
+      "irate",
+      "blast",
+      "teach",
+      "stale"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "stale",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 61,
+    "guesses": [
+      "irate",
+      "glass",
+      "table",
+      "stale"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "stale",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 61,
+    "guesses": [
+      "irate",
+      "blast",
+      "stale"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "stale",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 61,
+    "guesses": [
+      "irate",
+      "blast",
+      "stale"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "stale",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 61,
+    "guesses": [
+      "irate",
+      "least",
+      "slate",
+      "stale"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "stale",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 61,
+    "guesses": [
+      "irate",
+      "slope",
+      "stale"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "stale",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 61,
+    "guesses": [
+      "irate",
+      "clash",
+      "table",
+      "stale"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "stale",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 62,
+    "guesses": [
+      "irate",
+      "stare"
+    ],
+    "member": 0,
+    "reward": 5.0,
+    "secret": "stare",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 62,
+    "guesses": [
+      "irate",
+      "heart",
+      "stare"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "stare",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 62,
+    "guesses": [
+      "irate",
+      "stare"
+    ],
+    "member": 2,
+    "reward": 5.0,
+    "secret": "stare",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 62,
+    "guesses": [
+      "irate",
+      "stare"
+    ],
+    "member": 3,
+    "reward": 5.0,
+    "secret": "stare",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 62,
+    "guesses": [
+      "irate",
+      "scare",
+      "stare"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "stare",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 62,
+    "guesses": [
+      "irate",
+      "stare"
+    ],
+    "member": 5,
+    "reward": 5.0,
+    "secret": "stare",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 62,
+    "guesses": [
+      "irate",
+      "stare"
+    ],
+    "member": 6,
+    "reward": 5.0,
+    "secret": "stare",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 62,
+    "guesses": [
+      "irate",
+      "stare"
+    ],
+    "member": 7,
+    "reward": 5.0,
+    "secret": "stare",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 63,
+    "guesses": [
+      "irate",
+      "light",
+      "stick"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "stick",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 63,
+    "guesses": [
+      "irate",
+      "light",
+      "stick"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "stick",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 63,
+    "guesses": [
+      "irate",
+      "light",
+      "stick"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "stick",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 63,
+    "guesses": [
+      "irate",
+      "limit",
+      "stick"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "stick",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 63,
+    "guesses": [
+      "irate",
+      "limit",
+      "stick"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "stick",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 63,
+    "guesses": [
+      "irate",
+      "light",
+      "stick"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "stick",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 63,
+    "guesses": [
+      "irate",
+      "light",
+      "stick"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "stick",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 63,
+    "guesses": [
+      "irate",
+      "limit",
+      "stick"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "stick",
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 64,
+    "guesses": [
+      "irate",
+      "strap",
+      "strap",
+      "strap",
+      "straw"
+    ],
+    "member": 0,
+    "reward": 2.0,
+    "secret": "straw",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 64,
+    "guesses": [
+      "irate",
+      "strap",
+      "strap",
+      "straw"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "straw",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 64,
+    "guesses": [
+      "irate",
+      "strap",
+      "strap",
+      "straw"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "straw",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 64,
+    "guesses": [
+      "irate",
+      "strap",
+      "strap",
+      "straw"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "straw",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 64,
+    "guesses": [
+      "irate",
+      "strap",
+      "strap",
+      "straw"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "straw",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 64,
+    "guesses": [
+      "irate",
+      "strap",
+      "strap",
+      "straw"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "straw",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 64,
+    "guesses": [
+      "irate",
+      "strap",
+      "strap",
+      "straw"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "straw",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 64,
+    "guesses": [
+      "irate",
+      "strap",
+      "strap",
+      "straw"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "straw",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 65,
+    "guesses": [
+      "irate",
+      "clash",
+      "focus",
+      "stuck"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "stuck",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 65,
+    "guesses": [
+      "irate",
+      "stuck"
+    ],
+    "member": 1,
+    "reward": 5.0,
+    "secret": "stuck",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 65,
+    "guesses": [
+      "irate",
+      "stuck"
+    ],
+    "member": 2,
+    "reward": 5.0,
+    "secret": "stuck",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 65,
+    "guesses": [
+      "irate",
+      "scout",
+      "stuck"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "stuck",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 65,
+    "guesses": [
+      "irate",
+      "stuck"
+    ],
+    "member": 4,
+    "reward": 5.0,
+    "secret": "stuck",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 65,
+    "guesses": [
+      "irate",
+      "count",
+      "stuck"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "stuck",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 65,
+    "guesses": [
+      "irate",
+      "stuck"
+    ],
+    "member": 6,
+    "reward": 5.0,
+    "secret": "stuck",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 65,
+    "guesses": [
+      "irate",
+      "stuck"
+    ],
+    "member": 7,
+    "reward": 5.0,
+    "secret": "stuck",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 66,
+    "guesses": [
+      "irate",
+      "cloud",
+      "funny",
+      "funny",
+      "funny",
+      "funny"
+    ],
+    "member": 0,
+    "reward": 0.0,
+    "secret": "sunny",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 66,
+    "guesses": [
+      "irate",
+      "bonus",
+      "sound",
+      "sunny"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "sunny",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 66,
+    "guesses": [
+      "irate",
+      "bonus",
+      "sunny"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "sunny",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 66,
+    "guesses": [
+      "irate",
+      "bonus",
+      "sunny"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "sunny",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 66,
+    "guesses": [
+      "irate",
+      "block",
+      "funny",
+      "funny",
+      "funny",
+      "funny"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "sunny",
+    "won": false
+  },
+  {
+    "attempts": 3,
+    "group": 66,
+    "guesses": [
+      "irate",
+      "bonus",
+      "sunny"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "sunny",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 66,
+    "guesses": [
+      "irate",
+      "blood",
+      "funny",
+      "funny",
+      "funny",
+      "funny"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "sunny",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 66,
+    "guesses": [
+      "irate",
+      "bound",
+      "funny",
+      "funny",
+      "funny",
+      "funny"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "sunny",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 67,
+    "guesses": [
+      "irate",
+      "bleed",
+      "honey",
+      "super"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "super",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 67,
+    "guesses": [
+      "irate",
+      "fleet",
+      "apron",
+      "super"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "super",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 67,
+    "guesses": [
+      "irate",
+      "elder",
+      "bonus",
+      "super"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "super",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 67,
+    "guesses": [
+      "irate",
+      "flour",
+      "super"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "super",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 67,
+    "guesses": [
+      "irate",
+      "flour",
+      "super"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "super",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 67,
+    "guesses": [
+      "irate",
+      "flour",
+      "super"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "super",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 67,
+    "guesses": [
+      "irate",
+      "fleet",
+      "apron",
+      "super"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "super",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 67,
+    "guesses": [
+      "irate",
+      "flour",
+      "super"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "super",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 68,
+    "guesses": [
+      "irate",
+      "album",
+      "champ",
+      "today"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "today",
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 68,
+    "guesses": [
+      "irate",
+      "adopt",
+      "today"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "today",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 68,
+    "guesses": [
+      "irate",
+      "adopt",
+      "stand",
+      "today"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "today",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 68,
+    "guesses": [
+      "irate",
+      "album",
+      "champ",
+      "steam",
+      "staff",
+      "woman"
+    ],
+    "member": 3,
+    "reward": 0.0,
+    "secret": "today",
+    "won": false
+  },
+  {
+    "attempts": 5,
+    "group": 68,
+    "guesses": [
+      "irate",
+      "adobe",
+      "datum",
+      "pound",
+      "today"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "today",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 68,
+    "guesses": [
+      "irate",
+      "album",
+      "champ",
+      "nasty",
+      "staff",
+      "state"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "today",
+    "won": false
+  },
+  {
+    "attempts": 5,
+    "group": 68,
+    "guesses": [
+      "irate",
+      "album",
+      "champ",
+      "steam",
+      "today"
+    ],
+    "member": 6,
+    "reward": 2.0,
+    "secret": "today",
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 68,
+    "guesses": [
+      "irate",
+      "album",
+      "champ",
+      "today"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "today",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 69,
+    "guesses": [
+      "irate",
+      "alert",
+      "other",
+      "outer",
+      "outer",
+      "outer"
+    ],
+    "member": 0,
+    "reward": 0.0,
+    "secret": "tower",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 69,
+    "guesses": [
+      "irate",
+      "elect",
+      "other",
+      "outer",
+      "outer",
+      "outer"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "tower",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 69,
+    "guesses": [
+      "irate",
+      "other",
+      "outer",
+      "outer",
+      "outer",
+      "other"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "tower",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 69,
+    "guesses": [
+      "irate",
+      "other",
+      "outer",
+      "worst",
+      "owner",
+      "tower"
+    ],
+    "member": 3,
+    "reward": 1.0,
+    "secret": "tower",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 69,
+    "guesses": [
+      "irate",
+      "meter",
+      "other",
+      "outer",
+      "outer",
+      "outer"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "tower",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 69,
+    "guesses": [
+      "irate",
+      "other",
+      "outer",
+      "outer",
+      "outer",
+      "outer"
+    ],
+    "member": 5,
+    "reward": 0.0,
+    "secret": "tower",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 69,
+    "guesses": [
+      "irate",
+      "other",
+      "outer",
+      "outer",
+      "owner",
+      "worth"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "tower",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 69,
+    "guesses": [
+      "irate",
+      "elect",
+      "other",
+      "outer",
+      "outer",
+      "outer"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "tower",
+    "won": false
+  },
+  {
+    "attempts": 2,
+    "group": 70,
+    "guesses": [
+      "irate",
+      "trail"
+    ],
+    "member": 0,
+    "reward": 5.0,
+    "secret": "trail",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 70,
+    "guesses": [
+      "irate",
+      "trail"
+    ],
+    "member": 1,
+    "reward": 5.0,
+    "secret": "trail",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 70,
+    "guesses": [
+      "irate",
+      "trail"
+    ],
+    "member": 2,
+    "reward": 5.0,
+    "secret": "trail",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 70,
+    "guesses": [
+      "irate",
+      "trail"
+    ],
+    "member": 3,
+    "reward": 5.0,
+    "secret": "trail",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 70,
+    "guesses": [
+      "irate",
+      "trail"
+    ],
+    "member": 4,
+    "reward": 5.0,
+    "secret": "trail",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 70,
+    "guesses": [
+      "irate",
+      "trail"
+    ],
+    "member": 5,
+    "reward": 5.0,
+    "secret": "trail",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 70,
+    "guesses": [
+      "irate",
+      "trail"
+    ],
+    "member": 6,
+    "reward": 5.0,
+    "secret": "trail",
+    "won": true
+  },
+  {
+    "attempts": 2,
+    "group": 70,
+    "guesses": [
+      "irate",
+      "trail"
+    ],
+    "member": 7,
+    "reward": 5.0,
+    "secret": "trail",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 71,
+    "guesses": [
+      "irate",
+      "stuck",
+      "champ",
+      "below",
+      "taken",
+      "watch"
+    ],
+    "member": 0,
+    "reward": 1.0,
+    "secret": "watch",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 71,
+    "guesses": [
+      "irate",
+      "album",
+      "champ",
+      "ranch",
+      "youth",
+      "ranch"
+    ],
+    "member": 1,
+    "reward": 0.0,
+    "secret": "watch",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 71,
+    "guesses": [
+      "irate",
+      "adopt",
+      "climb",
+      "album",
+      "fault",
+      "sauce"
+    ],
+    "member": 2,
+    "reward": 0.0,
+    "secret": "watch",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 71,
+    "guesses": [
+      "irate",
+      "adopt",
+      "bacon",
+      "champ",
+      "match",
+      "catch"
+    ],
+    "member": 3,
+    "reward": 0.0,
+    "secret": "watch",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 71,
+    "guesses": [
+      "irate",
+      "album",
+      "champ",
+      "ranch",
+      "ranch",
+      "ranch"
+    ],
+    "member": 4,
+    "reward": 0.0,
+    "secret": "watch",
+    "won": false
+  },
+  {
+    "attempts": 4,
+    "group": 71,
+    "guesses": [
+      "irate",
+      "adopt",
+      "below",
+      "watch"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "watch",
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 71,
+    "guesses": [
+      "irate",
+      "adopt",
+      "climb",
+      "fault",
+      "ratio",
+      "ratio"
+    ],
+    "member": 6,
+    "reward": 0.0,
+    "secret": "watch",
+    "won": false
+  },
+  {
+    "attempts": 6,
+    "group": 71,
+    "guesses": [
+      "irate",
+      "album",
+      "champ",
+      "ranch",
+      "ranch",
+      "youth"
+    ],
+    "member": 7,
+    "reward": 0.0,
+    "secret": "watch",
+    "won": false
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "action_regret": {
+    "actions": 263,
+    "games": 72,
+    "illegal_actions": 0,
+    "mean_action_regret": 0.01750079354005807,
+    "median_action_regret": 0.0,
+    "rank_1_fraction": 0.7300380228136882,
+    "top_3_fraction": 0.779467680608365,
+    "top_8_fraction": 0.7984790874524715
+  },
+  "constrained_average_attempts": 3.6527777777777777,
+  "constrained_average_guesses": 3.3174603174603177,
+  "constrained_wins": 63,
+  "effective_passes": 0.0,
+  "epoch": 0,
+  "gradient_norm": null,
+  "improved": true,
+  "learning_rate": 1e-06,
+  "mechanics_validation_loss": 0.0025081191696487105,
+  "optimizer_steps": 0,
+  "pairs_seen": 0,
+  "peak_gpu_memory_bytes": 618944512,
+  "raw_invalid_guesses": 1,
+  "raw_wins": 63,
+  "train": null,
+  "validation": {
+    "chosen_delta_logp": 0.0,
+    "chosen_nll": 3.9215903282165527,
+    "loss": 0.6931474208831787,
+    "policy_chosen_logp": -3.9215903282165527,
+    "policy_margin": 4.3213629722595215,
+    "policy_rejected_logp": -8.242953300476074,
+    "preference_accuracy": 0.7669199705123901,
+    "reference_chosen_logp": -3.921590566635132,
+    "reference_deviation": 0.0,
+    "reference_margin": 4.3213629722595215,
+    "reference_rejected_logp": -8.242953300476074,
+    "rejected_delta_logp": 0.0,
+    "total_loss": 4.6147377490997314
+  },
+  "wall_clock_seconds": 12.841428864998306
+}

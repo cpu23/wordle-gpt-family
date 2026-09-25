@@ -1,0 +1,3403 @@
+{
+  "algorithm": "expected-information candidate-ranking GRPO",
+  "base_checkpoint": "runs/scaling-dev-1m/seed-0/fold-1/7.2m/checkpoints/best.pt",
+  "base_checkpoint_sha256": "68dce0c6c0477e89fce4e05524627ad6136b7eff806a3fb6554ca65811f4ef9e",
+  "candidate_universe": "all legal dictionary answers consistent with history, including held-out secret words",
+  "corpus": "data/grpo-information",
+  "device": "cuda",
+  "group_size": 64,
+  "groups_per_update": 16,
+  "held_out_caveat": "held-out source secrets are excluded from training histories, not hypothetical reward answers",
+  "initial_model_groups": 256,
+  "initial_model_states": 660,
+  "initial_training_coverage": {
+    "draws": {
+      "missing_strata": [
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        }
+      ],
+      "strata": []
+    },
+    "model_states": 660,
+    "opening_accumulator": 24,
+    "opening_denominator": 40,
+    "opening_draws": 0,
+    "opening_fraction": 0.075,
+    "pool": {
+      "missing_strata": [
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        }
+      ],
+      "strata": [
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 12,
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "count": 50,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 329,
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 152,
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "count": 138,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 17,
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "count": 1,
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 2,
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 256,
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "count": 124,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "count": 94,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "count": 172,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "count": 86,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "count": 2,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 256,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 256,
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "count": 7,
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "count": 5,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 153,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "count": 1,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "count": 35,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 256,
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "count": 43,
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "count": 2,
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 256,
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "count": 2,
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "count": 16,
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "count": 23,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 196,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "count": 76,
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "count": 18,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "count": 5,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 256,
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 63,
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "count": 30,
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "count": 29,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 220,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "count": 14,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "count": 21,
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 256,
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "count": 1,
+          "history_depth": 5
+        }
+      ]
+    },
+    "pool_states": 20859,
+    "total_draws": 0,
+    "training_pool_secrets": 575
+  },
+  "kl": "raw categorical KL to frozen original SFT, evaluated at the five action prefixes",
+  "kl_beta": 0.1,
+  "loss_tokens": "only five newly proposed guess letters; mean tokens then equal candidate guesses",
+  "lr": 3e-06,
+  "microbatch_groups": 2,
+  "mode": "data/wordle-development.json",
+  "model_refresh_every": 100,
+  "opening_fraction": 0.075,
+  "output_dir": "runs/grpo-information-dev",
+  "panel_size": 400,
+  "policy_proposals": 48,
+  "proposal_objective": "equal-candidate ranking surrogate; mixed and deduplicated proposals are not unbiased on-policy PPO",
+  "random_proposals": 16,
+  "ratio": "token-level current/base-behavior-policy ratio under original full-dictionary prefix masks",
+  "refill": "exclude accepted words during proposal refill only; update policy never excludes other candidates",
+  "refresh_model_groups": 64,
+  "reward": "log(N / (sum_feedback_bucket_sizes_squared / N)) + 2 * indicator(guess in candidates) / N",
+  "scheduled_checkpoints": [
+    0,
+    100,
+    250,
+    500,
+    1000
+  ],
+  "seed": 0,
+  "source_secret_restriction": "train only for training state histories",
+  "source_secret_used_for_reward": false,
+  "test_gameplay_evaluated": false,
+  "train_pool_sha256": "d2a3a4d5a43b1580427008c2fddefe1774e3b4367788bae3a2620f881c2e640d",
+  "updates": 1000,
+  "validation_coverage": {
+    "draws": {
+      "missing_strata": [
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        }
+      ],
+      "strata": [
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 3,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 3,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 3,
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 1,
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "count": 2,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 1,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 2,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 1,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 4,
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 3,
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "count": 3,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 2,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 4,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 3,
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 2,
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 2,
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 3,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 4,
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 1,
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 3,
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 3,
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 4,
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 3,
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 3,
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 3,
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "count": 6,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 3,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "count": 5,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "count": 7,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 1,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "count": 6,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "count": 5,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 4,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "count": 5,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 18,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 26,
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "count": 3,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "count": 3,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "count": 6,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "count": 1,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 3,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "count": 2,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "count": 5,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "count": 7,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 4,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "count": 7,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "count": 7,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 5,
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "count": 6,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 14,
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "count": 1,
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 3,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 5,
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "count": 3,
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "count": 2,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 3,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 5,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 1,
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "count": 3,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 1,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 6,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 3,
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 1,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 1,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 2,
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 1,
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 7,
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 2,
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 2,
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 2,
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 5,
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 1,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "count": 5,
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "count": 3,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 3,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 1,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 2,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "count": 1,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 1,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 3,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 9,
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "count": 1,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 6,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 1,
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 2,
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "count": 7,
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 7,
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 2,
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 7,
+          "history_depth": 5
+        }
+      ]
+    },
+    "model_states": 845,
+    "opening_accumulator": 31,
+    "opening_denominator": 40,
+    "opening_draws": 30,
+    "opening_fraction": 0.075,
+    "pool": {
+      "missing_strata": [
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "history_depth": 5
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 4
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "101+",
+          "history_depth": 5
+        }
+      ],
+      "strata": [
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 5,
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "count": 5,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 169,
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 236,
+          "history_depth": 3
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "1-2",
+          "count": 19,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 175,
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 4
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "1-2",
+          "count": 153,
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "1-2",
+          "count": 32,
+          "history_depth": 5
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "count": 17,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "count": 18,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "101+",
+          "count": 22,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "count": 10,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "101+",
+          "count": 1,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "101+",
+          "count": 1,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 32,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "101+",
+          "count": 32,
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "21-100",
+          "count": 7,
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "21-100",
+          "count": 2,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 21,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "21-100",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "21-100",
+          "count": 10,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 32,
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "21-100",
+          "count": 4,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "21-100",
+          "count": 32,
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "count": 7,
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "count": 4,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 28,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "count": 49,
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "3-5",
+          "count": 3,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "3-5",
+          "count": 4,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "3-5",
+          "count": 32,
+          "history_depth": 5
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "3-5",
+          "count": 4,
+          "history_depth": 5
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "count": 22,
+          "history_depth": 1
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "count": 4,
+          "history_depth": 1
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 29,
+          "history_depth": 1
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 1
+        },
+        {
+          "behavior": "model",
+          "candidate_bucket": "6-20",
+          "count": 18,
+          "history_depth": 2
+        },
+        {
+          "behavior": "optimal_entropy",
+          "candidate_bucket": "6-20",
+          "count": 1,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 2
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 3
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 4
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 4
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 4
+        },
+        {
+          "behavior": "simple",
+          "candidate_bucket": "6-20",
+          "count": 1,
+          "history_depth": 4
+        },
+        {
+          "behavior": "partly_random",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 5
+        },
+        {
+          "behavior": "poor",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 5
+        },
+        {
+          "behavior": "random",
+          "candidate_bucket": "6-20",
+          "count": 32,
+          "history_depth": 5
+        }
+      ]
+    },
+    "pool_states": 3387,
+    "total_draws": 400,
+    "training_pool_secrets": 72
+  },
+  "validation_model_states": 845,
+  "validation_pool_sha256": "8ad6d225fb26aa0d6125d60ee09d0a51cd11fc18b4d2287c8b523abc66718387",
+  "words": "/home/mrw/dev/ai-wordle/words.txt"
+}

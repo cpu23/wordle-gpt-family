@@ -1,0 +1,5414 @@
+[
+  {
+    "behavior": "model",
+    "candidate_count": 36,
+    "candidates": [
+      "belly",
+      "below",
+      "bench",
+      "bleed",
+      "blend",
+      "bless",
+      "blues",
+      "bowel",
+      "check",
+      "cheek",
+      "chess",
+      "dozen",
+      "elbow",
+      "enemy",
+      "enjoy",
+      "flesh",
+      "guess",
+      "hello",
+      "honey",
+      "jelly",
+      "jewel",
+      "kneel",
+      "lemon",
+      "model",
+      "money",
+      "novel",
+      "queen",
+      "seven",
+      "sheep",
+      "shelf",
+      "shell",
+      "sleep",
+      "smell",
+      "speed",
+      "sweep",
+      "wheel"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXY"
+      ]
+    ],
+    "secret": "lemon",
+    "source_index": "model-400-0-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "belly",
+      "jelly",
+      "lemon"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXY"
+      ],
+      [
+        "wheel",
+        "XXYXY"
+      ]
+    ],
+    "secret": "lemon",
+    "source_index": "model-400-0-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "lemon"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXY"
+      ],
+      [
+        "wheel",
+        "XXYXY"
+      ],
+      [
+        "belly",
+        "XGYXX"
+      ]
+    ],
+    "secret": "lemon",
+    "source_index": "model-400-0-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "below",
+      "elbow",
+      "lemon"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXY"
+      ],
+      [
+        "shell",
+        "XXYYX"
+      ]
+    ],
+    "secret": "lemon",
+    "source_index": "model-400-1-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "lemon"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXY"
+      ],
+      [
+        "shell",
+        "XXYYX"
+      ],
+      [
+        "blown",
+        "XYYXG"
+      ]
+    ],
+    "secret": "lemon",
+    "source_index": "model-400-1-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 20,
+    "candidates": [
+      "abase",
+      "awake",
+      "blame",
+      "blaze",
+      "chase",
+      "flame",
+      "leave",
+      "peace",
+      "phase",
+      "place",
+      "plane",
+      "scale",
+      "shade",
+      "shake",
+      "shame",
+      "shape",
+      "snake",
+      "space",
+      "usage",
+      "whale"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXG"
+      ]
+    ],
+    "secret": "scale",
+    "source_index": "model-400-4-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "scale"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXG"
+      ],
+      [
+        "clash",
+        "YYGYX"
+      ]
+    ],
+    "secret": "scale",
+    "source_index": "model-400-5-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "crate"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGGGG"
+      ]
+    ],
+    "secret": "crate",
+    "source_index": "model-400-8-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 19,
+    "candidates": [
+      "abbey",
+      "ahead",
+      "amend",
+      "angel",
+      "began",
+      "camel",
+      "cheap",
+      "clean",
+      "delay",
+      "equal",
+      "essay",
+      "gleam",
+      "label",
+      "medal",
+      "ocean",
+      "panel",
+      "pedal",
+      "plead",
+      "speak"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXY"
+      ]
+    ],
+    "secret": "angel",
+    "source_index": "model-400-12-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "angel"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXY"
+      ],
+      [
+        "panel",
+        "XYYGG"
+      ]
+    ],
+    "secret": "angel",
+    "source_index": "model-400-12-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "angel",
+      "camel",
+      "label"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXY"
+      ],
+      [
+        "pedal",
+        "XYXYG"
+      ]
+    ],
+    "secret": "angel",
+    "source_index": "model-400-13-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "angel"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXY"
+      ],
+      [
+        "pedal",
+        "XYXYG"
+      ],
+      [
+        "camel",
+        "XYXGG"
+      ]
+    ],
+    "secret": "angel",
+    "source_index": "model-400-13-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 11,
+    "candidates": [
+      "angel",
+      "awful",
+      "camel",
+      "equal",
+      "label",
+      "local",
+      "medal",
+      "naval",
+      "panel",
+      "pedal",
+      "usual"
+    ],
+    "history": [
+      [
+        "trail",
+        "XXYXG"
+      ]
+    ],
+    "secret": "angel",
+    "source_index": "model-400-14-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "angel"
+    ],
+    "history": [
+      [
+        "trail",
+        "XXYXG"
+      ],
+      [
+        "amend",
+        "GXYYX"
+      ]
+    ],
+    "secret": "angel",
+    "source_index": "model-400-14-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 4,
+    "candidates": [
+      "abate",
+      "plate",
+      "slate",
+      "state"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGGG"
+      ]
+    ],
+    "secret": "plate",
+    "source_index": "model-400-16-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "plate"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGGG"
+      ],
+      [
+        "slate",
+        "XGGGG"
+      ]
+    ],
+    "secret": "plate",
+    "source_index": "model-400-16-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "trace",
+      "track",
+      "trade"
+    ],
+    "history": [
+      [
+        "trail",
+        "GGGXX"
+      ]
+    ],
+    "secret": "trade",
+    "source_index": "model-400-20-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "trade"
+    ],
+    "history": [
+      [
+        "trail",
+        "GGGXX"
+      ],
+      [
+        "trace",
+        "GGGXG"
+      ]
+    ],
+    "secret": "trade",
+    "source_index": "model-400-20-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "trace",
+      "trade"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGGYG"
+      ]
+    ],
+    "secret": "trade",
+    "source_index": "model-400-21-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "trade"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGGYG"
+      ],
+      [
+        "trace",
+        "GGGXG"
+      ]
+    ],
+    "secret": "trade",
+    "source_index": "model-400-21-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 14,
+    "candidates": [
+      "chest",
+      "comet",
+      "elect",
+      "event",
+      "fleet",
+      "guest",
+      "hotel",
+      "often",
+      "scent",
+      "steel",
+      "steep",
+      "sweet",
+      "token",
+      "upset"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXYY"
+      ]
+    ],
+    "secret": "chest",
+    "source_index": "model-400-24-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "chest",
+      "scent"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXYY"
+      ],
+      [
+        "elect",
+        "XXGYG"
+      ]
+    ],
+    "secret": "chest",
+    "source_index": "model-400-24-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "steel"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXYY"
+      ],
+      [
+        "elect",
+        "YYGXY"
+      ]
+    ],
+    "secret": "steel",
+    "source_index": "model-400-29-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 4,
+    "candidates": [
+      "labor",
+      "large",
+      "laser",
+      "later"
+    ],
+    "history": [
+      [
+        "rally",
+        "YGYXX"
+      ]
+    ],
+    "secret": "large",
+    "source_index": "model-400-32-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "large"
+    ],
+    "history": [
+      [
+        "rally",
+        "YGYXX"
+      ],
+      [
+        "laser",
+        "GGXYY"
+      ]
+    ],
+    "secret": "large",
+    "source_index": "model-400-32-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 5,
+    "candidates": [
+      "adore",
+      "agree",
+      "carve",
+      "large",
+      "range"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYXG"
+      ]
+    ],
+    "secret": "large",
+    "source_index": "model-400-33-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "large"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYXG"
+      ],
+      [
+        "agree",
+        "YYGXG"
+      ]
+    ],
+    "secret": "large",
+    "source_index": "model-400-33-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 18,
+    "candidates": [
+      "glide",
+      "guide",
+      "juice",
+      "knife",
+      "movie",
+      "noise",
+      "olive",
+      "piece",
+      "shine",
+      "since",
+      "slice",
+      "slide",
+      "smile",
+      "spice",
+      "spike",
+      "spine",
+      "voice",
+      "while"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXXG"
+      ]
+    ],
+    "secret": "spice",
+    "source_index": "model-400-36-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "spice"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXXG"
+      ],
+      [
+        "slick",
+        "GXGGX"
+      ]
+    ],
+    "secret": "spice",
+    "source_index": "model-400-36-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "queen",
+      "speed"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXY"
+      ],
+      [
+        "wheel",
+        "XXGGX"
+      ]
+    ],
+    "secret": "speed",
+    "source_index": "model-400-40-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "speed"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXY"
+      ],
+      [
+        "wheel",
+        "XXGGX"
+      ],
+      [
+        "queen",
+        "XXGGX"
+      ]
+    ],
+    "secret": "speed",
+    "source_index": "model-400-40-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 9,
+    "candidates": [
+      "diner",
+      "diver",
+      "fiber",
+      "fiery",
+      "liver",
+      "reign",
+      "rider",
+      "river",
+      "weird"
+    ],
+    "history": [
+      [
+        "irate",
+        "YYXXY"
+      ]
+    ],
+    "secret": "diver",
+    "source_index": "model-400-44-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 9,
+    "candidates": [
+      "adapt",
+      "blast",
+      "boast",
+      "chant",
+      "coast",
+      "plant",
+      "stack",
+      "staff",
+      "stand"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGYX"
+      ]
+    ],
+    "secret": "coast",
+    "source_index": "model-400-48-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "coast"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGYX"
+      ],
+      [
+        "clash",
+        "GXGGX"
+      ]
+    ],
+    "secret": "coast",
+    "source_index": "model-400-48-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 15,
+    "candidates": [
+      "amber",
+      "anger",
+      "baker",
+      "baler",
+      "clear",
+      "eager",
+      "early",
+      "laser",
+      "layer",
+      "maker",
+      "opera",
+      "paper",
+      "relax",
+      "spear",
+      "zebra"
+    ],
+    "history": [
+      [
+        "trade",
+        "XYYXY"
+      ]
+    ],
+    "secret": "anger",
+    "source_index": "model-400-52-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "anger",
+      "spear"
+    ],
+    "history": [
+      [
+        "trade",
+        "XYYXY"
+      ],
+      [
+        "labor",
+        "XYXXG"
+      ]
+    ],
+    "secret": "anger",
+    "source_index": "model-400-52-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "anger"
+    ],
+    "history": [
+      [
+        "trade",
+        "XYYXY"
+      ],
+      [
+        "labor",
+        "XYXXG"
+      ],
+      [
+        "ample",
+        "GXXXY"
+      ]
+    ],
+    "secret": "anger",
+    "source_index": "model-400-52-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 15,
+    "candidates": [
+      "amber",
+      "anger",
+      "baker",
+      "baler",
+      "clear",
+      "eager",
+      "early",
+      "laser",
+      "layer",
+      "maker",
+      "opera",
+      "paper",
+      "relax",
+      "spear",
+      "zebra"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYXY"
+      ]
+    ],
+    "secret": "anger",
+    "source_index": "model-400-53-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "anger"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYXY"
+      ],
+      [
+        "baler",
+        "XYXGG"
+      ]
+    ],
+    "secret": "anger",
+    "source_index": "model-400-53-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "ridge",
+      "rifle"
+    ],
+    "history": [
+      [
+        "irate",
+        "YYXXG"
+      ]
+    ],
+    "secret": "ridge",
+    "source_index": "model-400-56-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 10,
+    "candidates": [
+      "forge",
+      "horse",
+      "nerve",
+      "nurse",
+      "ridge",
+      "rifle",
+      "rogue",
+      "serve",
+      "shore",
+      "where"
+    ],
+    "history": [
+      [
+        "trace",
+        "XYXXG"
+      ]
+    ],
+    "secret": "ridge",
+    "source_index": "model-400-57-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "nerve",
+      "ridge",
+      "rifle"
+    ],
+    "history": [
+      [
+        "trace",
+        "XYXXG"
+      ],
+      [
+        "house",
+        "XXXXG"
+      ]
+    ],
+    "secret": "ridge",
+    "source_index": "model-400-57-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 5,
+    "candidates": [
+      "arena",
+      "bread",
+      "break",
+      "cream",
+      "dream"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGYXY"
+      ]
+    ],
+    "secret": "cream",
+    "source_index": "model-400-60-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "cream"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGYXY"
+      ],
+      [
+        "bread",
+        "XGGGX"
+      ]
+    ],
+    "secret": "cream",
+    "source_index": "model-400-60-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "cream",
+      "dream"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGYXY"
+      ],
+      [
+        "break",
+        "XGGGX"
+      ]
+    ],
+    "secret": "cream",
+    "source_index": "model-400-63-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "smile"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXXG"
+      ],
+      [
+        "slick",
+        "GYGXX"
+      ]
+    ],
+    "secret": "smile",
+    "source_index": "model-400-64-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 28,
+    "candidates": [
+      "dodge",
+      "glide",
+      "globe",
+      "glove",
+      "guide",
+      "house",
+      "issue",
+      "judge",
+      "knife",
+      "lodge",
+      "loose",
+      "mouse",
+      "movie",
+      "noble",
+      "noise",
+      "olive",
+      "phone",
+      "sense",
+      "shine",
+      "slide",
+      "slope",
+      "smile",
+      "smoke",
+      "solve",
+      "spike",
+      "spine",
+      "while",
+      "whole"
+    ],
+    "history": [
+      [
+        "trace",
+        "XXXXG"
+      ]
+    ],
+    "secret": "smile",
+    "source_index": "model-400-66-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "smile"
+    ],
+    "history": [
+      [
+        "trace",
+        "XXXXG"
+      ],
+      [
+        "solid",
+        "GXYYX"
+      ]
+    ],
+    "secret": "smile",
+    "source_index": "model-400-66-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "smile"
+    ],
+    "history": [
+      [
+        "trace",
+        "XXXXG"
+      ],
+      [
+        "solid",
+        "GXYYX"
+      ],
+      [
+        "slice",
+        "GYGXG"
+      ]
+    ],
+    "secret": "smile",
+    "source_index": "model-400-66-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "dozen",
+      "money"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXY"
+      ],
+      [
+        "wheel",
+        "XXXGX"
+      ]
+    ],
+    "secret": "dozen",
+    "source_index": "model-400-68-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "dozen",
+      "enjoy",
+      "money"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXY"
+      ],
+      [
+        "shell",
+        "XXYXX"
+      ]
+    ],
+    "secret": "dozen",
+    "source_index": "model-400-69-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "dozen"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXY"
+      ],
+      [
+        "wheel",
+        "XXXGX"
+      ],
+      [
+        "money",
+        "XGYGX"
+      ]
+    ],
+    "secret": "dozen",
+    "source_index": "model-400-71-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 6,
+    "candidates": [
+      "agile",
+      "aisle",
+      "alike",
+      "alive",
+      "aside",
+      "naive"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXYXG"
+      ]
+    ],
+    "secret": "naive",
+    "source_index": "model-400-72-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "naive"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXYXG"
+      ],
+      [
+        "alike",
+        "YXGXG"
+      ]
+    ],
+    "secret": "naive",
+    "source_index": "model-400-72-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 5,
+    "candidates": [
+      "aging",
+      "aside",
+      "china",
+      "daisy",
+      "naive"
+    ],
+    "history": [
+      [
+        "trail",
+        "XXYYX"
+      ]
+    ],
+    "secret": "naive",
+    "source_index": "model-400-73-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "naive"
+    ],
+    "history": [
+      [
+        "trail",
+        "XXYYX"
+      ],
+      [
+        "aging",
+        "YXGYX"
+      ]
+    ],
+    "secret": "naive",
+    "source_index": "model-400-73-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "naive"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXYXG"
+      ],
+      [
+        "align",
+        "YXGXY"
+      ]
+    ],
+    "secret": "naive",
+    "source_index": "model-400-74-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 5,
+    "candidates": [
+      "stone",
+      "stove",
+      "style",
+      "theme",
+      "those"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXYG"
+      ]
+    ],
+    "secret": "those",
+    "source_index": "model-400-76-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "those"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXYG"
+      ],
+      [
+        "stone",
+        "YYGXG"
+      ]
+    ],
+    "secret": "those",
+    "source_index": "model-400-76-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 8,
+    "candidates": [
+      "court",
+      "motor",
+      "robot",
+      "short",
+      "sport",
+      "storm",
+      "story",
+      "worst"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYXYX"
+      ]
+    ],
+    "secret": "sport",
+    "source_index": "model-400-80-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "sport"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYXYX"
+      ],
+      [
+        "short",
+        "GXGGG"
+      ]
+    ],
+    "secret": "sport",
+    "source_index": "model-400-80-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 12,
+    "candidates": [
+      "first",
+      "motor",
+      "right",
+      "robot",
+      "shirt",
+      "short",
+      "skirt",
+      "sport",
+      "storm",
+      "story",
+      "strip",
+      "worst"
+    ],
+    "history": [
+      [
+        "crate",
+        "XYXYX"
+      ]
+    ],
+    "secret": "sport",
+    "source_index": "model-400-82-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "sport"
+    ],
+    "history": [
+      [
+        "crate",
+        "XYXYX"
+      ],
+      [
+        "shirt",
+        "GXXGG"
+      ]
+    ],
+    "secret": "sport",
+    "source_index": "model-400-82-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 8,
+    "candidates": [
+      "breed",
+      "cheer",
+      "creek",
+      "dress",
+      "fresh",
+      "green",
+      "press",
+      "sheer"
+    ],
+    "history": [
+      [
+        "alert",
+        "XXGYX"
+      ]
+    ],
+    "secret": "creek",
+    "source_index": "model-400-84-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "creek",
+      "green"
+    ],
+    "history": [
+      [
+        "alert",
+        "XXGYX"
+      ],
+      [
+        "dress",
+        "XGGXX"
+      ]
+    ],
+    "secret": "creek",
+    "source_index": "model-400-84-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 8,
+    "candidates": [
+      "breed",
+      "creek",
+      "dress",
+      "error",
+      "fresh",
+      "green",
+      "order",
+      "press"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGXXY"
+      ]
+    ],
+    "secret": "creek",
+    "source_index": "model-400-85-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "creek",
+      "green"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGXXY"
+      ],
+      [
+        "dress",
+        "XGGXX"
+      ]
+    ],
+    "secret": "creek",
+    "source_index": "model-400-85-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 19,
+    "candidates": [
+      "abyss",
+      "album",
+      "allow",
+      "along",
+      "apply",
+      "awful",
+      "bacon",
+      "badly",
+      "cacao",
+      "candy",
+      "fancy",
+      "happy",
+      "human",
+      "laugh",
+      "local",
+      "naval",
+      "salad",
+      "usual",
+      "woman"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXX"
+      ]
+    ],
+    "secret": "bacon",
+    "source_index": "model-400-88-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "bacon"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXX"
+      ],
+      [
+        "cloud",
+        "YXYXX"
+      ]
+    ],
+    "secret": "bacon",
+    "source_index": "model-400-91-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 12,
+    "candidates": [
+      "blunt",
+      "boost",
+      "count",
+      "doubt",
+      "mount",
+      "ought",
+      "scout",
+      "shout",
+      "stock",
+      "stood",
+      "stuck",
+      "study"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXYX"
+      ]
+    ],
+    "secret": "study",
+    "source_index": "model-400-92-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "study"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXYX"
+      ],
+      [
+        "stuck",
+        "GGGXX"
+      ]
+    ],
+    "secret": "study",
+    "source_index": "model-400-92-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 19,
+    "candidates": [
+      "booth",
+      "ditch",
+      "fifth",
+      "fifty",
+      "month",
+      "mouth",
+      "pitch",
+      "south",
+      "stick",
+      "stock",
+      "stood",
+      "stuck",
+      "study",
+      "thick",
+      "thing",
+      "think",
+      "topic",
+      "unity",
+      "youth"
+    ],
+    "history": [
+      [
+        "alert",
+        "XXXXY"
+      ]
+    ],
+    "secret": "study",
+    "source_index": "model-400-93-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "study"
+    ],
+    "history": [
+      [
+        "alert",
+        "XXXXY"
+      ],
+      [
+        "choir",
+        "XXXXX"
+      ]
+    ],
+    "secret": "study",
+    "source_index": "model-400-93-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "study"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXYX"
+      ],
+      [
+        "cloud",
+        "XXXYY"
+      ]
+    ],
+    "secret": "study",
+    "source_index": "model-400-95-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 38,
+    "candidates": [
+      "board",
+      "cargo",
+      "carry",
+      "chair",
+      "charm",
+      "chart",
+      "coral",
+      "dairy",
+      "favor",
+      "guard",
+      "hairy",
+      "harsh",
+      "labor",
+      "major",
+      "march",
+      "marry",
+      "mayor",
+      "moral",
+      "party",
+      "radio",
+      "rally",
+      "rapid",
+      "ratio",
+      "rival",
+      "roast",
+      "royal",
+      "rural",
+      "scarf",
+      "shark",
+      "sharp",
+      "smart",
+      "solar",
+      "spray",
+      "stair",
+      "start",
+      "strap",
+      "straw",
+      "sugar"
+    ],
+    "history": [
+      [
+        "arena",
+        "YYXXX"
+      ]
+    ],
+    "secret": "radio",
+    "source_index": "model-400-96-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 5,
+    "candidates": [
+      "favor",
+      "major",
+      "mayor",
+      "radio",
+      "ratio"
+    ],
+    "history": [
+      [
+        "arena",
+        "YYXXX"
+      ],
+      [
+        "coral",
+        "XYYYX"
+      ]
+    ],
+    "secret": "radio",
+    "source_index": "model-400-96-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "favor",
+      "radio"
+    ],
+    "history": [
+      [
+        "arena",
+        "YYXXX"
+      ],
+      [
+        "coral",
+        "XYYYX"
+      ],
+      [
+        "empty",
+        "XXXXX"
+      ]
+    ],
+    "secret": "radio",
+    "source_index": "model-400-96-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "radio"
+    ],
+    "history": [
+      [
+        "arena",
+        "YYXXX"
+      ],
+      [
+        "coral",
+        "XYYYX"
+      ],
+      [
+        "empty",
+        "XXXXX"
+      ],
+      [
+        "favor",
+        "XGXYY"
+      ]
+    ],
+    "secret": "radio",
+    "source_index": "model-400-96-4"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 21,
+    "candidates": [
+      "angry",
+      "apron",
+      "dairy",
+      "favor",
+      "hairy",
+      "harsh",
+      "labor",
+      "major",
+      "marry",
+      "mayor",
+      "moral",
+      "parka",
+      "radio",
+      "rally",
+      "rapid",
+      "rival",
+      "royal",
+      "rural",
+      "solar",
+      "spray",
+      "sugar"
+    ],
+    "history": [
+      [
+        "trace",
+        "XYYXX"
+      ]
+    ],
+    "secret": "radio",
+    "source_index": "model-400-97-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "radio"
+    ],
+    "history": [
+      [
+        "trace",
+        "XYYXX"
+      ],
+      [
+        "mayor",
+        "XGXYY"
+      ]
+    ],
+    "secret": "radio",
+    "source_index": "model-400-97-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 5,
+    "candidates": [
+      "dairy",
+      "hairy",
+      "radio",
+      "rapid",
+      "rival"
+    ],
+    "history": [
+      [
+        "irate",
+        "YYYXX"
+      ]
+    ],
+    "secret": "radio",
+    "source_index": "model-400-98-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "radio",
+      "rapid"
+    ],
+    "history": [
+      [
+        "irate",
+        "YYYXX"
+      ],
+      [
+        "dairy",
+        "YGYYX"
+      ]
+    ],
+    "secret": "radio",
+    "source_index": "model-400-99-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "death"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGGY"
+      ]
+    ],
+    "secret": "death",
+    "source_index": "model-400-100-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 5,
+    "candidates": [
+      "acute",
+      "haste",
+      "paste",
+      "taste",
+      "waste"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYGG"
+      ]
+    ],
+    "secret": "haste",
+    "source_index": "model-400-108-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "haste"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYGG"
+      ],
+      [
+        "champ",
+        "XYYXX"
+      ]
+    ],
+    "secret": "haste",
+    "source_index": "model-400-108-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "haste"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYGG"
+      ],
+      [
+        "teach",
+        "YYYXY"
+      ]
+    ],
+    "secret": "haste",
+    "source_index": "model-400-110-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 21,
+    "candidates": [
+      "angry",
+      "apron",
+      "cargo",
+      "carry",
+      "coral",
+      "favor",
+      "harsh",
+      "labor",
+      "major",
+      "march",
+      "marry",
+      "mayor",
+      "moral",
+      "parka",
+      "rally",
+      "ranch",
+      "royal",
+      "rural",
+      "solar",
+      "spray",
+      "sugar"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYXX"
+      ]
+    ],
+    "secret": "favor",
+    "source_index": "model-400-112-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "favor",
+      "labor",
+      "major"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYXX"
+      ],
+      [
+        "carry",
+        "XGYXX"
+      ]
+    ],
+    "secret": "favor",
+    "source_index": "model-400-112-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "favor"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYXX"
+      ],
+      [
+        "carry",
+        "XGYXX"
+      ],
+      [
+        "alarm",
+        "YXXYX"
+      ]
+    ],
+    "secret": "favor",
+    "source_index": "model-400-112-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "favor",
+      "major",
+      "mayor"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYXX"
+      ],
+      [
+        "coral",
+        "XYYYX"
+      ]
+    ],
+    "secret": "favor",
+    "source_index": "model-400-113-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "favor"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYXX"
+      ],
+      [
+        "coral",
+        "XYYYX"
+      ],
+      [
+        "major",
+        "XGXGG"
+      ]
+    ],
+    "secret": "favor",
+    "source_index": "model-400-113-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 31,
+    "candidates": [
+      "brain",
+      "brand",
+      "brass",
+      "broad",
+      "cargo",
+      "chair",
+      "crack",
+      "crash",
+      "croak",
+      "drain",
+      "drama",
+      "drank",
+      "favor",
+      "grain",
+      "grand",
+      "graph",
+      "grasp",
+      "grass",
+      "groan",
+      "harsh",
+      "major",
+      "march",
+      "mayor",
+      "organ",
+      "parka",
+      "radio",
+      "ranch",
+      "rapid",
+      "spray",
+      "sugar",
+      "urban"
+    ],
+    "history": [
+      [
+        "alert",
+        "YXXYX"
+      ]
+    ],
+    "secret": "favor",
+    "source_index": "model-400-114-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "favor",
+      "major",
+      "mayor"
+    ],
+    "history": [
+      [
+        "alert",
+        "YXXYX"
+      ],
+      [
+        "crisp",
+        "XYXXX"
+      ]
+    ],
+    "secret": "favor",
+    "source_index": "model-400-114-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "favor"
+    ],
+    "history": [
+      [
+        "alert",
+        "YXXYX"
+      ],
+      [
+        "crisp",
+        "XYXXX"
+      ],
+      [
+        "major",
+        "XGXGG"
+      ]
+    ],
+    "secret": "favor",
+    "source_index": "model-400-114-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "sweet"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXYY"
+      ],
+      [
+        "elect",
+        "YXGXG"
+      ]
+    ],
+    "secret": "sweet",
+    "source_index": "model-400-116-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 29,
+    "candidates": [
+      "boost",
+      "booth",
+      "chest",
+      "cloth",
+      "comet",
+      "depth",
+      "doubt",
+      "elect",
+      "empty",
+      "fleet",
+      "flute",
+      "guest",
+      "hotel",
+      "mouth",
+      "ought",
+      "scout",
+      "shout",
+      "south",
+      "steel",
+      "steep",
+      "stock",
+      "stood",
+      "stove",
+      "stuck",
+      "study",
+      "style",
+      "sweet",
+      "upset",
+      "youth"
+    ],
+    "history": [
+      [
+        "train",
+        "YXXXX"
+      ]
+    ],
+    "secret": "sweet",
+    "source_index": "model-400-117-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "sweet"
+    ],
+    "history": [
+      [
+        "train",
+        "YXXXX"
+      ],
+      [
+        "shout",
+        "GXXXG"
+      ]
+    ],
+    "secret": "sweet",
+    "source_index": "model-400-117-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "sweet"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXYY"
+      ],
+      [
+        "clown",
+        "XXXYX"
+      ]
+    ],
+    "secret": "sweet",
+    "source_index": "model-400-118-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 13,
+    "candidates": [
+      "depth",
+      "eight",
+      "empty",
+      "event",
+      "fleet",
+      "guest",
+      "hotel",
+      "often",
+      "quiet",
+      "steel",
+      "steep",
+      "sweet",
+      "upset"
+    ],
+    "history": [
+      [
+        "trace",
+        "YXXXY"
+      ]
+    ],
+    "secret": "sweet",
+    "source_index": "model-400-119-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "sweet"
+    ],
+    "history": [
+      [
+        "trace",
+        "YXXXY"
+      ],
+      [
+        "steel",
+        "GYGGX"
+      ]
+    ],
+    "secret": "sweet",
+    "source_index": "model-400-119-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "trail",
+      "trial"
+    ],
+    "history": [
+      [
+        "alert",
+        "YYXYY"
+      ]
+    ],
+    "secret": "trial",
+    "source_index": "model-400-120-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "trial"
+    ],
+    "history": [
+      [
+        "alert",
+        "YYXYY"
+      ],
+      [
+        "trail",
+        "GGYYG"
+      ]
+    ],
+    "secret": "trial",
+    "source_index": "model-400-120-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "trial"
+    ],
+    "history": [
+      [
+        "irate",
+        "YGYYX"
+      ]
+    ],
+    "secret": "trial",
+    "source_index": "model-400-121-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 9,
+    "candidates": [
+      "armor",
+      "aroma",
+      "array",
+      "arrow",
+      "broad",
+      "croak",
+      "groan",
+      "organ",
+      "urban"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGYXX"
+      ]
+    ],
+    "secret": "organ",
+    "source_index": "model-400-124-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "organ"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGYXX"
+      ],
+      [
+        "bloom",
+        "XXYXX"
+      ]
+    ],
+    "secret": "organ",
+    "source_index": "model-400-124-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "organ"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGYXX"
+      ],
+      [
+        "aroma",
+        "YGYXX"
+      ]
+    ],
+    "secret": "organ",
+    "source_index": "model-400-127-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 29,
+    "candidates": [
+      "block",
+      "blood",
+      "bloom",
+      "blown",
+      "blush",
+      "bonus",
+      "bound",
+      "clock",
+      "cloud",
+      "clown",
+      "colon",
+      "couch",
+      "could",
+      "flock",
+      "flood",
+      "focus",
+      "found",
+      "funny",
+      "knock",
+      "known",
+      "lucky",
+      "lunch",
+      "pound",
+      "shock",
+      "sound",
+      "sunny",
+      "would",
+      "wound",
+      "young"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ]
+    ],
+    "secret": "wound",
+    "source_index": "model-400-128-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 5,
+    "candidates": [
+      "bound",
+      "found",
+      "pound",
+      "sound",
+      "wound"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "cloud",
+        "XXYYG"
+      ]
+    ],
+    "secret": "wound",
+    "source_index": "model-400-128-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "found",
+      "pound",
+      "wound"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "cloud",
+        "XXYYG"
+      ],
+      [
+        "abase",
+        "XXXXX"
+      ]
+    ],
+    "secret": "wound",
+    "source_index": "model-400-128-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "wound"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "cloud",
+        "XXYYG"
+      ],
+      [
+        "abase",
+        "XXXXX"
+      ],
+      [
+        "awful",
+        "XYXYX"
+      ]
+    ],
+    "secret": "wound",
+    "source_index": "model-400-128-4"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 4,
+    "candidates": [
+      "found",
+      "pound",
+      "sound",
+      "wound"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "bound",
+        "XGGGG"
+      ]
+    ],
+    "secret": "wound",
+    "source_index": "model-400-129-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "wound"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "bound",
+        "XGGGG"
+      ],
+      [
+        "sweep",
+        "XYXXX"
+      ]
+    ],
+    "secret": "wound",
+    "source_index": "model-400-129-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "wound"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "blown",
+        "XXYYY"
+      ]
+    ],
+    "secret": "wound",
+    "source_index": "model-400-130-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 4,
+    "candidates": [
+      "found",
+      "pound",
+      "wound",
+      "young"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "bonus",
+        "XGYYX"
+      ]
+    ],
+    "secret": "wound",
+    "source_index": "model-400-131-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 4,
+    "candidates": [
+      "found",
+      "pound",
+      "wound",
+      "young"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "bonus",
+        "XGYYX"
+      ],
+      [
+        "count",
+        "XGGGX"
+      ]
+    ],
+    "secret": "wound",
+    "source_index": "model-400-131-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "pound",
+      "wound"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "bonus",
+        "XGYYX"
+      ],
+      [
+        "count",
+        "XGGGX"
+      ],
+      [
+        "found",
+        "XGGGG"
+      ]
+    ],
+    "secret": "wound",
+    "source_index": "model-400-131-4"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "wound"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "bonus",
+        "XGYYX"
+      ],
+      [
+        "count",
+        "XGGGX"
+      ],
+      [
+        "found",
+        "XGGGG"
+      ],
+      [
+        "pound",
+        "XGGGG"
+      ]
+    ],
+    "secret": "wound",
+    "source_index": "model-400-131-5"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 7,
+    "candidates": [
+      "bride",
+      "crime",
+      "drive",
+      "price",
+      "pride",
+      "prime",
+      "prize"
+    ],
+    "history": [
+      [
+        "irate",
+        "YGXXG"
+      ]
+    ],
+    "secret": "pride",
+    "source_index": "model-400-132-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "pride",
+      "prize"
+    ],
+    "history": [
+      [
+        "irate",
+        "YGXXG"
+      ],
+      [
+        "champ",
+        "XXXXY"
+      ]
+    ],
+    "secret": "pride",
+    "source_index": "model-400-132-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "pride"
+    ],
+    "history": [
+      [
+        "irate",
+        "YGXXG"
+      ],
+      [
+        "champ",
+        "XXXXY"
+      ],
+      [
+        "admit",
+        "XYXYX"
+      ]
+    ],
+    "secret": "pride",
+    "source_index": "model-400-132-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "bride",
+      "pride"
+    ],
+    "history": [
+      [
+        "irate",
+        "YGXXG"
+      ],
+      [
+        "candy",
+        "XXXGX"
+      ]
+    ],
+    "secret": "pride",
+    "source_index": "model-400-133-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "pride"
+    ],
+    "history": [
+      [
+        "irate",
+        "YGXXG"
+      ],
+      [
+        "candy",
+        "XXXGX"
+      ],
+      [
+        "bride",
+        "XGGGG"
+      ]
+    ],
+    "secret": "pride",
+    "source_index": "model-400-133-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 4,
+    "candidates": [
+      "bride",
+      "drive",
+      "pride",
+      "prize"
+    ],
+    "history": [
+      [
+        "irate",
+        "YGXXG"
+      ],
+      [
+        "crime",
+        "XGGXG"
+      ]
+    ],
+    "secret": "pride",
+    "source_index": "model-400-134-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "pride"
+    ],
+    "history": [
+      [
+        "irate",
+        "YGXXG"
+      ],
+      [
+        "crime",
+        "XGGXG"
+      ],
+      [
+        "bride",
+        "XGGGG"
+      ]
+    ],
+    "secret": "pride",
+    "source_index": "model-400-134-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 11,
+    "candidates": [
+      "brake",
+      "brave",
+      "crane",
+      "crave",
+      "craze",
+      "erase",
+      "frame",
+      "grace",
+      "grade",
+      "grape",
+      "grave"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGGXG"
+      ]
+    ],
+    "secret": "crane",
+    "source_index": "model-400-136-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "crane",
+      "crave",
+      "craze"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGGXG"
+      ],
+      [
+        "climb",
+        "GXXXX"
+      ]
+    ],
+    "secret": "crane",
+    "source_index": "model-400-136-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "crane"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGGXG"
+      ],
+      [
+        "climb",
+        "GXXXX"
+      ],
+      [
+        "dozen",
+        "XXXYY"
+      ]
+    ],
+    "secret": "crane",
+    "source_index": "model-400-136-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 18,
+    "candidates": [
+      "aging",
+      "alias",
+      "alibi",
+      "align",
+      "audio",
+      "avoid",
+      "basic",
+      "basil",
+      "basin",
+      "basis",
+      "cabin",
+      "china",
+      "daily",
+      "daisy",
+      "final",
+      "magic",
+      "panic",
+      "valid"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXYXX"
+      ]
+    ],
+    "secret": "magic",
+    "source_index": "model-400-140-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "magic"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXYXX"
+      ],
+      [
+        "blind",
+        "XXYXX"
+      ]
+    ],
+    "secret": "magic",
+    "source_index": "model-400-140-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "magic"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXYXX"
+      ],
+      [
+        "blind",
+        "XXYXX"
+      ],
+      [
+        "music",
+        "GXXGG"
+      ]
+    ],
+    "secret": "magic",
+    "source_index": "model-400-140-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "magic"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXYXX"
+      ],
+      [
+        "bland",
+        "XXYXX"
+      ]
+    ],
+    "secret": "magic",
+    "source_index": "model-400-141-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "magic"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXYXX"
+      ],
+      [
+        "bland",
+        "XXYXX"
+      ],
+      [
+        "alias",
+        "YXYXX"
+      ]
+    ],
+    "secret": "magic",
+    "source_index": "model-400-141-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "magic"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXYXX"
+      ],
+      [
+        "cabin",
+        "YGXGX"
+      ]
+    ],
+    "secret": "magic",
+    "source_index": "model-400-142-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 9,
+    "candidates": [
+      "audio",
+      "avoid",
+      "basic",
+      "basin",
+      "basis",
+      "cabin",
+      "magic",
+      "media",
+      "panic"
+    ],
+    "history": [
+      [
+        "trail",
+        "XXYGX"
+      ]
+    ],
+    "secret": "magic",
+    "source_index": "model-400-145-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "magic"
+    ],
+    "history": [
+      [
+        "trail",
+        "XXYGX"
+      ],
+      [
+        "bacon",
+        "XGYXX"
+      ]
+    ],
+    "secret": "magic",
+    "source_index": "model-400-145-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 24,
+    "candidates": [
+      "berry",
+      "buyer",
+      "cheer",
+      "clerk",
+      "cover",
+      "decor",
+      "elder",
+      "every",
+      "ferry",
+      "fewer",
+      "lover",
+      "lower",
+      "mercy",
+      "never",
+      "offer",
+      "owner",
+      "power",
+      "query",
+      "refer",
+      "reply",
+      "sheer",
+      "super",
+      "under",
+      "upper"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYXXY"
+      ]
+    ],
+    "secret": "clerk",
+    "source_index": "model-400-148-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "clerk"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYXXY"
+      ],
+      [
+        "elder",
+        "YGXXY"
+      ]
+    ],
+    "secret": "clerk",
+    "source_index": "model-400-148-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "clerk"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYXXY"
+      ],
+      [
+        "fleet",
+        "XGGXX"
+      ]
+    ],
+    "secret": "clerk",
+    "source_index": "model-400-150-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "clerk"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYXXY"
+      ],
+      [
+        "enemy",
+        "XXGXX"
+      ]
+    ],
+    "secret": "clerk",
+    "source_index": "model-400-151-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "below",
+      "elbow"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXY"
+      ],
+      [
+        "wheel",
+        "YXYXY"
+      ]
+    ],
+    "secret": "below",
+    "source_index": "model-400-152-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 16,
+    "candidates": [
+      "color",
+      "curly",
+      "donor",
+      "floor",
+      "flour",
+      "forum",
+      "glory",
+      "honor",
+      "humor",
+      "rocky",
+      "rough",
+      "round",
+      "sorry",
+      "sword",
+      "world",
+      "worry"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYXXX"
+      ]
+    ],
+    "secret": "sorry",
+    "source_index": "model-400-156-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 4,
+    "candidates": [
+      "forum",
+      "humor",
+      "rough",
+      "sorry"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYXXX"
+      ],
+      [
+        "crown",
+        "XYYXX"
+      ]
+    ],
+    "secret": "sorry",
+    "source_index": "model-400-156-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "sorry"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYXXX"
+      ],
+      [
+        "crown",
+        "XYYXX"
+      ],
+      [
+        "forum",
+        "XGGXX"
+      ]
+    ],
+    "secret": "sorry",
+    "source_index": "model-400-156-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "honor",
+      "sorry",
+      "worry"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYXXX"
+      ],
+      [
+        "could",
+        "XGXXX"
+      ]
+    ],
+    "secret": "sorry",
+    "source_index": "model-400-157-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 4,
+    "candidates": [
+      "donor",
+      "sorry",
+      "world",
+      "worry"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYXXX"
+      ],
+      [
+        "couch",
+        "XGXXX"
+      ]
+    ],
+    "secret": "sorry",
+    "source_index": "model-400-158-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 9,
+    "candidates": [
+      "begin",
+      "being",
+      "chief",
+      "equip",
+      "field",
+      "given",
+      "linen",
+      "pixel",
+      "video"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXXY"
+      ]
+    ],
+    "secret": "begin",
+    "source_index": "model-400-160-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "begin"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXXY"
+      ],
+      [
+        "linen",
+        "XYXYG"
+      ]
+    ],
+    "secret": "begin",
+    "source_index": "model-400-160-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 41,
+    "candidates": [
+      "begin",
+      "being",
+      "belly",
+      "below",
+      "bleed",
+      "blend",
+      "bless",
+      "blues",
+      "bowel",
+      "dozen",
+      "elbow",
+      "enemy",
+      "enjoy",
+      "equip",
+      "field",
+      "flesh",
+      "given",
+      "guess",
+      "hello",
+      "honey",
+      "index",
+      "jelly",
+      "jewel",
+      "kneel",
+      "lemon",
+      "linen",
+      "model",
+      "money",
+      "novel",
+      "pixel",
+      "queen",
+      "seven",
+      "sheep",
+      "shelf",
+      "shell",
+      "sleep",
+      "smell",
+      "speed",
+      "sweep",
+      "video",
+      "wheel"
+    ],
+    "history": [
+      [
+        "trace",
+        "XXXXY"
+      ]
+    ],
+    "secret": "begin",
+    "source_index": "model-400-163-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 4,
+    "candidates": [
+      "begin",
+      "being",
+      "enjoy",
+      "equip"
+    ],
+    "history": [
+      [
+        "trace",
+        "XXXXY"
+      ],
+      [
+        "wheel",
+        "XXYXX"
+      ]
+    ],
+    "secret": "begin",
+    "source_index": "model-400-163-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "begin",
+      "being"
+    ],
+    "history": [
+      [
+        "trace",
+        "XXXXY"
+      ],
+      [
+        "wheel",
+        "XXYXX"
+      ],
+      [
+        "enjoy",
+        "YYXXX"
+      ]
+    ],
+    "secret": "begin",
+    "source_index": "model-400-163-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 24,
+    "candidates": [
+      "chose",
+      "clone",
+      "close",
+      "cycle",
+      "dodge",
+      "globe",
+      "glove",
+      "hence",
+      "house",
+      "judge",
+      "lodge",
+      "loose",
+      "mouse",
+      "noble",
+      "ounce",
+      "phone",
+      "scene",
+      "scope",
+      "sense",
+      "slope",
+      "smoke",
+      "solve",
+      "uncle",
+      "whole"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXG"
+      ]
+    ],
+    "secret": "mouse",
+    "source_index": "model-400-164-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "house",
+      "mouse"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXG"
+      ],
+      [
+        "close",
+        "XXYGG"
+      ]
+    ],
+    "secret": "mouse",
+    "source_index": "model-400-164-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "mouse"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXG"
+      ],
+      [
+        "close",
+        "XXYGG"
+      ],
+      [
+        "house",
+        "XGGGG"
+      ]
+    ],
+    "secret": "mouse",
+    "source_index": "model-400-164-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 37,
+    "candidates": [
+      "chose",
+      "clone",
+      "close",
+      "cycle",
+      "globe",
+      "glove",
+      "hence",
+      "house",
+      "issue",
+      "juice",
+      "knife",
+      "loose",
+      "mouse",
+      "movie",
+      "noble",
+      "noise",
+      "olive",
+      "ounce",
+      "phone",
+      "piece",
+      "scene",
+      "scope",
+      "sense",
+      "shine",
+      "since",
+      "slice",
+      "slope",
+      "smile",
+      "smoke",
+      "solve",
+      "spice",
+      "spike",
+      "spine",
+      "uncle",
+      "voice",
+      "while",
+      "whole"
+    ],
+    "history": [
+      [
+        "trade",
+        "XXXXG"
+      ]
+    ],
+    "secret": "mouse",
+    "source_index": "model-400-167-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "house",
+      "mouse"
+    ],
+    "history": [
+      [
+        "trade",
+        "XXXXG"
+      ],
+      [
+        "slick",
+        "YXXXX"
+      ]
+    ],
+    "secret": "mouse",
+    "source_index": "model-400-167-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "mouse"
+    ],
+    "history": [
+      [
+        "trade",
+        "XXXXG"
+      ],
+      [
+        "slick",
+        "YXXXX"
+      ],
+      [
+        "house",
+        "XGGGG"
+      ]
+    ],
+    "secret": "mouse",
+    "source_index": "model-400-167-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 14,
+    "candidates": [
+      "blown",
+      "bonus",
+      "clown",
+      "colon",
+      "input",
+      "knock",
+      "known",
+      "lunch",
+      "month",
+      "night",
+      "pinch",
+      "union",
+      "unity",
+      "until"
+    ],
+    "history": [
+      [
+        "arena",
+        "XXXYX"
+      ]
+    ],
+    "secret": "unity",
+    "source_index": "model-400-168-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "input",
+      "night",
+      "unity"
+    ],
+    "history": [
+      [
+        "arena",
+        "XXXYX"
+      ],
+      [
+        "clown",
+        "XXXXY"
+      ]
+    ],
+    "secret": "unity",
+    "source_index": "model-400-168-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "unity"
+    ],
+    "history": [
+      [
+        "arena",
+        "XXXYX"
+      ],
+      [
+        "clown",
+        "XXXXY"
+      ],
+      [
+        "input",
+        "YGXYY"
+      ]
+    ],
+    "secret": "unity",
+    "source_index": "model-400-168-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 38,
+    "candidates": [
+      "blunt",
+      "boost",
+      "booth",
+      "built",
+      "cloth",
+      "count",
+      "fifth",
+      "fifty",
+      "fight",
+      "guilt",
+      "input",
+      "joint",
+      "light",
+      "limit",
+      "might",
+      "month",
+      "mount",
+      "mouth",
+      "night",
+      "ought",
+      "pilot",
+      "pitch",
+      "point",
+      "quilt",
+      "scout",
+      "shift",
+      "shout",
+      "sight",
+      "south",
+      "split",
+      "stick",
+      "still",
+      "stock",
+      "stuck",
+      "unity",
+      "until",
+      "visit",
+      "youth"
+    ],
+    "history": [
+      [
+        "trade",
+        "YXXXX"
+      ]
+    ],
+    "secret": "unity",
+    "source_index": "model-400-169-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 7,
+    "candidates": [
+      "fifth",
+      "fifty",
+      "fight",
+      "input",
+      "might",
+      "night",
+      "unity"
+    ],
+    "history": [
+      [
+        "trade",
+        "YXXXX"
+      ],
+      [
+        "close",
+        "XXXXX"
+      ]
+    ],
+    "secret": "unity",
+    "source_index": "model-400-169-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "unity"
+    ],
+    "history": [
+      [
+        "trade",
+        "YXXXX"
+      ],
+      [
+        "close",
+        "XXXXX"
+      ],
+      [
+        "fifth",
+        "XYXGX"
+      ]
+    ],
+    "secret": "unity",
+    "source_index": "model-400-169-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "fifth",
+      "fifty",
+      "unity"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXGX"
+      ]
+    ],
+    "secret": "unity",
+    "source_index": "model-400-170-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "unity"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXGX"
+      ],
+      [
+        "fifth",
+        "XYXGX"
+      ]
+    ],
+    "secret": "unity",
+    "source_index": "model-400-170-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 5,
+    "candidates": [
+      "front",
+      "frost",
+      "truck",
+      "truly",
+      "trust"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGXYX"
+      ]
+    ],
+    "secret": "truck",
+    "source_index": "model-400-172-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "truck"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGXYX"
+      ],
+      [
+        "blues",
+        "XXGXX"
+      ]
+    ],
+    "secret": "truck",
+    "source_index": "model-400-172-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "truck"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGXYX"
+      ],
+      [
+        "blush",
+        "XXGXX"
+      ]
+    ],
+    "secret": "truck",
+    "source_index": "model-400-173-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "basil"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXYXX"
+      ],
+      [
+        "blind",
+        "GYYXX"
+      ]
+    ],
+    "secret": "basil",
+    "source_index": "model-400-176-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "basil",
+      "basis"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXYXX"
+      ],
+      [
+        "cabin",
+        "XGYGX"
+      ]
+    ],
+    "secret": "basil",
+    "source_index": "model-400-178-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "basil"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXYXX"
+      ],
+      [
+        "bland",
+        "GYYXX"
+      ]
+    ],
+    "secret": "basil",
+    "source_index": "model-400-179-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 4,
+    "candidates": [
+      "fruit",
+      "orbit",
+      "print",
+      "trick"
+    ],
+    "history": [
+      [
+        "irate",
+        "YGXYX"
+      ]
+    ],
+    "secret": "print",
+    "source_index": "model-400-180-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "print"
+    ],
+    "history": [
+      [
+        "irate",
+        "YGXYX"
+      ],
+      [
+        "orbit",
+        "XGXYG"
+      ]
+    ],
+    "secret": "print",
+    "source_index": "model-400-180-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "print"
+    ],
+    "history": [
+      [
+        "irate",
+        "YGXYX"
+      ],
+      [
+        "fruit",
+        "XGXYG"
+      ]
+    ],
+    "secret": "print",
+    "source_index": "model-400-181-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 15,
+    "candidates": [
+      "arena",
+      "argue",
+      "armor",
+      "aroma",
+      "array",
+      "arrow",
+      "bread",
+      "break",
+      "broad",
+      "cream",
+      "croak",
+      "dream",
+      "groan",
+      "organ",
+      "urban"
+    ],
+    "history": [
+      [
+        "trail",
+        "XGYXX"
+      ]
+    ],
+    "secret": "break",
+    "source_index": "model-400-184-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "break"
+    ],
+    "history": [
+      [
+        "trail",
+        "XGYXX"
+      ],
+      [
+        "adobe",
+        "YXXYY"
+      ]
+    ],
+    "secret": "break",
+    "source_index": "model-400-184-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "break"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGYXY"
+      ],
+      [
+        "bread",
+        "GGGGX"
+      ]
+    ],
+    "secret": "break",
+    "source_index": "model-400-185-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "arise"
+    ],
+    "history": [
+      [
+        "irate",
+        "YGYXG"
+      ]
+    ],
+    "secret": "arise",
+    "source_index": "model-400-188-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 17,
+    "candidates": [
+      "aback",
+      "black",
+      "bland",
+      "blank",
+      "chalk",
+      "champ",
+      "chaos",
+      "clamp",
+      "clash",
+      "class",
+      "coach",
+      "flank",
+      "flash",
+      "glass",
+      "shall",
+      "small",
+      "snack"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXX"
+      ]
+    ],
+    "secret": "class",
+    "source_index": "model-400-192-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "chaos",
+      "clash",
+      "class"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXX"
+      ],
+      [
+        "stuck",
+        "YXXYX"
+      ]
+    ],
+    "secret": "class",
+    "source_index": "model-400-192-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "class"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXX"
+      ],
+      [
+        "stuck",
+        "YXXYX"
+      ],
+      [
+        "chaos",
+        "GXGXG"
+      ]
+    ],
+    "secret": "class",
+    "source_index": "model-400-192-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 18,
+    "candidates": [
+      "black",
+      "blame",
+      "bland",
+      "blank",
+      "blaze",
+      "chalk",
+      "clamp",
+      "clash",
+      "class",
+      "flame",
+      "flank",
+      "flash",
+      "glass",
+      "leave",
+      "place",
+      "plane",
+      "scale",
+      "whale"
+    ],
+    "history": [
+      [
+        "trail",
+        "XXGXY"
+      ]
+    ],
+    "secret": "class",
+    "source_index": "model-400-193-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "clamp",
+      "class"
+    ],
+    "history": [
+      [
+        "trail",
+        "XXGXY"
+      ],
+      [
+        "bench",
+        "XXXYX"
+      ]
+    ],
+    "secret": "class",
+    "source_index": "model-400-193-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "class"
+    ],
+    "history": [
+      [
+        "trail",
+        "XXGXY"
+      ],
+      [
+        "bench",
+        "XXXYX"
+      ],
+      [
+        "clamp",
+        "GGGXX"
+      ]
+    ],
+    "secret": "class",
+    "source_index": "model-400-193-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "class"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXX"
+      ],
+      [
+        "shock",
+        "YXXYX"
+      ]
+    ],
+    "secret": "class",
+    "source_index": "model-400-194-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "arena"
+    ],
+    "history": [
+      [
+        "irate",
+        "XGYXY"
+      ],
+      [
+        "bread",
+        "XGGYX"
+      ]
+    ],
+    "secret": "arena",
+    "source_index": "model-400-196-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 7,
+    "candidates": [
+      "after",
+      "alert",
+      "alter",
+      "cater",
+      "extra",
+      "later",
+      "water"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYYY"
+      ]
+    ],
+    "secret": "after",
+    "source_index": "model-400-200-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "after"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYYY"
+      ],
+      [
+        "camel",
+        "XYXGX"
+      ]
+    ],
+    "secret": "after",
+    "source_index": "model-400-200-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "after"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYYY"
+      ],
+      [
+        "alert",
+        "GXYYY"
+      ]
+    ],
+    "secret": "after",
+    "source_index": "model-400-201-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "phone"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXG"
+      ],
+      [
+        "close",
+        "XXGXG"
+      ]
+    ],
+    "secret": "phone",
+    "source_index": "model-400-204-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 5,
+    "candidates": [
+      "first",
+      "right",
+      "shirt",
+      "skirt",
+      "strip"
+    ],
+    "history": [
+      [
+        "irate",
+        "YYXYX"
+      ]
+    ],
+    "secret": "shirt",
+    "source_index": "model-400-208-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "shirt"
+    ],
+    "history": [
+      [
+        "irate",
+        "YYXYX"
+      ],
+      [
+        "right",
+        "YYXYG"
+      ]
+    ],
+    "secret": "shirt",
+    "source_index": "model-400-211-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "blank",
+      "flank"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXX"
+      ],
+      [
+        "shock",
+        "XXXXG"
+      ]
+    ],
+    "secret": "flank",
+    "source_index": "model-400-212-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "flank"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXX"
+      ],
+      [
+        "shock",
+        "XXXXG"
+      ],
+      [
+        "blank",
+        "XGGGG"
+      ]
+    ],
+    "secret": "flank",
+    "source_index": "model-400-212-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 29,
+    "candidates": [
+      "blind",
+      "blink",
+      "build",
+      "child",
+      "chili",
+      "chill",
+      "civic",
+      "civil",
+      "click",
+      "cliff",
+      "climb",
+      "cling",
+      "disco",
+      "dizzy",
+      "doing",
+      "flick",
+      "fling",
+      "fluid",
+      "logic",
+      "music",
+      "pinch",
+      "quick",
+      "silly",
+      "skill",
+      "slick",
+      "solid",
+      "spill",
+      "union",
+      "which"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXXX"
+      ]
+    ],
+    "secret": "build",
+    "source_index": "model-400-220-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "build"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXXX"
+      ],
+      [
+        "slick",
+        "XYGXX"
+      ]
+    ],
+    "secret": "build",
+    "source_index": "model-400-220-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "build",
+      "spill"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXXX"
+      ],
+      [
+        "click",
+        "XYGXX"
+      ]
+    ],
+    "secret": "build",
+    "source_index": "model-400-221-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 16,
+    "candidates": [
+      "build",
+      "child",
+      "chili",
+      "chill",
+      "civil",
+      "colon",
+      "could",
+      "imply",
+      "logic",
+      "lucky",
+      "lunch",
+      "silly",
+      "skill",
+      "solid",
+      "spill",
+      "would"
+    ],
+    "history": [
+      [
+        "alert",
+        "XYXXX"
+      ]
+    ],
+    "secret": "build",
+    "source_index": "model-400-222-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "build"
+    ],
+    "history": [
+      [
+        "alert",
+        "XYXXX"
+      ],
+      [
+        "child",
+        "XXGGG"
+      ]
+    ],
+    "secret": "build",
+    "source_index": "model-400-222-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "build",
+      "skill",
+      "spill"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXXX"
+      ],
+      [
+        "cling",
+        "XYGXX"
+      ]
+    ],
+    "secret": "build",
+    "source_index": "model-400-223-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "build"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXXX"
+      ],
+      [
+        "cling",
+        "XYGXX"
+      ],
+      [
+        "skill",
+        "XXGGX"
+      ]
+    ],
+    "secret": "build",
+    "source_index": "model-400-223-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 20,
+    "candidates": [
+      "adobe",
+      "algae",
+      "alone",
+      "ample",
+      "angle",
+      "ankle",
+      "apple",
+      "badge",
+      "cable",
+      "cache",
+      "canoe",
+      "cause",
+      "dance",
+      "false",
+      "lance",
+      "maple",
+      "maybe",
+      "pause",
+      "sauce",
+      "value"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXG"
+      ]
+    ],
+    "secret": "cause",
+    "source_index": "model-400-224-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 5,
+    "candidates": [
+      "cache",
+      "cause",
+      "maybe",
+      "pause",
+      "sauce"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXG"
+      ],
+      [
+        "angle",
+        "YXXXG"
+      ]
+    ],
+    "secret": "cause",
+    "source_index": "model-400-224-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "cause"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXG"
+      ],
+      [
+        "angle",
+        "YXXXG"
+      ],
+      [
+        "beach",
+        "XYYYX"
+      ]
+    ],
+    "secret": "cause",
+    "source_index": "model-400-224-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "cause",
+      "pause",
+      "sauce"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXG"
+      ],
+      [
+        "album",
+        "YXXYX"
+      ]
+    ],
+    "secret": "cause",
+    "source_index": "model-400-225-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 6,
+    "candidates": [
+      "badge",
+      "cache",
+      "cause",
+      "maybe",
+      "pause",
+      "sauce"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXG"
+      ],
+      [
+        "alone",
+        "YXXXG"
+      ]
+    ],
+    "secret": "cause",
+    "source_index": "model-400-226-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 4,
+    "candidates": [
+      "cache",
+      "cause",
+      "pause",
+      "sauce"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXG"
+      ],
+      [
+        "alone",
+        "YXXXG"
+      ],
+      [
+        "began",
+        "XYXYX"
+      ]
+    ],
+    "secret": "cause",
+    "source_index": "model-400-226-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "cause"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXG"
+      ],
+      [
+        "alone",
+        "YXXXG"
+      ],
+      [
+        "began",
+        "XYXYX"
+      ],
+      [
+        "patch",
+        "XGXYX"
+      ]
+    ],
+    "secret": "cause",
+    "source_index": "model-400-226-4"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "block",
+      "blood",
+      "bloom"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "bonus",
+        "GYXXX"
+      ]
+    ],
+    "secret": "bloom",
+    "source_index": "model-400-228-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "bloom"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "bonus",
+        "GYXXX"
+      ],
+      [
+        "blood",
+        "GGGGX"
+      ]
+    ],
+    "secret": "bloom",
+    "source_index": "model-400-228-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "blood",
+      "bloom",
+      "blown"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "block",
+        "GGGXX"
+      ]
+    ],
+    "secret": "bloom",
+    "source_index": "model-400-230-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "bloom"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXXXX"
+      ],
+      [
+        "block",
+        "GGGXX"
+      ],
+      [
+        "blood",
+        "GGGGX"
+      ]
+    ],
+    "secret": "bloom",
+    "source_index": "model-400-230-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 5,
+    "candidates": [
+      "again",
+      "chain",
+      "claim",
+      "piano",
+      "plain"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXGXX"
+      ]
+    ],
+    "secret": "piano",
+    "source_index": "model-400-232-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "piano"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXGXX"
+      ],
+      [
+        "claim",
+        "XXGYX"
+      ]
+    ],
+    "secret": "piano",
+    "source_index": "model-400-232-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 10,
+    "candidates": [
+      "again",
+      "bland",
+      "blank",
+      "flank",
+      "flash",
+      "glass",
+      "piano",
+      "plain",
+      "shall",
+      "small"
+    ],
+    "history": [
+      [
+        "trace",
+        "XXGXX"
+      ]
+    ],
+    "secret": "piano",
+    "source_index": "model-400-234-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "piano"
+    ],
+    "history": [
+      [
+        "trace",
+        "XXGXX"
+      ],
+      [
+        "flank",
+        "XXGGX"
+      ]
+    ],
+    "secret": "piano",
+    "source_index": "model-400-234-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "solar"
+    ],
+    "history": [
+      [
+        "trace",
+        "XYYXX"
+      ],
+      [
+        "mayor",
+        "XYXYG"
+      ]
+    ],
+    "secret": "solar",
+    "source_index": "model-400-236-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "solar"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYXX"
+      ],
+      [
+        "coral",
+        "XGYGY"
+      ]
+    ],
+    "secret": "solar",
+    "source_index": "model-400-237-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "solar",
+      "sugar"
+    ],
+    "history": [
+      [
+        "irate",
+        "XYYXX"
+      ],
+      [
+        "carry",
+        "XYYXX"
+      ]
+    ],
+    "secret": "solar",
+    "source_index": "model-400-238-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "shade",
+      "shake",
+      "shame"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXG"
+      ],
+      [
+        "sheep",
+        "GGYXX"
+      ]
+    ],
+    "secret": "shame",
+    "source_index": "model-400-240-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "shame"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXG"
+      ],
+      [
+        "sheep",
+        "GGYXX"
+      ],
+      [
+        "admit",
+        "YXYXX"
+      ]
+    ],
+    "secret": "shame",
+    "source_index": "model-400-240-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 20,
+    "candidates": [
+      "aback",
+      "abase",
+      "awake",
+      "beach",
+      "champ",
+      "chaos",
+      "chase",
+      "coach",
+      "heavy",
+      "peace",
+      "peach",
+      "phase",
+      "shade",
+      "shake",
+      "shame",
+      "shape",
+      "snack",
+      "snake",
+      "space",
+      "usage"
+    ],
+    "history": [
+      [
+        "trail",
+        "XXGXX"
+      ]
+    ],
+    "secret": "shame",
+    "source_index": "model-400-242-1"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 3,
+    "candidates": [
+      "shake",
+      "shame",
+      "shape"
+    ],
+    "history": [
+      [
+        "trail",
+        "XXGXX"
+      ],
+      [
+        "shade",
+        "GGGXG"
+      ]
+    ],
+    "secret": "shame",
+    "source_index": "model-400-242-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "shame",
+      "shape"
+    ],
+    "history": [
+      [
+        "trail",
+        "XXGXX"
+      ],
+      [
+        "shade",
+        "GGGXG"
+      ],
+      [
+        "shake",
+        "GGGXG"
+      ]
+    ],
+    "secret": "shame",
+    "source_index": "model-400-242-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 4,
+    "candidates": [
+      "shade",
+      "shake",
+      "shame",
+      "shape"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXG"
+      ],
+      [
+        "clash",
+        "XXGYY"
+      ]
+    ],
+    "secret": "shame",
+    "source_index": "model-400-243-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "shake",
+      "shame"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXG"
+      ],
+      [
+        "clash",
+        "XXGYY"
+      ],
+      [
+        "adapt",
+        "XXGXX"
+      ]
+    ],
+    "secret": "shame",
+    "source_index": "model-400-243-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "shame"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXG"
+      ],
+      [
+        "clash",
+        "XXGYY"
+      ],
+      [
+        "adapt",
+        "XXGXX"
+      ],
+      [
+        "shake",
+        "GGGXG"
+      ]
+    ],
+    "secret": "shame",
+    "source_index": "model-400-243-4"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "local"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXX"
+      ],
+      [
+        "candy",
+        "YYXXX"
+      ]
+    ],
+    "secret": "local",
+    "source_index": "model-400-244-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "local"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXX"
+      ],
+      [
+        "cabin",
+        "YYXXX"
+      ]
+    ],
+    "secret": "local",
+    "source_index": "model-400-245-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "local"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXX"
+      ],
+      [
+        "cloud",
+        "YYYXX"
+      ]
+    ],
+    "secret": "local",
+    "source_index": "model-400-246-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "local"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXYXX"
+      ],
+      [
+        "bacon",
+        "XYGYX"
+      ]
+    ],
+    "secret": "local",
+    "source_index": "model-400-247-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "doing"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXXX"
+      ],
+      [
+        "child",
+        "XXGXY"
+      ]
+    ],
+    "secret": "doing",
+    "source_index": "model-400-248-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "doing",
+      "union"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXXX"
+      ],
+      [
+        "cliff",
+        "XXGXX"
+      ]
+    ],
+    "secret": "doing",
+    "source_index": "model-400-249-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "doing",
+      "union"
+    ],
+    "history": [
+      [
+        "irate",
+        "YXXXX"
+      ],
+      [
+        "click",
+        "XXGXX"
+      ]
+    ],
+    "secret": "doing",
+    "source_index": "model-400-250-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "clash"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXX"
+      ],
+      [
+        "shock",
+        "YYXYX"
+      ]
+    ],
+    "secret": "clash",
+    "source_index": "model-400-252-2"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 1,
+    "candidates": [
+      "clash"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXX"
+      ],
+      [
+        "stuck",
+        "YXXYX"
+      ],
+      [
+        "chaos",
+        "GYGXY"
+      ]
+    ],
+    "secret": "clash",
+    "source_index": "model-400-253-3"
+  },
+  {
+    "behavior": "model",
+    "candidate_count": 2,
+    "candidates": [
+      "clash",
+      "flash"
+    ],
+    "history": [
+      [
+        "irate",
+        "XXGXX"
+      ],
+      [
+        "shall",
+        "YYGYX"
+      ]
+    ],
+    "secret": "clash",
+    "source_index": "model-400-255-2"
+  }
+]

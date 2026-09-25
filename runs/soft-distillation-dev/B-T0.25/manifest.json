@@ -1,0 +1,54 @@
+{
+  "candidate_probability": "softmax over raw-vocabulary five-letter sequence log probabilities",
+  "checkpoint_selection": [
+    "maximum constrained wins",
+    "minimum constrained average attempts",
+    "minimum average guesses among wins",
+    "lower exhaustive expected-survivor regret",
+    "lower teacher-to-student KL"
+  ],
+  "early_C_evaluations": [
+    100,
+    250,
+    1000
+  ],
+  "effective_batch_states": 128,
+  "epoch_batches": {
+    "consistency": 0,
+    "expert": 7018,
+    "mechanics": 369
+  },
+  "held_out_caveat": "Source-secret splits are strict; possible answers use the full dictionary, as in original expert SFT.",
+  "initialization": "runs/scaling-dev-1m/seed-0/fold-1/7.2m/mechanics/checkpoints/best.pt",
+  "initialization_sha256": "64f66d3479d1289bd1335d335bf6f3eafdfd8b692958439385df706f66a1f9ae",
+  "learning_rate": 0.0003,
+  "max_epochs": 100,
+  "microbatch_states": 128,
+  "mode": "data/wordle-development.json",
+  "model_config": {
+    "context_length": 96,
+    "embedding_size": 384,
+    "mlp_size": 1536,
+    "num_heads": 12,
+    "num_layers": 4,
+    "vocab_size": 35
+  },
+  "optimizer": "AdamW",
+  "parameters": 7162403,
+  "patience": 4,
+  "rapid_drift_rule": "At step250, at least five fewer constrained wins than initialization; retry that temperature from original SFT at LR3e-6.",
+  "ratios": {
+    "consistency": 0.0,
+    "expert": 0.95,
+    "mechanics": 0.05
+  },
+  "seed": 0,
+  "smoke_steps": 0,
+  "teacher_dataset": "data/soft-teacher-1m",
+  "temperature": 0.25,
+  "test_gameplay_evaluated": false,
+  "training_source_states": 888231,
+  "variant": "B",
+  "weight_decay": 0.01,
+  "weighted_training_states": 898230
+}

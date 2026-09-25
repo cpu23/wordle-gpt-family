@@ -1,0 +1,33 @@
+{
+  "base_checkpoint": "runs/scaling-cv5-1m/seed-0/fold-3/7.2m/checkpoints/best.pt",
+  "base_checkpoint_sha256": "082846cbe99e909c49c67fb561e66740d6b7fd7f884c8d14567af6b188006fa5",
+  "beta": 0.2,
+  "collapse_wins": 45,
+  "completion_log_probability": "sum over exactly five guess-letter tokens",
+  "effective_batch_size": 128,
+  "eval_batch_size": 256,
+  "evaluation_passes": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "gradient_accumulation_steps": 2,
+  "initialization": {
+    "chosen_logps_equal": true,
+    "dpo_loss": 0.6931471824645996,
+    "parameters_equal": true,
+    "rejected_logps_equal": true
+  },
+  "lambda_sft": 1.0,
+  "learning_rate": 1e-06,
+  "mechanics_replay_fraction": 0.0,
+  "objective": "dpo_loss + lambda_sft * chosen_nll",
+  "optimizer": "AdamW",
+  "physical_batch_size": 64,
+  "seed": 0,
+  "train_pairs": 439483,
+  "validation_pairs": 50000
+}

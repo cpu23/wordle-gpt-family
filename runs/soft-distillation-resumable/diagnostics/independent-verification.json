@@ -1,0 +1,2148 @@
+{
+  "hard_sft": {
+    "direct_forward_wins": 59,
+    "games": 72,
+    "trajectory_disagreements": 0,
+    "panel_argmax_disagreements": 0,
+    "max_logp_error_against_prefix_reuse": 6.103515625e-05,
+    "direct_full_dictionary_panel_scores_checked": 8628,
+    "results": [
+      {
+        "secret": "adopt",
+        "guesses": [
+          "irate",
+          "album",
+          "adopt"
+        ],
+        "won": true
+      },
+      {
+        "secret": "agree",
+        "guesses": [
+          "irate",
+          "agree"
+        ],
+        "won": true
+      },
+      {
+        "secret": "aisle",
+        "guesses": [
+          "irate",
+          "alike",
+          "agile",
+          "aisle"
+        ],
+        "won": true
+      },
+      {
+        "secret": "alert",
+        "guesses": [
+          "irate",
+          "camel",
+          "alert"
+        ],
+        "won": true
+      },
+      {
+        "secret": "alibi",
+        "guesses": [
+          "irate",
+          "blind",
+          "alibi"
+        ],
+        "won": true
+      },
+      {
+        "secret": "alive",
+        "guesses": [
+          "irate",
+          "alike",
+          "alike",
+          "align",
+          "alive"
+        ],
+        "won": true
+      },
+      {
+        "secret": "amend",
+        "guesses": [
+          "irate",
+          "amend"
+        ],
+        "won": true
+      },
+      {
+        "secret": "armor",
+        "guesses": [
+          "irate",
+          "bloom",
+          "major",
+          "armor"
+        ],
+        "won": true
+      },
+      {
+        "secret": "asset",
+        "guesses": [
+          "irate",
+          "cheat",
+          "asset"
+        ],
+        "won": true
+      },
+      {
+        "secret": "award",
+        "guesses": [
+          "irate",
+          "adopt",
+          "again",
+          "avoid",
+          "award"
+        ],
+        "won": true
+      },
+      {
+        "secret": "aware",
+        "guesses": [
+          "irate",
+          "clash",
+          "aware"
+        ],
+        "won": true
+      },
+      {
+        "secret": "badly",
+        "guesses": [
+          "irate",
+          "bonus",
+          "badly"
+        ],
+        "won": true
+      },
+      {
+        "secret": "basin",
+        "guesses": [
+          "irate",
+          "blind",
+          "basin"
+        ],
+        "won": true
+      },
+      {
+        "secret": "beast",
+        "guesses": [
+          "irate",
+          "blast",
+          "beast"
+        ],
+        "won": true
+      },
+      {
+        "secret": "berry",
+        "guesses": [
+          "irate",
+          "fleet",
+          "every",
+          "query",
+          "query",
+          "query"
+        ],
+        "won": false
+      },
+      {
+        "secret": "bland",
+        "guesses": [
+          "irate",
+          "shock",
+          "bland"
+        ],
+        "won": true
+      },
+      {
+        "secret": "bless",
+        "guesses": [
+          "irate",
+          "wheel",
+          "blend",
+          "bless"
+        ],
+        "won": true
+      },
+      {
+        "secret": "block",
+        "guesses": [
+          "irate",
+          "bonus",
+          "blood",
+          "block"
+        ],
+        "won": true
+      },
+      {
+        "secret": "brain",
+        "guesses": [
+          "irate",
+          "adobe",
+          "brain"
+        ],
+        "won": true
+      },
+      {
+        "secret": "canoe",
+        "guesses": [
+          "irate",
+          "along",
+          "canoe"
+        ],
+        "won": true
+      },
+      {
+        "secret": "chose",
+        "guesses": [
+          "irate",
+          "close",
+          "chose"
+        ],
+        "won": true
+      },
+      {
+        "secret": "couch",
+        "guesses": [
+          "irate",
+          "bonus",
+          "couch"
+        ],
+        "won": true
+      },
+      {
+        "secret": "cover",
+        "guesses": [
+          "irate",
+          "fleet",
+          "apron",
+          "owner",
+          "cover"
+        ],
+        "won": true
+      },
+      {
+        "secret": "crawl",
+        "guesses": [
+          "irate",
+          "bench",
+          "crash",
+          "crawl"
+        ],
+        "won": true
+      },
+      {
+        "secret": "dance",
+        "guesses": [
+          "irate",
+          "along",
+          "dance"
+        ],
+        "won": true
+      },
+      {
+        "secret": "disco",
+        "guesses": [
+          "irate",
+          "click",
+          "disco"
+        ],
+        "won": true
+      },
+      {
+        "secret": "dizzy",
+        "guesses": [
+          "irate",
+          "click",
+          "bonus",
+          "might",
+          "pixel",
+          "video"
+        ],
+        "won": false
+      },
+      {
+        "secret": "elbow",
+        "guesses": [
+          "irate",
+          "wheel",
+          "below",
+          "elbow"
+        ],
+        "won": true
+      },
+      {
+        "secret": "equip",
+        "guesses": [
+          "irate",
+          "linen",
+          "equip"
+        ],
+        "won": true
+      },
+      {
+        "secret": "faith",
+        "guesses": [
+          "irate",
+          "faith"
+        ],
+        "won": true
+      },
+      {
+        "secret": "ferry",
+        "guesses": [
+          "irate",
+          "fleet",
+          "ferry"
+        ],
+        "won": true
+      },
+      {
+        "secret": "fifty",
+        "guesses": [
+          "irate",
+          "fifth",
+          "fifty"
+        ],
+        "won": true
+      },
+      {
+        "secret": "float",
+        "guesses": [
+          "irate",
+          "album",
+          "plant",
+          "float"
+        ],
+        "won": true
+      },
+      {
+        "secret": "grown",
+        "guesses": [
+          "irate",
+          "bound",
+          "crown",
+          "brown",
+          "brown",
+          "brown"
+        ],
+        "won": false
+      },
+      {
+        "secret": "house",
+        "guesses": [
+          "irate",
+          "close",
+          "house"
+        ],
+        "won": true
+      },
+      {
+        "secret": "label",
+        "guesses": [
+          "irate",
+          "amend",
+          "equal",
+          "camel",
+          "panel",
+          "label"
+        ],
+        "won": true
+      },
+      {
+        "secret": "lower",
+        "guesses": [
+          "irate",
+          "fleet",
+          "lover",
+          "lover",
+          "lover",
+          "lover"
+        ],
+        "won": false
+      },
+      {
+        "secret": "medal",
+        "guesses": [
+          "irate",
+          "amend",
+          "medal"
+        ],
+        "won": true
+      },
+      {
+        "secret": "mercy",
+        "guesses": [
+          "irate",
+          "fleet",
+          "every",
+          "mercy"
+        ],
+        "won": true
+      },
+      {
+        "secret": "olive",
+        "guesses": [
+          "irate",
+          "slick",
+          "glide",
+          "elite",
+          "elite",
+          "elite"
+        ],
+        "won": false
+      },
+      {
+        "secret": "orbit",
+        "guesses": [
+          "irate",
+          "orbit"
+        ],
+        "won": true
+      },
+      {
+        "secret": "parka",
+        "guesses": [
+          "irate",
+          "carry",
+          "harsh",
+          "major",
+          "range",
+          "parka"
+        ],
+        "won": true
+      },
+      {
+        "secret": "party",
+        "guesses": [
+          "irate",
+          "nasty",
+          "party"
+        ],
+        "won": true
+      },
+      {
+        "secret": "piece",
+        "guesses": [
+          "irate",
+          "slick",
+          "piece"
+        ],
+        "won": true
+      },
+      {
+        "secret": "pilot",
+        "guesses": [
+          "irate",
+          "light",
+          "limit",
+          "linen",
+          "limit",
+          "limit"
+        ],
+        "won": false
+      },
+      {
+        "secret": "power",
+        "guesses": [
+          "irate",
+          "fleet",
+          "apron",
+          "super",
+          "opera",
+          "opera"
+        ],
+        "won": false
+      },
+      {
+        "secret": "press",
+        "guesses": [
+          "irate",
+          "dance",
+          "fresh",
+          "fresh",
+          "guess",
+          "dress"
+        ],
+        "won": false
+      },
+      {
+        "secret": "prime",
+        "guesses": [
+          "irate",
+          "candy",
+          "movie",
+          "smile",
+          "write",
+          "prime"
+        ],
+        "won": true
+      },
+      {
+        "secret": "prize",
+        "guesses": [
+          "irate",
+          "candy",
+          "movie",
+          "write",
+          "write",
+          "write"
+        ],
+        "won": false
+      },
+      {
+        "secret": "raise",
+        "guesses": [
+          "irate",
+          "raise"
+        ],
+        "won": true
+      },
+      {
+        "secret": "range",
+        "guesses": [
+          "irate",
+          "agree",
+          "large",
+          "carve",
+          "range"
+        ],
+        "won": true
+      },
+      {
+        "secret": "round",
+        "guesses": [
+          "irate",
+          "couch",
+          "round"
+        ],
+        "won": true
+      },
+      {
+        "secret": "scarf",
+        "guesses": [
+          "irate",
+          "adopt",
+          "shark",
+          "smart",
+          "scare",
+          "scarf"
+        ],
+        "won": true
+      },
+      {
+        "secret": "scout",
+        "guesses": [
+          "irate",
+          "stuck",
+          "scout"
+        ],
+        "won": true
+      },
+      {
+        "secret": "seven",
+        "guesses": [
+          "irate",
+          "wheel",
+          "enemy",
+          "seven"
+        ],
+        "won": true
+      },
+      {
+        "secret": "shape",
+        "guesses": [
+          "irate",
+          "blush",
+          "adapt",
+          "shape"
+        ],
+        "won": true
+      },
+      {
+        "secret": "sheep",
+        "guesses": [
+          "irate",
+          "wheel",
+          "cheek",
+          "sheep"
+        ],
+        "won": true
+      },
+      {
+        "secret": "shout",
+        "guesses": [
+          "irate",
+          "stuck",
+          "south",
+          "shout"
+        ],
+        "won": true
+      },
+      {
+        "secret": "space",
+        "guesses": [
+          "irate",
+          "blush",
+          "snake",
+          "scare",
+          "scale",
+          "scare"
+        ],
+        "won": false
+      },
+      {
+        "secret": "split",
+        "guesses": [
+          "irate",
+          "light",
+          "built",
+          "limit",
+          "limit",
+          "limit"
+        ],
+        "won": false
+      },
+      {
+        "secret": "stack",
+        "guesses": [
+          "irate",
+          "clash",
+          "stack"
+        ],
+        "won": true
+      },
+      {
+        "secret": "stale",
+        "guesses": [
+          "irate",
+          "blast",
+          "stale"
+        ],
+        "won": true
+      },
+      {
+        "secret": "stare",
+        "guesses": [
+          "irate",
+          "stare"
+        ],
+        "won": true
+      },
+      {
+        "secret": "stick",
+        "guesses": [
+          "irate",
+          "light",
+          "stick"
+        ],
+        "won": true
+      },
+      {
+        "secret": "straw",
+        "guesses": [
+          "irate",
+          "strap",
+          "strap",
+          "straw"
+        ],
+        "won": true
+      },
+      {
+        "secret": "stuck",
+        "guesses": [
+          "irate",
+          "stuck"
+        ],
+        "won": true
+      },
+      {
+        "secret": "sunny",
+        "guesses": [
+          "irate",
+          "bonus",
+          "sunny"
+        ],
+        "won": true
+      },
+      {
+        "secret": "super",
+        "guesses": [
+          "irate",
+          "fleet",
+          "apron",
+          "super"
+        ],
+        "won": true
+      },
+      {
+        "secret": "today",
+        "guesses": [
+          "irate",
+          "album",
+          "champ",
+          "staff",
+          "today"
+        ],
+        "won": true
+      },
+      {
+        "secret": "tower",
+        "guesses": [
+          "irate",
+          "other",
+          "outer",
+          "outer",
+          "outer",
+          "other"
+        ],
+        "won": false
+      },
+      {
+        "secret": "trail",
+        "guesses": [
+          "irate",
+          "trail"
+        ],
+        "won": true
+      },
+      {
+        "secret": "watch",
+        "guesses": [
+          "irate",
+          "album",
+          "champ",
+          "ranch",
+          "ranch",
+          "ratio"
+        ],
+        "won": false
+      }
+    ]
+  },
+  "soft_best": {
+    "direct_forward_wins": 72,
+    "games": 72,
+    "trajectory_disagreements": 0,
+    "panel_argmax_disagreements": 0,
+    "max_logp_error_against_prefix_reuse": 1.52587890625e-05,
+    "direct_full_dictionary_panel_scores_checked": 8628,
+    "results": [
+      {
+        "secret": "adopt",
+        "guesses": [
+          "crate",
+          "saint",
+          "float",
+          "adopt"
+        ],
+        "won": true
+      },
+      {
+        "secret": "agree",
+        "guesses": [
+          "crate",
+          "adore",
+          "agree"
+        ],
+        "won": true
+      },
+      {
+        "secret": "aisle",
+        "guesses": [
+          "crate",
+          "align",
+          "aisle"
+        ],
+        "won": true
+      },
+      {
+        "secret": "alert",
+        "guesses": [
+          "crate",
+          "later",
+          "alert"
+        ],
+        "won": true
+      },
+      {
+        "secret": "alibi",
+        "guesses": [
+          "crate",
+          "blind",
+          "alibi"
+        ],
+        "won": true
+      },
+      {
+        "secret": "alive",
+        "guesses": [
+          "crate",
+          "align",
+          "grove",
+          "alive"
+        ],
+        "won": true
+      },
+      {
+        "secret": "amend",
+        "guesses": [
+          "crate",
+          "pedal",
+          "abbey",
+          "amend"
+        ],
+        "won": true
+      },
+      {
+        "secret": "armor",
+        "guesses": [
+          "crate",
+          "brown",
+          "organ",
+          "arrow",
+          "armor"
+        ],
+        "won": true
+      },
+      {
+        "secret": "asset",
+        "guesses": [
+          "crate",
+          "steel",
+          "asset"
+        ],
+        "won": true
+      },
+      {
+        "secret": "award",
+        "guesses": [
+          "crate",
+          "would",
+          "award"
+        ],
+        "won": true
+      },
+      {
+        "secret": "aware",
+        "guesses": [
+          "crate",
+          "chirp",
+          "flare",
+          "aware"
+        ],
+        "won": true
+      },
+      {
+        "secret": "badly",
+        "guesses": [
+          "crate",
+          "blind",
+          "badly"
+        ],
+        "won": true
+      },
+      {
+        "secret": "basin",
+        "guesses": [
+          "crate",
+          "blind",
+          "basin"
+        ],
+        "won": true
+      },
+      {
+        "secret": "beast",
+        "guesses": [
+          "crate",
+          "blunt",
+          "beast"
+        ],
+        "won": true
+      },
+      {
+        "secret": "berry",
+        "guesses": [
+          "crate",
+          "video",
+          "funny",
+          "reply",
+          "berry"
+        ],
+        "won": true
+      },
+      {
+        "secret": "bland",
+        "guesses": [
+          "crate",
+          "blush",
+          "drink",
+          "bland"
+        ],
+        "won": true
+      },
+      {
+        "secret": "bless",
+        "guesses": [
+          "crate",
+          "wheel",
+          "blend",
+          "bless"
+        ],
+        "won": true
+      },
+      {
+        "secret": "block",
+        "guesses": [
+          "crate",
+          "blush",
+          "block"
+        ],
+        "won": true
+      },
+      {
+        "secret": "brain",
+        "guesses": [
+          "crate",
+          "being",
+          "brain"
+        ],
+        "won": true
+      },
+      {
+        "secret": "canoe",
+        "guesses": [
+          "crate",
+          "apron",
+          "canoe"
+        ],
+        "won": true
+      },
+      {
+        "secret": "chose",
+        "guesses": [
+          "crate",
+          "noise",
+          "chose"
+        ],
+        "won": true
+      },
+      {
+        "secret": "couch",
+        "guesses": [
+          "crate",
+          "blind",
+          "couch"
+        ],
+        "won": true
+      },
+      {
+        "secret": "cover",
+        "guesses": [
+          "crate",
+          "cheer",
+          "cover"
+        ],
+        "won": true
+      },
+      {
+        "secret": "crawl",
+        "guesses": [
+          "crate",
+          "crack",
+          "champ",
+          "crown",
+          "crawl"
+        ],
+        "won": true
+      },
+      {
+        "secret": "dance",
+        "guesses": [
+          "crate",
+          "lance",
+          "dance"
+        ],
+        "won": true
+      },
+      {
+        "secret": "disco",
+        "guesses": [
+          "crate",
+          "blush",
+          "knock",
+          "voice",
+          "disco"
+        ],
+        "won": true
+      },
+      {
+        "secret": "dizzy",
+        "guesses": [
+          "crate",
+          "blind",
+          "music",
+          "dizzy"
+        ],
+        "won": true
+      },
+      {
+        "secret": "elbow",
+        "guesses": [
+          "crate",
+          "wheel",
+          "owner",
+          "solve",
+          "elder",
+          "elbow"
+        ],
+        "won": true
+      },
+      {
+        "secret": "equip",
+        "guesses": [
+          "crate",
+          "wheel",
+          "enjoy",
+          "essay",
+          "enemy",
+          "equip"
+        ],
+        "won": true
+      },
+      {
+        "secret": "faith",
+        "guesses": [
+          "crate",
+          "nasty",
+          "faith"
+        ],
+        "won": true
+      },
+      {
+        "secret": "ferry",
+        "guesses": [
+          "crate",
+          "video",
+          "funny",
+          "ferry"
+        ],
+        "won": true
+      },
+      {
+        "secret": "fifty",
+        "guesses": [
+          "crate",
+          "youth",
+          "fifty"
+        ],
+        "won": true
+      },
+      {
+        "secret": "float",
+        "guesses": [
+          "crate",
+          "saint",
+          "float"
+        ],
+        "won": true
+      },
+      {
+        "secret": "grown",
+        "guesses": [
+          "crate",
+          "bound",
+          "grown"
+        ],
+        "won": true
+      },
+      {
+        "secret": "house",
+        "guesses": [
+          "crate",
+          "solid",
+          "month",
+          "house"
+        ],
+        "won": true
+      },
+      {
+        "secret": "label",
+        "guesses": [
+          "crate",
+          "pedal",
+          "angel",
+          "label"
+        ],
+        "won": true
+      },
+      {
+        "secret": "lower",
+        "guesses": [
+          "crate",
+          "video",
+          "offer",
+          "power",
+          "lower"
+        ],
+        "won": true
+      },
+      {
+        "secret": "medal",
+        "guesses": [
+          "crate",
+          "pedal",
+          "medal"
+        ],
+        "won": true
+      },
+      {
+        "secret": "mercy",
+        "guesses": [
+          "crate",
+          "decor",
+          "bench",
+          "mercy"
+        ],
+        "won": true
+      },
+      {
+        "secret": "olive",
+        "guesses": [
+          "crate",
+          "solid",
+          "while",
+          "olive"
+        ],
+        "won": true
+      },
+      {
+        "secret": "orbit",
+        "guesses": [
+          "crate",
+          "phone",
+          "orbit"
+        ],
+        "won": true
+      },
+      {
+        "secret": "parka",
+        "guesses": [
+          "crate",
+          "mayor",
+          "chirp",
+          "rapid",
+          "naval",
+          "parka"
+        ],
+        "won": true
+      },
+      {
+        "secret": "party",
+        "guesses": [
+          "crate",
+          "nasty",
+          "party"
+        ],
+        "won": true
+      },
+      {
+        "secret": "piece",
+        "guesses": [
+          "crate",
+          "pound",
+          "spice",
+          "piece"
+        ],
+        "won": true
+      },
+      {
+        "secret": "pilot",
+        "guesses": [
+          "crate",
+          "shout",
+          "money",
+          "pilot"
+        ],
+        "won": true
+      },
+      {
+        "secret": "power",
+        "guesses": [
+          "crate",
+          "video",
+          "offer",
+          "power"
+        ],
+        "won": true
+      },
+      {
+        "secret": "press",
+        "guesses": [
+          "crate",
+          "speed",
+          "press"
+        ],
+        "won": true
+      },
+      {
+        "secret": "prime",
+        "guesses": [
+          "crate",
+          "doubt",
+          "champ",
+          "prime"
+        ],
+        "won": true
+      },
+      {
+        "secret": "prize",
+        "guesses": [
+          "crate",
+          "doubt",
+          "champ",
+          "dizzy",
+          "prize"
+        ],
+        "won": true
+      },
+      {
+        "secret": "raise",
+        "guesses": [
+          "crate",
+          "adore",
+          "large",
+          "raise"
+        ],
+        "won": true
+      },
+      {
+        "secret": "range",
+        "guesses": [
+          "crate",
+          "adore",
+          "large",
+          "range"
+        ],
+        "won": true
+      },
+      {
+        "secret": "round",
+        "guesses": [
+          "crate",
+          "would",
+          "elbow",
+          "round"
+        ],
+        "won": true
+      },
+      {
+        "secret": "scarf",
+        "guesses": [
+          "crate",
+          "aback",
+          "scarf"
+        ],
+        "won": true
+      },
+      {
+        "secret": "scout",
+        "guesses": [
+          "crate",
+          "pound",
+          "outer",
+          "stock",
+          "scout"
+        ],
+        "won": true
+      },
+      {
+        "secret": "seven",
+        "guesses": [
+          "crate",
+          "wheel",
+          "seven"
+        ],
+        "won": true
+      },
+      {
+        "secret": "shape",
+        "guesses": [
+          "crate",
+          "blush",
+          "snake",
+          "shade",
+          "shame",
+          "shape"
+        ],
+        "won": true
+      },
+      {
+        "secret": "sheep",
+        "guesses": [
+          "crate",
+          "wheel",
+          "sheep"
+        ],
+        "won": true
+      },
+      {
+        "secret": "shout",
+        "guesses": [
+          "crate",
+          "shout"
+        ],
+        "won": true
+      },
+      {
+        "secret": "space",
+        "guesses": [
+          "crate",
+          "peach",
+          "space"
+        ],
+        "won": true
+      },
+      {
+        "secret": "split",
+        "guesses": [
+          "crate",
+          "shout",
+          "split"
+        ],
+        "won": true
+      },
+      {
+        "secret": "stack",
+        "guesses": [
+          "crate",
+          "imply",
+          "ankle",
+          "stack"
+        ],
+        "won": true
+      },
+      {
+        "secret": "stale",
+        "guesses": [
+          "crate",
+          "blush",
+          "stale"
+        ],
+        "won": true
+      },
+      {
+        "secret": "stare",
+        "guesses": [
+          "crate",
+          "stare"
+        ],
+        "won": true
+      },
+      {
+        "secret": "stick",
+        "guesses": [
+          "crate",
+          "pound",
+          "shelf",
+          "suite",
+          "stick"
+        ],
+        "won": true
+      },
+      {
+        "secret": "straw",
+        "guesses": [
+          "crate",
+          "worst",
+          "straw"
+        ],
+        "won": true
+      },
+      {
+        "secret": "stuck",
+        "guesses": [
+          "crate",
+          "pound",
+          "stuck"
+        ],
+        "won": true
+      },
+      {
+        "secret": "sunny",
+        "guesses": [
+          "crate",
+          "blind",
+          "young",
+          "funny",
+          "sunny"
+        ],
+        "won": true
+      },
+      {
+        "secret": "super",
+        "guesses": [
+          "crate",
+          "video",
+          "buyer",
+          "super"
+        ],
+        "won": true
+      },
+      {
+        "secret": "today",
+        "guesses": [
+          "crate",
+          "saint",
+          "today"
+        ],
+        "won": true
+      },
+      {
+        "secret": "tower",
+        "guesses": [
+          "crate",
+          "meter",
+          "other",
+          "tower"
+        ],
+        "won": true
+      },
+      {
+        "secret": "trail",
+        "guesses": [
+          "crate",
+          "grant",
+          "draft",
+          "train",
+          "trail"
+        ],
+        "won": true
+      },
+      {
+        "secret": "watch",
+        "guesses": [
+          "crate",
+          "champ",
+          "brown",
+          "watch"
+        ],
+        "won": true
+      }
+    ]
+  },
+  "soft_stopped": {
+    "direct_forward_wins": 68,
+    "games": 72,
+    "trajectory_disagreements": 0,
+    "panel_argmax_disagreements": 0,
+    "max_logp_error_against_prefix_reuse": 1.52587890625e-05,
+    "direct_full_dictionary_panel_scores_checked": 8628,
+    "results": [
+      {
+        "secret": "adopt",
+        "guesses": [
+          "crate",
+          "audit",
+          "adopt"
+        ],
+        "won": true
+      },
+      {
+        "secret": "agree",
+        "guesses": [
+          "crate",
+          "adore",
+          "agree"
+        ],
+        "won": true
+      },
+      {
+        "secret": "aisle",
+        "guesses": [
+          "crate",
+          "align",
+          "aisle"
+        ],
+        "won": true
+      },
+      {
+        "secret": "alert",
+        "guesses": [
+          "crate",
+          "fleet",
+          "alert"
+        ],
+        "won": true
+      },
+      {
+        "secret": "alibi",
+        "guesses": [
+          "crate",
+          "blind",
+          "alibi"
+        ],
+        "won": true
+      },
+      {
+        "secret": "alive",
+        "guesses": [
+          "crate",
+          "align",
+          "leave",
+          "alive"
+        ],
+        "won": true
+      },
+      {
+        "secret": "amend",
+        "guesses": [
+          "crate",
+          "pedal",
+          "abbey",
+          "amend"
+        ],
+        "won": true
+      },
+      {
+        "secret": "armor",
+        "guesses": [
+          "crate",
+          "along",
+          "armor"
+        ],
+        "won": true
+      },
+      {
+        "secret": "asset",
+        "guesses": [
+          "crate",
+          "shelf",
+          "asset"
+        ],
+        "won": true
+      },
+      {
+        "secret": "award",
+        "guesses": [
+          "crate",
+          "would",
+          "award"
+        ],
+        "won": true
+      },
+      {
+        "secret": "aware",
+        "guesses": [
+          "crate",
+          "flash",
+          "would",
+          "aware"
+        ],
+        "won": true
+      },
+      {
+        "secret": "badly",
+        "guesses": [
+          "crate",
+          "blind",
+          "badly"
+        ],
+        "won": true
+      },
+      {
+        "secret": "basin",
+        "guesses": [
+          "crate",
+          "blind",
+          "basin"
+        ],
+        "won": true
+      },
+      {
+        "secret": "beast",
+        "guesses": [
+          "crate",
+          "blast",
+          "beast"
+        ],
+        "won": true
+      },
+      {
+        "secret": "berry",
+        "guesses": [
+          "crate",
+          "video",
+          "query",
+          "ferry",
+          "berry"
+        ],
+        "won": true
+      },
+      {
+        "secret": "bland",
+        "guesses": [
+          "crate",
+          "blush",
+          "drink",
+          "bland"
+        ],
+        "won": true
+      },
+      {
+        "secret": "bless",
+        "guesses": [
+          "crate",
+          "wheel",
+          "blast",
+          "blend",
+          "bless"
+        ],
+        "won": true
+      },
+      {
+        "secret": "block",
+        "guesses": [
+          "crate",
+          "slick",
+          "flock",
+          "block"
+        ],
+        "won": true
+      },
+      {
+        "secret": "brain",
+        "guesses": [
+          "crate",
+          "doing",
+          "brain"
+        ],
+        "won": true
+      },
+      {
+        "secret": "canoe",
+        "guesses": [
+          "crate",
+          "basin",
+          "candy",
+          "canoe"
+        ],
+        "won": true
+      },
+      {
+        "secret": "chose",
+        "guesses": [
+          "crate",
+          "blink",
+          "chose"
+        ],
+        "won": true
+      },
+      {
+        "secret": "couch",
+        "guesses": [
+          "crate",
+          "blind",
+          "couch"
+        ],
+        "won": true
+      },
+      {
+        "secret": "cover",
+        "guesses": [
+          "crate",
+          "river",
+          "cover"
+        ],
+        "won": true
+      },
+      {
+        "secret": "crawl",
+        "guesses": [
+          "crate",
+          "think",
+          "crack",
+          "crash",
+          "clamp",
+          "curly"
+        ],
+        "won": false
+      },
+      {
+        "secret": "dance",
+        "guesses": [
+          "crate",
+          "spill",
+          "dance"
+        ],
+        "won": true
+      },
+      {
+        "secret": "disco",
+        "guesses": [
+          "crate",
+          "slick",
+          "music",
+          "pinch",
+          "disco"
+        ],
+        "won": true
+      },
+      {
+        "secret": "dizzy",
+        "guesses": [
+          "crate",
+          "build",
+          "movie",
+          "digit",
+          "dizzy"
+        ],
+        "won": true
+      },
+      {
+        "secret": "elbow",
+        "guesses": [
+          "crate",
+          "wheel",
+          "below",
+          "elbow"
+        ],
+        "won": true
+      },
+      {
+        "secret": "equip",
+        "guesses": [
+          "crate",
+          "wheel",
+          "enjoy",
+          "enemy",
+          "essay",
+          "dizzy"
+        ],
+        "won": false
+      },
+      {
+        "secret": "faith",
+        "guesses": [
+          "crate",
+          "nasty",
+          "faith"
+        ],
+        "won": true
+      },
+      {
+        "secret": "ferry",
+        "guesses": [
+          "crate",
+          "video",
+          "query",
+          "ferry"
+        ],
+        "won": true
+      },
+      {
+        "secret": "fifty",
+        "guesses": [
+          "crate",
+          "youth",
+          "fifty"
+        ],
+        "won": true
+      },
+      {
+        "secret": "float",
+        "guesses": [
+          "crate",
+          "audit",
+          "salad",
+          "float"
+        ],
+        "won": true
+      },
+      {
+        "secret": "grown",
+        "guesses": [
+          "crate",
+          "doing",
+          "grown"
+        ],
+        "won": true
+      },
+      {
+        "secret": "house",
+        "guesses": [
+          "crate",
+          "solid",
+          "boost",
+          "noise",
+          "month",
+          "honor"
+        ],
+        "won": false
+      },
+      {
+        "secret": "label",
+        "guesses": [
+          "crate",
+          "pedal",
+          "angel",
+          "basil",
+          "label"
+        ],
+        "won": true
+      },
+      {
+        "secret": "lower",
+        "guesses": [
+          "crate",
+          "video",
+          "offer",
+          "lunch",
+          "loose",
+          "lower"
+        ],
+        "won": true
+      },
+      {
+        "secret": "medal",
+        "guesses": [
+          "crate",
+          "pedal",
+          "medal"
+        ],
+        "won": true
+      },
+      {
+        "secret": "mercy",
+        "guesses": [
+          "crate",
+          "decor",
+          "mercy"
+        ],
+        "won": true
+      },
+      {
+        "secret": "olive",
+        "guesses": [
+          "crate",
+          "solid",
+          "olive"
+        ],
+        "won": true
+      },
+      {
+        "secret": "orbit",
+        "guesses": [
+          "crate",
+          "shift",
+          "orbit"
+        ],
+        "won": true
+      },
+      {
+        "secret": "parka",
+        "guesses": [
+          "crate",
+          "mayor",
+          "rapid",
+          "parka"
+        ],
+        "won": true
+      },
+      {
+        "secret": "party",
+        "guesses": [
+          "crate",
+          "party"
+        ],
+        "won": true
+      },
+      {
+        "secret": "piece",
+        "guesses": [
+          "crate",
+          "point",
+          "piece"
+        ],
+        "won": true
+      },
+      {
+        "secret": "pilot",
+        "guesses": [
+          "crate",
+          "shout",
+          "donor",
+          "pilot"
+        ],
+        "won": true
+      },
+      {
+        "secret": "power",
+        "guesses": [
+          "crate",
+          "video",
+          "offer",
+          "lunch",
+          "power"
+        ],
+        "won": true
+      },
+      {
+        "secret": "press",
+        "guesses": [
+          "crate",
+          "speed",
+          "press"
+        ],
+        "won": true
+      },
+      {
+        "secret": "prime",
+        "guesses": [
+          "crate",
+          "doubt",
+          "prime"
+        ],
+        "won": true
+      },
+      {
+        "secret": "prize",
+        "guesses": [
+          "crate",
+          "doubt",
+          "prime",
+          "dozen",
+          "prize"
+        ],
+        "won": true
+      },
+      {
+        "secret": "raise",
+        "guesses": [
+          "crate",
+          "adore",
+          "large",
+          "raise"
+        ],
+        "won": true
+      },
+      {
+        "secret": "range",
+        "guesses": [
+          "crate",
+          "adore",
+          "large",
+          "range"
+        ],
+        "won": true
+      },
+      {
+        "secret": "round",
+        "guesses": [
+          "crate",
+          "would",
+          "rough",
+          "round"
+        ],
+        "won": true
+      },
+      {
+        "secret": "scarf",
+        "guesses": [
+          "crate",
+          "reach",
+          "scarf"
+        ],
+        "won": true
+      },
+      {
+        "secret": "scout",
+        "guesses": [
+          "crate",
+          "pound",
+          "stock",
+          "scout"
+        ],
+        "won": true
+      },
+      {
+        "secret": "seven",
+        "guesses": [
+          "crate",
+          "wheel",
+          "seven"
+        ],
+        "won": true
+      },
+      {
+        "secret": "shape",
+        "guesses": [
+          "crate",
+          "flash",
+          "pound",
+          "shape"
+        ],
+        "won": true
+      },
+      {
+        "secret": "sheep",
+        "guesses": [
+          "crate",
+          "wheel",
+          "speed",
+          "sheep"
+        ],
+        "won": true
+      },
+      {
+        "secret": "shout",
+        "guesses": [
+          "crate",
+          "shout"
+        ],
+        "won": true
+      },
+      {
+        "secret": "space",
+        "guesses": [
+          "crate",
+          "sleep",
+          "space"
+        ],
+        "won": true
+      },
+      {
+        "secret": "split",
+        "guesses": [
+          "crate",
+          "shout",
+          "split"
+        ],
+        "won": true
+      },
+      {
+        "secret": "stack",
+        "guesses": [
+          "crate",
+          "champ",
+          "stack"
+        ],
+        "won": true
+      },
+      {
+        "secret": "stale",
+        "guesses": [
+          "crate",
+          "stale"
+        ],
+        "won": true
+      },
+      {
+        "secret": "stare",
+        "guesses": [
+          "crate",
+          "stare"
+        ],
+        "won": true
+      },
+      {
+        "secret": "stick",
+        "guesses": [
+          "crate",
+          "pound",
+          "pitch",
+          "stick"
+        ],
+        "won": true
+      },
+      {
+        "secret": "straw",
+        "guesses": [
+          "crate",
+          "worst",
+          "strap",
+          "strap",
+          "strap",
+          "strap"
+        ],
+        "won": false
+      },
+      {
+        "secret": "stuck",
+        "guesses": [
+          "crate",
+          "pound",
+          "smart",
+          "stick",
+          "stuck"
+        ],
+        "won": true
+      },
+      {
+        "secret": "sunny",
+        "guesses": [
+          "crate",
+          "build",
+          "ought",
+          "funny",
+          "sunny"
+        ],
+        "won": true
+      },
+      {
+        "secret": "super",
+        "guesses": [
+          "crate",
+          "video",
+          "refer",
+          "buyer",
+          "super"
+        ],
+        "won": true
+      },
+      {
+        "secret": "today",
+        "guesses": [
+          "crate",
+          "audit",
+          "stood",
+          "today"
+        ],
+        "won": true
+      },
+      {
+        "secret": "tower",
+        "guesses": [
+          "crate",
+          "timer",
+          "tower"
+        ],
+        "won": true
+      },
+      {
+        "secret": "trail",
+        "guesses": [
+          "crate",
+          "fling",
+          "train",
+          "trail"
+        ],
+        "won": true
+      },
+      {
+        "secret": "watch",
+        "guesses": [
+          "crate",
+          "champ",
+          "habit",
+          "watch"
+        ],
+        "won": true
+      }
+    ]
+  }
+}

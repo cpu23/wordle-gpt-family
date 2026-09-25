@@ -1,0 +1,2259 @@
+{
+  "all_runs": [
+    {
+      "action_quality": {
+        "actions": 32,
+        "mean_action_regret": 1.5493938066009567,
+        "mean_relative_quality": 2.0271357677870854,
+        "median_action_regret": 0.0,
+        "median_relative_quality": 1.0,
+        "rank_1_fraction": 0.0,
+        "top_3_fraction": 0.0,
+        "top_8_fraction": 0.0
+      },
+      "benchmark_eligible": false,
+      "best_epoch": 0,
+      "best_step": 0,
+      "checkpoint": "runs/soft-distillation-smoke/B-T0.50/checkpoints/best.pt",
+      "gameplay": {
+        "average_attempts": 5.944444444444445,
+        "average_guesses": 2.0,
+        "checkpoint": "in-memory",
+        "decode": "constrained",
+        "games": 72,
+        "invalid_guesses": 0,
+        "win_rate": 0.013888888888888888,
+        "wins": 1
+      },
+      "learning_rate": 0.0003,
+      "mechanics_validation_loss": 0.000780485689586492,
+      "model": "B",
+      "name": "B-T0.50",
+      "paired_development_games": {
+        "counts": {
+          "both_lose": 12,
+          "both_win": 0,
+          "sft_loses_soft_wins": 1,
+          "sft_wins_soft_loses": 59
+        },
+        "mean_attempt_difference_soft_minus_sft": 2.0277777777777777,
+        "secrets": [
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "adopt",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 4,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "agree",
+            "sft_attempts": 2,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "aisle",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "alert",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "alibi",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 1,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "alive",
+            "sft_attempts": 5,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "amend",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "armor",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "asset",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "award",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "aware",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "badly",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "basin",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "beast",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "berry",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "bland",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "bless",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "block",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "brain",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "canoe",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "chose",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "couch",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 1,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "cover",
+            "sft_attempts": 5,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "crawl",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "dance",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "disco",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "dizzy",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "elbow",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "equip",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 4,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "faith",
+            "sft_attempts": 2,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "ferry",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "fifty",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "float",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "grown",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "house",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "label",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "lower",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "medal",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "mercy",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "olive",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 4,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "orbit",
+            "sft_attempts": 2,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "parka",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "party",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "piece",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "pilot",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "power",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "press",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "prime",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "prize",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "raise",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 1,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "range",
+            "sft_attempts": 5,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "round",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "scarf",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "scout",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "seven",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "shape",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "sheep",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "shout",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "space",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "split",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "stack",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "stale",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 4,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "stare",
+            "sft_attempts": 2,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "stick",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "straw",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 4,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "stuck",
+            "sft_attempts": 2,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "sunny",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "super",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 1,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "today",
+            "sft_attempts": 5,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "tower",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 4,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "trail",
+            "sft_attempts": 2,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": -4,
+            "outcome": "sft_loses_soft_wins",
+            "secret": "watch",
+            "sft_attempts": 6,
+            "soft_attempts": 2
+          }
+        ]
+      },
+      "policy": {
+        "cross_entropy": 13.769804954528809,
+        "rank1_probability": 0.006017447682097554,
+        "student_entropy": 1.131200134754181,
+        "teacher_entropy": 2.732564926147461,
+        "teacher_student_kl": 11.037240028381348,
+        "top3_probability": 0.01733217015862465,
+        "top8_probability": 0.03398289531469345
+      },
+      "temperature": 0.5
+    },
+    {
+      "action_quality": {
+        "actions": 32,
+        "mean_action_regret": 0.1461236884031002,
+        "mean_relative_quality": 1.1256838284454564,
+        "median_action_regret": 0.0,
+        "median_relative_quality": 1.0,
+        "rank_1_fraction": 0.40625,
+        "top_3_fraction": 0.46875,
+        "top_8_fraction": 0.5
+      },
+      "benchmark_eligible": true,
+      "best_epoch": 1,
+      "best_step": 3,
+      "checkpoint": "runs/soft-distillation-smoke/C-T0.50/checkpoints/best.pt",
+      "gameplay": {
+        "average_attempts": 3.9166666666666665,
+        "average_guesses": 3.5,
+        "checkpoint": "in-memory",
+        "decode": "constrained",
+        "games": 72,
+        "invalid_guesses": 0,
+        "win_rate": 0.8333333333333334,
+        "wins": 60
+      },
+      "learning_rate": 1e-05,
+      "mechanics_validation_loss": 0.0017860661655459157,
+      "model": "C",
+      "name": "C-T0.50",
+      "paired_development_games": {
+        "counts": {
+          "both_lose": 12,
+          "both_win": 59,
+          "sft_loses_soft_wins": 1,
+          "sft_wins_soft_loses": 0
+        },
+        "mean_attempt_difference_soft_minus_sft": 0.0,
+        "secrets": [
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "adopt",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "agree",
+            "sft_attempts": 2,
+            "soft_attempts": 2
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "aisle",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "alert",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "alibi",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "alive",
+            "sft_attempts": 5,
+            "soft_attempts": 5
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "amend",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "armor",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "asset",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "award",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "aware",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "badly",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "basin",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "beast",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "sft_loses_soft_wins",
+            "secret": "berry",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "bland",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "bless",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "block",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "brain",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "canoe",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "chose",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "couch",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "cover",
+            "sft_attempts": 5,
+            "soft_attempts": 5
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "crawl",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "dance",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "disco",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "dizzy",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "elbow",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "equip",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "faith",
+            "sft_attempts": 2,
+            "soft_attempts": 2
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "ferry",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "fifty",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "float",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "grown",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "house",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "label",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "lower",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "medal",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "mercy",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "olive",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "orbit",
+            "sft_attempts": 2,
+            "soft_attempts": 2
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "parka",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "party",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "piece",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "pilot",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "power",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "press",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "prime",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "prize",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "raise",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "range",
+            "sft_attempts": 5,
+            "soft_attempts": 5
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "round",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "scarf",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "scout",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "seven",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "shape",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "sheep",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "shout",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "space",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "split",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "stack",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "stale",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "stare",
+            "sft_attempts": 2,
+            "soft_attempts": 2
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "stick",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "straw",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "stuck",
+            "sft_attempts": 2,
+            "soft_attempts": 2
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "sunny",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "super",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "today",
+            "sft_attempts": 5,
+            "soft_attempts": 5
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "tower",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "trail",
+            "sft_attempts": 2,
+            "soft_attempts": 2
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "watch",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          }
+        ]
+      },
+      "policy": {
+        "cross_entropy": 10.158088207244873,
+        "rank1_probability": 0.5165136158466339,
+        "student_entropy": 0.7412572503089905,
+        "teacher_entropy": 2.732564926147461,
+        "teacher_student_kl": 7.425523281097412,
+        "top3_probability": 0.5887862741947174,
+        "top8_probability": 0.6480169892311096
+      },
+      "temperature": 0.5
+    }
+  ],
+  "benchmark_gate": "Lexicographically better constrained wins/attempts/guesses-among-wins, or at least 5% lower exhaustive mean regret with no worse gameplay key.",
+  "qualifying_configurations": [
+    "C-T0.50"
+  ],
+  "source_split_caveat": "Source secrets held out; full dictionary answer inference matches original SFT.",
+  "table": [
+    {
+      "action_quality": {
+        "actions": 32,
+        "mean_action_regret": 0.1461236884031002,
+        "mean_relative_quality": 1.1256838284454564,
+        "median_action_regret": 0.0,
+        "median_relative_quality": 1.0,
+        "rank_1_fraction": 0.40625,
+        "top_3_fraction": 0.46875,
+        "top_8_fraction": 0.5
+      },
+      "checkpoint": "runs/scaling-dev-1m/seed-0/fold-1/7.2m/checkpoints/best.pt",
+      "gameplay": {
+        "average_attempts": 3.9166666666666665,
+        "average_guesses": 3.457627118644068,
+        "checkpoint": "in-memory",
+        "decode": "constrained",
+        "games": 72,
+        "invalid_guesses": 0,
+        "win_rate": 0.8194444444444444,
+        "wins": 59
+      },
+      "mechanics_validation_loss": 0.0017920516262490485,
+      "model": "A",
+      "name": "Hard SFT",
+      "temperature": null
+    },
+    {
+      "action_quality": {
+        "actions": 32,
+        "mean_action_regret": 1.5493938066009567,
+        "mean_relative_quality": 2.0271357677870854,
+        "median_action_regret": 0.0,
+        "median_relative_quality": 1.0,
+        "rank_1_fraction": 0.0,
+        "top_3_fraction": 0.0,
+        "top_8_fraction": 0.0
+      },
+      "benchmark_eligible": false,
+      "best_epoch": 0,
+      "best_step": 0,
+      "checkpoint": "runs/soft-distillation-smoke/B-T0.50/checkpoints/best.pt",
+      "gameplay": {
+        "average_attempts": 5.944444444444445,
+        "average_guesses": 2.0,
+        "checkpoint": "in-memory",
+        "decode": "constrained",
+        "games": 72,
+        "invalid_guesses": 0,
+        "win_rate": 0.013888888888888888,
+        "wins": 1
+      },
+      "learning_rate": 0.0003,
+      "mechanics_validation_loss": 0.000780485689586492,
+      "model": "B",
+      "name": "B-T0.50",
+      "paired_development_games": {
+        "counts": {
+          "both_lose": 12,
+          "both_win": 0,
+          "sft_loses_soft_wins": 1,
+          "sft_wins_soft_loses": 59
+        },
+        "mean_attempt_difference_soft_minus_sft": 2.0277777777777777,
+        "secrets": [
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "adopt",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 4,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "agree",
+            "sft_attempts": 2,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "aisle",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "alert",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "alibi",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 1,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "alive",
+            "sft_attempts": 5,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "amend",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "armor",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "asset",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "award",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "aware",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "badly",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "basin",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "beast",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "berry",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "bland",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "bless",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "block",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "brain",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "canoe",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "chose",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "couch",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 1,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "cover",
+            "sft_attempts": 5,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "crawl",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "dance",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "disco",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "dizzy",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "elbow",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "equip",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 4,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "faith",
+            "sft_attempts": 2,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "ferry",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "fifty",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "float",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "grown",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "house",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "label",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "lower",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "medal",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "mercy",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "olive",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 4,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "orbit",
+            "sft_attempts": 2,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "parka",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "party",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "piece",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "pilot",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "power",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "press",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "prime",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "prize",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "raise",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 1,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "range",
+            "sft_attempts": 5,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "round",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "scarf",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "scout",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "seven",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "shape",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "sheep",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "shout",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "space",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "split",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "stack",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "stale",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 4,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "stare",
+            "sft_attempts": 2,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "stick",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "straw",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 4,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "stuck",
+            "sft_attempts": 2,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 3,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "sunny",
+            "sft_attempts": 3,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 2,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "super",
+            "sft_attempts": 4,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 1,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "today",
+            "sft_attempts": 5,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "tower",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 4,
+            "outcome": "sft_wins_soft_loses",
+            "secret": "trail",
+            "sft_attempts": 2,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": -4,
+            "outcome": "sft_loses_soft_wins",
+            "secret": "watch",
+            "sft_attempts": 6,
+            "soft_attempts": 2
+          }
+        ]
+      },
+      "policy": {
+        "cross_entropy": 13.769804954528809,
+        "rank1_probability": 0.006017447682097554,
+        "student_entropy": 1.131200134754181,
+        "teacher_entropy": 2.732564926147461,
+        "teacher_student_kl": 11.037240028381348,
+        "top3_probability": 0.01733217015862465,
+        "top8_probability": 0.03398289531469345
+      },
+      "temperature": 0.5
+    },
+    {
+      "action_quality": {
+        "actions": 32,
+        "mean_action_regret": 0.1461236884031002,
+        "mean_relative_quality": 1.1256838284454564,
+        "median_action_regret": 0.0,
+        "median_relative_quality": 1.0,
+        "rank_1_fraction": 0.40625,
+        "top_3_fraction": 0.46875,
+        "top_8_fraction": 0.5
+      },
+      "benchmark_eligible": true,
+      "best_epoch": 1,
+      "best_step": 3,
+      "checkpoint": "runs/soft-distillation-smoke/C-T0.50/checkpoints/best.pt",
+      "gameplay": {
+        "average_attempts": 3.9166666666666665,
+        "average_guesses": 3.5,
+        "checkpoint": "in-memory",
+        "decode": "constrained",
+        "games": 72,
+        "invalid_guesses": 0,
+        "win_rate": 0.8333333333333334,
+        "wins": 60
+      },
+      "learning_rate": 1e-05,
+      "mechanics_validation_loss": 0.0017860661655459157,
+      "model": "C",
+      "name": "C-T0.50",
+      "paired_development_games": {
+        "counts": {
+          "both_lose": 12,
+          "both_win": 59,
+          "sft_loses_soft_wins": 1,
+          "sft_wins_soft_loses": 0
+        },
+        "mean_attempt_difference_soft_minus_sft": 0.0,
+        "secrets": [
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "adopt",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "agree",
+            "sft_attempts": 2,
+            "soft_attempts": 2
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "aisle",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "alert",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "alibi",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "alive",
+            "sft_attempts": 5,
+            "soft_attempts": 5
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "amend",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "armor",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "asset",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "award",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "aware",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "badly",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "basin",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "beast",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "sft_loses_soft_wins",
+            "secret": "berry",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "bland",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "bless",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "block",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "brain",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "canoe",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "chose",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "couch",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "cover",
+            "sft_attempts": 5,
+            "soft_attempts": 5
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "crawl",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "dance",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "disco",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "dizzy",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "elbow",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "equip",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "faith",
+            "sft_attempts": 2,
+            "soft_attempts": 2
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "ferry",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "fifty",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "float",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "grown",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "house",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "label",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "lower",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "medal",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "mercy",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "olive",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "orbit",
+            "sft_attempts": 2,
+            "soft_attempts": 2
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "parka",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "party",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "piece",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "pilot",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "power",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "press",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "prime",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "prize",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "raise",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "range",
+            "sft_attempts": 5,
+            "soft_attempts": 5
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "round",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "scarf",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "scout",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "seven",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "shape",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "sheep",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "shout",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "space",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "split",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "stack",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "stale",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "stare",
+            "sft_attempts": 2,
+            "soft_attempts": 2
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "stick",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "straw",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "stuck",
+            "sft_attempts": 2,
+            "soft_attempts": 2
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "sunny",
+            "sft_attempts": 3,
+            "soft_attempts": 3
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "super",
+            "sft_attempts": 4,
+            "soft_attempts": 4
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "today",
+            "sft_attempts": 5,
+            "soft_attempts": 5
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "tower",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_win",
+            "secret": "trail",
+            "sft_attempts": 2,
+            "soft_attempts": 2
+          },
+          {
+            "attempt_difference_soft_minus_sft": 0,
+            "outcome": "both_lose",
+            "secret": "watch",
+            "sft_attempts": 6,
+            "soft_attempts": 6
+          }
+        ]
+      },
+      "policy": {
+        "cross_entropy": 10.158088207244873,
+        "rank1_probability": 0.5165136158466339,
+        "student_entropy": 0.7412572503089905,
+        "teacher_entropy": 2.732564926147461,
+        "teacher_student_kl": 7.425523281097412,
+        "top3_probability": 0.5887862741947174,
+        "top8_probability": 0.6480169892311096
+      },
+      "temperature": 0.5
+    }
+  ],
+  "test_gameplay_evaluated": false
+}

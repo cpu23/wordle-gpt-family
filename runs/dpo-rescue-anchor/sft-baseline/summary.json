@@ -1,0 +1,38 @@
+{
+  "action_regret": {
+    "actions": 282,
+    "games": 72,
+    "illegal_actions": 0,
+    "mean_action_regret": 0.04350873975106511,
+    "median_action_regret": 0.0,
+    "rank_1_fraction": 0.6560283687943262,
+    "top_3_fraction": 0.6702127659574468,
+    "top_8_fraction": 0.6914893617021277
+  },
+  "beta": null,
+  "constrained_average_attempts": 3.9166666666666665,
+  "constrained_average_guesses": 3.457627118644068,
+  "constrained_wins": 59,
+  "label": "sft",
+  "lambda_sft": null,
+  "learning_rate": null,
+  "mechanics_validation_loss": 0.0017920516262490485,
+  "pass": 0.0,
+  "preference": {
+    "chosen_delta_logp": 0.0,
+    "chosen_nll": 3.7127950191497803,
+    "loss": 0.6931474208831787,
+    "policy_chosen_logp": -3.7127950191497803,
+    "policy_margin": 3.795870542526245,
+    "policy_rejected_logp": -7.508666038513184,
+    "preference_accuracy": 0.7555599808692932,
+    "reference_chosen_logp": -3.7127950191497803,
+    "reference_deviation": 0.0,
+    "reference_margin": 3.795870542526245,
+    "reference_rejected_logp": -7.508666038513184,
+    "rejected_delta_logp": 0.0,
+    "total_loss": 0.6931474208831787
+  },
+  "raw_invalid_guesses": 5,
+  "raw_wins": 57
+}

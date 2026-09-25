@@ -1,0 +1,309 @@
+{
+  "training_corpus": "data/grpo-continuations/train.jsonl",
+  "validation_corpus": "data/grpo-continuations/validation.jsonl",
+  "training_corpus_size": 100000,
+  "groups_per_run": 16000,
+  "unique_training_states_visited_per_run": 14781,
+  "rollouts_per_run": 128000,
+  "validation_states": 512,
+  "validation_continuations_per_checkpoint": 4096,
+  "matched_state_order_verified": true,
+  "only_config_differences": [
+    "kl_beta",
+    "output_dir"
+  ],
+  "selected_updates": {
+    "0.02": 0,
+    "0.05": 0,
+    "0.1": 0
+  },
+  "results": [
+    {
+      "beta": 0.02,
+      "updates": 0,
+      "constrained_wins": 59,
+      "average_attempts": 3.9166666666666665,
+      "raw_wins": 57,
+      "fixed_sft_prefix_kl": 0.0,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 0.0,
+        "identical_reward_group_rate": 0.431640625,
+        "mean_group_reward_std": 0.37480618711560965,
+        "mean_guesses_for_winning_rollouts": 4.7869440838801465,
+        "mean_trajectory_reward": 1.50634765625,
+        "raw_prefix_kl_from_sft": 0.0,
+        "sampled_rollout_win_fraction": 0.6806640625,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2788
+      }
+    },
+    {
+      "beta": 0.02,
+      "updates": 100,
+      "constrained_wins": 59,
+      "average_attempts": 3.9166666666666665,
+      "raw_wins": 57,
+      "fixed_sft_prefix_kl": 1.4034723790246062e-05,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 1.8787648129323724e-05,
+        "identical_reward_group_rate": 0.4375,
+        "mean_group_reward_std": 0.3775520594790578,
+        "mean_guesses_for_winning_rollouts": 4.789831741283839,
+        "mean_trajectory_reward": 1.507080078125,
+        "raw_prefix_kl_from_sft": 1.979087004189462e-05,
+        "sampled_rollout_win_fraction": 0.681884765625,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2793
+      }
+    },
+    {
+      "beta": 0.02,
+      "updates": 250,
+      "constrained_wins": 59,
+      "average_attempts": 3.9305555555555554,
+      "raw_wins": 57,
+      "fixed_sft_prefix_kl": 5.9148114814888686e-05,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 8.384388138724784e-05,
+        "identical_reward_group_rate": 0.4296875,
+        "mean_group_reward_std": 0.3827104950323701,
+        "mean_guesses_for_winning_rollouts": 4.78348298612146,
+        "mean_trajectory_reward": 1.507080078125,
+        "raw_prefix_kl_from_sft": 8.830081545683063e-05,
+        "sampled_rollout_win_fraction": 0.679931640625,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2785
+      }
+    },
+    {
+      "beta": 0.02,
+      "updates": 500,
+      "constrained_wins": 57,
+      "average_attempts": 3.9305555555555554,
+      "raw_wins": 56,
+      "fixed_sft_prefix_kl": 0.00020620923896785825,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 0.00029696491151948325,
+        "identical_reward_group_rate": 0.427734375,
+        "mean_group_reward_std": 0.37564102467149496,
+        "mean_guesses_for_winning_rollouts": 4.782859248998228,
+        "mean_trajectory_reward": 1.503173828125,
+        "raw_prefix_kl_from_sft": 0.00031376934590611043,
+        "sampled_rollout_win_fraction": 0.677978515625,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2777
+      }
+    },
+    {
+      "beta": 0.02,
+      "updates": 1000,
+      "constrained_wins": 57,
+      "average_attempts": 3.9722222222222223,
+      "raw_wins": 56,
+      "fixed_sft_prefix_kl": 0.0008147450280375779,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 0.0011547484866732693,
+        "identical_reward_group_rate": 0.423828125,
+        "mean_group_reward_std": 0.37811897322535515,
+        "mean_guesses_for_winning_rollouts": 4.778218480339559,
+        "mean_trajectory_reward": 1.504150390625,
+        "raw_prefix_kl_from_sft": 0.0012201859400575142,
+        "sampled_rollout_win_fraction": 0.677001953125,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2773
+      }
+    },
+    {
+      "beta": 0.05,
+      "updates": 0,
+      "constrained_wins": 59,
+      "average_attempts": 3.9166666666666665,
+      "raw_wins": 57,
+      "fixed_sft_prefix_kl": 0.0,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 0.0,
+        "identical_reward_group_rate": 0.431640625,
+        "mean_group_reward_std": 0.37480618711560965,
+        "mean_guesses_for_winning_rollouts": 4.7869440838801465,
+        "mean_trajectory_reward": 1.50634765625,
+        "raw_prefix_kl_from_sft": 0.0,
+        "sampled_rollout_win_fraction": 0.6806640625,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2788
+      }
+    },
+    {
+      "beta": 0.05,
+      "updates": 100,
+      "constrained_wins": 59,
+      "average_attempts": 3.9166666666666665,
+      "raw_wins": 57,
+      "fixed_sft_prefix_kl": 1.4029918020241894e-05,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 1.8784045833429163e-05,
+        "identical_reward_group_rate": 0.4375,
+        "mean_group_reward_std": 0.3775520594790578,
+        "mean_guesses_for_winning_rollouts": 4.789831741283839,
+        "mean_trajectory_reward": 1.507080078125,
+        "raw_prefix_kl_from_sft": 1.978731530673722e-05,
+        "sampled_rollout_win_fraction": 0.681884765625,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2793
+      }
+    },
+    {
+      "beta": 0.05,
+      "updates": 250,
+      "constrained_wins": 59,
+      "average_attempts": 3.9305555555555554,
+      "raw_wins": 57,
+      "fixed_sft_prefix_kl": 5.9111276641488075e-05,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 8.379257108286229e-05,
+        "identical_reward_group_rate": 0.4296875,
+        "mean_group_reward_std": 0.3827104950323701,
+        "mean_guesses_for_winning_rollouts": 4.78348298612146,
+        "mean_trajectory_reward": 1.507080078125,
+        "raw_prefix_kl_from_sft": 8.824641155581376e-05,
+        "sampled_rollout_win_fraction": 0.679931640625,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2785
+      }
+    },
+    {
+      "beta": 0.05,
+      "updates": 500,
+      "constrained_wins": 57,
+      "average_attempts": 3.9305555555555554,
+      "raw_wins": 56,
+      "fixed_sft_prefix_kl": 0.00020594807574525476,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 0.0002965920446367994,
+        "identical_reward_group_rate": 0.427734375,
+        "mean_group_reward_std": 0.37564102467149496,
+        "mean_guesses_for_winning_rollouts": 4.782859248998228,
+        "mean_trajectory_reward": 1.503173828125,
+        "raw_prefix_kl_from_sft": 0.00031337069913228526,
+        "sampled_rollout_win_fraction": 0.677978515625,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2777
+      }
+    },
+    {
+      "beta": 0.05,
+      "updates": 1000,
+      "constrained_wins": 57,
+      "average_attempts": 3.9722222222222223,
+      "raw_wins": 56,
+      "fixed_sft_prefix_kl": 0.0008126404136419296,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 0.0011516652791430746,
+        "identical_reward_group_rate": 0.423828125,
+        "mean_group_reward_std": 0.3769946228712797,
+        "mean_guesses_for_winning_rollouts": 4.778218480339559,
+        "mean_trajectory_reward": 1.504150390625,
+        "raw_prefix_kl_from_sft": 0.0012178220224533577,
+        "sampled_rollout_win_fraction": 0.677001953125,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2773
+      }
+    },
+    {
+      "beta": 0.1,
+      "updates": 0,
+      "constrained_wins": 59,
+      "average_attempts": 3.9166666666666665,
+      "raw_wins": 57,
+      "fixed_sft_prefix_kl": 0.0,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 0.0,
+        "identical_reward_group_rate": 0.431640625,
+        "mean_group_reward_std": 0.37480618711560965,
+        "mean_guesses_for_winning_rollouts": 4.7869440838801465,
+        "mean_trajectory_reward": 1.50634765625,
+        "raw_prefix_kl_from_sft": 0.0,
+        "sampled_rollout_win_fraction": 0.6806640625,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2788
+      }
+    },
+    {
+      "beta": 0.1,
+      "updates": 100,
+      "constrained_wins": 59,
+      "average_attempts": 3.9166666666666665,
+      "raw_wins": 57,
+      "fixed_sft_prefix_kl": 1.4026708413439337e-05,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 1.877895136888607e-05,
+        "identical_reward_group_rate": 0.4375,
+        "mean_group_reward_std": 0.3775520594790578,
+        "mean_guesses_for_winning_rollouts": 4.789831741283839,
+        "mean_trajectory_reward": 1.507080078125,
+        "raw_prefix_kl_from_sft": 1.9780725632243766e-05,
+        "sampled_rollout_win_fraction": 0.681884765625,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2793
+      }
+    },
+    {
+      "beta": 0.1,
+      "updates": 250,
+      "constrained_wins": 59,
+      "average_attempts": 3.9305555555555554,
+      "raw_wins": 57,
+      "fixed_sft_prefix_kl": 5.905189027544111e-05,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 8.3708285173967e-05,
+        "identical_reward_group_rate": 0.4296875,
+        "mean_group_reward_std": 0.3827104950323701,
+        "mean_guesses_for_winning_rollouts": 4.78348298612146,
+        "mean_trajectory_reward": 1.507080078125,
+        "raw_prefix_kl_from_sft": 8.815731566317202e-05,
+        "sampled_rollout_win_fraction": 0.679931640625,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2785
+      }
+    },
+    {
+      "beta": 0.1,
+      "updates": 500,
+      "constrained_wins": 57,
+      "average_attempts": 3.9305555555555554,
+      "raw_wins": 56,
+      "fixed_sft_prefix_kl": 0.0002055135992122814,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 0.00029596834434771383,
+        "identical_reward_group_rate": 0.427734375,
+        "mean_group_reward_std": 0.37564102467149496,
+        "mean_guesses_for_winning_rollouts": 4.782859248998228,
+        "mean_trajectory_reward": 1.503173828125,
+        "raw_prefix_kl_from_sft": 0.00031270513963010656,
+        "sampled_rollout_win_fraction": 0.677978515625,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2777
+      }
+    },
+    {
+      "beta": 0.1,
+      "updates": 1000,
+      "constrained_wins": 57,
+      "average_attempts": 3.9722222222222223,
+      "raw_wins": 56,
+      "fixed_sft_prefix_kl": 0.0008085579611361027,
+      "continuations": {
+        "constrained_prefix_kl_from_sft": 0.001146234443724531,
+        "identical_reward_group_rate": 0.423828125,
+        "mean_group_reward_std": 0.37811897322535515,
+        "mean_guesses_for_winning_rollouts": 4.778218480339559,
+        "mean_trajectory_reward": 1.504150390625,
+        "raw_prefix_kl_from_sft": 0.0012110612877419217,
+        "sampled_rollout_win_fraction": 0.677001953125,
+        "sampled_rollouts": 4096,
+        "winning_rollouts": 2773
+      }
+    }
+  ],
+  "test_evaluated": false,
+  "conclusion": "No tested beta improves greedy checkpoint ranking over original SFT; no observed final continuation win/reward separation."
+}

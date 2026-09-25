@@ -1,0 +1,274 @@
+{
+  "configuration": {
+    "updates": 1000,
+    "lr": 3e-06,
+    "kl_beta": 0.1,
+    "states_per_update": 16,
+    "guesses_per_state": 64
+  },
+  "evaluations": [
+    {
+      "updates": 0,
+      "training": {
+        "constrained_prefix_kl_from_sft": 0.0,
+        "greedy_mean_information_reward": 2.115194552070836,
+        "greedy_mean_reward": 2.524891840253154,
+        "greedy_mean_reward_regret": 0.06053184917683668,
+        "greedy_mean_solve_probability": 0.20484864409115885,
+        "raw_prefix_kl_from_sft": 0.0,
+        "states": 400,
+        "stochastic_mean_reward": 2.48403055384844
+      },
+      "validation": {
+        "constrained_prefix_kl_from_sft": 0.0,
+        "greedy_mean_information_reward": 2.2041674321977323,
+        "greedy_mean_reward": 2.456066406028034,
+        "greedy_mean_reward_regret": 0.22668233040018848,
+        "greedy_mean_solve_probability": 0.12594948691515087,
+        "raw_prefix_kl_from_sft": 0.0,
+        "states": 400,
+        "stochastic_mean_reward": 2.418271928936973
+      },
+      "constrained_gameplay": {
+        "average_attempts": 3.9166666666666665,
+        "average_guesses": 3.457627118644068,
+        "checkpoint": "update-0",
+        "decode": "constrained",
+        "games": 72,
+        "invalid_guesses": 0,
+        "mean_trajectory_reward": 2.9027777777777777,
+        "win_rate": 0.8194444444444444,
+        "wins": 59
+      },
+      "raw_gameplay": {
+        "average_attempts": 3.7916666666666665,
+        "average_guesses": 3.3684210526315788,
+        "checkpoint": "update-0",
+        "decode": "raw",
+        "games": 72,
+        "invalid_guesses": 5,
+        "mean_trajectory_reward": 2.875,
+        "win_rate": 0.7916666666666666,
+        "wins": 57
+      }
+    },
+    {
+      "updates": 100,
+      "training": {
+        "constrained_prefix_kl_from_sft": 0.0012934294948354363,
+        "greedy_mean_information_reward": 2.1122062585755987,
+        "greedy_mean_reward": 2.5224111574268178,
+        "greedy_mean_reward_regret": 0.06301253200317294,
+        "greedy_mean_solve_probability": 0.20510244942560937,
+        "raw_prefix_kl_from_sft": 0.0013208008254878222,
+        "states": 400,
+        "stochastic_mean_reward": 2.48922958331241
+      },
+      "validation": {
+        "constrained_prefix_kl_from_sft": 0.001138147721067071,
+        "greedy_mean_information_reward": 2.205553774176717,
+        "greedy_mean_reward": 2.4595634062982623,
+        "greedy_mean_reward_regret": 0.22318533012996034,
+        "greedy_mean_solve_probability": 0.12700481606077255,
+        "raw_prefix_kl_from_sft": 0.001202655730303377,
+        "states": 400,
+        "stochastic_mean_reward": 2.4212695375904802
+      },
+      "constrained_gameplay": {
+        "average_attempts": 3.986111111111111,
+        "average_guesses": 3.542372881355932,
+        "checkpoint": "update-100",
+        "decode": "constrained",
+        "games": 72,
+        "invalid_guesses": 0,
+        "mean_trajectory_reward": 2.8333333333333335,
+        "win_rate": 0.8194444444444444,
+        "wins": 59
+      },
+      "raw_gameplay": {
+        "average_attempts": 3.861111111111111,
+        "average_guesses": 3.4464285714285716,
+        "checkpoint": "update-100",
+        "decode": "raw",
+        "games": 72,
+        "invalid_guesses": 7,
+        "mean_trajectory_reward": 2.763888888888889,
+        "win_rate": 0.7777777777777778,
+        "wins": 56
+      }
+    },
+    {
+      "updates": 250,
+      "training": {
+        "constrained_prefix_kl_from_sft": 0.018825682029128075,
+        "greedy_mean_information_reward": 2.115771029175095,
+        "greedy_mean_reward": 2.5362259280263135,
+        "greedy_mean_reward_regret": 0.049197761403677036,
+        "greedy_mean_solve_probability": 0.21022744942560936,
+        "raw_prefix_kl_from_sft": 0.01919287461787462,
+        "states": 400,
+        "stochastic_mean_reward": 2.491997876612848
+      },
+      "validation": {
+        "constrained_prefix_kl_from_sft": 0.018300997614860533,
+        "greedy_mean_information_reward": 2.202776266075448,
+        "greedy_mean_reward": 2.463563675974771,
+        "greedy_mean_reward_regret": 0.21918506045345132,
+        "greedy_mean_solve_probability": 0.13039370494966146,
+        "raw_prefix_kl_from_sft": 0.018803765401244163,
+        "states": 400,
+        "stochastic_mean_reward": 2.4246770098692734
+      },
+      "constrained_gameplay": {
+        "average_attempts": 3.875,
+        "average_guesses": 3.45,
+        "checkpoint": "update-250",
+        "decode": "constrained",
+        "games": 72,
+        "invalid_guesses": 0,
+        "mean_trajectory_reward": 2.9583333333333335,
+        "win_rate": 0.8333333333333334,
+        "wins": 60
+      },
+      "raw_gameplay": {
+        "average_attempts": 3.75,
+        "average_guesses": 3.396551724137931,
+        "checkpoint": "update-250",
+        "decode": "raw",
+        "games": 72,
+        "invalid_guesses": 5,
+        "mean_trajectory_reward": 2.9027777777777777,
+        "win_rate": 0.8055555555555556,
+        "wins": 58
+      }
+    },
+    {
+      "updates": 500,
+      "training": {
+        "constrained_prefix_kl_from_sft": 0.040171112567186355,
+        "greedy_mean_information_reward": 2.1017212541843913,
+        "greedy_mean_reward": 2.5317094863689436,
+        "greedy_mean_reward_regret": 0.053714203061047135,
+        "greedy_mean_solve_probability": 0.21499411609227606,
+        "raw_prefix_kl_from_sft": 0.041419822871685025,
+        "states": 400,
+        "stochastic_mean_reward": 2.4908501163278505
+      },
+      "validation": {
+        "constrained_prefix_kl_from_sft": 0.040342506170272824,
+        "greedy_mean_information_reward": 2.20033798285689,
+        "greedy_mean_reward": 2.4690718213276415,
+        "greedy_mean_reward_regret": 0.213676915100581,
+        "greedy_mean_solve_probability": 0.13436691923537572,
+        "raw_prefix_kl_from_sft": 0.042572878301143646,
+        "states": 400,
+        "stochastic_mean_reward": 2.4323079451073375
+      },
+      "constrained_gameplay": {
+        "average_attempts": 4.097222222222222,
+        "average_guesses": 3.5964912280701755,
+        "checkpoint": "update-500",
+        "decode": "constrained",
+        "games": 72,
+        "invalid_guesses": 0,
+        "mean_trajectory_reward": 2.6944444444444446,
+        "win_rate": 0.7916666666666666,
+        "wins": 57
+      },
+      "raw_gameplay": {
+        "average_attempts": 3.9583333333333335,
+        "average_guesses": 3.490566037735849,
+        "checkpoint": "update-500",
+        "decode": "raw",
+        "games": 72,
+        "invalid_guesses": 8,
+        "mean_trajectory_reward": 2.5833333333333335,
+        "win_rate": 0.7361111111111112,
+        "wins": 53
+      }
+    },
+    {
+      "updates": 1000,
+      "training": {
+        "constrained_prefix_kl_from_sft": 0.1035127991437912,
+        "greedy_mean_information_reward": 2.072385957727798,
+        "greedy_mean_reward": 2.5079985030991634,
+        "greedy_mean_reward_regret": 0.07742518633082708,
+        "greedy_mean_solve_probability": 0.21780627268568267,
+        "raw_prefix_kl_from_sft": 0.10970263957977294,
+        "states": 400,
+        "stochastic_mean_reward": 2.4792276781502416
+      },
+      "validation": {
+        "constrained_prefix_kl_from_sft": 0.11244148537516593,
+        "greedy_mean_information_reward": 2.189422926649616,
+        "greedy_mean_reward": 2.4586537859126643,
+        "greedy_mean_reward_regret": 0.22409495051555833,
+        "greedy_mean_solve_probability": 0.13461542963152406,
+        "raw_prefix_kl_from_sft": 0.12353380918502807,
+        "states": 400,
+        "stochastic_mean_reward": 2.429615005171687
+      },
+      "constrained_gameplay": {
+        "average_attempts": 4.083333333333333,
+        "average_guesses": 3.4444444444444446,
+        "checkpoint": "update-1000",
+        "decode": "constrained",
+        "games": 72,
+        "invalid_guesses": 0,
+        "mean_trajectory_reward": 2.6666666666666665,
+        "win_rate": 0.75,
+        "wins": 54
+      },
+      "raw_gameplay": {
+        "average_attempts": 3.888888888888889,
+        "average_guesses": 3.34,
+        "checkpoint": "update-1000",
+        "decode": "raw",
+        "games": 72,
+        "invalid_guesses": 11,
+        "mean_trajectory_reward": 2.5416666666666665,
+        "win_rate": 0.6944444444444444,
+        "wins": 50
+      }
+    }
+  ],
+  "paired_changes": {
+    "100": {
+      "mean_stochastic_reward_change": 0.002997608653506551,
+      "descriptive_normal_95_interval": [
+        5.882831226899053e-05,
+        0.005936388994744112
+      ]
+    },
+    "250": {
+      "mean_stochastic_reward_change": 0.006405080932300309,
+      "descriptive_normal_95_interval": [
+        0.00020975283279676352,
+        0.012600409031803855
+      ]
+    },
+    "500": {
+      "mean_stochastic_reward_change": 0.014036016170364018,
+      "descriptive_normal_95_interval": [
+        0.0038487362039808723,
+        0.024223296136747164
+      ]
+    },
+    "1000": {
+      "mean_stochastic_reward_change": 0.011343076234713548,
+      "descriptive_normal_95_interval": [
+        -0.005853678784035261,
+        0.028539831253462357
+      ]
+    }
+  },
+  "paired_interval_caveat": "Descriptive state-level normal intervals; repeated/related histories are not independent experimental seeds.",
+  "verified_saved_rewards": 5120,
+  "identical_reward_groups": 1,
+  "total_training_groups": 16000,
+  "opening_groups": 1200,
+  "best_information_update": 500,
+  "best_gameplay_update": 250,
+  "held_out_caveat": "Training-source secrets exclude held-out secrets, but exact counterfactual rewards include all dictionary answers."
+}

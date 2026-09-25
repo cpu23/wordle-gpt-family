@@ -1,0 +1,82 @@
+[
+  {
+    "checkpoint": "checkpoints/update-0.pt",
+    "updates": 0,
+    "validation_key": [
+      59,
+      -3.9166666666666665,
+      -0.04350873975106511,
+      -0.0
+    ]
+  },
+  {
+    "checkpoint": "checkpoints/update-100.pt",
+    "updates": 100,
+    "validation_key": [
+      59,
+      -3.986111111111111,
+      -0.03573626033123178,
+      -0.00023949434398673475
+    ]
+  },
+  {
+    "checkpoint": "checkpoints/update-250.pt",
+    "updates": 250,
+    "validation_key": [
+      57,
+      -4.069444444444445,
+      -0.033926680004707534,
+      -0.0011876659700646996
+    ]
+  },
+  {
+    "checkpoint": "checkpoints/update-500.pt",
+    "updates": 500,
+    "validation_key": [
+      56,
+      -4.069444444444445,
+      -0.027698011062728015,
+      -0.004010561853647232
+    ]
+  },
+  {
+    "checkpoint": "checkpoints/update-1000.pt",
+    "updates": 1000,
+    "validation_key": [
+      54,
+      -4.166666666666667,
+      -0.023718390804597693,
+      -0.0093513960018754
+    ]
+  },
+  {
+    "checkpoint": "checkpoints/update-5000.pt",
+    "updates": 5000,
+    "validation_key": [
+      52,
+      -4.263888888888889,
+      -0.023614950866340013,
+      -0.044010963290929794
+    ]
+  },
+  {
+    "checkpoint": "checkpoints/update-2500.pt",
+    "updates": 2500,
+    "validation_key": [
+      52,
+      -4.277777777777778,
+      -0.02034950343773872,
+      -0.025480041280388832
+    ]
+  },
+  {
+    "checkpoint": "checkpoints/update-10000.pt",
+    "updates": 10000,
+    "validation_key": [
+      49,
+      -4.416666666666667,
+      -0.03576397051989305,
+      -0.060933083295822144
+    ]
+  }
+]

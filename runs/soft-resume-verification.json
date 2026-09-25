@@ -1,0 +1,17 @@
+{
+  "device": "CUDA",
+  "parameters": 7162403,
+  "effective_batch_states": 128,
+  "candidate_actions": 128,
+  "completed_updates": 6,
+  "stop_updates": [
+    2,
+    3,
+    4
+  ],
+  "model_optimizer_rng_and_training_state": "bit-for-bit identical excluding elapsed time",
+  "best_and_last_checkpoints": "bit-for-bit identical tensor values",
+  "focused_tests_passed": 49,
+  "legacy_run": "refused without file-content or modification-time changes",
+  "real_experiment_restarted": false
+}

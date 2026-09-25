@@ -1,0 +1,154 @@
+{
+  "temperature": 0.25,
+  "tie_definition": "Equal minimum expected-survivor cost before singleton one-hot override",
+  "populations": {
+    "corpus": {
+      "singleton": {
+        "states": 411937,
+        "full_optimal_ties": 719.0,
+        "full_answer_mass": 1.0,
+        "full_optimal_mass": 1.0,
+        "candidate_optimal_ties": 128.0,
+        "candidate_answer_mass": 1.0,
+        "candidate_optimal_mass": 1.0,
+        "remaining_answers_omitted": 0.0,
+        "fraction_multiple_optimal_candidates": 1.0,
+        "fraction_any_remaining_answers_omitted": 0.0
+      },
+      "N2": {
+        "states": 124416,
+        "full_optimal_ties": 354.9016927083333,
+        "full_answer_mass": 0.006381498605629336,
+        "full_optimal_mass": 0.9137234167517502,
+        "candidate_optimal_ties": 89.13916216563786,
+        "candidate_answer_mass": 0.023047995000687892,
+        "candidate_optimal_mass": 0.9683285546637316,
+        "remaining_answers_omitted": 0.0,
+        "fraction_multiple_optimal_candidates": 1.0,
+        "fraction_any_remaining_answers_omitted": 0.0
+      },
+      "N3-5": {
+        "states": 166523,
+        "full_optimal_ties": 126.90206758225591,
+        "full_answer_mass": 0.017318534442967607,
+        "full_optimal_mass": 0.5828300329318069,
+        "candidate_optimal_ties": 48.73854662719264,
+        "candidate_answer_mass": 0.04182714578457833,
+        "candidate_optimal_mass": 0.7849097647784603,
+        "remaining_answers_omitted": 0.9397320490262606,
+        "fraction_multiple_optimal_candidates": 0.9865183788425623,
+        "fraction_any_remaining_answers_omitted": 0.5402316797079082
+      },
+      "N6-20": {
+        "states": 200259,
+        "full_optimal_ties": 12.293260228004733,
+        "full_answer_mass": 0.06600935159134054,
+        "full_optimal_mass": 0.14462967791911108,
+        "candidate_optimal_ties": 9.641743941595633,
+        "candidate_answer_mass": 0.10783278916903749,
+        "candidate_optimal_mass": 0.27990763882070985,
+        "remaining_answers_omitted": 5.08426587569098,
+        "fraction_multiple_optimal_candidates": 0.7645299337358121,
+        "fraction_any_remaining_answers_omitted": 0.9654197813831089
+      },
+      "N21-100": {
+        "states": 87512,
+        "full_optimal_ties": 1.3442613584422707,
+        "full_answer_mass": 0.2780020595508066,
+        "full_optimal_mass": 0.048573699542016895,
+        "candidate_optimal_ties": 1.3442613584422707,
+        "candidate_answer_mass": 0.3688261374084705,
+        "candidate_optimal_mass": 0.0844690288437254,
+        "remaining_answers_omitted": 22.820047536337874,
+        "fraction_multiple_optimal_candidates": 0.234870646311363,
+        "fraction_any_remaining_answers_omitted": 0.9999771459914069
+      },
+      "N101+": {
+        "states": 9353,
+        "full_optimal_ties": 1.031647599700631,
+        "full_answer_mass": 0.710841744712161,
+        "full_optimal_mass": 0.04977664813550538,
+        "candidate_optimal_ties": 1.031647599700631,
+        "candidate_answer_mass": 0.8384984258026699,
+        "candidate_optimal_mass": 0.07883821845982741,
+        "remaining_answers_omitted": 82.11899925157704,
+        "fraction_multiple_optimal_candidates": 0.03111301186784989,
+        "fraction_any_remaining_answers_omitted": 1.0
+      }
+    },
+    "panel": {
+      "singleton": {
+        "states": 200,
+        "full_optimal_ties": 719.0,
+        "full_answer_mass": 1.0,
+        "full_optimal_mass": 1.0,
+        "candidate_optimal_ties": 128.0,
+        "candidate_answer_mass": 1.0,
+        "candidate_optimal_mass": 1.0,
+        "remaining_answers_omitted": 0.0,
+        "fraction_multiple_optimal_candidates": 1.0,
+        "fraction_any_remaining_answers_omitted": 0.0
+      },
+      "N2": {
+        "states": 57,
+        "full_optimal_ties": 378.8421052631579,
+        "full_answer_mass": 0.005981373743809061,
+        "full_optimal_mass": 0.9233130759400429,
+        "candidate_optimal_ties": 91.80701754385964,
+        "candidate_answer_mass": 0.022381546671162676,
+        "candidate_optimal_mass": 0.9711720675363725,
+        "remaining_answers_omitted": 0.0,
+        "fraction_multiple_optimal_candidates": 1.0,
+        "fraction_any_remaining_answers_omitted": 0.0
+      },
+      "N3-5": {
+        "states": 95,
+        "full_optimal_ties": 120.09473684210526,
+        "full_answer_mass": 0.01723005519663191,
+        "full_optimal_mass": 0.5983525409261448,
+        "candidate_optimal_ties": 49.32631578947368,
+        "candidate_answer_mass": 0.04178066006127503,
+        "candidate_optimal_mass": 0.8125915008373308,
+        "remaining_answers_omitted": 0.9473684210526315,
+        "fraction_multiple_optimal_candidates": 1.0,
+        "fraction_any_remaining_answers_omitted": 0.5578947368421052
+      },
+      "N6-20": {
+        "states": 106,
+        "full_optimal_ties": 14.481132075471699,
+        "full_answer_mass": 0.05682888878226924,
+        "full_optimal_mass": 0.15658154498567692,
+        "candidate_optimal_ties": 11.283018867924529,
+        "candidate_answer_mass": 0.09502662768740691,
+        "candidate_optimal_mass": 0.3065842015041118,
+        "remaining_answers_omitted": 5.113207547169812,
+        "fraction_multiple_optimal_candidates": 0.7641509433962265,
+        "fraction_any_remaining_answers_omitted": 0.9716981132075472
+      },
+      "N21-100": {
+        "states": 49,
+        "full_optimal_ties": 1.346938775510204,
+        "full_answer_mass": 0.284003776891246,
+        "full_optimal_mass": 0.04774976814831302,
+        "candidate_optimal_ties": 1.346938775510204,
+        "candidate_answer_mass": 0.3842501799596771,
+        "candidate_optimal_mass": 0.08421510027767003,
+        "remaining_answers_omitted": 22.755102040816325,
+        "fraction_multiple_optimal_candidates": 0.16326530612244897,
+        "fraction_any_remaining_answers_omitted": 1.0
+      },
+      "N101+": {
+        "states": 5,
+        "full_optimal_ties": 1.0,
+        "full_answer_mass": 0.6985934957440401,
+        "full_optimal_mass": 0.055981742214174915,
+        "candidate_optimal_ties": 1.0,
+        "candidate_answer_mass": 0.8101235795288906,
+        "candidate_optimal_mass": 0.08370051950622336,
+        "remaining_answers_omitted": 76.4,
+        "fraction_multiple_optimal_candidates": 0.0,
+        "fraction_any_remaining_answers_omitted": 1.0
+      }
+    }
+  }
+}

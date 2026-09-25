@@ -1,0 +1,7 @@
+{
+  "base_checkpoint": "runs/scaling-cv5-1m/seed-1/fold-3/7.2m/checkpoints/best.pt",
+  "base_checkpoint_sha256": "823308288bb67e4c81645ba73717412a4e238cea9b731c398d25de032f6f3e32",
+  "checkpoint": "runs/dpo-cv5-7.2m/seed-1/fold-3/checkpoints/best.pt",
+  "checkpoint_sha256": "d06a90b2cc4c1f39d988d383ffa6826f34a699db372f373e3ed5abfb746b709c",
+  "evaluations": 6
+}

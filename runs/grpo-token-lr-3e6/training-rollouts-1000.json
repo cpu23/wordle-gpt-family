@@ -1,0 +1,3605 @@
+[
+  {
+    "attempts": 6,
+    "group": 0,
+    "guesses": [
+      "quick",
+      "click",
+      "which",
+      "sport",
+      "shall",
+      "shelf"
+    ],
+    "member": 0,
+    "reward": 1.0,
+    "secret": "shelf",
+    "source_index": 960506,
+    "starting_history": [
+      [
+        "quick",
+        "XXXXX"
+      ],
+      [
+        "click",
+        "XYXXX"
+      ],
+      [
+        "which",
+        "XGXXX"
+      ],
+      [
+        "sport",
+        "GXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 0,
+    "guesses": [
+      "quick",
+      "click",
+      "which",
+      "sport",
+      "shall",
+      "shelf"
+    ],
+    "member": 1,
+    "reward": 1.0,
+    "secret": "shelf",
+    "source_index": 960506,
+    "starting_history": [
+      [
+        "quick",
+        "XXXXX"
+      ],
+      [
+        "click",
+        "XYXXX"
+      ],
+      [
+        "which",
+        "XGXXX"
+      ],
+      [
+        "sport",
+        "GXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 0,
+    "guesses": [
+      "quick",
+      "click",
+      "which",
+      "sport",
+      "shall",
+      "shelf"
+    ],
+    "member": 2,
+    "reward": 1.0,
+    "secret": "shelf",
+    "source_index": 960506,
+    "starting_history": [
+      [
+        "quick",
+        "XXXXX"
+      ],
+      [
+        "click",
+        "XYXXX"
+      ],
+      [
+        "which",
+        "XGXXX"
+      ],
+      [
+        "sport",
+        "GXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 0,
+    "guesses": [
+      "quick",
+      "click",
+      "which",
+      "sport",
+      "shall",
+      "shelf"
+    ],
+    "member": 3,
+    "reward": 1.0,
+    "secret": "shelf",
+    "source_index": 960506,
+    "starting_history": [
+      [
+        "quick",
+        "XXXXX"
+      ],
+      [
+        "click",
+        "XYXXX"
+      ],
+      [
+        "which",
+        "XGXXX"
+      ],
+      [
+        "sport",
+        "GXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 0,
+    "guesses": [
+      "quick",
+      "click",
+      "which",
+      "sport",
+      "shelf"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "shelf",
+    "source_index": 960506,
+    "starting_history": [
+      [
+        "quick",
+        "XXXXX"
+      ],
+      [
+        "click",
+        "XYXXX"
+      ],
+      [
+        "which",
+        "XGXXX"
+      ],
+      [
+        "sport",
+        "GXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 0,
+    "guesses": [
+      "quick",
+      "click",
+      "which",
+      "sport",
+      "shall",
+      "shelf"
+    ],
+    "member": 5,
+    "reward": 1.0,
+    "secret": "shelf",
+    "source_index": 960506,
+    "starting_history": [
+      [
+        "quick",
+        "XXXXX"
+      ],
+      [
+        "click",
+        "XYXXX"
+      ],
+      [
+        "which",
+        "XGXXX"
+      ],
+      [
+        "sport",
+        "GXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 0,
+    "guesses": [
+      "quick",
+      "click",
+      "which",
+      "sport",
+      "shall",
+      "shelf"
+    ],
+    "member": 6,
+    "reward": 1.0,
+    "secret": "shelf",
+    "source_index": 960506,
+    "starting_history": [
+      [
+        "quick",
+        "XXXXX"
+      ],
+      [
+        "click",
+        "XYXXX"
+      ],
+      [
+        "which",
+        "XGXXX"
+      ],
+      [
+        "sport",
+        "GXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 0,
+    "guesses": [
+      "quick",
+      "click",
+      "which",
+      "sport",
+      "shall",
+      "shelf"
+    ],
+    "member": 7,
+    "reward": 1.0,
+    "secret": "shelf",
+    "source_index": 960506,
+    "starting_history": [
+      [
+        "quick",
+        "XXXXX"
+      ],
+      [
+        "click",
+        "XYXXX"
+      ],
+      [
+        "which",
+        "XGXXX"
+      ],
+      [
+        "sport",
+        "GXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 1,
+    "guesses": [
+      "alias",
+      "salad",
+      "comet",
+      "happy"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "happy",
+    "source_index": 867623,
+    "starting_history": [
+      [
+        "alias",
+        "YXXXX"
+      ],
+      [
+        "salad",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 1,
+    "guesses": [
+      "alias",
+      "salad",
+      "comet",
+      "happy"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "happy",
+    "source_index": 867623,
+    "starting_history": [
+      [
+        "alias",
+        "YXXXX"
+      ],
+      [
+        "salad",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 1,
+    "guesses": [
+      "alias",
+      "salad",
+      "comet",
+      "happy"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "happy",
+    "source_index": 867623,
+    "starting_history": [
+      [
+        "alias",
+        "YXXXX"
+      ],
+      [
+        "salad",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 1,
+    "guesses": [
+      "alias",
+      "salad",
+      "comet",
+      "happy"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "happy",
+    "source_index": 867623,
+    "starting_history": [
+      [
+        "alias",
+        "YXXXX"
+      ],
+      [
+        "salad",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 1,
+    "guesses": [
+      "alias",
+      "salad",
+      "comet",
+      "happy"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "happy",
+    "source_index": 867623,
+    "starting_history": [
+      [
+        "alias",
+        "YXXXX"
+      ],
+      [
+        "salad",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 1,
+    "guesses": [
+      "alias",
+      "salad",
+      "comet",
+      "happy"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "happy",
+    "source_index": 867623,
+    "starting_history": [
+      [
+        "alias",
+        "YXXXX"
+      ],
+      [
+        "salad",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 1,
+    "guesses": [
+      "alias",
+      "salad",
+      "comet",
+      "happy"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "happy",
+    "source_index": 867623,
+    "starting_history": [
+      [
+        "alias",
+        "YXXXX"
+      ],
+      [
+        "salad",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 1,
+    "guesses": [
+      "alias",
+      "salad",
+      "comet",
+      "happy"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "happy",
+    "source_index": 867623,
+    "starting_history": [
+      [
+        "alias",
+        "YXXXX"
+      ],
+      [
+        "salad",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 2,
+    "guesses": [
+      "crown",
+      "mount",
+      "empty",
+      "noble"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "noble",
+    "source_index": 684414,
+    "starting_history": [
+      [
+        "crown",
+        "XXYXY"
+      ],
+      [
+        "mount",
+        "XGXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 2,
+    "guesses": [
+      "crown",
+      "mount",
+      "noble"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "noble",
+    "source_index": 684414,
+    "starting_history": [
+      [
+        "crown",
+        "XXYXY"
+      ],
+      [
+        "mount",
+        "XGXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 2,
+    "guesses": [
+      "crown",
+      "mount",
+      "noble"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "noble",
+    "source_index": 684414,
+    "starting_history": [
+      [
+        "crown",
+        "XXYXY"
+      ],
+      [
+        "mount",
+        "XGXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 2,
+    "guesses": [
+      "crown",
+      "mount",
+      "noble"
+    ],
+    "member": 3,
+    "reward": 4.0,
+    "secret": "noble",
+    "source_index": 684414,
+    "starting_history": [
+      [
+        "crown",
+        "XXYXY"
+      ],
+      [
+        "mount",
+        "XGXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 2,
+    "guesses": [
+      "crown",
+      "mount",
+      "empty",
+      "noble"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "noble",
+    "source_index": 684414,
+    "starting_history": [
+      [
+        "crown",
+        "XXYXY"
+      ],
+      [
+        "mount",
+        "XGXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 2,
+    "guesses": [
+      "crown",
+      "mount",
+      "noble"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "noble",
+    "source_index": 684414,
+    "starting_history": [
+      [
+        "crown",
+        "XXYXY"
+      ],
+      [
+        "mount",
+        "XGXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 2,
+    "guesses": [
+      "crown",
+      "mount",
+      "noble"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "noble",
+    "source_index": 684414,
+    "starting_history": [
+      [
+        "crown",
+        "XXYXY"
+      ],
+      [
+        "mount",
+        "XGXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 2,
+    "guesses": [
+      "crown",
+      "mount",
+      "noble"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "noble",
+    "source_index": 684414,
+    "starting_history": [
+      [
+        "crown",
+        "XXYXY"
+      ],
+      [
+        "mount",
+        "XGXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 3,
+    "guesses": [
+      "angel",
+      "black",
+      "proud",
+      "front"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "front",
+    "source_index": 132111,
+    "starting_history": [
+      [
+        "angel",
+        "XYXXX"
+      ],
+      [
+        "black",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 3,
+    "guesses": [
+      "angel",
+      "black",
+      "sport",
+      "front"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "front",
+    "source_index": 132111,
+    "starting_history": [
+      [
+        "angel",
+        "XYXXX"
+      ],
+      [
+        "black",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 3,
+    "guesses": [
+      "angel",
+      "black",
+      "fruit",
+      "front"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "front",
+    "source_index": 132111,
+    "starting_history": [
+      [
+        "angel",
+        "XYXXX"
+      ],
+      [
+        "black",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 3,
+    "guesses": [
+      "angel",
+      "black",
+      "print",
+      "front"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "front",
+    "source_index": 132111,
+    "starting_history": [
+      [
+        "angel",
+        "XYXXX"
+      ],
+      [
+        "black",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 3,
+    "guesses": [
+      "angel",
+      "black",
+      "fruit",
+      "front"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "front",
+    "source_index": 132111,
+    "starting_history": [
+      [
+        "angel",
+        "XYXXX"
+      ],
+      [
+        "black",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 3,
+    "guesses": [
+      "angel",
+      "black",
+      "fruit",
+      "front"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "front",
+    "source_index": 132111,
+    "starting_history": [
+      [
+        "angel",
+        "XYXXX"
+      ],
+      [
+        "black",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 3,
+    "guesses": [
+      "angel",
+      "black",
+      "fruit",
+      "front"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "front",
+    "source_index": 132111,
+    "starting_history": [
+      [
+        "angel",
+        "XYXXX"
+      ],
+      [
+        "black",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 3,
+    "guesses": [
+      "angel",
+      "black",
+      "print",
+      "front"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "front",
+    "source_index": 132111,
+    "starting_history": [
+      [
+        "angel",
+        "XYXXX"
+      ],
+      [
+        "black",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 4,
+    "guesses": [
+      "cling",
+      "might",
+      "diver",
+      "virus"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "virus",
+    "source_index": 90958,
+    "starting_history": [
+      [
+        "cling",
+        "XXYXX"
+      ],
+      [
+        "might",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 4,
+    "guesses": [
+      "cling",
+      "might",
+      "diver",
+      "virus"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "virus",
+    "source_index": 90958,
+    "starting_history": [
+      [
+        "cling",
+        "XXYXX"
+      ],
+      [
+        "might",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 4,
+    "guesses": [
+      "cling",
+      "might",
+      "diver",
+      "virus"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "virus",
+    "source_index": 90958,
+    "starting_history": [
+      [
+        "cling",
+        "XXYXX"
+      ],
+      [
+        "might",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 4,
+    "guesses": [
+      "cling",
+      "might",
+      "diver",
+      "virus"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "virus",
+    "source_index": 90958,
+    "starting_history": [
+      [
+        "cling",
+        "XXYXX"
+      ],
+      [
+        "might",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 4,
+    "guesses": [
+      "cling",
+      "might",
+      "diver",
+      "virus"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "virus",
+    "source_index": 90958,
+    "starting_history": [
+      [
+        "cling",
+        "XXYXX"
+      ],
+      [
+        "might",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 4,
+    "guesses": [
+      "cling",
+      "might",
+      "diver",
+      "virus"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "virus",
+    "source_index": 90958,
+    "starting_history": [
+      [
+        "cling",
+        "XXYXX"
+      ],
+      [
+        "might",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 4,
+    "guesses": [
+      "cling",
+      "might",
+      "diver",
+      "virus"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "virus",
+    "source_index": 90958,
+    "starting_history": [
+      [
+        "cling",
+        "XXYXX"
+      ],
+      [
+        "might",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 4,
+    "guesses": [
+      "cling",
+      "might",
+      "diver",
+      "virus"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "virus",
+    "source_index": 90958,
+    "starting_history": [
+      [
+        "cling",
+        "XXYXX"
+      ],
+      [
+        "might",
+        "XGXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 5,
+    "guesses": [
+      "pilot",
+      "crate",
+      "teach",
+      "waste"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "waste",
+    "source_index": 295522,
+    "starting_history": [
+      [
+        "pilot",
+        "XXXXY"
+      ],
+      [
+        "crate",
+        "XXYGG"
+      ],
+      [
+        "teach",
+        "YYYXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 5,
+    "guesses": [
+      "pilot",
+      "crate",
+      "teach",
+      "waste"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "waste",
+    "source_index": 295522,
+    "starting_history": [
+      [
+        "pilot",
+        "XXXXY"
+      ],
+      [
+        "crate",
+        "XXYGG"
+      ],
+      [
+        "teach",
+        "YYYXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 5,
+    "guesses": [
+      "pilot",
+      "crate",
+      "teach",
+      "waste"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "waste",
+    "source_index": 295522,
+    "starting_history": [
+      [
+        "pilot",
+        "XXXXY"
+      ],
+      [
+        "crate",
+        "XXYGG"
+      ],
+      [
+        "teach",
+        "YYYXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 5,
+    "guesses": [
+      "pilot",
+      "crate",
+      "teach",
+      "waste"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "waste",
+    "source_index": 295522,
+    "starting_history": [
+      [
+        "pilot",
+        "XXXXY"
+      ],
+      [
+        "crate",
+        "XXYGG"
+      ],
+      [
+        "teach",
+        "YYYXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 5,
+    "guesses": [
+      "pilot",
+      "crate",
+      "teach",
+      "waste"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "waste",
+    "source_index": 295522,
+    "starting_history": [
+      [
+        "pilot",
+        "XXXXY"
+      ],
+      [
+        "crate",
+        "XXYGG"
+      ],
+      [
+        "teach",
+        "YYYXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 5,
+    "guesses": [
+      "pilot",
+      "crate",
+      "teach",
+      "waste"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "waste",
+    "source_index": 295522,
+    "starting_history": [
+      [
+        "pilot",
+        "XXXXY"
+      ],
+      [
+        "crate",
+        "XXYGG"
+      ],
+      [
+        "teach",
+        "YYYXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 5,
+    "guesses": [
+      "pilot",
+      "crate",
+      "teach",
+      "waste"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "waste",
+    "source_index": 295522,
+    "starting_history": [
+      [
+        "pilot",
+        "XXXXY"
+      ],
+      [
+        "crate",
+        "XXYGG"
+      ],
+      [
+        "teach",
+        "YYYXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 5,
+    "guesses": [
+      "pilot",
+      "crate",
+      "teach",
+      "waste"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "waste",
+    "source_index": 295522,
+    "starting_history": [
+      [
+        "pilot",
+        "XXXXY"
+      ],
+      [
+        "crate",
+        "XXYGG"
+      ],
+      [
+        "teach",
+        "YYYXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 6,
+    "guesses": [
+      "drove",
+      "chant",
+      "ranch",
+      "chalk",
+      "champ"
+    ],
+    "member": 0,
+    "reward": 2.0,
+    "secret": "champ",
+    "source_index": 587938,
+    "starting_history": [
+      [
+        "drove",
+        "XXXXX"
+      ],
+      [
+        "chant",
+        "GGGXX"
+      ],
+      [
+        "ranch",
+        "XYXYY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 6,
+    "guesses": [
+      "drove",
+      "chant",
+      "ranch",
+      "chalk",
+      "champ"
+    ],
+    "member": 1,
+    "reward": 2.0,
+    "secret": "champ",
+    "source_index": 587938,
+    "starting_history": [
+      [
+        "drove",
+        "XXXXX"
+      ],
+      [
+        "chant",
+        "GGGXX"
+      ],
+      [
+        "ranch",
+        "XYXYY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 6,
+    "guesses": [
+      "drove",
+      "chant",
+      "ranch",
+      "chalk",
+      "champ"
+    ],
+    "member": 2,
+    "reward": 2.0,
+    "secret": "champ",
+    "source_index": 587938,
+    "starting_history": [
+      [
+        "drove",
+        "XXXXX"
+      ],
+      [
+        "chant",
+        "GGGXX"
+      ],
+      [
+        "ranch",
+        "XYXYY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 6,
+    "guesses": [
+      "drove",
+      "chant",
+      "ranch",
+      "chalk",
+      "champ"
+    ],
+    "member": 3,
+    "reward": 2.0,
+    "secret": "champ",
+    "source_index": 587938,
+    "starting_history": [
+      [
+        "drove",
+        "XXXXX"
+      ],
+      [
+        "chant",
+        "GGGXX"
+      ],
+      [
+        "ranch",
+        "XYXYY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 6,
+    "guesses": [
+      "drove",
+      "chant",
+      "ranch",
+      "chalk",
+      "champ"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "champ",
+    "source_index": 587938,
+    "starting_history": [
+      [
+        "drove",
+        "XXXXX"
+      ],
+      [
+        "chant",
+        "GGGXX"
+      ],
+      [
+        "ranch",
+        "XYXYY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 6,
+    "guesses": [
+      "drove",
+      "chant",
+      "ranch",
+      "chalk",
+      "champ"
+    ],
+    "member": 5,
+    "reward": 2.0,
+    "secret": "champ",
+    "source_index": 587938,
+    "starting_history": [
+      [
+        "drove",
+        "XXXXX"
+      ],
+      [
+        "chant",
+        "GGGXX"
+      ],
+      [
+        "ranch",
+        "XYXYY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 6,
+    "guesses": [
+      "drove",
+      "chant",
+      "ranch",
+      "chalk",
+      "champ"
+    ],
+    "member": 6,
+    "reward": 2.0,
+    "secret": "champ",
+    "source_index": 587938,
+    "starting_history": [
+      [
+        "drove",
+        "XXXXX"
+      ],
+      [
+        "chant",
+        "GGGXX"
+      ],
+      [
+        "ranch",
+        "XYXYY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 6,
+    "guesses": [
+      "drove",
+      "chant",
+      "ranch",
+      "chalk",
+      "champ"
+    ],
+    "member": 7,
+    "reward": 2.0,
+    "secret": "champ",
+    "source_index": 587938,
+    "starting_history": [
+      [
+        "drove",
+        "XXXXX"
+      ],
+      [
+        "chant",
+        "GGGXX"
+      ],
+      [
+        "ranch",
+        "XYXYY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "given",
+      "crime",
+      "being"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "being",
+    "source_index": 173420,
+    "starting_history": [
+      [
+        "irate",
+        "YXXXY"
+      ],
+      [
+        "given",
+        "YYXYY"
+      ],
+      [
+        "crime",
+        "XXGXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "given",
+      "crime",
+      "being"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "being",
+    "source_index": 173420,
+    "starting_history": [
+      [
+        "irate",
+        "YXXXY"
+      ],
+      [
+        "given",
+        "YYXYY"
+      ],
+      [
+        "crime",
+        "XXGXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "given",
+      "crime",
+      "being"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "being",
+    "source_index": 173420,
+    "starting_history": [
+      [
+        "irate",
+        "YXXXY"
+      ],
+      [
+        "given",
+        "YYXYY"
+      ],
+      [
+        "crime",
+        "XXGXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "given",
+      "crime",
+      "being"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "being",
+    "source_index": 173420,
+    "starting_history": [
+      [
+        "irate",
+        "YXXXY"
+      ],
+      [
+        "given",
+        "YYXYY"
+      ],
+      [
+        "crime",
+        "XXGXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "given",
+      "crime",
+      "being"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "being",
+    "source_index": 173420,
+    "starting_history": [
+      [
+        "irate",
+        "YXXXY"
+      ],
+      [
+        "given",
+        "YYXYY"
+      ],
+      [
+        "crime",
+        "XXGXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "given",
+      "crime",
+      "being"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "being",
+    "source_index": 173420,
+    "starting_history": [
+      [
+        "irate",
+        "YXXXY"
+      ],
+      [
+        "given",
+        "YYXYY"
+      ],
+      [
+        "crime",
+        "XXGXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "given",
+      "crime",
+      "being"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "being",
+    "source_index": 173420,
+    "starting_history": [
+      [
+        "irate",
+        "YXXXY"
+      ],
+      [
+        "given",
+        "YYXYY"
+      ],
+      [
+        "crime",
+        "XXGXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 7,
+    "guesses": [
+      "irate",
+      "given",
+      "crime",
+      "being"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "being",
+    "source_index": 173420,
+    "starting_history": [
+      [
+        "irate",
+        "YXXXY"
+      ],
+      [
+        "given",
+        "YYXYY"
+      ],
+      [
+        "crime",
+        "XXGXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 8,
+    "guesses": [
+      "kneel",
+      "delay",
+      "anger",
+      "beast",
+      "peach"
+    ],
+    "member": 0,
+    "reward": 2.0,
+    "secret": "peach",
+    "source_index": 501504,
+    "starting_history": [
+      [
+        "kneel",
+        "XXYXX"
+      ],
+      [
+        "delay",
+        "XGXYX"
+      ],
+      [
+        "anger",
+        "YXXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 8,
+    "guesses": [
+      "kneel",
+      "delay",
+      "anger",
+      "batch",
+      "peach"
+    ],
+    "member": 1,
+    "reward": 2.0,
+    "secret": "peach",
+    "source_index": 501504,
+    "starting_history": [
+      [
+        "kneel",
+        "XXYXX"
+      ],
+      [
+        "delay",
+        "XGXYX"
+      ],
+      [
+        "anger",
+        "YXXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 8,
+    "guesses": [
+      "kneel",
+      "delay",
+      "anger",
+      "peach"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "peach",
+    "source_index": 501504,
+    "starting_history": [
+      [
+        "kneel",
+        "XXYXX"
+      ],
+      [
+        "delay",
+        "XGXYX"
+      ],
+      [
+        "anger",
+        "YXXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 8,
+    "guesses": [
+      "kneel",
+      "delay",
+      "anger",
+      "batch",
+      "peach"
+    ],
+    "member": 3,
+    "reward": 2.0,
+    "secret": "peach",
+    "source_index": 501504,
+    "starting_history": [
+      [
+        "kneel",
+        "XXYXX"
+      ],
+      [
+        "delay",
+        "XGXYX"
+      ],
+      [
+        "anger",
+        "YXXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 8,
+    "guesses": [
+      "kneel",
+      "delay",
+      "anger",
+      "basic",
+      "peach"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "peach",
+    "source_index": 501504,
+    "starting_history": [
+      [
+        "kneel",
+        "XXYXX"
+      ],
+      [
+        "delay",
+        "XGXYX"
+      ],
+      [
+        "anger",
+        "YXXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 8,
+    "guesses": [
+      "kneel",
+      "delay",
+      "anger",
+      "batch",
+      "peach"
+    ],
+    "member": 5,
+    "reward": 2.0,
+    "secret": "peach",
+    "source_index": 501504,
+    "starting_history": [
+      [
+        "kneel",
+        "XXYXX"
+      ],
+      [
+        "delay",
+        "XGXYX"
+      ],
+      [
+        "anger",
+        "YXXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 8,
+    "guesses": [
+      "kneel",
+      "delay",
+      "anger",
+      "beast",
+      "peach"
+    ],
+    "member": 6,
+    "reward": 2.0,
+    "secret": "peach",
+    "source_index": 501504,
+    "starting_history": [
+      [
+        "kneel",
+        "XXYXX"
+      ],
+      [
+        "delay",
+        "XGXYX"
+      ],
+      [
+        "anger",
+        "YXXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 8,
+    "guesses": [
+      "kneel",
+      "delay",
+      "anger",
+      "beast",
+      "peach"
+    ],
+    "member": 7,
+    "reward": 2.0,
+    "secret": "peach",
+    "source_index": 501504,
+    "starting_history": [
+      [
+        "kneel",
+        "XXYXX"
+      ],
+      [
+        "delay",
+        "XGXYX"
+      ],
+      [
+        "anger",
+        "YXXYX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 9,
+    "guesses": [
+      "agile",
+      "motor",
+      "sorry"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "sorry",
+    "source_index": 264076,
+    "starting_history": [
+      [
+        "agile",
+        "XXXXX"
+      ],
+      [
+        "motor",
+        "XGXXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 9,
+    "guesses": [
+      "agile",
+      "motor",
+      "sorry"
+    ],
+    "member": 1,
+    "reward": 4.0,
+    "secret": "sorry",
+    "source_index": 264076,
+    "starting_history": [
+      [
+        "agile",
+        "XXXXX"
+      ],
+      [
+        "motor",
+        "XGXXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 9,
+    "guesses": [
+      "agile",
+      "motor",
+      "sorry"
+    ],
+    "member": 2,
+    "reward": 4.0,
+    "secret": "sorry",
+    "source_index": 264076,
+    "starting_history": [
+      [
+        "agile",
+        "XXXXX"
+      ],
+      [
+        "motor",
+        "XGXXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 9,
+    "guesses": [
+      "agile",
+      "motor",
+      "rough",
+      "sorry"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "sorry",
+    "source_index": 264076,
+    "starting_history": [
+      [
+        "agile",
+        "XXXXX"
+      ],
+      [
+        "motor",
+        "XGXXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 9,
+    "guesses": [
+      "agile",
+      "motor",
+      "sorry"
+    ],
+    "member": 4,
+    "reward": 4.0,
+    "secret": "sorry",
+    "source_index": 264076,
+    "starting_history": [
+      [
+        "agile",
+        "XXXXX"
+      ],
+      [
+        "motor",
+        "XGXXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 9,
+    "guesses": [
+      "agile",
+      "motor",
+      "rough",
+      "sorry"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "sorry",
+    "source_index": 264076,
+    "starting_history": [
+      [
+        "agile",
+        "XXXXX"
+      ],
+      [
+        "motor",
+        "XGXXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 9,
+    "guesses": [
+      "agile",
+      "motor",
+      "sorry"
+    ],
+    "member": 6,
+    "reward": 4.0,
+    "secret": "sorry",
+    "source_index": 264076,
+    "starting_history": [
+      [
+        "agile",
+        "XXXXX"
+      ],
+      [
+        "motor",
+        "XGXXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 9,
+    "guesses": [
+      "agile",
+      "motor",
+      "sorry"
+    ],
+    "member": 7,
+    "reward": 4.0,
+    "secret": "sorry",
+    "source_index": 264076,
+    "starting_history": [
+      [
+        "agile",
+        "XXXXX"
+      ],
+      [
+        "motor",
+        "XGXXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 10,
+    "guesses": [
+      "shine",
+      "abate",
+      "cloud",
+      "force"
+    ],
+    "member": 0,
+    "reward": 3.0,
+    "secret": "force",
+    "source_index": 489677,
+    "starting_history": [
+      [
+        "shine",
+        "XXXXG"
+      ],
+      [
+        "abate",
+        "XXXXG"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 10,
+    "guesses": [
+      "shine",
+      "abate",
+      "lodge",
+      "force"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "force",
+    "source_index": 489677,
+    "starting_history": [
+      [
+        "shine",
+        "XXXXG"
+      ],
+      [
+        "abate",
+        "XXXXG"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 10,
+    "guesses": [
+      "shine",
+      "abate",
+      "lower",
+      "force"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "force",
+    "source_index": 489677,
+    "starting_history": [
+      [
+        "shine",
+        "XXXXG"
+      ],
+      [
+        "abate",
+        "XXXXG"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 10,
+    "guesses": [
+      "shine",
+      "abate",
+      "coral",
+      "force"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "force",
+    "source_index": 489677,
+    "starting_history": [
+      [
+        "shine",
+        "XXXXG"
+      ],
+      [
+        "abate",
+        "XXXXG"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 10,
+    "guesses": [
+      "shine",
+      "abate",
+      "cloud",
+      "force"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "force",
+    "source_index": 489677,
+    "starting_history": [
+      [
+        "shine",
+        "XXXXG"
+      ],
+      [
+        "abate",
+        "XXXXG"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 10,
+    "guesses": [
+      "shine",
+      "abate",
+      "cloud",
+      "force"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "force",
+    "source_index": 489677,
+    "starting_history": [
+      [
+        "shine",
+        "XXXXG"
+      ],
+      [
+        "abate",
+        "XXXXG"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 10,
+    "guesses": [
+      "shine",
+      "abate",
+      "cloud",
+      "force"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "force",
+    "source_index": 489677,
+    "starting_history": [
+      [
+        "shine",
+        "XXXXG"
+      ],
+      [
+        "abate",
+        "XXXXG"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 10,
+    "guesses": [
+      "shine",
+      "abate",
+      "cloud",
+      "force"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "force",
+    "source_index": 489677,
+    "starting_history": [
+      [
+        "shine",
+        "XXXXG"
+      ],
+      [
+        "abate",
+        "XXXXG"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 11,
+    "guesses": [
+      "imply",
+      "salad",
+      "force",
+      "topic",
+      "booth"
+    ],
+    "member": 0,
+    "reward": 2.0,
+    "secret": "booth",
+    "source_index": 614145,
+    "starting_history": [
+      [
+        "imply",
+        "XXXXX"
+      ],
+      [
+        "salad",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 11,
+    "guesses": [
+      "imply",
+      "salad",
+      "court",
+      "booth"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "booth",
+    "source_index": 614145,
+    "starting_history": [
+      [
+        "imply",
+        "XXXXX"
+      ],
+      [
+        "salad",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 11,
+    "guesses": [
+      "imply",
+      "salad",
+      "forth",
+      "booth"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "booth",
+    "source_index": 614145,
+    "starting_history": [
+      [
+        "imply",
+        "XXXXX"
+      ],
+      [
+        "salad",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 11,
+    "guesses": [
+      "imply",
+      "salad",
+      "worth",
+      "booth"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "booth",
+    "source_index": 614145,
+    "starting_history": [
+      [
+        "imply",
+        "XXXXX"
+      ],
+      [
+        "salad",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 11,
+    "guesses": [
+      "imply",
+      "salad",
+      "greet",
+      "brown",
+      "booth"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "booth",
+    "source_index": 614145,
+    "starting_history": [
+      [
+        "imply",
+        "XXXXX"
+      ],
+      [
+        "salad",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 11,
+    "guesses": [
+      "imply",
+      "salad",
+      "front",
+      "booth"
+    ],
+    "member": 5,
+    "reward": 3.0,
+    "secret": "booth",
+    "source_index": 614145,
+    "starting_history": [
+      [
+        "imply",
+        "XXXXX"
+      ],
+      [
+        "salad",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 11,
+    "guesses": [
+      "imply",
+      "salad",
+      "front",
+      "booth"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "booth",
+    "source_index": 614145,
+    "starting_history": [
+      [
+        "imply",
+        "XXXXX"
+      ],
+      [
+        "salad",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 11,
+    "guesses": [
+      "imply",
+      "salad",
+      "front",
+      "aback",
+      "booth"
+    ],
+    "member": 7,
+    "reward": 2.0,
+    "secret": "booth",
+    "source_index": 614145,
+    "starting_history": [
+      [
+        "imply",
+        "XXXXX"
+      ],
+      [
+        "salad",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 12,
+    "guesses": [
+      "known",
+      "young",
+      "lucky",
+      "could",
+      "stare",
+      "there"
+    ],
+    "member": 0,
+    "reward": 1.0,
+    "secret": "there",
+    "source_index": 341248,
+    "starting_history": [
+      [
+        "known",
+        "XXXXX"
+      ],
+      [
+        "young",
+        "XXXXX"
+      ],
+      [
+        "lucky",
+        "XXXXX"
+      ],
+      [
+        "could",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 12,
+    "guesses": [
+      "known",
+      "young",
+      "lucky",
+      "could",
+      "stare",
+      "there"
+    ],
+    "member": 1,
+    "reward": 1.0,
+    "secret": "there",
+    "source_index": 341248,
+    "starting_history": [
+      [
+        "known",
+        "XXXXX"
+      ],
+      [
+        "young",
+        "XXXXX"
+      ],
+      [
+        "lucky",
+        "XXXXX"
+      ],
+      [
+        "could",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 12,
+    "guesses": [
+      "known",
+      "young",
+      "lucky",
+      "could",
+      "stare",
+      "there"
+    ],
+    "member": 2,
+    "reward": 1.0,
+    "secret": "there",
+    "source_index": 341248,
+    "starting_history": [
+      [
+        "known",
+        "XXXXX"
+      ],
+      [
+        "young",
+        "XXXXX"
+      ],
+      [
+        "lucky",
+        "XXXXX"
+      ],
+      [
+        "could",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 12,
+    "guesses": [
+      "known",
+      "young",
+      "lucky",
+      "could",
+      "stare",
+      "there"
+    ],
+    "member": 3,
+    "reward": 1.0,
+    "secret": "there",
+    "source_index": 341248,
+    "starting_history": [
+      [
+        "known",
+        "XXXXX"
+      ],
+      [
+        "young",
+        "XXXXX"
+      ],
+      [
+        "lucky",
+        "XXXXX"
+      ],
+      [
+        "could",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 12,
+    "guesses": [
+      "known",
+      "young",
+      "lucky",
+      "could",
+      "stare",
+      "there"
+    ],
+    "member": 4,
+    "reward": 1.0,
+    "secret": "there",
+    "source_index": 341248,
+    "starting_history": [
+      [
+        "known",
+        "XXXXX"
+      ],
+      [
+        "young",
+        "XXXXX"
+      ],
+      [
+        "lucky",
+        "XXXXX"
+      ],
+      [
+        "could",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 12,
+    "guesses": [
+      "known",
+      "young",
+      "lucky",
+      "could",
+      "stare",
+      "there"
+    ],
+    "member": 5,
+    "reward": 1.0,
+    "secret": "there",
+    "source_index": 341248,
+    "starting_history": [
+      [
+        "known",
+        "XXXXX"
+      ],
+      [
+        "young",
+        "XXXXX"
+      ],
+      [
+        "lucky",
+        "XXXXX"
+      ],
+      [
+        "could",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 12,
+    "guesses": [
+      "known",
+      "young",
+      "lucky",
+      "could",
+      "stare",
+      "there"
+    ],
+    "member": 6,
+    "reward": 1.0,
+    "secret": "there",
+    "source_index": 341248,
+    "starting_history": [
+      [
+        "known",
+        "XXXXX"
+      ],
+      [
+        "young",
+        "XXXXX"
+      ],
+      [
+        "lucky",
+        "XXXXX"
+      ],
+      [
+        "could",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 6,
+    "group": 12,
+    "guesses": [
+      "known",
+      "young",
+      "lucky",
+      "could",
+      "stare",
+      "there"
+    ],
+    "member": 7,
+    "reward": 1.0,
+    "secret": "there",
+    "source_index": 341248,
+    "starting_history": [
+      [
+        "known",
+        "XXXXX"
+      ],
+      [
+        "young",
+        "XXXXX"
+      ],
+      [
+        "lucky",
+        "XXXXX"
+      ],
+      [
+        "could",
+        "XXXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 13,
+    "guesses": [
+      "buyer",
+      "aside",
+      "boast",
+      "trust",
+      "layer"
+    ],
+    "member": 0,
+    "reward": 2.0,
+    "secret": "layer",
+    "source_index": 456040,
+    "starting_history": [
+      [
+        "buyer",
+        "XXGGG"
+      ],
+      [
+        "aside",
+        "YXXXY"
+      ],
+      [
+        "boast",
+        "XXYXX"
+      ],
+      [
+        "trust",
+        "XYXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 13,
+    "guesses": [
+      "buyer",
+      "aside",
+      "boast",
+      "trust",
+      "layer"
+    ],
+    "member": 1,
+    "reward": 2.0,
+    "secret": "layer",
+    "source_index": 456040,
+    "starting_history": [
+      [
+        "buyer",
+        "XXGGG"
+      ],
+      [
+        "aside",
+        "YXXXY"
+      ],
+      [
+        "boast",
+        "XXYXX"
+      ],
+      [
+        "trust",
+        "XYXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 13,
+    "guesses": [
+      "buyer",
+      "aside",
+      "boast",
+      "trust",
+      "layer"
+    ],
+    "member": 2,
+    "reward": 2.0,
+    "secret": "layer",
+    "source_index": 456040,
+    "starting_history": [
+      [
+        "buyer",
+        "XXGGG"
+      ],
+      [
+        "aside",
+        "YXXXY"
+      ],
+      [
+        "boast",
+        "XXYXX"
+      ],
+      [
+        "trust",
+        "XYXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 13,
+    "guesses": [
+      "buyer",
+      "aside",
+      "boast",
+      "trust",
+      "layer"
+    ],
+    "member": 3,
+    "reward": 2.0,
+    "secret": "layer",
+    "source_index": 456040,
+    "starting_history": [
+      [
+        "buyer",
+        "XXGGG"
+      ],
+      [
+        "aside",
+        "YXXXY"
+      ],
+      [
+        "boast",
+        "XXYXX"
+      ],
+      [
+        "trust",
+        "XYXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 13,
+    "guesses": [
+      "buyer",
+      "aside",
+      "boast",
+      "trust",
+      "layer"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "layer",
+    "source_index": 456040,
+    "starting_history": [
+      [
+        "buyer",
+        "XXGGG"
+      ],
+      [
+        "aside",
+        "YXXXY"
+      ],
+      [
+        "boast",
+        "XXYXX"
+      ],
+      [
+        "trust",
+        "XYXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 13,
+    "guesses": [
+      "buyer",
+      "aside",
+      "boast",
+      "trust",
+      "layer"
+    ],
+    "member": 5,
+    "reward": 2.0,
+    "secret": "layer",
+    "source_index": 456040,
+    "starting_history": [
+      [
+        "buyer",
+        "XXGGG"
+      ],
+      [
+        "aside",
+        "YXXXY"
+      ],
+      [
+        "boast",
+        "XXYXX"
+      ],
+      [
+        "trust",
+        "XYXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 13,
+    "guesses": [
+      "buyer",
+      "aside",
+      "boast",
+      "trust",
+      "layer"
+    ],
+    "member": 6,
+    "reward": 2.0,
+    "secret": "layer",
+    "source_index": 456040,
+    "starting_history": [
+      [
+        "buyer",
+        "XXGGG"
+      ],
+      [
+        "aside",
+        "YXXXY"
+      ],
+      [
+        "boast",
+        "XXYXX"
+      ],
+      [
+        "trust",
+        "XYXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 13,
+    "guesses": [
+      "buyer",
+      "aside",
+      "boast",
+      "trust",
+      "layer"
+    ],
+    "member": 7,
+    "reward": 2.0,
+    "secret": "layer",
+    "source_index": 456040,
+    "starting_history": [
+      [
+        "buyer",
+        "XXGGG"
+      ],
+      [
+        "aside",
+        "YXXXY"
+      ],
+      [
+        "boast",
+        "XXYXX"
+      ],
+      [
+        "trust",
+        "XYXXX"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 14,
+    "guesses": [
+      "rigid",
+      "bless",
+      "birth",
+      "share",
+      "shore"
+    ],
+    "member": 0,
+    "reward": 2.0,
+    "secret": "shore",
+    "source_index": 174619,
+    "starting_history": [
+      [
+        "rigid",
+        "YXXXX"
+      ],
+      [
+        "bless",
+        "XXYYX"
+      ],
+      [
+        "birth",
+        "XXYXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 14,
+    "guesses": [
+      "rigid",
+      "bless",
+      "birth",
+      "share",
+      "shore"
+    ],
+    "member": 1,
+    "reward": 2.0,
+    "secret": "shore",
+    "source_index": 174619,
+    "starting_history": [
+      [
+        "rigid",
+        "YXXXX"
+      ],
+      [
+        "bless",
+        "XXYYX"
+      ],
+      [
+        "birth",
+        "XXYXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 14,
+    "guesses": [
+      "rigid",
+      "bless",
+      "birth",
+      "share",
+      "shore"
+    ],
+    "member": 2,
+    "reward": 2.0,
+    "secret": "shore",
+    "source_index": 174619,
+    "starting_history": [
+      [
+        "rigid",
+        "YXXXX"
+      ],
+      [
+        "bless",
+        "XXYYX"
+      ],
+      [
+        "birth",
+        "XXYXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 14,
+    "guesses": [
+      "rigid",
+      "bless",
+      "birth",
+      "share",
+      "shore"
+    ],
+    "member": 3,
+    "reward": 2.0,
+    "secret": "shore",
+    "source_index": 174619,
+    "starting_history": [
+      [
+        "rigid",
+        "YXXXX"
+      ],
+      [
+        "bless",
+        "XXYYX"
+      ],
+      [
+        "birth",
+        "XXYXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 14,
+    "guesses": [
+      "rigid",
+      "bless",
+      "birth",
+      "share",
+      "shore"
+    ],
+    "member": 4,
+    "reward": 2.0,
+    "secret": "shore",
+    "source_index": 174619,
+    "starting_history": [
+      [
+        "rigid",
+        "YXXXX"
+      ],
+      [
+        "bless",
+        "XXYYX"
+      ],
+      [
+        "birth",
+        "XXYXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 14,
+    "guesses": [
+      "rigid",
+      "bless",
+      "birth",
+      "share",
+      "shore"
+    ],
+    "member": 5,
+    "reward": 2.0,
+    "secret": "shore",
+    "source_index": 174619,
+    "starting_history": [
+      [
+        "rigid",
+        "YXXXX"
+      ],
+      [
+        "bless",
+        "XXYYX"
+      ],
+      [
+        "birth",
+        "XXYXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 14,
+    "guesses": [
+      "rigid",
+      "bless",
+      "birth",
+      "share",
+      "shore"
+    ],
+    "member": 6,
+    "reward": 2.0,
+    "secret": "shore",
+    "source_index": 174619,
+    "starting_history": [
+      [
+        "rigid",
+        "YXXXX"
+      ],
+      [
+        "bless",
+        "XXYYX"
+      ],
+      [
+        "birth",
+        "XXYXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 5,
+    "group": 14,
+    "guesses": [
+      "rigid",
+      "bless",
+      "birth",
+      "share",
+      "shore"
+    ],
+    "member": 7,
+    "reward": 2.0,
+    "secret": "shore",
+    "source_index": 174619,
+    "starting_history": [
+      [
+        "rigid",
+        "YXXXX"
+      ],
+      [
+        "bless",
+        "XXYYX"
+      ],
+      [
+        "birth",
+        "XXYXY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 15,
+    "guesses": [
+      "phase",
+      "diner",
+      "greet"
+    ],
+    "member": 0,
+    "reward": 4.0,
+    "secret": "greet",
+    "source_index": 638434,
+    "starting_history": [
+      [
+        "phase",
+        "XXXXY"
+      ],
+      [
+        "diner",
+        "XXXGY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 15,
+    "guesses": [
+      "phase",
+      "diner",
+      "creek",
+      "greet"
+    ],
+    "member": 1,
+    "reward": 3.0,
+    "secret": "greet",
+    "source_index": 638434,
+    "starting_history": [
+      [
+        "phase",
+        "XXXXY"
+      ],
+      [
+        "diner",
+        "XXXGY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 15,
+    "guesses": [
+      "phase",
+      "diner",
+      "creek",
+      "greet"
+    ],
+    "member": 2,
+    "reward": 3.0,
+    "secret": "greet",
+    "source_index": 638434,
+    "starting_history": [
+      [
+        "phase",
+        "XXXXY"
+      ],
+      [
+        "diner",
+        "XXXGY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 15,
+    "guesses": [
+      "phase",
+      "diner",
+      "creek",
+      "greet"
+    ],
+    "member": 3,
+    "reward": 3.0,
+    "secret": "greet",
+    "source_index": 638434,
+    "starting_history": [
+      [
+        "phase",
+        "XXXXY"
+      ],
+      [
+        "diner",
+        "XXXGY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 15,
+    "guesses": [
+      "phase",
+      "diner",
+      "crown",
+      "greet"
+    ],
+    "member": 4,
+    "reward": 3.0,
+    "secret": "greet",
+    "source_index": 638434,
+    "starting_history": [
+      [
+        "phase",
+        "XXXXY"
+      ],
+      [
+        "diner",
+        "XXXGY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 3,
+    "group": 15,
+    "guesses": [
+      "phase",
+      "diner",
+      "greet"
+    ],
+    "member": 5,
+    "reward": 4.0,
+    "secret": "greet",
+    "source_index": 638434,
+    "starting_history": [
+      [
+        "phase",
+        "XXXXY"
+      ],
+      [
+        "diner",
+        "XXXGY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 15,
+    "guesses": [
+      "phase",
+      "diner",
+      "tower",
+      "greet"
+    ],
+    "member": 6,
+    "reward": 3.0,
+    "secret": "greet",
+    "source_index": 638434,
+    "starting_history": [
+      [
+        "phase",
+        "XXXXY"
+      ],
+      [
+        "diner",
+        "XXXGY"
+      ]
+    ],
+    "won": true
+  },
+  {
+    "attempts": 4,
+    "group": 15,
+    "guesses": [
+      "phase",
+      "diner",
+      "crown",
+      "greet"
+    ],
+    "member": 7,
+    "reward": 3.0,
+    "secret": "greet",
+    "source_index": 638434,
+    "starting_history": [
+      [
+        "phase",
+        "XXXXY"
+      ],
+      [
+        "diner",
+        "XXXGY"
+      ]
+    ],
+    "won": true
+  }
+]

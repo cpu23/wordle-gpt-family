@@ -1,0 +1,52 @@
+{
+  "best": {
+    "action_quality": {
+      "actions": 32,
+      "mean_action_regret": 1.5493938066009567,
+      "mean_relative_quality": 2.0271357677870854,
+      "median_action_regret": 0.0,
+      "median_relative_quality": 1.0,
+      "rank_1_fraction": 0.0,
+      "top_3_fraction": 0.0,
+      "top_8_fraction": 0.0
+    },
+    "elapsed_seconds": 2.2477412580010423,
+    "epoch": 0,
+    "gameplay": {
+      "average_attempts": 5.944444444444445,
+      "average_guesses": 2.0,
+      "checkpoint": "in-memory",
+      "decode": "constrained",
+      "games": 72,
+      "invalid_guesses": 0,
+      "win_rate": 0.013888888888888888,
+      "wins": 1
+    },
+    "improved": true,
+    "key": [
+      1,
+      -5.944444444444445,
+      -2.0,
+      -1.5493938066009567,
+      -11.037240028381348
+    ],
+    "mechanics_validation_loss": 0.000780485689586492,
+    "policy": {
+      "cross_entropy": 13.769804954528809,
+      "rank1_probability": 0.006017447682097554,
+      "student_entropy": 1.131200134754181,
+      "teacher_entropy": 2.732564926147461,
+      "teacher_student_kl": 11.037240028381348,
+      "top3_probability": 0.01733217015862465,
+      "top8_probability": 0.03398289531469345
+    },
+    "report_file": "evaluation-0.json",
+    "step": 0,
+    "training": {}
+  },
+  "checkpoint": "runs/soft-distillation-smoke/B-T0.50/checkpoints/best.pt",
+  "elapsed_seconds": 5.267305700999714,
+  "epochs": 1,
+  "name": "B-T0.50",
+  "rapid_destructive_drift": false
+}

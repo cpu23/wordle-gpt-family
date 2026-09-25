@@ -1,0 +1,801 @@
+{
+  "average_attempts": 3.9583333333333335,
+  "average_guesses": 3.4,
+  "checkpoint": "in-memory",
+  "decode": "raw",
+  "games": 72,
+  "invalid_guesses": 10,
+  "results": [
+    {
+      "guesses": [
+        "irate",
+        "clamp",
+        "patch",
+        "apron",
+        "adopt"
+      ],
+      "invalid_guesses": 0,
+      "secret": "adopt",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "agree"
+      ],
+      "invalid_guesses": 0,
+      "secret": "agree",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "align",
+        "aisle"
+      ],
+      "invalid_guesses": 0,
+      "secret": "aisle",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "camel",
+        "relax",
+        "alert"
+      ],
+      "invalid_guesses": 0,
+      "secret": "alert",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blind",
+        "climb",
+        "alime"
+      ],
+      "invalid_guesses": 1,
+      "secret": "alibi",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "align",
+        "alike",
+        "alike",
+        "alive"
+      ],
+      "invalid_guesses": 0,
+      "secret": "alive",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "pedal",
+        "ahead",
+        "ahead",
+        "ahead",
+        "ahead"
+      ],
+      "invalid_guesses": 0,
+      "secret": "amend",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "bloom",
+        "major",
+        "smxer"
+      ],
+      "invalid_guesses": 1,
+      "secret": "armor",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "cheat",
+        "asset"
+      ],
+      "invalid_guesses": 0,
+      "secret": "asset",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "stuck",
+        "alarm",
+        "award"
+      ],
+      "invalid_guesses": 0,
+      "secret": "award",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "clash",
+        "guard",
+        "aware"
+      ],
+      "invalid_guesses": 0,
+      "secret": "aware",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "cloud",
+        "badly"
+      ],
+      "invalid_guesses": 0,
+      "secret": "badly",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blind",
+        "basin"
+      ],
+      "invalid_guesses": 0,
+      "secret": "basin",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "blast",
+        "beast"
+      ],
+      "invalid_guesses": 0,
+      "secret": "beast",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "fleet",
+        "every",
+        "query",
+        "query",
+        "query"
+      ],
+      "invalid_guesses": 0,
+      "secret": "berry",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "stuck",
+        "bland"
+      ],
+      "invalid_guesses": 0,
+      "secret": "bland",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "wheel",
+        "blend",
+        "bless"
+      ],
+      "invalid_guesses": 0,
+      "secret": "bless",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bonus",
+        "blood",
+        "block"
+      ],
+      "invalid_guesses": 0,
+      "secret": "block",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "adobe",
+        "brain"
+      ],
+      "invalid_guesses": 0,
+      "secret": "brain",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "clash",
+        "canoe"
+      ],
+      "invalid_guesses": 0,
+      "secret": "canoe",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "close",
+        "chose"
+      ],
+      "invalid_guesses": 0,
+      "secret": "chose",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bonus",
+        "couch"
+      ],
+      "invalid_guesses": 0,
+      "secret": "couch",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "fleet",
+        "sound",
+        "cover"
+      ],
+      "invalid_guesses": 0,
+      "secret": "cover",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bench",
+        "crash",
+        "crame"
+      ],
+      "invalid_guesses": 1,
+      "secret": "crawl",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "clash",
+        "dance"
+      ],
+      "invalid_guesses": 0,
+      "secret": "dance",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "click",
+        "pinch",
+        "disco"
+      ],
+      "invalid_guesses": 0,
+      "secret": "disco",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "click",
+        "disco",
+        "dizzy"
+      ],
+      "invalid_guesses": 0,
+      "secret": "dizzy",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "wheel",
+        "below",
+        "elbow"
+      ],
+      "invalid_guesses": 0,
+      "secret": "elbow",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "linen",
+        "equip"
+      ],
+      "invalid_guesses": 0,
+      "secret": "equip",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "faith"
+      ],
+      "invalid_guesses": 0,
+      "secret": "faith",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "fleet",
+        "ferry"
+      ],
+      "invalid_guesses": 0,
+      "secret": "ferry",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "fifth",
+        "fifty"
+      ],
+      "invalid_guesses": 0,
+      "secret": "fifty",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "clamp",
+        "blown",
+        "float"
+      ],
+      "invalid_guesses": 0,
+      "secret": "float",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bound",
+        "crown",
+        "brown",
+        "brown",
+        "brown"
+      ],
+      "invalid_guesses": 0,
+      "secret": "grown",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "close",
+        "house"
+      ],
+      "invalid_guesses": 0,
+      "secret": "house",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "pedal",
+        "camel",
+        "taken",
+        "lasel"
+      ],
+      "invalid_guesses": 1,
+      "secret": "label",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "fleet",
+        "lover",
+        "lover",
+        "lover",
+        "lover"
+      ],
+      "invalid_guesses": 0,
+      "secret": "lower",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "pedal",
+        "pedal",
+        "pedal",
+        "pedal",
+        "pedal"
+      ],
+      "invalid_guesses": 0,
+      "secret": "medal",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "fleet",
+        "every",
+        "mercy"
+      ],
+      "invalid_guesses": 0,
+      "secret": "mercy",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "slick",
+        "glide",
+        "elite",
+        "olite"
+      ],
+      "invalid_guesses": 1,
+      "secret": "olive",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "orbit"
+      ],
+      "invalid_guesses": 0,
+      "secret": "orbit",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "curly",
+        "marry",
+        "harsh",
+        "favor",
+        "marry"
+      ],
+      "invalid_guesses": 0,
+      "secret": "parka",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "fancy",
+        "strap",
+        "party"
+      ],
+      "invalid_guesses": 0,
+      "secret": "party",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "slick",
+        "piece"
+      ],
+      "invalid_guesses": 0,
+      "secret": "piece",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "light",
+        "limit",
+        "linen",
+        "limit",
+        "pilot"
+      ],
+      "invalid_guesses": 0,
+      "secret": "pilot",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "fleet",
+        "sound",
+        "cover",
+        "honey",
+        "motor"
+      ],
+      "invalid_guesses": 0,
+      "secret": "power",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "dance",
+        "fresh",
+        "gress"
+      ],
+      "invalid_guesses": 1,
+      "secret": "press",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "champ",
+        "prime"
+      ],
+      "invalid_guesses": 0,
+      "secret": "prime",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "champ",
+        "admit",
+        "pride",
+        "prime",
+        "prime"
+      ],
+      "invalid_guesses": 0,
+      "secret": "prize",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "raise"
+      ],
+      "invalid_guesses": 0,
+      "secret": "raise",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "agree",
+        "sugar",
+        "large",
+        "carve",
+        "large"
+      ],
+      "invalid_guesses": 0,
+      "secret": "range",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "couch",
+        "sword",
+        "round"
+      ],
+      "invalid_guesses": 0,
+      "secret": "round",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "stuck",
+        "scarf"
+      ],
+      "invalid_guesses": 0,
+      "secret": "scarf",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "stuck",
+        "scout"
+      ],
+      "invalid_guesses": 0,
+      "secret": "scout",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "wheel",
+        "enemy",
+        "seven"
+      ],
+      "invalid_guesses": 0,
+      "secret": "seven",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "scene",
+        "might",
+        "adapt",
+        "shape"
+      ],
+      "invalid_guesses": 0,
+      "secret": "shape",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "wheel",
+        "cheek",
+        "sheep"
+      ],
+      "invalid_guesses": 0,
+      "secret": "sheep",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "stuck",
+        "scout",
+        "sword",
+        "stoup"
+      ],
+      "invalid_guesses": 1,
+      "secret": "shout",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "scene",
+        "scale",
+        "speak",
+        "space"
+      ],
+      "invalid_guesses": 0,
+      "secret": "space",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "light",
+        "built",
+        "limit",
+        "limit",
+        "limit"
+      ],
+      "invalid_guesses": 0,
+      "secret": "split",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "clash",
+        "stack"
+      ],
+      "invalid_guesses": 0,
+      "secret": "stack",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "lught"
+      ],
+      "invalid_guesses": 1,
+      "secret": "stale",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "stare"
+      ],
+      "invalid_guesses": 0,
+      "secret": "stare",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "light",
+        "stick"
+      ],
+      "invalid_guesses": 0,
+      "secret": "stick",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "strap",
+        "strap",
+        "strap",
+        "stral"
+      ],
+      "invalid_guesses": 1,
+      "secret": "straw",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "stuck"
+      ],
+      "invalid_guesses": 0,
+      "secret": "stuck",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "bonus",
+        "sunny"
+      ],
+      "invalid_guesses": 0,
+      "secret": "sunny",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "fleet",
+        "sound",
+        "super"
+      ],
+      "invalid_guesses": 0,
+      "secret": "super",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "clamp",
+        "blown",
+        "study",
+        "dotum"
+      ],
+      "invalid_guesses": 1,
+      "secret": "today",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "other",
+        "motor",
+        "outer",
+        "worth",
+        "worth"
+      ],
+      "invalid_guesses": 0,
+      "secret": "tower",
+      "won": false
+    },
+    {
+      "guesses": [
+        "irate",
+        "trail"
+      ],
+      "invalid_guesses": 0,
+      "secret": "trail",
+      "won": true
+    },
+    {
+      "guesses": [
+        "irate",
+        "clamp",
+        "batch",
+        "click",
+        "click",
+        "ratio"
+      ],
+      "invalid_guesses": 0,
+      "secret": "watch",
+      "won": false
+    }
+  ],
+  "win_rate": 0.6944444444444444,
+  "wins": 50
+}

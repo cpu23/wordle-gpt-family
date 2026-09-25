@@ -14,6 +14,7 @@ def analyze_action_regret(
 ) -> dict[str, object]:
     actions: list[dict[str, object]] = []
     allowed = tuple(allowed_words)
+    cache: dict[tuple[str, ...], list[tuple[str, float]]] = {}
     for game in gameplay["results"]:
         secret = str(game["secret"])
         possible = allowed
@@ -22,7 +23,11 @@ def analyze_action_regret(
             if guess not in allowed:
                 actions.append({"secret": secret, "turn": turn, "guess": guess, "legal": False})
                 break
-            top = top_informative_guesses(possible, allowed, 8)
+            possible_key = possible if isinstance(possible, tuple) else tuple(possible)
+            top = cache.get(possible_key)
+            if top is None:
+                top = top_informative_guesses(possible_key, allowed, 8)
+                cache[possible_key] = top
             model_score = expected_survivors(possible, guess)
             ranked = {candidate: rank for rank, (candidate, _) in enumerate(top, start=1)}
             optimal_score = top[0][1]

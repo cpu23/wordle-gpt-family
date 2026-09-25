@@ -1,0 +1,7 @@
+{
+  "checkpoint": "runs/dpo-rescue-anchor/lambda-1.0-lr-3e-06/checkpoints/best.pt",
+  "checkpoint_sha256": "b25f0a0418f03fd0d89f52e0b08d18686d5868cb4fc2512b4a84225d3f0c3c31",
+  "evaluations": 6,
+  "metrics": "runs/dpo-rescue-anchor/lambda-1.0-lr-3e-06/metrics.jsonl",
+  "metrics_sha256": "5e1c326866f4f15d3457be95bbaa84fd50b052ee2a1c0b1b64aa6885bb12794e"
+}
